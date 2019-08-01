@@ -9,7 +9,7 @@ data. A Device is always assumed to be capable of communicating electronically
 via a network.
 
 This data model has been partially developed in cooperation with mobile
-operators and the [GSMA](http://www.gsma.com/connectedliving/iot-big-data/).
+operators and the [GSMA](https://www.gsma.com/iot/iot-big-data/).
 
 This data model reuses concepts coming from the
 [SAREF Ontology](http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/01.01.01_60/ts_103264v010101p.pdf)
@@ -25,13 +25,13 @@ The data model is defined as shown below:
 
 -   `source` : A sequence of characters giving the source of the entity data.
 
-    -   Attribute type: Text or URL
+    -   Attribute type: Property. Text or URL
     -   Optional
 
 -   `dataProvider` : Specifies the URL to information about the provider of this
     information
 
-    -   Attribute type: URL
+    -   Attribute type: Property. URL
     -   Optional
 
 -   `category` : See attribute `category` from
@@ -45,7 +45,7 @@ The data model is defined as shown below:
 -   `controlledAsset` : The asset(s) (building, object, etc.) controlled by the
     device.
 
-    -   Attribute type: List of [Text](https://schema.org) or Reference(s) to
+    -   Attribute type: Property. List of [Text](https://schema.org) or Reference(s) to
         another entity.
     -   Optional
 
@@ -55,24 +55,24 @@ The data model is defined as shown below:
     identify a mobile phone operator/carrier using the GSM, CDMA, iDEN, TETRA
     and 3G / 4G public land mobile networks and some satellite mobile networks.
 
-    -   Attribute type: [Text](https://schema.org/Text)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Optional
 
 -   `mcc` : Mobile Country Code - This property identifies univoquely the
     country of the mobile network the device is attached to.
 
-    -   Attribute type: [Text](https://schema.org/Text)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Optional
 
 -   `macAddress` : The MAC address of the device.
 
-    -   Attribute type: List of [Text](https://schema.org/Text)
+    -   Attribute type: Property. List of [Text](https://schema.org/Text)
     -   Optional
 
 -   `ipAddress` : The IP address of the device. It can be a comma separated list
     of values if the device has more than one IP address.
 
-    -   Attribute type: List of [Text](https://schema.org/Text)
+    -   Attribute type: Property. List of [Text](https://schema.org/Text)
     -   Optional
 
 -   `supportedProtocol` : See attribute `supportedProtocol` from
@@ -86,7 +86,7 @@ The data model is defined as shown below:
     etc.) and which are not currently covered by the standard attributes defined
     by this model.
 
-    -   Attribute type: [StructuredValue](https://schema.org/StructuredValue)
+    -   Attribute type: Property. [StructuredValue](https://schema.org/StructuredValue)
     -   Attribute metadata:
         -   `dateModified` : Last update timestamp of this attribute.
             -   Metadata type: [DateTime](https://schema.org/DateTime)
@@ -96,7 +96,7 @@ The data model is defined as shown below:
 -   `location` : Location of this device represented by a GeoJSON geometry of
     type point.
 
-    -   Attribute type: `geo:json`.
+    -   Attribute type: GeoProperty. `geo:json`.
     -   Normative References:
         [https://tools.ietf.org/html/rfc7946](https://tools.ietf.org/html/rfc7946)
     -   Optional.
@@ -114,44 +114,44 @@ The data model is defined as shown below:
 -   `dateInstalled` : A timestamp which denotes when the device was installed
     (if it requires installation).
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Optional
 
 -   `dateFirstUsed` : A timestamp which denotes when the device was first used.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Optional
 
 -   `dateManufactured` : A timestamp which denotes when the device was
     manufactured.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Optional
 
 -   `hardwareVersion` : The hardware version of this device.
 
-    -   Attribute type: [Text](https://schema.org/Text)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Optional
 
 -   `softwareVersion` : The software version of this device.
 
-    -   Attribute type: [Text](https://schema.org/Text)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Optional
 
 -   `firmwareVersion` : The firmware version of this device.
 
-    -   Attribute type: [Text](https://schema.org/Text)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Optional
 
 -   `osVersion` : The version of the host operating system device.
 
-    -   Attribute type: [Text](https://schema.org/Text)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Optional
 
 -   `dateLastCalibration` : A timestamp which denotes when the last calibration
     of the device happened.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Optional
 
 -   `serialNumber` : The serial number assigned by the manufacturer.
@@ -168,16 +168,16 @@ The data model is defined as shown below:
 
 -   `refDeviceModel` : The device's model.
 
-    -   Attribute type: Reference to an entity of type
+    -   Attribute type: Property. Reference to an entity of type
         [DeviceModel](../../DeviceModel/doc/spec.md).
     -   Optional
 
 -   `batteryLevel` : Device's battery level. It must be equal to `1.0` when
-    battery is full. `0.0` when battery ìs empty. `null` when cannot be
-    determined.
+    battery is full. `0.0` when battery ìs empty. `-1` when transiently cannot
+    be determined.
 
     -   Type: [Number](https://schema.org/Number)
-    -   Allowed values: Interval \[0,1\]
+    -   Allowed values: Interval \[0,1\] or -1
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened. This value can also appear as a FIWARE
@@ -212,7 +212,7 @@ The data model is defined as shown below:
 -   `dateLastValueReported` : A timestamp which denotes the last time when the
     device successfully reported data to the cloud.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Optional
 
 -   `value` : A observed or reported value. For actuator devices, it is an
@@ -221,7 +221,7 @@ The data model is defined as shown below:
     value `"on"`of type `Text`. Obviously, in order to toggle the referred
     switch, this attribute value will have to be changed to `"off"`.
 
-    -   Attribute type: Any type, depending on the device. Usually
+    -   Attribute type: Property. Any type, depending on the device. Usually
         [Text](https://schema.org/Text) or
         [QuantitativeValue](https://schema.org/QuantitativeValue).
     -   Attribute metadata:
@@ -233,23 +233,22 @@ The data model is defined as shown below:
 
 -   `dateModified` : Last update timestamp of this entity.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Read-Only. Automatically generated.
 
 -   `dateCreated` : Entity's creation timestamp.
 
-    -   Attribute type: [DateTime](https://schema.org/DateTime)
+    -   Attribute type: Property. [DateTime](https://schema.org/DateTime)
     -   Read-Only. Automatically generated.
 
 -   `owner` : The owners of a Device.
-    -   Attribute type: List of references to [Person](http://schema.org/Person)
-        or [Organization](https://schema.org/Organization).
+    -   Attribute type: Property. List of references to [Person](http://schema.org/Person)
+        or [Organization](https://schema.org/Organization) or List of URIs.
     -   Optional
 
-**Note**: JSON Schemas only capture the NGSI simplified representation, this
-means that to test the JSON schema examples with a
-[FIWARE NGSI version 2](http://fiware.github.io/specifications/ngsiv2/stable)
-API implementation, you need to use the `keyValues` mode (`options=keyValues`).
+**Note**: JSON Schemas are intended to capture the data type and associated
+constraints of the different Attributes, regardless their final representation
+format in NGSI(v2, LD).
 
 ## Examples
 
@@ -331,6 +330,80 @@ Sample uses simplified representation for data consumers `?options=keyValues`
         "dateFirstUsed": "2014-09-11T11:00:00Z",
         "owner": ["http://person.org/leon"]
     }
+```
+
+### LD Example
+
+Sample uses the NGSI-LD representation
+
+```json
+{
+    "id": "urn:ngsi-ld:Device:device-9845A",
+    "type": "Device",
+    "category": {
+        "type": "Property",
+        "value": ["sensor"]
+    },
+    "batteryLevel": {
+        "type": "Property",
+        "value": 0.75
+    },
+    "dateFirstUsed": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2014-09-11T11:00:00Z"
+        }
+    },
+    "controlledAsset": {
+        "type": "Relationship",
+        "object": ["urn:ngsi-ld::wastecontainer-Osuna-100"]
+    },
+    "serialNumber": {
+        "type": "Property",
+        "value": "9845A"
+    },
+    "mcc": {
+        "type": "Property",
+        "value": "214"
+    },
+    "value": {
+        "type": "Property",
+        "value": "l%3D0.22%3Bt%3D21.2"
+    },
+    "refDeviceModel": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345"
+    },
+    "rssi": {
+        "type": "Property",
+        "value": 0.86
+    },
+    "controlledProperty": {
+        "type": "Property",
+        "value": ["fillingLevel", "temperature"]
+    },
+    "owner": {
+        "type": "Property",
+        "value": ["http://person.org/leon"]
+    },
+    "mnc": {
+        "type": "Property",
+        "value": "07"
+    },
+    "ipAddress": {
+        "type": "Property",
+        "value": ["192.14.56.78"]
+    },
+    "deviceState": {
+        "type": "Property",
+        "value": "ok"
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://schema.lab.fiware.org/ld/context"
+    ]
+}
 ```
 
 **N.B.:** This example to work in Orion Context Broker implementation of NGSI

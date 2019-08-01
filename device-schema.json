@@ -18,7 +18,11 @@
           "meter",
           "HVAC",
           "network",
-          "multimedia"
+          "multimedia",
+          "implement",
+          "irrSystem",
+          "irrSection",
+          "endgun"
         ]
       }
     },
@@ -62,7 +66,11 @@
           "weight",
           "waterConsumption",
           "gasComsumption",
-          "electricityConsumption"
+          "electricityConsumption",
+          "eatingActivity",
+          "milking",
+          "movementActivity",
+          "soilMoisture"
         ]
       },
       "SupportedProtocolType": {
