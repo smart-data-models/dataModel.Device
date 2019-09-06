@@ -1,18 +1,18 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://fiware.github.io/dataModels/specs/Device/Device/schema.json",
-  "title": "GSMA / FIWARE - Device schema",
+  "$id": "https://smart-data-models.github.io/dataModels/specs/Device/Device/schema.json",
+  "title": " - Device schema",
   "description": "An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).",
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/GSMA-Commons"
+      "$ref": "https://smart-data-models.github.io/dataModels/common-schema.json#/definitions/GSMA-Commons"
     },
     {
-      "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/Location-Commons"
+      "$ref": "https://smart-data-models.github.io/dataModels/common-schema.json#/definitions/Location-Commons"
     },
     {
-      "$ref": "https://fiware.github.io/dataModels/specs/Device/device-schema.json#/definitions/Device-Commons"
+      "$ref": "https://smart-data-models.github.io/dataModels/specs/Device/device-schema.json#/definitions/Device-Commons"
     },
     {
       "properties": {
@@ -30,7 +30,7 @@
                 "format": "uri"
               },
               {
-                "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
+                "$ref": "https://smart-data-models.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
               }
             ]
           }
@@ -41,7 +41,7 @@
         "macAddress": {
           "type": "array",
           "items": {
-            "$ref": "https://fiware.github.io/dataModels/specs/Device/device-schema.json#/definitions/MacAddressType"
+            "$ref": "https://smart-data-models.github.io/dataModels/specs/Device/device-schema.json#/definitions/MacAddressType"
           }
         },
         "ipAddress": {
@@ -102,7 +102,7 @@
               "format": "uri"
             },
             {
-              "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
+              "$ref": "https://smart-data-models.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
             }
           ]
         },
