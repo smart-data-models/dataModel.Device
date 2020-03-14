@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://smart-data-models.github.io/data-models/specs/Device/DeviceModel/schema.json",
+  "$id": "https://smart-data-models.github.io/dataModel.Device/DeviceModel/schema.json",
   "title": " - Device Model schema",
   "description": "This entity captures the static properties of a Device. ",
   "type": "object",
@@ -12,7 +12,7 @@
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/PhysicalObject-Commons"
     },
     {
-      "$ref": "https://smart-data-models.github.io/data-models/specs/Device/device-schema.json#/definitions/Device-Commons"
+      "$ref": "https://smart-data-models.github.io/dataModel.Device/DeviceModel/schema.json"
     },
     {
       "properties": {
