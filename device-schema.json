@@ -78,21 +78,23 @@
         "items": {
           "type": "string",
           "enum": [
-            "ul20",
-            "mqtt",
-            "lwm2m",
+            "3g",
+            "bluetooth",
+            "bluetooth LE",
+            "cat-m",
+            "coap",
+            "ec-gsm-iot",
+            "gprs",
             "http",
-            "websocket",
+            "lwm2m",
+            "lora",
+            "lte-m",
+            "mqtt",
+            "nb-iot",
             "onem2m",
             "sigfox",
-            "lora",
-            "nb-iot",
-            "ec-gsm-iot",
-            "lte-m",
-            "cat-m",
-            "3g",
-            "gprs",
-            "coap"
+            "ul20",
+            "websocket"
           ]
         }
       }
