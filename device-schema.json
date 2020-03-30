@@ -13,16 +13,17 @@
       "items": {
         "type": "string",
         "enum": [
-          "sensor",
           "actuator",
-          "meter",
+          "beacon",
+          "endgun",
           "HVAC",
-          "network",
-          "multimedia",
           "implement",
           "irrSystem",
           "irrSection",
-          "endgun"
+          "meter",
+          "network",
+          "multimedia",
+          "sensor"
         ]
       }
     },
