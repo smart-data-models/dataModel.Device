@@ -110,6 +110,9 @@
       },
       "supportedProtocol": {
         "$ref": "/definitions/SupportedProtocolType"
+      }, 
+      "macAddress": {
+        "$ref": "/definitions/MacAddressType"
       }
     }
   }
