@@ -13,7 +13,7 @@
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/PhysicalObject-Commons"
     },
     {
-      "$ref": "https://smart-data-models.github.io/dataModel.Device/DeviceModel/schema.json"
+      "$ref": "https://smart-data-models.github.io/dataModel.Device/device-schema.json"
     },
     {
       "properties": {
