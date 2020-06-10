@@ -27,6 +27,25 @@ Device:
         model: 'https://schema.org/Text'
       type: string
       description: ''
+    category:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          -  actuator
+          -  beacon
+          -  endgun
+          -  HVAC
+          -  implement
+          -  irrSystem
+          -  irrSection
+          -  meter
+          -  network
+          -  multimedia
+          -  sensor
     configuration:
       x-ngsi:
         type: Property
@@ -49,6 +68,52 @@ Device:
                 pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
               - type: string
                 format: uri
+    controlledProperty:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - temperature
+          - humidity
+          - light
+          - motion
+          - fillingLevel
+          - occupancy
+          - power
+          - pressure
+          - smoke
+          - energy
+          - airPollution
+          - noiseLevel
+          - weatherConditions
+          - precipitation
+          - windSpeed
+          - windDirection
+          - atmosphericPressure
+          - solarRadiation
+          - depth
+          - pH
+          - conductivity
+          - conductance
+          - tss
+          - tds
+          - turbidity
+          - salinity
+          - orp
+          - cdom
+          - waterPollution
+          - location
+          - speed
+          - heading
+          - weight
+          - waterConsumption
+          - gasComsumption
+          - electricityConsumption
+          - soilMoisture
+          - trafficFlow
     dataProvider:
       x-ngsi:
         type: Property
@@ -177,6 +242,31 @@ Device:
         model: 'https://schema.org/Text'
       type: string
       description: ''
+    supportedProtocol:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          -  3g
+          -  bluetooth
+          -  "bluetooth LE"
+          -  cat-m
+          -  coap
+          -  ec-gsm-iot
+          -  gprs
+          -  http
+          -  lwm2m
+          -  lora
+          -  lte-m
+          -  mqtt
+          -  nb-iot
+          -  onem2m
+          -  sigfox
+          -  ul20
+          -  websocket
     value:
       x-ngsi:
         type: Property
