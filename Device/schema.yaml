@@ -1,0 +1,275 @@
+Device:
+  required:
+    - id
+    - type
+    - category
+    - controlledProperty
+  allOf:
+    - $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
+  type: object
+  description: >-
+    An apparatus (hardware + software + firmware) intended to accomplish a
+    particular task (sensing the environment, actuating, etc.).
+  properties:
+    address:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/address
+    alternateName:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    areaServed:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    category:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          -  actuator
+          -  beacon
+          -  endgun
+          -  HVAC
+          -  implement
+          -  irrSystem
+          -  irrSection
+          -  meter
+          -  network
+          -  multimedia
+          -  sensor
+    configuration:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    controlledAsset:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        oneOf:
+          - type: string
+            format: uri
+          - &ref_0
+            anyOf:
+              - type: string
+                minLength: 1
+                maxLength: 256
+                pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
+              - type: string
+                format: uri
+    controlledProperty:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - temperature
+          - humidity
+          - light
+          - motion
+          - fillingLevel
+          - occupancy
+          - power
+          - pressure
+          - smoke
+          - energy
+          - airPollution
+          - noiseLevel
+          - weatherConditions
+          - precipitation
+          - windSpeed
+          - windDirection
+          - atmosphericPressure
+          - solarRadiation
+          - depth
+          - pH
+          - conductivity
+          - conductance
+          - tss
+          - tds
+          - turbidity
+          - salinity
+          - orp
+          - cdom
+          - waterPollution
+          - location
+          - speed
+          - heading
+          - weight
+          - waterConsumption
+          - gasComsumption
+          - electricityConsumption
+          - soilMoisture
+          - trafficFlow
+    dataProvider:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    dateFirstUsed:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    dateInstalled:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    dateLastCalibration:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    dateLastValueReported:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    dateManufactured:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    description:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
+    deviceState:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    firmwareVersion:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    hardwareVersion:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    ipAddress:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        oneOf:
+          - format: ipv4
+          - format: ipv6
+    location:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/location
+    macAddress:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        pattern: '^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$'
+    mnc:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    name:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
+    osVersion:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    owner:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items: *ref_0
+    provider:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    serialNumber:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    softwareVersion:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    source:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    supportedProtocol:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          -  3g
+          -  bluetooth
+          -  "bluetooth LE"
+          -  cat-m
+          -  coap
+          -  ec-gsm-iot
+          -  gprs
+          -  http
+          -  lwm2m
+          -  lora
+          -  lte-m
+          -  mqtt
+          -  nb-iot
+          -  onem2m
+          -  sigfox
+          -  ul20
+          -  websocket
+    value:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
