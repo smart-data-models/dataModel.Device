@@ -3,8 +3,8 @@ components:
   schemas: 
     DeviceModel: 
       $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/schema.yaml#/DeviceModel"
- info: 
-  description: ""
+info: 
+  description: "This entity captures the static properties of a Device."
   title: DeviceModel
   version: "1.0.0"
 openapi: "3.0.0"
