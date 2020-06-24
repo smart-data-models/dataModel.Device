@@ -169,7 +169,8 @@ DeviceModel:
         https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
     owner:
       x-ngsi:
-        type: Property
+        type: Relationship
+        model: https://schema.org/URL  
       type: array
       description: ''
       items:
