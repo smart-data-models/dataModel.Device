@@ -25,76 +25,29 @@ DeviceModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Device's brand name.'
+      externalDocs: 
+        url: "https://schema.org/brand"
     category:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: 'Device's category(ies).'
       items:
-        type: string
-        enum:
-          -  actuator
-          -  beacon
-          -  endgun
-          -  HVAC
-          -  implement
-          -  irrSystem
-          -  irrSection
-          -  meter
-          -  network
-          -  multimedia
-          -  sensor
+        allOf:
+          - $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/Categories"
     color:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/color
-
     controlledProperty:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: |
+        Anything that can be sensed, measured or controlled by.
       items:
-        type: string
-        enum:
-          - temperature
-          - humidity
-          - light
-          - motion
-          - fillingLevel
-          - occupancy
-          - power
-          - pressure
-          - smoke
-          - energy
-          - airPollution
-          - noiseLevel
-          - weatherConditions
-          - precipitation
-          - windSpeed
-          - windDirection
-          - atmosphericPressure
-          - solarRadiation
-          - depth
-          - pH
-          - conductivity
-          - conductance
-          - tss
-          - tds
-          - turbidity
-          - salinity
-          - orp
-          - cdom
-          - waterPollution
-          - location
-          - speed
-          - heading
-          - weight
-          - waterConsumption
-          - gasComsumption
-          - electricityConsumption
-          - soilMoisture
-          - trafficFlow
+        anyOf:
+          - $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/ControlledProperties"
     dataProvider:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/dataProvider
@@ -106,53 +59,50 @@ DeviceModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: |
+        Class of constrained device as specified by RFC 7228. If the
+        device is not a constrained device this property shall not be present.
+      externalDocs: 
+        url: "https://tools.ietf.org/html/rfc7228#section-3"
     documentation:
       x-ngsi:
         type: Property
         model: 'https://schema.org/URL'
       type: string
-      description: ''
+      description: 'A link to device's documentation.'
       format: uri
     energyLimitationClass:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: ''
+      $ref: "https://raw.githubusercontent.com//smart-data-models/dataModel.Device/edit/master/DeviceModel/schema.yaml#/EnergyLimitationClass"
     function:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: |
+        The functionality necessary to accomplish the task for which a
+        Device is designed. A device can be designed to perform more than one
+        function. Defined by [SAREF](https://w3id.org/saref#Function).
       items:
-        type: string
-        enum:
-          - levelControl
-          - sensing
-          - onOff
-          - openClose
-          - metering
-          - eventNotification
+        anyOf:
+          - $ref: "https://raw.githubusercontent.com//smart-data-models/dataModel.Device/edit/master/DeviceModel/schema.yaml#/Function"
     image:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/URL'
-      type: string
-      description: ''
-      format: uri
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/image
     manufacturerName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Device's manufacturer name.'
+      externalDocs: 
+        url: "https://schema.org/model"
     modelName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Device's model name.'
+      externalDocs: 
+        url: "https://schema.org/model"
     name:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
@@ -166,31 +116,58 @@ DeviceModel:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: 'Supported protocol(s) or networks.'
       items:
-        type: string
-        enum:
-          -  3g
-          -  bluetooth
-          -  "bluetooth LE"
-          -  cat-m
-          -  coap
-          -  ec-gsm-iot
-          -  gprs
-          -  http
-          -  lwm2m
-          -  lora
-          -  lte-m
-          -  mqtt
-          -  nb-iot
-          -  onem2m
-          -  sigfox
-          -  ul20
-          -  websocket    
+        anyOf:
+          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/schema.yaml#/SupportedProtocol'
     supportedUnits:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: |
+        Units of measurement supported by the device. Allowed values: The unit code (text) of measurement given using the
+        [UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)
+        (max. 3 characters).
       items:
         type: string
+                
+Function: 
+  description: |
+  
+    The functionality necessary to accomplish the task for which a
+    Device is designed. A device can be designed to perform more than one
+    function. Defined by [SAREF](https://w3id.org/saref#Function).
+    
+      -   `levelControl`
+      -   `sensing`
+      -   `onOff`
+      -   `openClose`
+      -   `metering`
+      -   `eventNotification`
+  enum: 
+      -   levelControl
+      -   sensing
+      -   onOff
+      -   openClose
+      -   metering
+      -   eventNotification
+  type: string
+  x-ngsi: 
+    uri-prefix: "https://w3id.org/saref#"
+
+EnergyLimitationClass:
+  externalDocs: 
+    url: "https://tools.ietf.org/html/rfc7228#section-3"
+  description: |
+    Device's class of energy limitation as per RFC 7228.
+   
+    -   `E0`
+    -   `E1`
+    -   `E2`
+    -   `E9`
+   enum:
+     - E0
+     - E1
+     - E2
+     - E9
+  
