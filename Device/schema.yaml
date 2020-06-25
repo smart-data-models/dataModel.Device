@@ -150,7 +150,7 @@ Device:
       items:
         type: string
         pattern: '^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$'
-     mcc:
+    mcc:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
