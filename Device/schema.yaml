@@ -36,7 +36,7 @@ Device:
       description: 'See attribute category from DeviceModel. Optional but recommended to optimize queries.'
       items:
         allOf:
-          - $ref: "./schema.yaml#/DeviceCategory"
+          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/schema.yaml#/DeviceCategory"
     configuration:
       x-ngsi:
         type: Property
@@ -222,7 +222,7 @@ Device:
       description: ''
       items:
         anyOf:
-          - $ref: "./schema.yaml#/SupportedProtocol"
+          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/schema.yaml#/SupportedProtocol"
     value:
       x-ngsi:
         type: Property
