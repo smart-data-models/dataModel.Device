@@ -163,14 +163,15 @@ EnergyLimitationClass:
     url: "https://tools.ietf.org/html/rfc7228#section-3"
   description: |
   
-    Device's class of energy limitation as per RFC 7228.
+    Device's class of energy limitation as per [RFC 7228](https://tools.ietf.org/html/rfc7228#section-3").
 
-    -   `E0`
-    -   `E1`
-    -   `E2`
-    -   `E9`
+    -   `E0` - Event energy-limited 
+    -   `E1` - Period energy-limited 
+    -   `E2` - Lifetime energy-limited 
+    -   `E9` - No direct quantitative limitations to available energy
   enum:
      - E0
      - E1
      - E2
      - E9
+  type: string
