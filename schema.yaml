@@ -1,0 +1,35 @@
+---
+SupportedProtocol: 
+  description: |
+      -   `3g`
+      -   `cat-m`
+      -   `ec-gsm-iot`
+      -   `grps`
+      -   `http`
+      -   `lora`
+      -   `lte-m`
+      -   `lwm2m`
+      -   `mqtt`
+      -   `nb-iot`
+      -   `onem2m`
+      -   `sigfox`
+      -   `ul20`
+      -   `websocket`
+  enum: 
+    - 3g
+    - cat-m
+    - ec-gsm-iot
+    - grps
+    - http
+    - lora
+    - lte-m
+    - lwm2m
+    - mqtt
+    - nb-iot
+    - onem2m
+    - sigfox
+    - ul20
+    - websocket
+  type: string
+  x-ngsi: 
+    uri-prefix: "https://uri.fiware.org/ns/data-models#"
