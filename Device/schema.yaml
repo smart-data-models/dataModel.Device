@@ -155,8 +155,12 @@ Device:
       type: string
       description: ''
     owner:
+<<<<<<< Updated upstream
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/owner
+=======
+      $ref: https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/owner
+>>>>>>> Stashed changes
     provider:
       x-ngsi:
         type: Property
