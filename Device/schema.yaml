@@ -36,7 +36,7 @@ Device:
       description: 'See attribute category from DeviceModel. Optional but recommended to optimize queries.'
       items:
         allOf:
-          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/schema.yaml#/DeviceCategory"
+          - $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/Categories"
     configuration:
       x-ngsi:
         type: Property
@@ -222,7 +222,7 @@ Device:
       description: ''
       items:
         anyOf:
-          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/schema.yaml#/SupportedProtocol"
+          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/schema.yaml#/SupportedProtocol"
     value:
       x-ngsi:
         type: Property
@@ -234,71 +234,3 @@ Device:
         A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to 
         change the actuation setting. For instance, a switch device which is currently _on_ can report a value `"on"` of type Text. 
         Obviously, in order to toggle the referred switch, this attribute value will have to be changed to `"off"`
-
-DeviceCategory:
-  type: string
-  x-ngsi: 
-    uri-prefix: "https://uri.fiware.org/ns/data-models#"
-
-  description: |
-      -  `actuator`
-      -  `beacon`
-      -  `endgun`
-      -  `HVAC`
-      -  `implement`
-      -  `irrSystem`
-      -  `irrSection`
-      -  `meter`
-      -  `network`
-      -  `multimedia`
-      -  `sensor`
-  items:
-    type: string
-    enum:
-      -  actuator
-      -  beacon
-      -  endgun
-      -  HVAC
-      -  implement
-      -  irrSystem
-      -  irrSection
-      -  meter
-      -  network
-      -  multimedia
-      -  sensor
-
-
-SupportedProtocol: 
-  description: |
-      -   `3g`
-      -   `cat-m`
-      -   `ec-gsm-iot`
-      -   `grps`
-      -   `http`
-      -   `lora`
-      -   `lte-m`
-      -   `lwm2m`
-      -   `mqtt`
-      -   `nb-iot`
-      -   `onem2m`
-      -   `sigfox`
-      -   `ul20`
-      -   `websocket`
-  enum: 
-    - 3g
-    - cat-m
-    - ec-gsm-iot
-    - grps
-    - http
-    - lora
-    - lte-m
-    - lwm2m
-    - mqtt
-    - nb-iot
-    - onem2m
-    - sigfox
-    - ul20
-    - websocket
-  type: string
-  x-ngsi: 
-    uri-prefix: "https://uri.fiware.org/ns/data-models#"
