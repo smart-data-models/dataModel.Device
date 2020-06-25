@@ -1,8 +1,14 @@
 ---
 SupportedProtocol: 
   description: |
+  
+    Supported protocol(s) or networks.
+    
       -   `3g`
+      -   `bluetooth`
+      -   `bluetooth LE`
       -   `cat-m`
+      -   `coap`
       -   `ec-gsm-iot`
       -   `grps`
       -   `http`
@@ -16,19 +22,22 @@ SupportedProtocol:
       -   `ul20`
       -   `websocket`
   enum: 
-    - 3g
-    - cat-m
-    - ec-gsm-iot
-    - grps
-    - http
-    - lora
-    - lte-m
-    - lwm2m
-    - mqtt
-    - nb-iot
-    - onem2m
-    - sigfox
-    - ul20
+    -  3g
+    -  bluetooth
+    -  "bluetooth LE"
+    -  cat-m
+    -  coap
+    -  ec-gsm-iot
+    -  grps
+    -  http
+    -  lora
+    -  lte-m
+    -  lwm2m
+    -  mqtt
+    -  nb-iot
+    -  onem2m
+    -  sigfox
+    -  ul20
     - websocket
   type: string
   x-ngsi: 
