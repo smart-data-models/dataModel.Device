@@ -162,6 +162,7 @@ EnergyLimitationClass:
   externalDocs: 
     url: "https://tools.ietf.org/html/rfc7228#section-3"
   description: |
+  
     Device's class of energy limitation as per RFC 7228.
 
     -   `E0`
