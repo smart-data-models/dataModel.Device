@@ -16,36 +16,19 @@ Device:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/address
     alternateName:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: ''
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/alternateName
     areaServed:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: ''
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/areaServed
     category:
       x-ngsi:
         type: Property
       type: array
       description: ''
       items:
-        type: string
-        enum:
-          -  actuator
-          -  beacon
-          -  endgun
-          -  HVAC
-          -  implement
-          -  irrSystem
-          -  irrSection
-          -  meter
-          -  network
-          -  multimedia
-          -  sensor
+        allOf:
+          - $ref: "./device.yaml#/DeviceCategory"
     configuration:
       x-ngsi:
         type: Property
@@ -72,54 +55,13 @@ Device:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: "See attribute `controlledProperty` from [DeviceModel](../../DeviceModel/doc/spec.md). Optional but recommended to optimize queries."
       items:
-        type: string
-        enum:
-          - temperature
-          - humidity
-          - light
-          - motion
-          - fillingLevel
-          - occupancy
-          - power
-          - pressure
-          - smoke
-          - energy
-          - airPollution
-          - noiseLevel
-          - weatherConditions
-          - precipitation
-          - windSpeed
-          - windDirection
-          - atmosphericPressure
-          - solarRadiation
-          - depth
-          - pH
-          - conductivity
-          - conductance
-          - tss
-          - tds
-          - turbidity
-          - salinity
-          - orp
-          - cdom
-          - waterPollution
-          - location
-          - speed
-          - heading
-          - weight
-          - waterConsumption
-          - gasComsumption
-          - electricityConsumption
-          - soilMoisture
-          - trafficFlow
+        anyOf:
+          - $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/ControlledProperties"
     dataProvider:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: ''
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/dataProvider
     dateFirstUsed:
       x-ngsi:
         type: Property
@@ -213,12 +155,8 @@ Device:
       type: string
       description: ''
     owner:
-      x-ngsi:
-        type: Relationship
-        model: https://schema.org/URL  
-      type: array
-      description: ''
-      items: *ref_0
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/owner
     provider:
       x-ngsi:
         type: Property
@@ -238,39 +176,87 @@ Device:
       type: string
       description: ''
     source:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: ''
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/source
     supportedProtocol:
       x-ngsi:
         type: Property
       type: array
       description: ''
       items:
-        type: string
-        enum:
-          -  3g
-          -  bluetooth
-          -  "bluetooth LE"
-          -  cat-m
-          -  coap
-          -  ec-gsm-iot
-          -  gprs
-          -  http
-          -  lwm2m
-          -  lora
-          -  lte-m
-          -  mqtt
-          -  nb-iot
-          -  onem2m
-          -  sigfox
-          -  ul20
-          -  websocket
+        anyOf:
+          - $ref: "./device.yaml#/SupportedProtocol"
     value:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
       description: ''
+
+DeviceCategory:
+  type: string
+  x-ngsi: 
+    uri-prefix: "https://uri.fiware.org/ns/data-models#"
+
+  description: |
+      -  `actuator`
+      -  `beacon`
+      -  `endgun`
+      -  `HVAC`
+      -  `implement`
+      -  `irrSystem`
+      -  `irrSection`
+      -  `meter`
+      -  `network`
+      -  `multimedia`
+      -  `sensor`
+  items:
+    type: string
+    enum:
+      -  actuator
+      -  beacon
+      -  endgun
+      -  HVAC
+      -  implement
+      -  irrSystem
+      -  irrSection
+      -  meter
+      -  network
+      -  multimedia
+      -  sensor
+
+
+SupportedProtocol: 
+  description: |
+      -   `3g`
+      -   `cat-m`
+      -   `ec-gsm-iot`
+      -   `grps`
+      -   `http`
+      -   `lora`
+      -   `lte-m`
+      -   `lwm2m`
+      -   `mqtt`
+      -   `nb-iot`
+      -   `onem2m`
+      -   `sigfox`
+      -   `ul20`
+      -   `websocket`
+  enum: 
+    - 3g
+    - cat-m
+    - ec-gsm-iot
+    - grps
+    - http
+    - lora
+    - lte-m
+    - lwm2m
+    - mqtt
+    - nb-iot
+    - onem2m
+    - sigfox
+    - ul20
+    - websocket
+  type: string
+  x-ngsi: 
+    uri-prefix: "https://uri.fiware.org/ns/data-models#"
