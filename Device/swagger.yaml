@@ -4,9 +4,9 @@ components:
     Device: 
       $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/schema.yaml#/Device"
     DeviceCategory: 
-      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/schema.yaml#/DeviceCategory"
+      $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/Categories"
     SupportedProtocol: 
-      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/schema.yaml#/SupportedProtocol"
+      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/schema.yaml#/SupportedProtocol"
 info: 
   description: |
       An apparatus (hardware + software + firmware) intended to accomplish a
