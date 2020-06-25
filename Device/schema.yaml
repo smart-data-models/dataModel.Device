@@ -28,7 +28,7 @@ Device:
       description: ''
       items:
         allOf:
-          - $ref: "./device.yaml#/DeviceCategory"
+          - $ref: "#/DeviceCategory"
     configuration:
       x-ngsi:
         type: Property
@@ -185,7 +185,7 @@ Device:
       description: ''
       items:
         anyOf:
-          - $ref: "./device.yaml#/SupportedProtocol"
+          - $ref: "#/SupportedProtocol"
     value:
       x-ngsi:
         type: Property
