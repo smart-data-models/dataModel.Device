@@ -3,6 +3,17 @@ components:
   schemas: 
     DeviceModel: 
       $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/schema.yaml#/DeviceModel"
+    ControlledProperties: 
+      $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/ControlledProperties"
+    DeviceCategories:
+      $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/Categories"
+    EnergyLimitationClass:
+      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/schema.yaml#/EnergyLimitationClass"
+    Function: 
+      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/schema.yaml#/Function"    
+    SupportedProtocol: 
+      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/schema.yaml#/SupportedProtocol"
+
 info: 
   description: "This entity captures the static properties of a Device."
   title: DeviceModel
