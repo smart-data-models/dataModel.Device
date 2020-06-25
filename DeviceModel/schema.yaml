@@ -73,7 +73,7 @@ DeviceModel:
       description: "A link to device's documentation."
       format: uri
     energyLimitationClass:
-      $ref: "https://raw.githubusercontent.com//smart-data-models/dataModel.Device/edit/master/DeviceModel/schema.yaml#/EnergyLimitationClass"
+      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/schema.yaml#/EnergyLimitationClass"
     function:
       x-ngsi:
         type: Property
@@ -84,7 +84,7 @@ DeviceModel:
         function. Defined by [SAREF](https://w3id.org/saref#Function).
       items:
         anyOf:
-          - $ref: "https://raw.githubusercontent.com//smart-data-models/dataModel.Device/edit/master/DeviceModel/schema.yaml#/Function"
+          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/schema.yaml#/Function"
     image:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/image
