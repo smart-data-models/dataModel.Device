@@ -25,14 +25,15 @@ DeviceModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: 'Device's brand name.'
+      description: "Device's brand name."
       externalDocs: 
         url: "https://schema.org/brand"
+
     category:
       x-ngsi:
         type: Property
       type: array
-      description: 'Device's category(ies).'
+      description: "Device's category(ies)."
       items:
         allOf:
           - $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/Categories"
@@ -69,7 +70,7 @@ DeviceModel:
         type: Property
         model: 'https://schema.org/URL'
       type: string
-      description: 'A link to device's documentation.'
+      description: "A link to device's documentation."
       format: uri
     energyLimitationClass:
       $ref: "https://raw.githubusercontent.com//smart-data-models/dataModel.Device/edit/master/DeviceModel/schema.yaml#/EnergyLimitationClass"
@@ -92,7 +93,7 @@ DeviceModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: 'Device's manufacturer name.'
+      description: "Device's manufacturer name."
       externalDocs: 
         url: "https://schema.org/model"
     modelName:
@@ -100,7 +101,7 @@ DeviceModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: 'Device's model name.'
+      description: "Device's model name."
       externalDocs: 
         url: "https://schema.org/model"
     name:
@@ -112,6 +113,7 @@ DeviceModel:
     source:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/source
+
     supportedProtocol:
       x-ngsi:
         type: Property
@@ -119,31 +121,32 @@ DeviceModel:
       description: 'Supported protocol(s) or networks.'
       items:
         anyOf:
-          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/schema.yaml#/SupportedProtocol'
+          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/schema.yaml#/SupportedProtocol"
     supportedUnits:
       x-ngsi:
         type: Property
       type: array
       description: |
-        Units of measurement supported by the device. Allowed values: The unit code (text) of measurement given using the
+        Units of measurement supported by the device. Allowed values The unit code (text) of measurement given using the
         [UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)
         (max. 3 characters).
       items:
         type: string
-                
+
 Function: 
   description: |
-  
+
     The functionality necessary to accomplish the task for which a
     Device is designed. A device can be designed to perform more than one
     function. Defined by [SAREF](https://w3id.org/saref#Function).
-    
+
       -   `levelControl`
       -   `sensing`
       -   `onOff`
       -   `openClose`
       -   `metering`
       -   `eventNotification`
+
   enum: 
       -   levelControl
       -   sensing
@@ -160,14 +163,13 @@ EnergyLimitationClass:
     url: "https://tools.ietf.org/html/rfc7228#section-3"
   description: |
     Device's class of energy limitation as per RFC 7228.
-   
+
     -   `E0`
     -   `E1`
     -   `E2`
     -   `E9`
-   enum:
+  enum:
      - E0
      - E1
      - E2
      - E9
-  
