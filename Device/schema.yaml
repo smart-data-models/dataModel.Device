@@ -36,7 +36,7 @@ Device:
       description: 'See attribute category from DeviceModel. Optional but recommended to optimize queries.'
       items:
         allOf:
-          - $ref: "#/DeviceCategory"
+          - $ref: "./schema.yaml#/DeviceCategory"
     configuration:
       x-ngsi:
         type: Property
@@ -222,7 +222,7 @@ Device:
       description: ''
       items:
         anyOf:
-          - $ref: "#/SupportedProtocol"
+          - $ref: "./schema.yaml#/SupportedProtocol"
     value:
       x-ngsi:
         type: Property
