@@ -2,17 +2,17 @@
 components: 
   schemas: 
     DeviceModel: 
-      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/schema.yaml#/DeviceModel"
+      $ref: "https://smart-data-models.github.io/dataModel.Device/DeviceModel/model.yaml#/DeviceModel"
     ControlledProperties: 
-      $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/ControlledProperties"
+      $ref: "https://smart-data-models.github.io/data-models/saref-terms.yaml#/ControlledProperties"
     DeviceCategories:
-      $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/Categories"
+      $ref: "https://smart-data-models.github.io/data-models/saref-terms.yaml#/Categories"
     EnergyLimitationClass:
-      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/schema.yaml#/EnergyLimitationClass"
+      $ref: "https://smart-data-models.github.io/dataModel.Device/DeviceModel/model.yaml#/EnergyLimitationClass"
     Function: 
-      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/schema.yaml#/Function"    
+      $ref: "https://smart-data-models.github.io/dataModel.Device/DeviceModel/model.yaml#/Function"    
     SupportedProtocol: 
-      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/schema.yaml#/SupportedProtocol"
+      $ref: "https://smart-data-models.github.io/dataModel.Device/model.yaml#/SupportedProtocol"
 
 info: 
   description: "This entity captures the static properties of a Device."
@@ -44,12 +44,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.Device/DeviceModel/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/example-normalized-ld.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.Device/DeviceModel/example-normalized-ld.jsonld"
           description: OK
       tags: 
         - ngsi-ld

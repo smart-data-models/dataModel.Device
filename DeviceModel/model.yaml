@@ -9,16 +9,16 @@ DeviceModel:
     - modelName
   allOf:
     - $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
   description: 'This entity captures the static properties of a Device. '
   properties:
     alternateName:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/alternateName
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
     annotations:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/annotations
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/annotations
 
     brandName:
       x-ngsi:
@@ -36,10 +36,10 @@ DeviceModel:
       description: "Device's category(ies)."
       items:
         allOf:
-          - $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/Categories"
+          - $ref: "https://smart-data-models.github.io/data-models/saref-terms.yaml#/Categories"
     color:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/color
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/color
     controlledProperty:
       x-ngsi:
         type: Property
@@ -48,13 +48,13 @@ DeviceModel:
         Anything that can be sensed, measured or controlled by.
       items:
         anyOf:
-          - $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/ControlledProperties"
+          - $ref: "https://smart-data-models.github.io/data-models/saref-terms.yaml#/ControlledProperties"
     dataProvider:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/dataProvider
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
     description:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
     deviceClass:
       x-ngsi:
         type: Property
@@ -73,7 +73,7 @@ DeviceModel:
       description: "A link to device's documentation."
       format: uri
     energyLimitationClass:
-      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/schema.yaml#/EnergyLimitationClass"
+      $ref: "https://smart-data-models.github.io/dataModel.Device/DeviceModel/model.yaml#/EnergyLimitationClass"
     function:
       x-ngsi:
         type: Property
@@ -84,10 +84,10 @@ DeviceModel:
         function. Defined by [SAREF](https://w3id.org/saref#Function).
       items:
         anyOf:
-          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/schema.yaml#/Function"
+          - $ref: "https://smart-data-models.github.io/dataModel.Device/DeviceModel/model.yaml#/Function"
     image:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/image
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/image
     manufacturerName:
       x-ngsi:
         type: Property
@@ -106,13 +106,13 @@ DeviceModel:
         url: "https://schema.org/model"
     name:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
     owner:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/owner
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
     source:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/source
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
 
     supportedProtocol:
       x-ngsi:
@@ -121,7 +121,7 @@ DeviceModel:
       description: 'Supported protocol(s) or networks.'
       items:
         anyOf:
-          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/schema.yaml#/SupportedProtocol"
+          - $ref: "https://smart-data-models.github.io/dataModel.Device/model.yaml#/SupportedProtocol"
     supportedUnits:
       x-ngsi:
         type: Property

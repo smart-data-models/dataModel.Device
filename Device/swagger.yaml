@@ -2,11 +2,11 @@
 components: 
   schemas: 
     Device: 
-      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/schema.yaml#/Device"
+      $ref: "https://smart-data-models.github.io/dataModel.Device/Device/model.yaml#/Device"
     DeviceCategory: 
-      $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/Categories"
+      $ref: "https://smart-data-models.github.io/data-models/saref-terms.yaml#/Categories"
     SupportedProtocol: 
-      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/schema.yaml#/SupportedProtocol"
+      $ref: "https://smart-data-models.github.io/dataModel.Device/model.yaml#/SupportedProtocol"
 info: 
   description: |
       An apparatus (hardware + software + firmware) intended to accomplish a
@@ -47,12 +47,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.Device/Device/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/example-normalized-ld.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.Device/Device/example-normalized-ld.jsonld"
           description: OK
       tags: 
         - ngsi-ld

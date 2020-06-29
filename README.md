@@ -6,7 +6,7 @@
 These data models allow to represent devices of different nature (IoT, mobile,
 wearable, etc.). It is composed by the following entity types:
 
--   [`Device`](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/swagger.yaml). A Device is an electronic apparatus
+-   [`Device`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Device/swagger.yaml). A Device is an electronic apparatus
     designed to accomplish a particular task.
--   [`DeviceModel`](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceModel/swagger.yaml). It captures the static properties
+-   [`DeviceModel`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/DeviceModel/swagger.yaml). It captures the static properties
     common to multiple instances of a Device.

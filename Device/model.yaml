@@ -6,7 +6,7 @@ Device:
     - controlledProperty
   allOf:
     - $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
   description: >-
     An apparatus (hardware + software + firmware) intended to accomplish a
@@ -14,13 +14,13 @@ Device:
   properties:
     address:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/address
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/address
     alternateName:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/alternateName
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
     areaServed:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/areaServed
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/areaServed
     batteryLevel:
       x-ngsi:
         type: Property
@@ -36,7 +36,7 @@ Device:
       description: 'See attribute category from DeviceModel. Optional but recommended to optimize queries.'
       items:
         allOf:
-          - $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/Categories"
+          - $ref: "https://smart-data-models.github.io/data-models/saref-terms.yaml#/Categories"
     configuration:
       x-ngsi:
         type: Property
@@ -69,10 +69,10 @@ Device:
       description: "See attribute `controlledProperty` from [DeviceModel](../../DeviceModel/doc/spec.md). Optional but recommended to optimize queries."
       items:
         anyOf:
-          - $ref: "https://raw.githubusercontent.com/smart-data-models/data-models/master/saref-terms.yaml#/ControlledProperties"
+          - $ref: "https://smart-data-models.github.io/data-models/saref-terms.yaml#/ControlledProperties"
     dataProvider:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/dataProvider
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
     dateFirstUsed:
       x-ngsi:
         type: Property
@@ -110,7 +110,7 @@ Device:
       format: date-time
     description:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
     deviceState:
       x-ngsi:
         type: Property
@@ -141,7 +141,7 @@ Device:
           - format: ipv6
     location:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/location
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
     macAddress:
       x-ngsi:
         type: Property
@@ -167,7 +167,7 @@ Device:
         iDEN, TETRA and 3G / 4G public land mobile networks and some satellite mobile networks.
     name:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
     osVersion:
       x-ngsi:
         type: Property
@@ -176,7 +176,7 @@ Device:
       description: 'The version of the host operating system device.'
     owner:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/owner
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
     provider:
       x-ngsi:
         type: Property
@@ -214,7 +214,7 @@ Device:
       description: 'The software version of this device.'
     source:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/source
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
     supportedProtocol:
       x-ngsi:
         type: Property
@@ -222,7 +222,7 @@ Device:
       description: ''
       items:
         anyOf:
-          - $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/schema.yaml#/SupportedProtocol"
+          - $ref: "https://smart-data-models.github.io/dataModel.Device/model.yaml#/SupportedProtocol"
     value:
       x-ngsi:
         type: Property
