@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://smart-data-models.github.io/data-models/specs/Device/device-schema.json",
+  "$id": "https://smart-data-models.github.io/dataModel.Device/device-schema.json",
   "title": " - Device  Commons schema",
   "description": "Common defintions to describe Device and Device Model scemas.",
   "definitions": {
