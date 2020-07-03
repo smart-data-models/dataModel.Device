@@ -15,7 +15,7 @@ components:
     Function: 
       $ref: "https://smart-data-models.github.io/dataModel.Device/DeviceModel/model.yaml#/Function"    
     SupportedProtocol: 
-      $ref: "https://smart-data-models.github.io/dataModel.Device/model.yaml#/SupportedProtocol"
+      $ref: "https://smart-data-models.github.io/dataModel.Device/device-model.yaml#/SupportedProtocol"
 
 info: 
   description: "This entity captures the static properties of a Device."

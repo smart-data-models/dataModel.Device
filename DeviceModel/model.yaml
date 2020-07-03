@@ -126,7 +126,7 @@ DeviceModel:
       description: 'Supported protocol(s) or networks.'
       items:
         anyOf:
-          - $ref: "https://smart-data-models.github.io/dataModel.Device/model.yaml#/SupportedProtocol"
+          - $ref: "https://smart-data-models.github.io/dataModel.Device/device-model.yaml#/SupportedProtocol"
     supportedUnits:
       x-ngsi:
         type: Property

@@ -9,7 +9,7 @@ components:
     DeviceCategory: 
       $ref: "https://smart-data-models.github.io/data-models/saref-terms.yaml#/Categories"
     SupportedProtocol: 
-      $ref: "https://smart-data-models.github.io/dataModel.Device/model.yaml#/SupportedProtocol"
+      $ref: "https://smart-data-models.github.io/dataModel.Device/device-model.yaml#/SupportedProtocol"
 info: 
   description: |
       An apparatus (hardware + software + firmware) intended to accomplish a

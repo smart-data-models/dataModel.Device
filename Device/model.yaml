@@ -226,7 +226,7 @@ Device:
       description: ''
       items:
         anyOf:
-          - $ref: "https://smart-data-models.github.io/dataModel.Device/model.yaml#/SupportedProtocol"
+          - $ref: "https://smart-data-models.github.io/dataModel.Device/device-model.yaml#/SupportedProtocol"
     value:
       x-ngsi:
         type: Property
