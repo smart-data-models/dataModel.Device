@@ -12,7 +12,7 @@ Device:
     - $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
-  description: >-
+  description: |
     An apparatus (hardware + software + firmware) intended to accomplish a
     particular task (sensing the environment, actuating, etc.).
   properties:
