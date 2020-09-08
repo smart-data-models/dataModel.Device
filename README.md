@@ -6,7 +6,7 @@ The following entity types are available:
 particular task (sensing the environment, actuating, etc.).
 
 
-- [DeviceModel](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceModel/README.md). This entity captures the static properties of a Device. 
+- [DeviceModel](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceModel/README.md). This entity captures the static properties of a Device.
 
 
 The list of incubated (on development) data models are:
