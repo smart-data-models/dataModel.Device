@@ -1,12 +1,20 @@
-[![Status badge](https://img.shields.io/badge/status-draft-red.svg)](RELEASE_NOTES)
-[![Build badge](https://img.shields.io/travis/smart-data-models/dataModel.Device.svg "Travis build status")](https://travis-ci.org/smart-data-models/dataModel.Device/)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-# Device Data Models
+# dataModel.Device
+These data models allow to represent devices of different nature (IoT, mobile, wearable, etc.).
 
-These data models allow to represent devices of different nature (IoT, mobile,
-wearable, etc.). It is composed by the following entity types:
+The following entity types are available:
+- [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/README.md). An apparatus (hardware + software + firmware) intended to accomplish a
+particular task (sensing the environment, actuating, etc.).
 
--   [`Device`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Device/swagger.yaml). A Device is an electronic apparatus
-    designed to accomplish a particular task.
--   [`DeviceModel`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/DeviceModel/swagger.yaml). It captures the static properties
-    common to multiple instances of a Device.
+
+- [DeviceModel](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceModel/README.md). This entity captures the static properties of a Device. 
+
+
+The list of incubated (on development) data models are:
+
+[DeviceOperation_incubated](https://github.com/smart-data-models/dataModel.Device/tree/master/DeviceOperation_incubated)
+
+[Link](https://github.com/smart-data-models/dataModel.Device/blob/master/CONTRIBUTORS.yaml) to the 5 current contributors of the data models of this Subject.
+
+You can raise an [issue](https://github.com/smart-data-models/dataModel.Device/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.Device/pulls) on existing data models
+
+
