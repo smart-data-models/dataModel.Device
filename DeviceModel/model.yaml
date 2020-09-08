@@ -16,7 +16,7 @@ DeviceModel:
     - $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
-  description: 'This entity captures the static properties of a Device. '
+  description: 'This entity captures the static properties of a Device.'
   properties:
     alternateName:
       $ref: >-
@@ -168,7 +168,7 @@ EnergyLimitationClass:
     url: "https://tools.ietf.org/html/rfc7228#section-3"
   description: |
   
-    Device's class of energy limitation as per [RFC 7228](https://tools.ietf.org/html/rfc7228#section-3").
+    Device class of energy limitation as per [RFC 7228](https://tools.ietf.org/html/rfc7228#section-3").
 
     -   `E0` - Event energy-limited 
     -   `E1` - Period energy-limited 
