@@ -31,7 +31,7 @@ Device:
         model: 'https://schema.org/Number'
       type: number
       description: |
-        Device's battery level. It must be equal to `1.0` when battery is full. `0.0` when battery ìs empty.
+        Device battery level. It must be equal to `1.0` when battery is full. `0.0` when battery ìs empty.
         `-1` when transiently cannot be determined.
     category:
       x-ngsi:
@@ -46,7 +46,7 @@ Device:
         type: Property
       type: object
       description: |
-        Device's technical configuration. This attribute is intended to be a dictionary of properties which capture parameters
+        Device technical configuration. This attribute is intended to be a dictionary of properties which capture parameters
         which have to do with the configuration of a device (timeouts, reporting periods, etc.) and which are not currently 
         covered by the standard attributes defined by this model.
     controlledAsset:
