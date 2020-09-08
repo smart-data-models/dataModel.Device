@@ -30,7 +30,7 @@ DeviceModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: "Device's brand name."
+      description: "Device brand name."
       externalDocs: 
         url: "https://schema.org/brand"
 
@@ -38,7 +38,7 @@ DeviceModel:
       x-ngsi:
         type: Property
       type: array
-      description: "Device's category(ies)."
+      description: "Device category(ies)."
       items:
         allOf:
           - $ref: "https://smart-data-models.github.io/data-models/saref-terms.yaml#/Categories"
@@ -75,7 +75,7 @@ DeviceModel:
         type: Property
         model: 'https://schema.org/URL'
       type: string
-      description: "A link to device's documentation."
+      description: "A link to device documentation."
       format: uri
     energyLimitationClass:
       $ref: "https://smart-data-models.github.io/dataModel.Device/DeviceModel/model.yaml#/EnergyLimitationClass"
@@ -98,7 +98,7 @@ DeviceModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: "Device's manufacturer name."
+      description: "Device manufacturer name."
       externalDocs: 
         url: "https://schema.org/model"
     modelName:
@@ -106,7 +106,7 @@ DeviceModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: "Device's model name."
+      description: "Device model name."
       externalDocs: 
         url: "https://schema.org/model"
     name:
