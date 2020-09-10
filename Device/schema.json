@@ -86,6 +86,19 @@
         "osVersion": {
           "type": "string"
         },
+		"distance": {
+          "type": "string"
+        },
+		"depth": {
+          "type": "string"
+        },
+		"relativePosition": {
+          "type": "string"
+        },
+		"direction": {
+          "type": "string",
+		  "enum": ["Inlet","Outlet","Entry","Exit"],
+        },
         "dateLastCalibration": {
           "type": "string",
           "format": "date-time"
