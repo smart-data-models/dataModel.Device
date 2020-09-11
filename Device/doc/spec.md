@@ -104,16 +104,14 @@ The data model is defined as shown below:
 -   `distance` : Location of this device represented by a distance from a starting point.
 
     -   Attribute type: Property. `Number`.
-    -   Normative References:
-        [https://schema.org/Distance](https://schema.org/Distance)
+    -   Normative References: [https://schema.org/Distance](https://schema.org/Distance)
     -   Attribute unit: All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code
     -   Optional.
 
 -   `depth` : Location of this device represented by a depth from a starting point.
 
     -   Attribute type: Property. `Number`.
-    -   Normative References:
-        [https://schema.org/depth](https://schema.org/depth)
+    -   Normative References: [https://schema.org/depth](https://schema.org/depth)
     -   Attribute unit: All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code
     -   Optional.
 
