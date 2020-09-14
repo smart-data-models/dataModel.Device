@@ -87,10 +87,10 @@
           "type": "string"
         },
         "distance": {
-          "type": "string"
+          "type": "number"
         },
         "depth": {
-          "type": "string"
+          "type": "number"
         },
         "relativePosition": {
           "type": "string"

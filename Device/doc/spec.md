@@ -111,7 +111,7 @@ The data model is defined as shown below:
 -   `depth` : Location of this device represented by a depth from a starting point.
 
     -   Attribute type: Property. `Number`.
-    -   Normative References: [https://schema.org/depth](https://schema.org/depth)
+    -   Normative References: [https://schema.org/depth](https://raw.githubusercontent.com/smart-data-models/data-models/master/terms.jsonld#depth)
     -   Attribute unit: All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code
     -   Optional.
 
