@@ -71,7 +71,10 @@
           "eatingActivity",
           "milking",
           "movementActivity",
-          "soilMoisture"
+          "soilMoisture",
+          "waterLevel",
+          "chlorine",
+          "flow"
         ]
       },
       "SupportedProtocolType": {
