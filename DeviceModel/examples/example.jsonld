@@ -1,0 +1,11 @@
+{"@context": ["https://schema.lab.fiware.org/ld/context",
+              "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],
+ "brandName": "myDevice",
+ "category": ["sensor"],
+ "controlledProperty": ["fillingLevel", "temperature"],
+ "function": ["sensing"],
+ "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",
+ "manufacturerName": "myDevice Inc.",
+ "modelName": "S4Container 345",
+ "name": "myDevice Sensor for Containers 345",
+ "type": "DeviceModel"}
