@@ -7,7 +7,7 @@ This entity captures the static properties of a Device.
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/DeviceModel/swagger.yaml)
 
-Link to the [specification](https://smart-data-models.github.io/dataModel.Device/DeviceModel/doc/spec.md)
+Link to the [specification](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceModel/doc/spec.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Device/DeviceModel/examples/example.json) (keyvalues) for NGSI v2
