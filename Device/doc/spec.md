@@ -101,6 +101,31 @@ The data model is defined as shown below:
         [https://tools.ietf.org/html/rfc7946](https://tools.ietf.org/html/rfc7946)
     -   Optional.
 
+-   `distance` : Location of this device represented by a distance from a starting point.
+
+    -   Attribute type: Property. `Number`.
+    -   Normative References: [https://schema.org/Distance](https://schema.org/Distance)
+    -   Attribute unit: All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code
+    -   Optional.
+
+-   `depth` : Location of this device represented by a depth from a starting point.
+
+    -   Attribute type: Property. `Number`.
+    -   Normative References: [https://schema.org/depth](https://raw.githubusercontent.com/smart-data-models/data-models/master/terms.jsonld#depth)
+    -   Attribute unit: All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code
+    -   Optional.
+
+-   `relativePosition` : Location of this device in a coordinate system according to its local emplacement.
+
+    -   Attribute type: Property. `List of Number`.
+    -   Optional.
+
+-   `direction` : Location of this device represented by its direction according to its local emplacement.
+
+    -   Attribute type: Property. `String`.
+    -   Values are Restricted to: "Inlet", "Outlet", "Entry" and "Exit"
+    -   Optional.
+
 -   `name` : A mnemonic name given to the device.
 
     -   Attribute type: Property. [Text](https://schema.org/Text)
