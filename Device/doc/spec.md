@@ -217,11 +217,8 @@ The data model is defined as shown below:
     -   Optional
 
 -   `rssi` : Received signal strength indicator for a wireless enabled device.
-    It must be equal to `1.0` when the signal strength is maximum. `0.0` when
-    signal is missing. `-1.0` when it cannot be determined.
-
+    It must be expressed in dBm or mW, use unitcode to set it out. 
     -   Type: [Number](https://schema.org/Number)
-    -   Allowed values: Interval \[0,1\] and -1
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened. This value can also appear as a FIWARE
