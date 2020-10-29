@@ -167,7 +167,7 @@ Device:
       type: string
       description: |
         This property identifies the Mobile Network Code (MNC) of the network the device is attached to. The MNC is used in combination with a 
-        Mobile Country Code (MCC) (also known as a "MCC / MNC tuple") to uniquely identify a mobile phone operator/carrier using the GSM, CDMA, 
+        Mobile Country Code (MCC) (also known as a MCC / MNC tuple) to uniquely identify a mobile phone operator/carrier using the GSM, CDMA, 
         iDEN, TETRA and 3G / 4G public land mobile networks and some satellite mobile networks.
     name:
       $ref: >-
