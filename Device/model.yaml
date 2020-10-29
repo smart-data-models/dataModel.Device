@@ -236,5 +236,5 @@ Device:
       type: string
       description: |
         A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to 
-        change the actuation setting. For instance, a switch device which is currently _on_ can report a value `"on"` of type Text. 
-        Obviously, in order to toggle the referred switch, this attribute value will have to be changed to `"off"`
+        change the actuation setting. For instance, a switch device which is currently _on_ can report a value `on` of type Text. 
+        Obviously, in order to toggle the referred switch, this attribute value will have to be changed to `off`
