@@ -170,10 +170,10 @@ EnergyLimitationClass:
   
     Device class of energy limitation as per [RFC 7228](https://tools.ietf.org/html/rfc7228#section-3").
 
-    -   `E0` - Event energy-limited 
-    -   `E1` - Period energy-limited 
-    -   `E2` - Lifetime energy-limited 
-    -   `E9` - No direct quantitative limitations to available energy
+    -   E0 - Event energy-limited 
+    -   E1 - Period energy-limited 
+    -   E2 - Lifetime energy-limited 
+    -   E9 - No direct quantitative limitations to available energy
   enum:
      - E0
      - E1
