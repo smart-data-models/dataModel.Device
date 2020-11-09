@@ -89,6 +89,9 @@
         "distance": {
           "type": "number"
         },
+        "dstAware":{
+          "type": "boolean"
+        },
         "depth": {
           "type": "number"
         },
