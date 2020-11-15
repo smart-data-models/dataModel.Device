@@ -73,47 +73,47 @@
           "movementActivity",
           "soilMoisture"
         ]
-      },
-      "SupportedProtocolType": {
-        "type": "array",
-        "items": {
-          "type": "string",
-          "enum": [
-            "3g",
-            "bluetooth",
-            "bluetooth LE",
-            "cat-m",
-            "coap",
-            "ec-gsm-iot",
-            "gprs",
-            "http",
-            "lwm2m",
-            "lora",
-            "lte-m",
-            "mqtt",
-            "nb-iot",
-            "onem2m",
-            "sigfox",
-            "ul20",
-            "websocket"
-          ]
-        }
       }
     },
-    "Device-Commons": {
-      "type": "object",
-      "category": {
-        "$ref": "#/definitions/CategoryType"
-      },
-      "controlledProperty": {
-        "$ref": "#/definitions/ControlledPropertyType"
-      },
-      "supportedProtocol": {
-        "$ref": "#/definitions/SupportedProtocolType"
-      }, 
-      "macAddress": {
-        "$ref": "#/definitions/MacAddressType"
+    "SupportedProtocolType": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "3g",
+          "bluetooth",
+          "bluetooth LE",
+          "cat-m",
+          "coap",
+          "ec-gsm-iot",
+          "gprs",
+          "http",
+          "lwm2m",
+          "lora",
+          "lte-m",
+          "mqtt",
+          "nb-iot",
+          "onem2m",
+          "sigfox",
+          "ul20",
+          "websocket"
+        ]
       }
+    }
+  },
+  "Device-Commons": {
+    "type": "object",
+    "category": {
+      "$ref": "#/definitions/CategoryType"
+    },
+    "controlledProperty": {
+      "$ref": "#/definitions/ControlledPropertyType"
+    },
+    "supportedProtocol": {
+      "$ref": "#/definitions/SupportedProtocolType"
+    },
+    "macAddress": {
+      "$ref": "#/definitions/MacAddressType"
     }
   }
 }
