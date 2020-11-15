@@ -103,16 +103,16 @@
     "Device-Commons": {
       "type": "object",
       "category": {
-        "$ref": "/definitions/CategoryType"
+        "$ref": "#/definitions/CategoryType"
       },
       "controlledProperty": {
-        "$ref": "/definitions/ControlledPropertyType"
+        "$ref": "#/definitions/ControlledPropertyType"
       },
       "supportedProtocol": {
-        "$ref": "/definitions/SupportedProtocolType"
+        "$ref": "#/definitions/SupportedProtocolType"
       }, 
       "macAddress": {
-        "$ref": "/definitions/MacAddressType"
+        "$ref": "#/definitions/MacAddressType"
       }
     }
   }
