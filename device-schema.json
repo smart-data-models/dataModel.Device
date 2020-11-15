@@ -99,21 +99,21 @@
           "websocket"
         ]
       }
-    }
-  },
-  "Device-Commons": {
-    "type": "object",
-    "category": {
-      "$ref": "#/definitions/CategoryType"
     },
-    "controlledProperty": {
-      "$ref": "#/definitions/ControlledPropertyType"
-    },
-    "supportedProtocol": {
-      "$ref": "#/definitions/SupportedProtocolType"
-    },
-    "macAddress": {
-      "$ref": "#/definitions/MacAddressType"
+    "Device-Commons": {
+      "type": "object",
+      "category": {
+        "$ref": "#/definitions/CategoryType"
+      },
+      "controlledProperty": {
+        "$ref": "#/definitions/ControlledPropertyType"
+      },
+      "supportedProtocol": {
+        "$ref": "#/definitions/SupportedProtocolType"
+      },
+      "macAddress": {
+        "$ref": "#/definitions/MacAddressType"
+      }
     }
   }
 }
