@@ -5,9 +5,10 @@ Entité : DeviceModel
 
 ## Liste des biens  
 
-`alternateName`: Un autre nom pour cet article  `annotations`:   `brandName`:   `color`: La couleur du produit.  `controlledProperty`:   `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  `description`: Une description de cet article  `deviceClass`:   `documentation`:   `energyLimitationClass`:   `function`:   `id`:   `image`: Une image de l'objet.  `manufacturerName`:   `modelName`:   `name`: Le nom de cet article.  `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  `seeAlso`:   `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  `supportedUnits`:   `type`: NGSI Type d'entité  ## Modèle de données description des biens  
-Classement par ordre alphabétique  
-```yaml  
+- `alternateName`: Un autre nom pour cet article  - `annotations`:   - `brandName`:   - `color`: La couleur du produit.  - `controlledProperty`:   - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `deviceClass`:   - `documentation`:   - `energyLimitationClass`:   - `function`:   - `id`:   - `image`: Une image de l'objet.  - `manufacturerName`:   - `modelName`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`:   - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `supportedUnits`:   - `type`: NGSI Type d'entité  ## Modèle de données description des biens  
+Classement par ordre alphabétique (cliquez pour plus de détails)  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 DeviceModel:    
   description: 'This entity captures the static properties of a Device. '    
   properties:    
@@ -164,6 +165,9 @@ DeviceModel:
     - modelName    
   type: object    
 ```  
+</details>    
+## Exemples de charges utiles  
+#### DeviceModel NGSI V2 valeurs clés Exemple  
 Voici un exemple de DeviceModel au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
@@ -178,6 +182,7 @@ DeviceModel:
   "controlledProperty": ["fillingLevel", "temperature"]  
 }  
 ```  
+#### DeviceModel NGSI V2 normalisé Exemple  
 Voici un exemple de DeviceModel au format JSON tel que normalisé. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
@@ -206,6 +211,7 @@ DeviceModel:
   }  
 }  
 ```  
+#### DeviceModel NGSI-LD valeurs clés Exemple  
 Voici un exemple de DeviceModel au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {"@context": ["https://schema.lab.fiware.org/ld/context",  
@@ -220,6 +226,7 @@ DeviceModel:
  "name": "myDevice Sensor for Containers 345",  
  "type": "DeviceModel"}  
 ```  
+#### DeviceModel NGSI-LD normalisé Exemple  
 Voici un exemple de DeviceModel au format JSON-LD tel que normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
