@@ -5,9 +5,10 @@ Entité : Dispositif :
 
 ## Liste des biens  
 
-`address`: L'adresse postale.  `alternateName`: Un autre nom pour cet article  `areaServed`: La zone géographique où un service ou un article offert est fourni.  `batteryLevel`:   `configuration`:   `controlledAsset`:   `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  `dateFirstUsed`:   `dateInstalled`:   `dateLastCalibration`:   `dateLastValueReported`:   `dateManufactured`:   `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  `depth`:   `description`: Une description de cet article  `deviceState`:   `direction`:   `distance`:   `firmwareVersion`:   `hardwareVersion`:   `id`:   `ipAddress`:   `location`:   `macAddress`:   `mnc`:   `name`: Le nom de cet article.  `osVersion`:   `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  `provider`:   `refDeviceModel`:   `relativePosition`:   `rssi`:   `seeAlso`:   `serialNumber`:   `softwareVersion`:   `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  `type`: NGSI Type d'entité  `value`:   ## Modèle de données description des biens  
-Classement par ordre alphabétique  
-```yaml  
+- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni.  - `batteryLevel`:   - `configuration`:   - `controlledAsset`:   - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateFirstUsed`:   - `dateInstalled`:   - `dateLastCalibration`:   - `dateLastValueReported`:   - `dateManufactured`:   - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `depth`:   - `description`: Une description de cet article  - `deviceState`:   - `direction`:   - `distance`:   - `firmwareVersion`:   - `hardwareVersion`:   - `id`:   - `ipAddress`:   - `location`:   - `macAddress`:   - `mnc`:   - `name`: Le nom de cet article.  - `osVersion`:   - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `provider`:   - `refDeviceModel`:   - `relativePosition`:   - `rssi`:   - `seeAlso`:   - `serialNumber`:   - `softwareVersion`:   - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: NGSI Type d'entité  - `value`:   ## Modèle de données description des biens  
+Classement par ordre alphabétique (cliquez pour plus de détails)  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 Device:    
   description: 'An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).'    
   properties:    
@@ -319,6 +320,9 @@ Device:
     - controlledProperty    
   type: object    
 ```  
+</details>    
+## Exemples de charges utiles  
+#### Dispositif NGSI V2 valeurs clés Exemple  
 Voici un exemple d'appareil au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
@@ -340,6 +344,7 @@ Device:
   "owner": ["http://person.org/leon"]  
 }  
 ```  
+#### Dispositif NGSI V2 normalisé Exemple  
 Voici un exemple d'un appareil au format JSON tel que normalisé. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
@@ -392,6 +397,7 @@ Device:
   }  
 }  
 ```  
+#### Dispositif NGSI-LD valeurs clés Exemple  
 Voici un exemple d'appareil au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {"@context": ["https://schema.lab.fiware.org/ld/context",  
@@ -413,6 +419,7 @@ Device:
  "type": "Device",  
  "value": "l%3D0.22%3Bt%3D21.2"}  
 ```  
+#### Dispositif NGSI-LD normalisé Exemple  
 Voici un exemple d'un appareil au format JSON-LD tel que normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
