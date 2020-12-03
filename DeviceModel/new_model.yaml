@@ -2,18 +2,20 @@ DeviceModel:
   description: 'This entity captures the static properties of a Device. '
   properties:
     alternateName:
-      description: 'An alternative name for this item'
-      type: Property
+      description: ""
+      type: 'An alternative name for this item'
     annotations:
       items:
         type: string
       type: array
     brandName:
-      type: string
+      description: ""
+      type: 'Device''s brand name.'
     color:
-      description: 'The color of the product.'
-      type: string
+      description: ""
+      type: 'The color of the product.'
     controlledProperty:
+      description: ""
       items:
         enum:
           - temperature
@@ -55,38 +57,42 @@ DeviceModel:
           - soilMoisture
           - trafficFlow
         type: string
-      type: array
+      type: 'Enum:''temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasComsumption, electricityConsumption, soilMoisture, trafficFlow,eatingActivity, milking, movementActivity''.'
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      description: ""
+      type: 'A sequence of characters identifying the provider of the harmonised data entity.'
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: ""
       format: date-time
-      type: Property
+      type: 'This will usually be allocated by the storage platform.'
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: ""
       format: date-time
-      type: Property
+      type: 'This will usually be allocated by the storage platform.'
     description:
-      description: 'A description of this item'
-      type: Property
+      description: ""
+      type: 'A description of this item'
     deviceClass:
+      description: ""
       enum:
         - C0
         - C1
         - C2
-      type: string
+      type: 'Enum:''C0, C1, C2'''
     documentation:
+      description: ""
       format: uri
-      type: string
+      type: 'A link to device''s documentation.'
     energyLimitationClass:
+      description: ""
       enum:
         - E0
         - E1
         - E2
         - E9
-      type: string
+      type: 'Enum:''E0, E1, E2, E9'''
     function:
+      description: ""
       items:
         enum:
           - levelControl
@@ -96,7 +102,7 @@ DeviceModel:
           - metering
           - eventNotification
         type: string
-      type: array
+      type: 'Enum:''levelControl, sensing, onOff, openClose, metering, eventNotification'
     id:
       anyOf: &devicemodel_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -108,21 +114,23 @@ DeviceModel:
           format: uri
           type: string
     image:
-      description: 'An image of the item.'
+      description: ""
       format: uri
-      type: string
+      type: 'An image of the item.'
     manufacturerName:
-      type: string
+      description: ""
+      type: 'Device''s manufacturer name.'
     modelName:
-      type: string
+      description: ""
+      type: 'Device''s model name.'
     name:
-      description: 'The name of this item.'
-      type: Property
+      description: ""
+      type: 'The name of this item.'
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: ""
       items:
         anyOf: *devicemodel_-_properties_-_owner_-_items_-_anyof
-      type: Property
+      type: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
     seeAlso:
       oneOf:
         - items:
@@ -133,17 +141,18 @@ DeviceModel:
         - format: uri
           type: string
     source:
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      description: ""
+      type: 'Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
     supportedUnits:
+      description: ""
       items:
         type: string
-      type: array
+      type: '3 characters).'
     type:
-      description: 'NGSI Entity type'
+      description: ""
       enum:
         - DeviceModel
-      type: string
+      type: 'it has to be DeviceModel'
   required:
     - id
     - type
