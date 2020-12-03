@@ -141,7 +141,7 @@
           ]
         },
         "batteryLevel": {
-          "description": "Property. Model:'https://schema.org/Number'. Device's battery level. It must be equal to `1.0` when battery is full. `0.0` when battery ìs empty. `-1` when transiently cannot be determined.",
+          "description": "Property. Model:'https://schema.org/Number'. Device's battery level. It must be equal to 1.0 when battery is full. 0.0 when battery ìs empty. -1 when transiently cannot be determined.",
           "oneOf": [
             {
               "type": "number",
