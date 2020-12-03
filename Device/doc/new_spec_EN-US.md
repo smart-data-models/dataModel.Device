@@ -359,6 +359,7 @@ Device:
       x-ngsi:    
         model: https://schema.org/Number    
     seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
             - format: uri    
@@ -367,6 +368,7 @@ Device:
           type: array    
         - format: uri    
           type: string    
+      type: Property    
     serialNumber:    
       description: 'The serial number assigned by the manufacturer.'    
       type: Property    
