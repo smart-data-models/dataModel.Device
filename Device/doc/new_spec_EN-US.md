@@ -5,7 +5,7 @@ Entity: Device
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided.  - `batteryLevel`:   - `configuration`:   - `controlledAsset`:   - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateFirstUsed`:   - `dateInstalled`:   - `dateLastCalibration`:   - `dateLastValueReported`:   - `dateManufactured`:   - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `depth`:   - `description`: A description of this item  - `deviceState`:   - `direction`:   - `distance`:   - `firmwareVersion`:   - `hardwareVersion`:   - `id`:   - `ipAddress`:   - `location`:   - `macAddress`:   - `mnc`:   - `name`: The name of this item.  - `osVersion`:   - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `provider`:   - `refDeviceModel`:   - `relativePosition`:   - `rssi`:   - `seeAlso`:   - `serialNumber`:   - `softwareVersion`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type  - `value`:     
+- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided.  - `batteryLevel`: Device battery level. It must be equal to 1.0 when battery is full. 0.0 when battery ìs empty. -1 when transiently cannot be determined.  - `configuration`: Device's technical configuration. This attribute is intended to be a dictionary of properties which capture parameters which have to do with the configuration of a device (timeouts, reporting periods, etc.) and which are not currently covered by the standard attributes defined by this model.  - `controlledAsset`: List of the asset(s) (building, object, etc.) controlled by the device.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateFirstUsed`: A timestamp which denotes when the device was first used.  - `dateInstalled`: A timestamp which denotes when the device was installed (if it requires installation).  - `dateLastCalibration`: A timestamp which denotes when the last calibration of the device happened.  - `dateLastValueReported`:   - `dateManufactured`: A timestamp which denotes when the device was manufactured.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `depth`: Location of this device represented by a depth from a starting point. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code  - `description`: A description of this item  - `deviceState`: State of this device from an operational point of view. Its value can be vendor dependent.  - `direction`: Enum:'Inlet, Outlet, Entry, Exit'. A timestamp which denotes when the device was installed (if it requires installation).  - `distance`: Location of this device represented by a distance from a starting point. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code  - `firmwareVersion`: The firmware version of this device.  - `hardwareVersion`: The hardware version of this device.  - `id`:   - `ipAddress`: List of IP address of the device. It can be a comma separated list of values if the device has more than one IP address.  - `location`:   - `macAddress`: The MAC address of the device  - `mnc`: This property identifies the Mobile Network Code (MNC) of the network the device is attached to. The MNC is used in combination with a Mobile Country Code (MCC) (also known as a 'MCC / MNC tuple') to uniquely identify a mobile phone operator/carrier using the GSM, CDMA, iDEN, TETRA and 3G / 4G public land mobile networks and some satellite mobile networks.  - `name`: The name of this item.  - `osVersion`: The version of the host operating system device.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `provider`: The provider of the device.  - `refDeviceModel`: Model of the device  - `relativePosition`: Location of this device in a coordinate system according to its local emplacement.  - `rssi`: Received signal strength indicator for a wireless enabled device. It must be expressed in dBm or mW, use unitcode to set it out.   - `seeAlso`:   - `serialNumber`: The serial number assigned by the manufacturer.  - `softwareVersion`: The software version of this device.  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: Oroperty. NGSI Entity type. It has to be Device  - `value`: A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to change the actuation setting. For instance, a switch device which is currently _on_ can report a value `on`of type `Text`. Obviously, in order to toggle the referred switch, this attribute value will have to be changed to `off`.    
 Required properties  
 - `category`  - `controlledProperty`  - `id`  - `type`    
 A Device is a   tangible object which contains some logic and is producer and/or consumer of data. A Device is always assumed to be capable of communicating electronically via a network. This data model has been partially developed in cooperation with mobile operators and the [GSMA](https://www.gsma.com/iot/iot-big-data/). This data model reuses concepts coming from the [SAREF Ontology](http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/01.01.01_60/ts_103264v010101p.pdf) part of [ETSI](http://www.etsi.org) standards.  
@@ -41,15 +41,23 @@ Device:
       description: 'The geographic area where a service or offered item is provided.'    
       type: Property    
     batteryLevel:    
+      description: 'Device battery level. It must be equal to 1.0 when battery is full. 0.0 when battery ìs empty. -1 when transiently cannot be determined.'    
       oneOf:    
         - maximum: 1    
           minimum: 0    
           type: number    
         - const: -1    
           type: number    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     configuration:    
-      type: object    
+      description: 'Device''s technical configuration. This attribute is intended to be a dictionary of properties which capture parameters which have to do with the configuration of a device (timeouts, reporting periods, etc.) and which are not currently covered by the standard attributes defined by this model.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/StructuredValue    
     controlledAsset:    
+      description: 'List of the asset(s) (building, object, etc.) controlled by the device.'    
       items:    
         oneOf:    
           - format: uri    
@@ -63,7 +71,9 @@ Device:
               - description: 'Property. Identifier format of any NGSI entity'    
                 format: uri    
                 type: string    
-      type: array    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: Property    
@@ -72,53 +82,89 @@ Device:
       format: date-time    
       type: Property    
     dateFirstUsed:    
+      description: 'A timestamp which denotes when the device was first used.'    
       format: date-time    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/DateTime    
     dateInstalled:    
+      description: 'A timestamp which denotes when the device was installed (if it requires installation).'    
       format: date-time    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/DateTime    
     dateLastCalibration:    
+      description: 'A timestamp which denotes when the last calibration of the device happened.'    
       format: date-time    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/DateTime    
     dateLastValueReported:    
+      description: ""    
       format: date-time    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: 'https://schema.org/DateTime.A timestamp which denotes the last time when the device successfully reported data to the cloud..'    
     dateManufactured:    
+      description: 'A timestamp which denotes when the device was manufactured.'    
       format: date-time    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/DateTime    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
       type: Property    
     depth:    
-      type: number    
+      description: 'Location of this device represented by a depth from a starting point. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/depth    
     description:    
       description: 'A description of this item'    
       type: Property    
     deviceState:    
-      type: string    
+      description: 'State of this device from an operational point of view. Its value can be vendor dependent.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     direction:    
+      description: 'Enum:''Inlet, Outlet, Entry, Exit''. A timestamp which denotes when the device was installed (if it requires installation).'    
       enum:    
         - Inlet    
         - Outlet    
         - Entry    
         - Exit    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: ' https://schema.org/DateTime'    
     distance:    
-      type: number    
+      description: 'Location of this device represented by a distance from a starting point. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Distance    
     firmwareVersion:    
-      type: string    
+      description: 'The firmware version of this device.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     hardwareVersion:    
-      type: string    
+      description: 'The hardware version of this device.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     id:    
       anyOf: *device_-_properties_-_id_-_anyof    
     ipAddress:    
+      description: 'List of IP address of the device. It can be a comma separated list of values if the device has more than one IP address.'    
       items:    
         oneOf:    
           - format: ipv4    
           - format: ipv6    
         type: string    
-      type: array    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     location:    
       $id: https://geojson.org/schema/Geometry.json    
       $schema: "http://json-schema.org/draft-07/schema#"    
@@ -267,33 +313,51 @@ Device:
           type: object    
       title: 'GeoJSON Geometry'    
     macAddress:    
+      description: 'The MAC address of the device'    
       items:    
         pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$    
         type: string    
-      type: array    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     mnc:    
-      type: string    
+      description: 'This property identifies the Mobile Network Code (MNC) of the network the device is attached to. The MNC is used in combination with a Mobile Country Code (MCC) (also known as a ''MCC / MNC tuple'') to uniquely identify a mobile phone operator/carrier using the GSM, CDMA, iDEN, TETRA and 3G / 4G public land mobile networks and some satellite mobile networks.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     name:    
       description: 'The name of this item.'    
       type: Property    
     osVersion:    
-      type: string    
+      description: 'The version of the host operating system device.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *device_-_properties_-_id_-_anyof    
       type: Property    
     provider:    
-      type: string    
+      description: 'The provider of the device.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/provider    
     refDeviceModel:    
+      description: 'Model of the device'    
       oneOf:    
         - format: uri    
           type: string    
         - anyOf: *device_-_properties_-_id_-_anyof    
+      type: Relationship    
     relativePosition:    
-      type: string    
+      description: 'Location of this device in a coordinate system according to its local emplacement.'    
+      type: Property    
     rssi:    
-      type: number    
+      description: 'Received signal strength indicator for a wireless enabled device. It must be expressed in dBm or mW, use unitcode to set it out. '    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
     seeAlso:    
       oneOf:    
         - items:    
@@ -304,19 +368,28 @@ Device:
         - format: uri    
           type: string    
     serialNumber:    
-      type: string    
+      description: 'The serial number assigned by the manufacturer.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/serialNumber    
     softwareVersion:    
-      type: string    
+      description: 'The software version of this device.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
     type:    
-      description: 'NGSI Entity type'    
+      description: 'Oroperty. NGSI Entity type. It has to be Device'    
       enum:    
         - Device    
       type: string    
     value:    
-      type: string    
+      description: 'A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to change the actuation setting. For instance, a switch device which is currently _on_ can report a value `on`of type `Text`. Obviously, in order to toggle the referred switch, this attribute value will have to be changed to `off`.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/QuantitativeValue    
   required:    
     - id    
     - type    
