@@ -161,6 +161,7 @@ DeviceModel:
         anyOf: *devicemodel_-_properties_-_owner_-_items_-_anyof    
       type: Property    
     seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
             - format: uri    
@@ -169,6 +170,7 @@ DeviceModel:
           type: array    
         - format: uri    
           type: string    
+      type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
