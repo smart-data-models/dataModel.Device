@@ -5,7 +5,7 @@ Entity: DeviceModel
 
 ## List of properties  
 
-- `alternateName`: An alternative name for this item  - `annotations`:   - `brandName`:   - `color`: The color of the product.  - `controlledProperty`:   - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `deviceClass`:   - `documentation`:   - `energyLimitationClass`:   - `function`:   - `id`:   - `image`: An image of the item.  - `manufacturerName`:   - `modelName`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `supportedUnits`:   - `type`: NGSI Entity type    
+- `alternateName`: An alternative name for this item  - `annotations`:   - `brandName`: Device's brand name.  - `color`: The color of the product.  - `controlledProperty`: Enum:'temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasComsumption, electricityConsumption, soilMoisture, trafficFlow,eatingActivity, milking, movementActivity'.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `deviceClass`: Class of constrained device as specified by RFC 7228. If the device is not a constrained device this property shall not be present. Normative References: [RFC7228](https://tools.ietf.org/html/rfc7228#section-3). Enum:'C0, C1, C2'  - `documentation`: A link to device's documentation.  - `energyLimitationClass`: Device's class of energy limitation as per RFC 7228. Normative References: [RFC7228](https://tools.ietf.org/html/rfc7228#page-11). Enum:'E0, E1, E2, E9'  - `function`: The functionality necessary to accomplish the task for which a Device is designed. A device can be designed to perform more than one function. Defined by [SAREF](https://w3id.org/saref#Function). Enum:'levelControl, sensing, onOff, openClose, metering, eventNotification  - `id`:   - `image`: An image of the item.  - `manufacturerName`: Device's manufacturer name.  - `modelName`: Device's model name.  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `supportedUnits`: Units of measurement supported by the device. The unit code (text) of measurement given using the [UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters).  - `type`: NGSI Entity type. it has to be DeviceModel    
 Required properties  
 - `brandName`  - `category`  - `controlledProperty`  - `id`  - `manufacturerName`  - `modelName`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -22,11 +22,15 @@ DeviceModel:
         type: string    
       type: array    
     brandName:    
-      type: string    
+      description: 'Device''s brand name.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     color:    
       description: 'The color of the product.'    
       type: string    
     controlledProperty:    
+      description: 'Enum:''temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasComsumption, electricityConsumption, soilMoisture, trafficFlow,eatingActivity, milking, movementActivity''.'    
       items:    
         enum:    
           - temperature    
@@ -68,7 +72,9 @@ DeviceModel:
           - soilMoisture    
           - trafficFlow    
         type: string    
-      type: array    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/DateTime    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: Property    
@@ -84,22 +90,32 @@ DeviceModel:
       description: 'A description of this item'    
       type: Property    
     deviceClass:    
+      description: "Class of constrained device as specified by RFC 7228. If the device is not a constrained device this property shall not be present. Normative References: [RFC7228](https://tools.ietf.org/html/rfc7228#section-3). Enum:'C0, C1, C2'"    
       enum:    
         - C0    
         - C1    
         - C2    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     documentation:    
+      description: 'A link to device''s documentation.'    
       format: uri    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/URL    
     energyLimitationClass:    
+      description: "Device's class of energy limitation as per RFC 7228. Normative References: [RFC7228](https://tools.ietf.org/html/rfc7228#page-11). Enum:'E0, E1, E2, E9'"    
       enum:    
         - E0    
         - E1    
         - E2    
         - E9    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     function:    
+      description: "The functionality necessary to accomplish the task for which a Device is designed. A device can be designed to perform more than one function. Defined by [SAREF](https://w3id.org/saref#Function). Enum:'levelControl, sensing, onOff, openClose, metering, eventNotification"    
       items:    
         enum:    
           - levelControl    
@@ -109,7 +125,9 @@ DeviceModel:
           - metering    
           - eventNotification    
         type: string    
-      type: array    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     id:    
       anyOf: &devicemodel_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -125,9 +143,15 @@ DeviceModel:
       format: uri    
       type: string    
     manufacturerName:    
-      type: string    
+      description: 'Device''s manufacturer name.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     modelName:    
-      type: string    
+      description: 'Device''s model name.'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -149,14 +173,17 @@ DeviceModel:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
     supportedUnits:    
+      description: 'Units of measurement supported by the device. The unit code (text) of measurement given using the [UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters).'    
       items:    
         type: string    
-      type: array    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     type:    
-      description: 'NGSI Entity type'    
+      description: 'NGSI Entity type. it has to be DeviceModel'    
       enum:    
         - DeviceModel    
-      type: string    
+      type: Property    
   required:    
     - id    
     - type    
