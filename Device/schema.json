@@ -129,7 +129,7 @@
           "description": "Property. Model:'https://schema.org/provider'. The provider of the device."
         },
         "refDeviceModel": {
-          "description": "Relationship. The device's model.",
+          "description": "Relationship. Model of the device",
           "oneOf": [
             {
               "type": "string",
