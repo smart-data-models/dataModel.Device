@@ -2,7 +2,7 @@ Device:
   description: 'An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).'
   properties:
     address:
-      description: 'The mailing address.'
+      description: ""
       properties:
         addressCountry:
           type: string
@@ -18,23 +18,27 @@ Device:
           type: string
         streetAddress:
           type: string
-      type: Property
+      type: 'The mailing address.'
     alternateName:
-      description: 'An alternative name for this item'
-      type: Property
+      description: ""
+      type: 'An alternative name for this item'
     areaServed:
-      description: 'The geographic area where a service or offered item is provided.'
-      type: Property
+      description: ""
+      type: 'The geographic area where a service or offered item is provided.'
     batteryLevel:
+      description: ""
       oneOf:
         - maximum: 1
           minimum: 0
           type: number
         - const: -1
           type: number
+      type: '-1 when transiently cannot be determined.'
     configuration:
-      type: object
+      description: ""
+      type: 'This attribute is intended to be a dictionary of properties which capture parameters which have to do with the configuration of a device (timeouts, reporting periods, etc.) and which are not currently covered by the standard attributes defined by this model.'
     controlledAsset:
+      description: ""
       items:
         oneOf:
           - format: uri
@@ -48,62 +52,74 @@ Device:
               - description: 'Property. Identifier format of any NGSI entity'
                 format: uri
                 type: string
-      type: array
+      type: 'List of the asset(s) (building, object, etc.) controlled by the device.'
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      description: ""
+      type: 'A sequence of characters identifying the provider of the harmonised data entity.'
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: ""
       format: date-time
-      type: Property
+      type: 'This will usually be allocated by the storage platform.'
     dateFirstUsed:
+      description: ""
       format: date-time
-      type: string
+      type: 'A timestamp which denotes when the device was first used.'
     dateInstalled:
+      description: ""
       format: date-time
-      type: string
+      type: 'A timestamp which denotes when the device was installed (if it requires installation).'
     dateLastCalibration:
+      description: ""
       format: date-time
-      type: string
+      type: 'A timestamp which denotes when the last calibration of the device happened.'
     dateLastValueReported:
+      description: ""
       format: date-time
-      type: string
+      type: 'Model:''https://schema.org/DateTime''.A timestamp which denotes the last time when the device successfully reported data to the cloud..'
     dateManufactured:
+      description: ""
       format: date-time
-      type: string
+      type: 'A timestamp which denotes when the device was manufactured.'
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: ""
       format: date-time
-      type: Property
+      type: 'This will usually be allocated by the storage platform.'
     depth:
-      type: number
+      description: ""
+      type: 'All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code'
     description:
-      description: 'A description of this item'
-      type: Property
+      description: ""
+      type: 'A description of this item'
     deviceState:
-      type: string
+      description: ""
+      type: 'Its value can be vendor dependent.'
     direction:
+      description: ""
       enum:
         - Inlet
         - Outlet
         - Entry
         - Exit
-      type: string
+      type: 'A timestamp which denotes when the device was installed (if it requires installation).'
     distance:
-      type: number
+      description: ""
+      type: 'All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code'
     firmwareVersion:
-      type: string
+      description: ""
+      type: 'The firmware version of this device.'
     hardwareVersion:
-      type: string
+      description: ""
+      type: 'The hardware version of this device.'
     id:
       anyOf: *device_-_properties_-_id_-_anyof
     ipAddress:
+      description: ""
       items:
         oneOf:
           - format: ipv4
           - format: ipv6
         type: string
-      type: array
+      type: 'It can be a comma separated list of values if the device has more than one IP address.'
     location:
       $id: https://geojson.org/schema/Geometry.json
       $schema: "http://json-schema.org/draft-07/schema#"
@@ -252,33 +268,41 @@ Device:
           type: object
       title: 'GeoJSON Geometry'
     macAddress:
+      description: ""
       items:
         pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$
         type: string
-      type: array
+      type: 'The MAC address of the device'
     mnc:
-      type: string
+      description: ""
+      type: 'The MNC is used in combination with a Mobile Country Code (MCC) (also known as a ''MCC / MNC tuple'') to uniquely identify a mobile phone operator/carrier using the GSM, CDMA, iDEN, TETRA and 3G / 4G public land mobile networks and some satellite mobile networks.'
     name:
-      description: 'The name of this item.'
-      type: Property
+      description: ""
+      type: 'The name of this item.'
     osVersion:
-      type: string
+      description: ""
+      type: 'The version of the host operating system device.'
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: ""
       items:
         anyOf: *device_-_properties_-_id_-_anyof
-      type: Property
+      type: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
     provider:
-      type: string
+      description: ""
+      type: 'The provider of the device.'
     refDeviceModel:
+      description: ""
       oneOf:
         - format: uri
           type: string
         - anyOf: *device_-_properties_-_id_-_anyof
+      type: 'Model of the device'
     relativePosition:
-      type: string
+      description: ""
+      type: 'Location of this device in a coordinate system according to its local emplacement.'
     rssi:
-      type: number
+      description: ""
+      type: ""
     seeAlso:
       oneOf:
         - items:
@@ -289,19 +313,22 @@ Device:
         - format: uri
           type: string
     serialNumber:
-      type: string
+      description: ""
+      type: 'The serial number assigned by the manufacturer.'
     softwareVersion:
-      type: string
+      description: ""
+      type: 'The software version of this device.'
     source:
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      description: ""
+      type: 'Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
     type:
-      description: 'NGSI Entity type'
+      description: ""
       enum:
         - Device
-      type: string
+      type: 'It has to be Device'
     value:
-      type: string
+      description: ""
+      type: 'Obviously, in order to toggle the referred switch, this attribute value will have to be changed to `off`.'
   required:
     - id
     - type
