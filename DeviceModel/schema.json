@@ -29,7 +29,7 @@
         },
         "controlledProperty": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/DateTime'. Enum:'temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasComsumption, electricityConsumption, soilMoisture, trafficFlow,eatingActivity, milking, movementActivity'.",
+          "description": "Property. Model:'https://schema.org/DateTime'. Enum:'temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasConsumption, electricityConsumption, soilMoisture, trafficFlow, eatingActivity, milking, movementActivity'.",
           "items": {
             "type": "string",
             "enum": [
@@ -67,10 +67,13 @@
               "heading",
               "weight",
               "waterConsumption",
-              "gasComsumption",
+              "gasConsumption",
               "electricityConsumption",
               "soilMoisture",
-              "trafficFlow"
+              "trafficFlow",
+              "eatingActivity", 
+              "milking", 
+              "movementActivity"
             ]
           }
         },
