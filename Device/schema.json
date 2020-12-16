@@ -90,7 +90,8 @@
           "type": "number"
         },
         "dstAware":{
-          "type": "boolean"
+          "type": "boolean",
+          "description": "Property. Indicates a device which is Daylight Savings Time Aware (True). In case it is then the Timestamp is automatically adjusted by the device to reflect DST changes. If not (False) the time adjustments must be taken care of by the user."
         },
         "depth": {
           "type": "number"
