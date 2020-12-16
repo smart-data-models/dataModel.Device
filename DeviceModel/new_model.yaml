@@ -5,19 +5,24 @@ DeviceModel:
       description: 'An alternative name for this item'
       type: Property
     annotations:
+      description: 'Annotations about the item'
       items:
         type: string
-      type: array
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
     brandName:
       description: 'Device''s brand name.'
       type: Property
       x-ngsi:
         model: https://schema.org/Text
     color:
-      description: 'The color of the product.'
-      type: string
+      description: 'The color of the product'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/color
     controlledProperty:
-      description: 'Enum:''temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasComsumption, electricityConsumption, soilMoisture, trafficFlow,eatingActivity, milking, movementActivity''.'
+      description: 'Enum:''temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasConsumption, electricityConsumption, soilMoisture, trafficFlow, eatingActivity, milking, movementActivity''.'
       items:
         enum:
           - temperature
@@ -54,10 +59,13 @@ DeviceModel:
           - heading
           - weight
           - waterConsumption
-          - gasComsumption
+          - gasConsumption
           - electricityConsumption
           - soilMoisture
           - trafficFlow
+          - eatingActivity
+          - milking
+          - movementActivity
         type: string
       type: Property
       x-ngsi:
@@ -125,10 +133,14 @@ DeviceModel:
         - description: 'Property. Identifier format of any NGSI entity'
           format: uri
           type: string
+      description: 'Unique identifier of the entity'
+      type: Property
     image:
-      description: 'An image of the item.'
+      description: 'An image of the item'
       format: uri
-      type: string
+      type: Property
+      x-ngsi:
+        model: https://schema.org/URL
     manufacturerName:
       description: 'Device''s manufacturer name.'
       type: Property
@@ -146,6 +158,7 @@ DeviceModel:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *devicemodel_-_properties_-_owner_-_items_-_anyof
+        description: 'Property. Unique identifier of the entity'
       type: Property
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
