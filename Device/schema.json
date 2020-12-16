@@ -102,6 +102,10 @@
           "type": "number",
           "description": "Property. Model:'https://schema.org/Distance'. Location of this device represented by a distance from a starting point. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code"
         },
+        "dstAware":{
+          "type": "boolean",
+          "description": "Property. Indicates a device which is Daylight Savings Time Aware (True). In case it is then the Timestamp is automatically adjusted by the device to reflect DST changes. If not (False) the time adjustments must be taken care of by the user."
+        },
         "depth": {
           "type": "number",
           "description": "Property. Model:'https://schema.org/depth'. Location of this device represented by a depth from a starting point. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code"
