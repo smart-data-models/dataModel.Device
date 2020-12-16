@@ -5,26 +5,35 @@ Device:
       description: 'The mailing address.'
       properties:
         addressCountry:
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''
           type: string
         addressLocality:
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''
           type: string
         addressRegion:
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''
           type: string
         areaServed:
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''
           type: string
         postOfficeBoxNumber:
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''
           type: string
         postalCode:
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''
           type: string
         streetAddress:
+          description: 'Property. The street address. Model:''https://schema.org/Text'''
           type: string
       type: Property
     alternateName:
       description: 'An alternative name for this item'
       type: Property
     areaServed:
-      description: 'The geographic area where a service or offered item is provided.'
+      description: 'The geographic area where a service or offered item is provided'
       type: Property
+      x-ngsi:
+        model: https://schema.org/Text
     batteryLevel:
       description: 'Device battery level. It must be equal to 1.0 when battery is full. 0.0 when battery ìs empty. -1 when transiently cannot be determined.'
       oneOf:
@@ -56,6 +65,7 @@ Device:
               - description: 'Property. Identifier format of any NGSI entity'
                 format: uri
                 type: string
+            description: 'Property. Unique identifier of the entity'
       type: Property
       x-ngsi:
         model: https://schema.org/Text
@@ -128,6 +138,9 @@ Device:
       type: Property
       x-ngsi:
         model: https://schema.org/Distance
+    dstAware:
+      description: 'Indicates a device which is Daylight Savings Time Aware (True). In case it is then the Timestamp is automatically adjusted by the device to reflect DST changes. If not (False) the time adjustments must be taken care of by the user.'
+      type: Property
     firmwareVersion:
       description: 'The firmware version of this device.'
       type: Property
@@ -140,6 +153,8 @@ Device:
         model: https://schema.org/Text
     id:
       anyOf: *device_-_properties_-_id_-_anyof
+      description: 'Unique identifier of the entity'
+      type: Property
     ipAddress:
       description: 'List of IP address of the device. It can be a comma separated list of values if the device has more than one IP address.'
       items:
@@ -322,6 +337,7 @@ Device:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *device_-_properties_-_id_-_anyof
+        description: 'Property. Unique identifier of the entity'
       type: Property
     provider:
       description: 'The provider of the device.'
@@ -334,6 +350,7 @@ Device:
         - format: uri
           type: string
         - anyOf: *device_-_properties_-_id_-_anyof
+          description: 'Property. Unique identifier of the entity'
       type: Relationship
     relativePosition:
       description: 'Location of this device in a coordinate system according to its local emplacement.'
