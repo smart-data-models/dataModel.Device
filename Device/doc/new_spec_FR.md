@@ -1,11 +1,11 @@
 Entité : Dispositif :  
 =====================  
-Cette spécification est une **version temporelle**. Elle est générée automatiquement à partir des propriétés documentées décrites dans le schema.json condensé dans le fichier `model.yaml`. Un fichier temporaire `nouveau_modèle.yaml` a été créé dans chaque modèle de données pour éviter d'avoir un impact sur les scripts existants. Ainsi, la spécification sera incomplète tant que le fichier schema.json n'est pas mis à jour au nouveau format (documentation des propriétés). Une fois mis à jour, le fichier `model.yaml` (`nouveau_model.yaml`) doit être mis à jour également (automatiquement) . Plus d'informations dans ce [lien](https://github.com/smart-data-models/data-models/blob/master/specs/warning_message_new_spec.md). Tant qu'il s'agit d'un format provisoire, tout [feedback est le bienvenu dans ce formulaire](https://smartdatamodels.org/index.php/submit-an-issue-2/) en choisissant l'option "Feedback sur la nouvelle spécification".  
+[Licence ouverte](https://github.com/smart-data-models//dataModel.Device/blob/master/Device/LICENSE.md)  
 Description globale : **Un appareil (matériel + logiciel + micrologiciel) destiné à accomplir une tâche particulière (détection de l'environnement, actionnement, etc.).**  
 
 ## Liste des biens  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni.  - `batteryLevel`: Niveau de la batterie de l'appareil. Il doit être égal à 1,0 lorsque la batterie est pleine. 0,0 lorsque la batterie est vide. -1 lorsque l'on ne peut pas déterminer de façon transitoire.  - `configuration`: La configuration technique de l'appareil. Cet attribut est destiné à être un dictionnaire de propriétés qui saisit les paramètres qui ont trait à la configuration d'un appareil (délais, périodes de rapport, etc.) et qui ne sont pas actuellement couverts par les attributs standard définis par ce modèle.  - `controlledAsset`: Liste du ou des biens (bâtiment, objet, etc.) contrôlés par l'appareil.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateFirstUsed`: Un horodatage qui indique la date de la première utilisation de l'appareil.  - `dateInstalled`: Un horodatage qui indique la date d'installation de l'appareil (si celui-ci doit être installé).  - `dateLastCalibration`: Un horodatage qui indique la date du dernier calibrage de l'appareil.  - `dateLastValueReported`:   - `dateManufactured`: Un horodatage qui indique la date de fabrication de l'appareil.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `depth`: Emplacement de cet appareil représenté par une profondeur à partir d'un point de départ. Toutes les unités sont acceptées en code [CEFACT](https://www.unece.org/cefact.html)  - `description`: Une description de cet article  - `deviceState`: État de ce dispositif d'un point de vue opérationnel. Sa valeur peut dépendre du vendeur.  - `direction`: Enum : "Inlet, Outlet, Entry, Exit". Un horodatage qui indique quand l'appareil a été installé (s'il doit être installé).  - `distance`: Emplacement de cet appareil représenté par une distance par rapport à un point de départ. Tous les appareils sont acceptés en code [CEFACT](https://www.unece.org/cefact.html)  - `firmwareVersion`: La version du micrologiciel de cet appareil.  - `hardwareVersion`: La version matérielle de cet appareil.  - `id`:   - `ipAddress`: Liste de l'adresse IP de l'appareil. Il peut s'agir d'une liste de valeurs séparées par des virgules si l'appareil a plus d'une adresse IP.  - `location`:   - `macAddress`: L'adresse MAC de l'appareil  - `mnc`: Cette propriété identifie le code de réseau mobile (MNC) du réseau auquel l'appareil est connecté. Le MNC est utilisé en combinaison avec un code de pays mobile (MCC) (également appelé "tuple MCC / MNC") pour identifier de manière unique un opérateur de téléphonie mobile utilisant les réseaux mobiles terrestres publics GSM, CDMA, iDEN, TETRA et 3G / 4G et certains réseaux mobiles par satellite.  - `name`: Le nom de cet article.  - `osVersion`: La version du système d'exploitation hôte.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `provider`: Le fournisseur de l'appareil.  - `refDeviceModel`: Modèle de l'appareil  - `relativePosition`: Localisation de cet appareil dans un système de coordonnées en fonction de son emplacement local.  - `rssi`: Indicateur de la puissance du signal reçu pour un appareil sans fil. Il doit être exprimé en dBm ou mW, utilisez le code de l'unité pour l'indiquer.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `serialNumber`: Le numéro de série attribué par le fabricant.  - `softwareVersion`: La version logicielle de cet appareil.  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Oroperty. Type d'entité NGSI. Il doit s'agir de Device  - `value`: Une valeur observée ou rapportée. Pour les dispositifs d'actionnement, c'est un attribut qui permet à une application de contrôle de modifier le réglage de l'actionnement. Par exemple, un dispositif de commutation qui est actuellement _on_ peut rapporter une valeur `on` de type `Text`. Evidemment, pour pouvoir basculer l'interrupteur en question, la valeur de cet attribut devra être changée en "off".    
+- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `batteryLevel`: Niveau de la batterie de l'appareil. Il doit être égal à 1,0 lorsque la batterie est pleine. 0,0 lorsque la batterie est vide. -1 lorsque l'on ne peut pas déterminer de façon transitoire.  - `configuration`: La configuration technique de l'appareil. Cet attribut est destiné à être un dictionnaire de propriétés qui saisit les paramètres qui ont trait à la configuration d'un appareil (délais, périodes de rapport, etc.) et qui ne sont pas actuellement couverts par les attributs standard définis par ce modèle.  - `controlledAsset`: Liste du ou des biens (bâtiment, objet, etc.) contrôlés par l'appareil.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateFirstUsed`: Un horodatage qui indique la date de la première utilisation de l'appareil.  - `dateInstalled`: Un horodatage qui indique la date d'installation de l'appareil (si celui-ci doit être installé).  - `dateLastCalibration`: Un horodatage qui indique la date du dernier calibrage de l'appareil.  - `dateLastValueReported`:   - `dateManufactured`: Un horodatage qui indique la date de fabrication de l'appareil.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `depth`: Emplacement de cet appareil représenté par une profondeur à partir d'un point de départ. Toutes les unités sont acceptées en code [CEFACT](https://www.unece.org/cefact.html)  - `description`: Une description de cet article  - `deviceState`: État de ce dispositif d'un point de vue opérationnel. Sa valeur peut dépendre du vendeur.  - `direction`: Enum : "Inlet, Outlet, Entry, Exit". Un horodatage qui indique quand l'appareil a été installé (s'il doit être installé).  - `distance`: Emplacement de cet appareil représenté par une distance par rapport à un point de départ. Tous les appareils sont acceptés en code [CEFACT](https://www.unece.org/cefact.html)  - `dstAware`: Indique un appareil qui est conforme à l'heure d'été (True). Si c'est le cas, l'horodateur est automatiquement ajusté par l'appareil pour refléter les changements de l'heure d'été. Si ce n'est pas le cas (Faux), les ajustements de l'heure doivent être effectués par l'utilisateur.  - `firmwareVersion`: La version du micrologiciel de cet appareil.  - `hardwareVersion`: La version matérielle de cet appareil.  - `id`: Identifiant unique de l'entité  - `ipAddress`: Liste de l'adresse IP de l'appareil. Il peut s'agir d'une liste de valeurs séparées par des virgules si l'appareil a plus d'une adresse IP.  - `location`:   - `macAddress`: L'adresse MAC de l'appareil  - `mnc`: Cette propriété identifie le code de réseau mobile (MNC) du réseau auquel l'appareil est connecté. Le MNC est utilisé en combinaison avec un code de pays mobile (MCC) (également appelé "tuple MCC / MNC") pour identifier de manière unique un opérateur de téléphonie mobile utilisant les réseaux mobiles terrestres publics GSM, CDMA, iDEN, TETRA et 3G / 4G et certains réseaux mobiles par satellite.  - `name`: Le nom de cet article.  - `osVersion`: La version du système d'exploitation hôte.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `provider`: Le fournisseur de l'appareil.  - `refDeviceModel`: Modèle de l'appareil  - `relativePosition`: Localisation de cet appareil dans un système de coordonnées en fonction de son emplacement local.  - `rssi`: Indicateur de la puissance du signal reçu pour un appareil sans fil. Il doit être exprimé en dBm ou mW, utilisez le code de l'unité pour l'indiquer.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `serialNumber`: Le numéro de série attribué par le fabricant.  - `softwareVersion`: La version logicielle de cet appareil.  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Oroperty. Type d'entité NGSI. Il doit s'agir de Device  - `value`: Une valeur observée ou rapportée. Pour les dispositifs d'actionnement, c'est un attribut qui permet à une application de contrôle de modifier le réglage de l'actionnement. Par exemple, un dispositif de commutation qui est actuellement _on_ peut rapporter une valeur `on` de type `Text`. Evidemment, pour pouvoir basculer l'interrupteur en question, la valeur de cet attribut devra être changée en "off".    
 Propriétés requises  
 - `category`  - `controlledProperty`  - `id`  - `type`    
 Un Dispositif est un objet tangible qui contient une certaine logique et qui est producteur et/ou consommateur de données. Un dispositif est toujours supposé être capable de communiquer électroniquement via un réseau. Ce modèle de données a été partiellement développé en coopération avec les opérateurs de téléphonie mobile et la [GSMA] (https://www.gsma.com/iot/iot-big-data/). Ce modèle de données réutilise des concepts provenant de la partie [SAREF Ontology](http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/01.01.01_60/ts_103264v010101p.pdf) des normes [ETSI](http://www.etsi.org).  
@@ -20,26 +20,35 @@ Device:
       description: 'The mailing address.'    
       properties:    
         addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
           type: string    
         addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
           type: string    
         areaServed:    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
           type: string    
         postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         postalCode:    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/Text'''    
           type: string    
       type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided.'    
+      description: 'The geographic area where a service or offered item is provided'    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     batteryLevel:    
       description: 'Device battery level. It must be equal to 1.0 when battery is full. 0.0 when battery ìs empty. -1 when transiently cannot be determined.'    
       oneOf:    
@@ -71,6 +80,7 @@ Device:
               - description: 'Property. Identifier format of any NGSI entity'    
                 format: uri    
                 type: string    
+            description: 'Property. Unique identifier of the entity'    
       type: Property    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -143,6 +153,9 @@ Device:
       type: Property    
       x-ngsi:    
         model: https://schema.org/Distance    
+    dstAware:    
+      description: 'Indicates a device which is Daylight Savings Time Aware (True). In case it is then the Timestamp is automatically adjusted by the device to reflect DST changes. If not (False) the time adjustments must be taken care of by the user.'    
+      type: Property    
     firmwareVersion:    
       description: 'The firmware version of this device.'    
       type: Property    
@@ -155,6 +168,8 @@ Device:
         model: https://schema.org/Text    
     id:    
       anyOf: *device_-_properties_-_id_-_anyof    
+      description: 'Unique identifier of the entity'    
+      type: Property    
     ipAddress:    
       description: 'List of IP address of the device. It can be a comma separated list of values if the device has more than one IP address.'    
       items:    
@@ -337,6 +352,7 @@ Device:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *device_-_properties_-_id_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
       type: Property    
     provider:    
       description: 'The provider of the device.'    
@@ -349,6 +365,7 @@ Device:
         - format: uri    
           type: string    
         - anyOf: *device_-_properties_-_id_-_anyof    
+          description: 'Property. Unique identifier of the entity'    
       type: Relationship    
     relativePosition:    
       description: 'Location of this device in a coordinate system according to its local emplacement.'    
