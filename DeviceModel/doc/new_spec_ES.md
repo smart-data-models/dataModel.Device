@@ -1,11 +1,11 @@
 Entidad: DeviceModel  
 ====================  
-Esta especificación es una **versión temporal**. Se genera automáticamente a partir de las propiedades documentadas descritas en el schema.json condensadas en el archivo `model.yaml`. Se ha creado un archivo temporal `nuevo_modelo.yaml` en cada modelo de datos para evitar el impacto en los scripts existentes. Por lo tanto, la especificación estará incompleta mientras el schema.json no se actualice al nuevo formato (documentando las propiedades). Una vez actualizado el `modelo.yaml` (`nuevo_modelo.yaml`) necesita ser actualizado también (automáticamente) . Más información en este [link](https://github.com/smart-data-models/data-models/blob/master/specs/warning_message_new_spec.md). Mientras sea un formato provisional cualquier [feedback es bienvenido en este formulario](https://smartdatamodels.org/index.php/submit-an-issue-2/) eligiendo la opción `Feedback on the new specification`.  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.Device/blob/master/DeviceModel/LICENSE.md)  
 Descripción global: **Esta entidad captura las propiedades estáticas de un dispositivo. **  
 
 ## Lista de propiedades  
 
-- `alternateName`: Un nombre alternativo para este artículo  - `annotations`:   - `brandName`: La marca del dispositivo.  - `color`: El color del producto.  - `controlledProperty`: Enum:temperatura, humedad, luz, movimiento, nivel de llenado, ocupación, potencia, presión, humo, energía, airePolución, ruidoNivel, condiciones meteorológicas, precipitación, velocidad del viento, dirección del viento, presión atmosférica, radiación solar, profundidad, pH, conductividad, conductancia, tss, tds, turbidez, salinidad,orp, cdom, aguaContaminación, ubicación, velocidad, rumbo, peso, aguaConsumo, gasConsumo, electricidadConsumo, sueloHumedad, tráficoFlujo, alimentaciónActividad, ordeño, movimientoActividad'.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateModified`: Sello de tiempo de la última modificación de la entidad. Esta será normalmente asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `deviceClass`: Clase de dispositivo restringido como se especifica en el RFC 7228. Si el dispositivo no es un dispositivo restringido esta propiedad no estará presente. Referencias normativas: [RFC7228](https://tools.ietf.org/html/rfc7228#section-3). Enum:'C0, C1, C2'.  - `documentation`: Un enlace a la documentación del dispositivo.  - `energyLimitationClass`: La clase de limitación de energía del dispositivo según la RFC 7228. Referencias normativas: [RFC7228](https://tools.ietf.org/html/rfc7228#page-11). Enum:'E0, E1, E2, E9'.  - `function`: La funcionalidad necesaria para cumplir la tarea para la que un dispositivo está diseñado. Un dispositivo puede ser diseñado para realizar más de una función. Definido por [SAREF](https://w3id.org/saref#Function). Enum:'levelControl, sensar, onOff, abrirCerrar, medir, eventoNotificación  - `id`:   - `image`: Una imagen del artículo.  - `manufacturerName`: El nombre del fabricante del dispositivo.  - `modelName`: El nombre del modelo del dispositivo.  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  - `seeAlso`: lista de uri que apunta a recursos adicionales sobre el tema  - `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  - `supportedUnits`: Unidades de medida soportadas por el dispositivo. El código de la unidad (texto) de medida dado usando el [Código Común UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres).  - `type`: Tipo de entidad NGSI. Tiene que ser DeviceModel    
+- `alternateName`: Un nombre alternativo para este artículo  - `annotations`: Anotaciones sobre el artículo  - `brandName`: La marca del dispositivo.  - `color`: El color del producto  - `controlledProperty`: Enum:temperatura, humedad, luz, movimiento, nivel de llenado, ocupación, potencia, presión, humo, energía, airePolución, ruidoNivel, condiciones meteorológicas, precipitación, velocidad del viento, dirección del viento, presión atmosférica, radiación solar, profundidad, pH, conductividad, conductancia, tss, tds, turbidez, salinidad,orp, cdom, aguaContaminación, ubicación, velocidad, rumbo, peso, aguaConsumo, gasConsumo, electricidadConsumo, sueloHumedad, tráficoFlujo, alimentaciónActividad, ordeño, movimientoActividad'.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateModified`: Sello de tiempo de la última modificación de la entidad. Esta será normalmente asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `deviceClass`: Clase de dispositivo restringido como se especifica en el RFC 7228. Si el dispositivo no es un dispositivo restringido esta propiedad no estará presente. Referencias normativas: [RFC7228](https://tools.ietf.org/html/rfc7228#section-3). Enum:'C0, C1, C2'.  - `documentation`: Un enlace a la documentación del dispositivo.  - `energyLimitationClass`: La clase de limitación de energía del dispositivo según la RFC 7228. Referencias normativas: [RFC7228](https://tools.ietf.org/html/rfc7228#page-11). Enum:'E0, E1, E2, E9'.  - `function`: La funcionalidad necesaria para cumplir la tarea para la que un dispositivo está diseñado. Un dispositivo puede ser diseñado para realizar más de una función. Definido por [SAREF](https://w3id.org/saref#Function). Enum:'levelControl, sensar, onOff, abrirCerrar, medir, eventoNotificación  - `id`: Identificador único de la entidad  - `image`: Una imagen del artículo  - `manufacturerName`: El nombre del fabricante del dispositivo.  - `modelName`: El nombre del modelo del dispositivo.  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  - `seeAlso`: lista de uri que apunta a recursos adicionales sobre el tema  - `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  - `supportedUnits`: Unidades de medida soportadas por el dispositivo. El código de la unidad (texto) de medida dado usando el [Código Común UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (máx. 3 caracteres).  - `type`: Tipo de entidad NGSI. Tiene que ser DeviceModel    
 Propiedades requeridas  
 - `brandName`  - `category`  - `controlledProperty`  - `id`  - `manufacturerName`  - `modelName`  - `type`  ## Modelo de datos Descripción de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -18,19 +18,24 @@ DeviceModel:
       description: 'An alternative name for this item'    
       type: Property    
     annotations:    
+      description: 'Annotations about the item'    
       items:    
         type: string    
-      type: array    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     brandName:    
       description: 'Device''s brand name.'    
       type: Property    
       x-ngsi:    
         model: https://schema.org/Text    
     color:    
-      description: 'The color of the product.'    
-      type: string    
+      description: 'The color of the product'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/color    
     controlledProperty:    
-      description: 'Enum:''temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasComsumption, electricityConsumption, soilMoisture, trafficFlow,eatingActivity, milking, movementActivity''.'    
+      description: 'Enum:''temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasConsumption, electricityConsumption, soilMoisture, trafficFlow, eatingActivity, milking, movementActivity''.'    
       items:    
         enum:    
           - temperature    
@@ -67,10 +72,13 @@ DeviceModel:
           - heading    
           - weight    
           - waterConsumption    
-          - gasComsumption    
+          - gasConsumption    
           - electricityConsumption    
           - soilMoisture    
           - trafficFlow    
+          - eatingActivity    
+          - milking    
+          - movementActivity    
         type: string    
       type: Property    
       x-ngsi:    
@@ -138,10 +146,14 @@ DeviceModel:
         - description: 'Property. Identifier format of any NGSI entity'    
           format: uri    
           type: string    
+      description: 'Unique identifier of the entity'    
+      type: Property    
     image:    
-      description: 'An image of the item.'    
+      description: 'An image of the item'    
       format: uri    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/URL    
     manufacturerName:    
       description: 'Device''s manufacturer name.'    
       type: Property    
@@ -159,6 +171,7 @@ DeviceModel:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *devicemodel_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
       type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
@@ -214,7 +227,7 @@ DeviceModel:
 }  
 ```  
 #### DeviceModel NGSI V2 normalizado Ejemplo  
-Aquí hay un ejemplo de un modelo de dispositivo en formato JSON como normalizado. Es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de un DeviceModel en formato JSON como normalizado. Es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "myDevice-wastecontainer-sensor-345",  
