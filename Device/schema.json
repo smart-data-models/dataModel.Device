@@ -20,7 +20,7 @@
         "type": {
           "type": "string",
           "enum": ["Device"],
-          "description": "Oroperty. NGSI Entity type. It has to be Device"
+          "description": "Property. NGSI Entity type. It has to be Device"
         },
         "controlledAsset": {
           "type": "array",
