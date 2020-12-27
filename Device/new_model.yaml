@@ -385,10 +385,10 @@ Device:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
       type: Property
     type:
-      description: 'Oroperty. NGSI Entity type. It has to be Device'
+      description: 'NGSI Entity type. It has to be Device'
       enum:
         - Device
-      type: string
+      type: Property
     value:
       description: 'A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to change the actuation setting. For instance, a switch device which is currently _on_ can report a value `on`of type `Text`. Obviously, in order to toggle the referred switch, this attribute value will have to be changed to `off`.'
       type: Property
