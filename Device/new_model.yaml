@@ -315,6 +315,7 @@ Device:
     macAddress:
       description: 'The MAC address of the device'
       items:
+        description: 'Property. Model:''https://schema.org/Text''. The MAC address of the device.'
         pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$
         type: string
       type: Property
