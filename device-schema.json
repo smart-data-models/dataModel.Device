@@ -105,7 +105,6 @@
       }
     },
     "Device-Commons": {
-      "type": "object",
       "category": {
         "$ref": "#/definitions/CategoryType"
       },
