@@ -5,7 +5,7 @@ Entidad: Dispositivo
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `batteryLevel`: Nivel de la batería del dispositivo. Debe ser igual a 1.0 cuando la batería está llena. 0,0 cuando la batería está vacía. -1 cuando no se puede determinar transitoriamente.  - `configuration`: La configuración técnica del dispositivo. Este atributo está destinado a ser un diccionario de propiedades que captan parámetros que tienen que ver con la configuración de un dispositivo (tiempos de espera, períodos de reporte, etc.) y que no están actualmente cubiertos por los atributos estándar definidos por este modelo.  - `controlledAsset`: Lista de los bienes (edificio, objeto, etc.) controlados por el dispositivo.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateFirstUsed`: Una marca de tiempo que denota cuando el dispositivo fue usado por primera vez.  - `dateInstalled`: Un sello de tiempo que denota cuando el dispositivo fue instalado (si requiere instalación).  - `dateLastCalibration`: Una marca de tiempo que denota cuándo fue la última calibración del dispositivo.  - `dateLastValueReported`:   - `dateManufactured`: Un sello de tiempo que denota cuando el dispositivo fue fabricado.  - `dateModified`: Sello de tiempo de la última modificación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `depth`: La ubicación de este dispositivo representada por una profundidad desde un punto de partida. Todas las unidades son aceptadas en el código [CEFACT](https://www.unece.org/cefact.html)  - `description`: Una descripción de este artículo  - `deviceState`: Estado de este dispositivo desde el punto de vista operacional. Su valor puede depender del proveedor.  - `direction`: Enum:'Entrada, Salida, Entrada, Salida'. Una marca de tiempo que denota cuándo se instaló el dispositivo (si requiere instalación).  - `distance`: La ubicación de este dispositivo representada por una distancia desde un punto de partida. Todas las unidades son aceptadas en el código [CEFACT](https://www.unece.org/cefact.html)  - `dstAware`: Indica un dispositivo que es consciente del horario de verano (Verdadero). En caso de que lo sea, el dispositivo ajusta automáticamente la marca de tiempo para reflejar los cambios de DST. Si no es así (Falso) los ajustes de tiempo deben ser atendidos por el usuario.  - `firmwareVersion`: La versión de firmware de este dispositivo.  - `hardwareVersion`: La versión de hardware de este dispositivo.  - `id`: Identificador único de la entidad  - `ipAddress`: Lista de la dirección IP del dispositivo. Puede ser una lista de valores separada por comas si el dispositivo tiene más de una dirección IP.  - `location`:   - `macAddress`: La dirección MAC del dispositivo  - `mnc`: Esta propiedad identifica el Código de Red Móvil (MNC) de la red a la que está conectado el dispositivo. El MNC se utiliza en combinación con un Indicativo de País para Móvil (MCC) (también conocido como 'MCC / MNC tuple') para identificar de forma exclusiva a un operador de telefonía móvil / portador que utiliza las redes móviles terrestres públicas GSM, CDMA, iDEN, TETRA y 3G / 4G y algunas redes móviles por satélite.  - `name`: El nombre de este artículo.  - `osVersion`: La versión del dispositivo del sistema operativo anfitrión.  - `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  - `provider`: El proveedor del dispositivo.  - `refDeviceModel`: Modelo del dispositivo  - `relativePosition`: Ubicación de este dispositivo en un sistema de coordenadas de acuerdo a su ubicación local.  - `rssi`: Indicador de intensidad de la señal recibida para un dispositivo habilitado para la tecnología inalámbrica. Debe ser expresada en dBm o mW, use el código de unidad para establecerlo.  - `seeAlso`: lista de uri que apunta a recursos adicionales sobre el tema  - `serialNumber`: El número de serie asignado por el fabricante.  - `softwareVersion`: La versión de software de este dispositivo.  - `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  - `type`: Tipo de entidad NGSI. Tiene que ser un dispositivo  - `value`: Un valor observado o comunicado. En el caso de los dispositivos de accionamiento, es un atributo que permite a una aplicación de control cambiar el ajuste de accionamiento. Por ejemplo, un dispositivo de interruptor que está actualmente _on_ puede reportar un valor "on" de tipo "Texto". Obviamente, para conmutar el interruptor referido, este valor de atributo tendrá que ser cambiado a "off".    
+- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `batteryLevel`: Nivel de la batería del dispositivo. Debe ser igual a 1.0 cuando la batería está llena. 0,0 cuando la batería está vacía. -1 cuando no se puede determinar transitoriamente.  - `category`: Un dispositivo que detecta y responde a eventos o cambios en el entorno físico como la luz, el movimiento o los cambios de temperatura. https://w3id.org/saref#Sensor. actuador : Un dispositivo responsable de mover o controlar un mecanismo o sistema. https://w3id.org/saref#Actuator. Medidor : Un dispositivo construido para detectar con precisión y mostrar una cantidad en una forma legible por un ser humano. Parcialmente definido por el SAREF. HVAC : Dispositivo de Calefacción, Ventilación y Aire Acondicionado (HVAC) que proporciona confort ambiental en interiores. https://w3id.org/saref#HVAC. Red : Un dispositivo utilizado para conectar otros dispositivos en una red, como un concentrador, un conmutador o un enrutador en una red LAN o una red de sensores. (https://w3id.org/saref#Network.Multimedia : Un dispositivo diseñado para mostrar, almacenar, grabar o reproducir contenido multimedia como audio, imágenes, animación, video. Enum:'actuador, baliza, pistola final, HVAC, implemento, irrSección, irrSistema, medidor, multimedia, red, sensor'.  - `configuration`: La configuración técnica del dispositivo. Este atributo está destinado a ser un diccionario de propiedades que captan parámetros que tienen que ver con la configuración de un dispositivo (tiempos de espera, períodos de reporte, etc.) y que no están actualmente cubiertos por los atributos estándar definidos por este modelo.  - `controlledAsset`: Lista de los bienes (edificio, objeto, etc.) controlados por el dispositivo.  - `controlledProperty`: Cualquier cosa que se pueda sentir, medir o controlar. Enum:"aireContaminación, atmosféricaPresión, cdom, conductancia, conductividad, profundidad, alimentaciónActividad, electricidadConsumo, energía, llenadoNivel, gasConsumo, rumbo, humedad, luz, ubicación, ordeño, movimiento, movimientoActividad, ruidoNivel, ocupación, orp, pH, potencia, precipitación, presión, salinidad, humo, sueloHumedad, radiación solar, velocidad, tds, temperatura, tss, turbidez, aguaConsumo, aguaContaminación, climaCondiciones, peso, vientoDirección, velocidad del viento'.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateFirstUsed`: Una marca de tiempo que denota cuando el dispositivo fue usado por primera vez.  - `dateInstalled`: Un sello de tiempo que denota cuando el dispositivo fue instalado (si requiere instalación).  - `dateLastCalibration`: Una marca de tiempo que denota cuándo fue la última calibración del dispositivo.  - `dateLastValueReported`:   - `dateManufactured`: Un sello de tiempo que denota cuando el dispositivo fue fabricado.  - `dateModified`: Sello de tiempo de la última modificación de la entidad. Esta será normalmente asignada por la plataforma de almacenamiento.  - `depth`: La ubicación de este dispositivo representada por una profundidad desde un punto de partida. Todas las unidades son aceptadas en el código [CEFACT](https://www.unece.org/cefact.html)  - `description`: Una descripción de este artículo  - `deviceState`: Estado de este dispositivo desde el punto de vista operacional. Su valor puede depender del proveedor.  - `direction`: Enum:'Entrada, Salida, Entrada, Salida'. Una marca de tiempo que denota cuándo se instaló el dispositivo (si requiere instalación).  - `distance`: La ubicación de este dispositivo representada por una distancia desde un punto de partida. Todas las unidades son aceptadas en el código [CEFACT](https://www.unece.org/cefact.html)  - `dstAware`: Indica un dispositivo que es consciente del horario de verano (Verdadero). En caso de que lo sea, el dispositivo ajusta automáticamente la marca de tiempo para reflejar los cambios de DST. Si no es así (Falso) los ajustes de tiempo deben ser atendidos por el usuario.  - `firmwareVersion`: La versión de firmware de este dispositivo.  - `hardwareVersion`: La versión de hardware de este dispositivo.  - `id`: Identificador único de la entidad  - `ipAddress`: Lista de la dirección IP del dispositivo. Puede ser una lista de valores separada por comas si el dispositivo tiene más de una dirección IP.  - `location`:   - `macAddress`: La dirección MAC del dispositivo  - `mnc`: Esta propiedad identifica el Código de Red Móvil (MNC) de la red a la que está conectado el dispositivo. El MNC se utiliza en combinación con un Indicativo de País para Móvil (MCC) (también conocido como 'MCC / MNC tuple') para identificar de forma exclusiva a un operador de telefonía móvil / portador que utiliza las redes móviles terrestres públicas GSM, CDMA, iDEN, TETRA y 3G / 4G y algunas redes móviles por satélite.  - `name`: El nombre de este artículo.  - `osVersion`: La versión del dispositivo del sistema operativo anfitrión.  - `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  - `provider`: El proveedor del dispositivo.  - `refDeviceModel`: Modelo del dispositivo  - `relativePosition`: Ubicación de este dispositivo en un sistema de coordenadas de acuerdo a su ubicación local.  - `rssi`: Indicador de intensidad de la señal recibida para un dispositivo habilitado para la tecnología inalámbrica. Debe ser expresada en dBm o mW, use el código de unidad para establecerlo.  - `seeAlso`: lista de uri que apunta a recursos adicionales sobre el tema  - `serialNumber`: El número de serie asignado por el fabricante.  - `softwareVersion`: La versión de software de este dispositivo.  - `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  - `supportedProtocol`: Protocolo(s) o redes soportadas  - `type`: Tipo de entidad NGSI. Tiene que ser un dispositivo  - `value`: Un valor observado o comunicado. En el caso de los dispositivos de accionamiento, es un atributo que permite a una aplicación de control cambiar el ajuste de accionamiento. Por ejemplo, un dispositivo de interruptor que está actualmente _on_ puede reportar un valor "on" de tipo "Texto". Obviamente, para conmutar el interruptor referido, este valor de atributo tendrá que ser cambiado a "off".    
 Propiedades requeridas  
 - `category`  - `controlledProperty`  - `id`  - `type`    
 Un dispositivo es un objeto tangible que contiene cierta lógica y es productor y/o consumidor de datos. Se supone siempre que un dispositivo es capaz de comunicarse electrónicamente a través de una red. Este modelo de datos se ha desarrollado parcialmente en cooperación con los operadores de telefonía móvil y la [GSMA] (https://www.gsma.com/iot/iot-big-data/). Este modelo de datos reutiliza conceptos procedentes de la parte de la [Ontología SAREF](http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/01.01.01_60/ts_103264v010101p.pdf) de las normas del [ETSI](http://www.etsi.org).  
@@ -60,6 +60,25 @@ Device:
       type: Property    
       x-ngsi:    
         model: https://schema.org/Number    
+    category:    
+      description: "A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network.Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'"    
+      items:    
+        enum:    
+          - actuator    
+          - beacon    
+          - endgun    
+          - HVAC    
+          - implement    
+          - irrSection    
+          - irrSystem    
+          - meter    
+          - multimedia    
+          - network    
+          - sensor    
+        type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     configuration:    
       description: 'Device''s technical configuration. This attribute is intended to be a dictionary of properties which capture parameters which have to do with the configuration of a device (timeouts, reporting periods, etc.) and which are not currently covered by the standard attributes defined by this model.'    
       type: Property    
@@ -81,6 +100,54 @@ Device:
                 format: uri    
                 type: string    
             description: 'Property. Unique identifier of the entity'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
+    controlledProperty:    
+      description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, gasComsumption, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, tss, turbidity, waterConsumption, waterPollution, weatherConditions, weight, windDirection, windSpeed'''    
+      items:    
+        enum:    
+          - airPollution    
+          - atmosphericPressure    
+          - cdom    
+          - conductance    
+          - conductivity    
+          - depth    
+          - eatingActivity    
+          - electricityConsumption    
+          - energy    
+          - fillingLevel    
+          - gasComsumption    
+          - heading    
+          - humidity    
+          - light    
+          - location    
+          - milking    
+          - motion    
+          - movementActivity    
+          - noiseLevel    
+          - occupancy    
+          - orp    
+          - pH    
+          - power    
+          - precipitation    
+          - pressure    
+          - salinity    
+          - smoke    
+          - soilMoisture    
+          - solarRadiation    
+          - speed    
+          - tds    
+          - temperature    
+          - tss    
+          - turbidity    
+          - waterConsumption    
+          - waterPollution    
+          - weatherConditions    
+          - weight    
+          - windDirection    
+          - windSpeed    
+        type: string    
       type: Property    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -330,6 +397,7 @@ Device:
     macAddress:    
       description: 'The MAC address of the device'    
       items:    
+        description: 'Property. Model:''https://schema.org/Text''. The MAC address of the device.'    
         pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$    
         type: string    
       type: Property    
@@ -399,6 +467,31 @@ Device:
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
+    supportedProtocol:    
+      description: 'Supported protocol(s) or networks'    
+      items:    
+        enum:    
+          - 3g    
+          - bluetooth    
+          - 'bluetooth LE'    
+          - cat-m    
+          - coap    
+          - ec-gsm-iot    
+          - gprs    
+          - http    
+          - lwm2m    
+          - lora    
+          - lte-m    
+          - mqtt    
+          - nb-iot    
+          - onem2m    
+          - sigfox    
+          - ul20    
+          - websocket    
+        type: string    
+      type: Property    
+      x-ngsi:    
+        model: '3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket'    
     type:    
       description: 'NGSI Entity type. It has to be Device'    
       enum:    
