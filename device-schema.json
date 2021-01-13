@@ -105,17 +105,20 @@
       }
     },
     "Device-Commons": {
-      "category": {
-        "$ref": "#/definitions/CategoryType"
-      },
-      "controlledProperty": {
-        "$ref": "#/definitions/ControlledPropertyType"
-      },
-      "supportedProtocol": {
-        "$ref": "#/definitions/SupportedProtocolType"
-      },
-      "macAddress": {
-        "$ref": "#/definitions/MacAddressType"
+      "type": "object",
+      "properties": {
+        "category": {
+          "$ref": "#/definitions/CategoryType"
+        },
+        "controlledProperty": {
+          "$ref": "#/definitions/ControlledPropertyType"
+        },
+        "supportedProtocol": {
+          "$ref": "#/definitions/SupportedProtocolType"
+        },
+        "macAddress": {
+          "$ref": "#/definitions/MacAddressType"
+        }
       }
     }
   }
