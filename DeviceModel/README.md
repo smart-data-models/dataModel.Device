@@ -2,7 +2,7 @@
 
 ## Description 
 
-This entity captures the static properties of a Device.
+This entity captures the static properties of a Device. 
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/DeviceModel/swagger.yaml)
