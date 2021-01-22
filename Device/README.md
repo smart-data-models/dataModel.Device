@@ -2,9 +2,7 @@
 
 ## Description 
 
-An apparatus (hardware + software + firmware) intended to accomplish a
-particular task (sensing the environment, actuating, etc.).
-
+An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Device/swagger.yaml)
