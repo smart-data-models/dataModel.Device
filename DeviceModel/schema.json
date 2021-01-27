@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0",
   "$id": "https://smart-data-models.github.io/dataModel.Device/DeviceModel/schema.json",
-  "title": " - Device Model schema",
+  "title": " Smart Data Models - Device Model schema",
   "description": "This entity captures the static properties of a Device. ",
   "type": "object",
   "allOf": [
