@@ -29,6 +29,25 @@ DeviceModel:
       type: Property    
       x-ngsi:    
         model: https://schema.org/Text    
+    category:    
+      description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. \nactuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. \nMeter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. \nNetwork : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. \nMultimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'"    
+      items:    
+        enum:    
+          - actuator    
+          - beacon    
+          - endgun    
+          - HVAC    
+          - implement    
+          - irrSection    
+          - irrSystem    
+          - meter    
+          - multimedia    
+          - network    
+          - sensor    
+        type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     color:    
       description: 'The color of the product'    
       type: Property    
@@ -154,6 +173,12 @@ DeviceModel:
       type: Property    
       x-ngsi:    
         model: https://schema.org/URL    
+    macAddress:    
+      description: 'The MAC address of the device.'    
+      pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     manufacturerName:    
       description: 'Device''s manufacturer name.'    
       type: Property    
@@ -187,6 +212,31 @@ DeviceModel:
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
+    supportedProtocol:    
+      description: 'Supported protocol(s) or networks'    
+      items:    
+        enum:    
+          - 3g    
+          - bluetooth    
+          - 'bluetooth LE'    
+          - cat-m    
+          - coap    
+          - ec-gsm-iot    
+          - gprs    
+          - http    
+          - lwm2m    
+          - lora    
+          - lte-m    
+          - mqtt    
+          - nb-iot    
+          - onem2m    
+          - sigfox    
+          - ul20    
+          - websocket    
+        type: string    
+      type: Property    
+      x-ngsi:    
+        model: '3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket'    
     supportedUnits:    
       description: 'Units of measurement supported by the device. The unit code (text) of measurement given using the [UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters).'    
       items:    
