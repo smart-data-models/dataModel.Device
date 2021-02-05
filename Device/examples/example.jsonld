@@ -4,7 +4,7 @@
  "category": ["sensor"],
  "controlledAsset": ["urn:ngsi-ld::wastecontainer-Osuna-100"],
  "controlledProperty": ["fillingLevel", "temperature"],
- "dateFirstUsed": {"@type": "DateTime", "@value": "2014-09-11T11:00:00Z"},
+ "dateFirstUsed": "2014-09-11T11:00:00Z",
  "deviceState": "ok",
  "id": "urn:ngsi-ld:Device:device-9845A",
  "ipAddress": ["192.14.56.78"],
