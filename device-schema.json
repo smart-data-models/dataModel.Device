@@ -9,6 +9,30 @@
       "pattern": "^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$",
       "description": "Property. Model:'https://schema.org/Text'. The MAC address of the device."
     },
+    "ControlledAssetType": {
+      "type": "array",
+      "description": "Property. Model: 'https://schema.org/Text. List of asset(s) (building, object, etc.) controlled by the device",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+          }
+        ]
+      }
+    },
+    "DateLastCalibrationType": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denotes when the last calibration of the device happened."
+    },
+    "DeviceStateType": {
+      "type": "string",
+      "description": "Property. Model:'https://schema.org/Text'. State of this device from an operational point of view. Its value can be vendor dependent."
+    },
     "CategoryType": {
       "type": "array",
       "description": "Property. Model:'https://schema.org/Text'. Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. \nactuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. \nMeter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. \nNetwork : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. \nMultimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'",
@@ -118,6 +142,15 @@
         },
         "macAddress": {
           "$ref": "#/definitions/MacAddressType"
+        },
+        "controlledAsset": {
+          "$ref": "#/definitions/ControlledAssetType"
+        },
+        "dateLastCalibration": {
+          "$ref": "#/definitions/DateLastCalibrationType"
+        },
+        "deviceState": {
+          "$ref": "#/definitions/DeviceStateType"
         }
       }
     }
