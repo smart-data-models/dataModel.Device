@@ -74,6 +74,7 @@
               "eatingActivity", 
               "milking", 
               "movementActivity"
+              "refractiveIndex"
             ]
           }
         },
