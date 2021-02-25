@@ -66,6 +66,7 @@ DeviceModel:
           - eatingActivity
           - milking
           - movementActivity
+          - refractiveIndex
         type: string
       type: Property
       x-ngsi:
