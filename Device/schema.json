@@ -64,8 +64,19 @@
           }
         },
         "configuration": {
-          "type": "object",
-          "description": "Property. Model:'https://schema.org/StructuredValue'. Device's technical configuration. This attribute is intended to be a dictionary of properties which capture parameters which have to do with the configuration of a device (timeouts, reporting periods, etc.) and which are not currently covered by the standard attributes defined by this model."
+          "type": "array",
+          "description": "Property. Model:'https://schema.org/StructuredValue'. Device's technical configuration. This attribute is intended to be a array properties and their values which capture parameters which have to do with the configuration of a device (timeouts, reporting periods, etc.) and which are not currently covered by the standard attributes defined by this model.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "parameter": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
         },
         "dateInstalled": {
           "type": "string",
