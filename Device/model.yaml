@@ -126,6 +126,7 @@ Device:
           - power
           - precipitation
           - pressure
+          - refractiveIndex
           - salinity
           - smoke
           - soilMoisture

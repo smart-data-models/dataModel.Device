@@ -73,7 +73,8 @@
               "trafficFlow",
               "eatingActivity", 
               "milking", 
-              "movementActivity"
+              "movementActivity",
+              "refractiveIndex"
             ]
           }
         },
