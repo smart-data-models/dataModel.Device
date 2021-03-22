@@ -55,7 +55,7 @@
           "description": "Property. Purpose of the data gathering."
         },
         "category": {
-          "$ref": "https://smart-data-models.github.io/Device/device-schema.json#/definitions/category"
+          "$ref": "https://smart-data-models.github.io/dataModel.Device/device-schema.json#/definitions/Device-Commons/properties/category"
         },
         "recipientList": {
           "type": "array",
