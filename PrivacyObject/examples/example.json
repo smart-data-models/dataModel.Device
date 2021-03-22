@@ -1,0 +1,35 @@
+{
+  "id": "urn:ngsi-ld:PrivacyObject:1044_parking",
+  "type": "PrivacyObject",
+  "refDevice": "Device:1044_parking",
+  "name": "1004_parking",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      46.18311,
+      6.14132
+    ]
+  },
+  "isIndoor": false,
+  "floor": 0,
+  "description": "Electromagnetic and ultrasonic sensor",
+  "description_fr": "Capteur électromagnétique et à ultrasons",
+  "user": "urn:ngsi-ld:User:abcdef",
+  "purpose": "Detecting the presence of a vehicle on a parking slot.",
+  "purpose_fr": "Détecter la présence d'un véhicule sur une place de parc.",
+  "category": [
+    "sensor"
+  ],
+  "recipientList": [
+    "urn:ngsi-ld:User:CommunalAdministration",
+    "urn:ngsi-ld:User:Motorists"
+  ],
+  "owner": [
+    "ngsi-ld:city:CityofCarouge"
+  ],
+  "isPersonalData": false,
+  "retentionPeriod": "< 1 month",
+  "legitimateInterest": "Facilitate and understand parking habits",
+  "crossborderTransfer": "None",
+  "image": "http://www.example.com/device1.jpg"
+}
