@@ -8,6 +8,8 @@ The following entity types are available:
 
 - [DeviceModel](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceModel/README.md). This entity captures the static properties of a Device. 
 
+- [PrivacyObject](https://github.com/smart-data-models/dataModel.Device/blob/master/PrivacyObject/README.md). Information about privacy for an IoT device
+
 
 
 ### Incubated data models
