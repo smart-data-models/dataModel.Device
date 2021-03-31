@@ -1,91 +1,33 @@
 {
-    "id": "urn:ngsi-ld:Device:device-9845A",
-    "type": "Device",
-    "category": {
-        "type": "Property",
-        "value": [
-            "sensor"
-        ]
-    },
-    "batteryLevel": {
-        "type": "Property",
-        "value": 0.75
-    },
-    "dateFirstUsed": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2014-09-11T11:00:00Z"
-        }
-    },
-    "controlledAsset": {
-        "type": "Relationship",
-        "object": [
-            "urn:ngsi-ld::wastecontainer-Osuna-100"
-        ]
-    },
-    "serialNumber": {
-        "type": "Property",
-        "value": "9845A"
-    },
-    "mcc": {
-        "type": "Property",
-        "value": "214"
-    },
-    "value": {
-        "type": "Property",
-        "value": "l%3D0.22%3Bt%3D21.2"
-    },
-    "refDeviceModel": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345"
-    },
-    "rssi": {
-        "type": "Property",
-        "value": 0.86
-    },
-    "controlledProperty": {
-        "type": "Property",
-        "value": [
-            "fillingLevel",
-            "temperature"
-        ]
-    },
-    "owner": {
-        "type": "Property",
-        "value": [
-            "http://person.org/leon"
-        ]
-    },
-    "mnc": {
-        "type": "Property",
-        "value": "07"
-    },
-    "ipAddress": {
-        "type": "Property",
-        "value": [
-            "192.14.56.78"
-        ]
-    },
-    "deviceState": {
-        "type": "Property",
-        "value": "ok"
-    },
-    "distance": {
-        "type": "Property",
-        "value": 20,
-        "unitCode": "MTR"
-    },
-    "depth": {
-        "type": "Property",
-        "value": 3,
-        "unitCode": "MTR"
-    },
-    "direction": {
-        "type": "Property",
-        "value": "Outlet"
-    },
-    "@context": [
-        "https://schema.lab.fiware.org/ld/context"
-    ]
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld",
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+  ],
+  "batteryLevel": 0.75,
+  "category": [
+    "sensor"
+  ],
+  "controlledAsset": [
+    "urn:ngsi-ld::wastecontainer-Osuna-100"
+  ],
+  "controlledProperty": [
+    "fillingLevel",
+    "temperature"
+  ],
+  "dateFirstUsed": "2014-09-11T11:00:00Z",
+  "deviceState": "ok",
+  "id": "urn:ngsi-ld:Device:device-9845A",
+  "ipAddress": [
+    "192.14.56.78"
+  ],
+  "mcc": "214",
+  "mnc": "07",
+  "owner": [
+    "http://person.org/leon"
+  ],
+  "refDeviceModel": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",
+  "rssi": 0.86,
+  "serialNumber": "9845A",
+  "type": "Device",
+  "value": "l%3D0.22%3Bt%3D21.2"
 }
