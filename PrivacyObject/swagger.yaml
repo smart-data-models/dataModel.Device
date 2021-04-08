@@ -5,12 +5,12 @@
 
 components:
   schemas: 
-    Device: 
-      $ref: "https://smart-data-models.github.io/dataModel.Device/Device/model.yaml#/Device"
+    PrivacyObject: 
+      $ref: "https://smart-data-models.github.io/dataModel.Device/PrivacyObject/model.yaml#/PrivacyObject"
 info:
   description:  |
-    An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).
-  title: Device
+    Information about privacy for an IoT device
+  title: PrivacyObject
   version: "1.0.0"
 openapi: "3.0.0"
 
@@ -25,7 +25,7 @@ paths:
           required: true
           schema: 
             enum: 
-              - Device
+              - PrivacyObject
             type: string
       responses: 
         ? "200"
@@ -37,12 +37,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.Device/Device/examples/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.Device/PrivacyObject/examples/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.Device/Device/examples/example-normalized.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.Device/PrivacyObject/examples/example-normalized.jsonld"
           description: OK
       tags: 
         - ngsi-ld
