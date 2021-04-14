@@ -11,7 +11,7 @@
   },
   "entityVersion": {
     "type": "Number",
-    "value": 2.0
+    "value": "2.0"
   },
   "meterType": {
     "type": "Text",
@@ -33,7 +33,7 @@
   },
   "image": {
     "type": "Text",
-    "value": "iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg=="
+    "value": "urn:ngsi:iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg=="
   },
   "address": {
     "type": "StructuredValue",

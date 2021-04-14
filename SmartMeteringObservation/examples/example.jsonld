@@ -3,7 +3,7 @@
   "type": "SmartMeteringObservation",
   "source": "https://source.example.com",
   "dataProvider": "https://provider.example.com",
-  "entityVersion": 2.0,
+  "entityVersion": "2.0",
   "meterType": "Electricity",
   "refDevice": "urn:ngsi-ld:Device:7a0708f6-9668-11e8-8f77-abc2b62ebaac",
   "location": {
@@ -13,7 +13,7 @@
       39.7564
     ]
   },
-  "image": "iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg==",
+  "image": "urn:ngsi:iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg==",
   "address": {
     "addressLocality": "London",
     "postalCode": "EC4N 8AF",

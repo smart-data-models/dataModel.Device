@@ -14,7 +14,7 @@
   },
   "entityVersion": {
     "type": "Property",
-    "value": 2.0
+    "value": "2.0"
   },
   "meterType": {
     "type": "Property",
@@ -36,7 +36,7 @@
   },
   "image": {
     "type": "Property",
-    "value": "iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg=="
+    "value": "urn:ngsi:iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg=="
   },
   "address": {
     "type": "Property",
