@@ -86,6 +86,7 @@ DeviceModel:
           - milking
           - movementActivity
           - refractiveIndex
+          - freeChlorine
         type: string
       type: Property
       x-ngsi:
@@ -190,8 +191,8 @@ DeviceModel:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
         - items:
-            - format: uri
-              type: string
+            format: uri
+            type: string
           minItems: 1
           type: array
         - format: uri
