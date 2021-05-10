@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$id": "Privacy/PrivacyObject/schema.json",
+    "$id": "https://smart-data-models.github.io/dataModel.Device/PrivacyObject/schema.json",
+    "$schemaVersion": "0.0.1",
     "title": "Smart Data Models / Privacy Object",
     "description": "Information about privacy for an IoT device",
     "type": "object",
@@ -90,6 +91,5 @@
     "required": [
         "id",
         "type"
-    ],
-    "$schemaVersion": "0.0.1"
+    ]
 }
