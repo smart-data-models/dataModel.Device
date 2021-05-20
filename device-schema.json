@@ -69,6 +69,7 @@
           "speed",
           "tds",
           "temperature",
+          "trafficFlow",
           "tss",
           "turbidity",
           "waterConsumption",
