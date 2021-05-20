@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.3",
+    "$schemaVersion": "0.0.4",
     "$id": "https://smart-data-models.github.io/dataModel.Device/Device/schema.json",
     "title": " Smart Data Models - Device schema",
     "description": "An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).",
@@ -46,13 +46,6 @@
                 "mcc": {
                     "type": "string",
                     "description": "Property. Model:'https://schema.org/Text'. This property identifies the Mobile Country Code"
-                },
-                "macAddress": {
-                    "type": "array",
-                    "description": "Property. Model:'https://schema.org/Text'. The MAC address of the device",
-                    "items": {
-                        "$ref": "https://smart-data-models.github.io/dataModel.Device/device-schema.json#/definitions/MacAddressType"
-                    }
                 },
                 "ipAddress": {
                     "type": "array",
