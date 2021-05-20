@@ -13,9 +13,6 @@ Device:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
-        areaServed:
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''
-          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -186,6 +183,10 @@ Device:
         model: https://schema.org/DateTime
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: Property
+    dateObserved:
+      description: 'Date of the observed entity defined by the user.'
       format: date-time
       type: Property
     depth:
@@ -501,6 +502,5 @@ Device:
   required:
     - id
     - type
-    - category
     - controlledProperty
   type: object
