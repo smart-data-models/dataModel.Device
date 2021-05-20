@@ -392,11 +392,8 @@ Device:
           type: object
       title: 'GeoJSON Geometry'
     macAddress:
-      description: 'The MAC address of the device'
-      items:
-        description: 'Property. Model:''https://schema.org/Text''. The MAC address of the device.'
-        pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$
-        type: string
+      description: 'The MAC address of the device.'
+      pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$
       type: Property
       x-ngsi:
         model: https://schema.org/Text
