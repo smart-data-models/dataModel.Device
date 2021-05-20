@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
+    "$schemaVersion": "0.0.2",
     "$id": "https://smart-data-models.github.io/dataModel.Device/Device/schema.json",
     "title": " Smart Data Models - Device schema",
     "description": "An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).",
@@ -192,6 +192,9 @@
                 "value": {
                     "type": "string",
                     "description": "Property. Model:'https://schema.org/QuantitativeValue'. A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to change the actuation setting. For instance, a switch device which is currently _on_ can report a value 'on' of type 'Text'. Obviously, in order to toggle the referred switch, this attribute value will have to be changed to 'off'."
+                },
+                "dateObserved": {
+                    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
                 }
             }
         }
@@ -199,7 +202,6 @@
     "required": [
         "id",
         "type",
-        "category",
         "controlledProperty"
     ]
 }
