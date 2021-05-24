@@ -1,6 +1,7 @@
 Entität: DeviceModel  
 ====================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Device/blob/master/DeviceModel/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Diese Entität erfasst die statischen Eigenschaften eines Geräts. **  
 
 ## Liste der Eigenschaften  
@@ -9,7 +10,7 @@ Entität: DeviceModel
 Aktor : Ein Gerät, das für die Bewegung oder Steuerung eines Mechanismus oder Systems verantwortlich ist. https://w3id.org/saref#Actuator.  
 Messgerät : Ein Gerät, das zur genauen Erfassung und Anzeige einer Größe in einer für den Menschen lesbaren Form gebaut ist. Teilweise durch SAREF definiert. HVAC : Gerät für Heizung, Lüftung und Klimatisierung (HVAC), das für ein angenehmes Raumklima sorgt. https://w3id.org/saref#HVAC.  
 Netzwerk : Ein Gerät, das dazu dient, andere Geräte in einem Netzwerk zu verbinden, z. B. Hub, Switch oder Router in einem LAN oder Sensor-Netzwerk. (https://w3id.org/saref#Network.  
-Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufnehmen oder Abspielen von Multimedia-Inhalten wie z. B. Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  - `color`: Die Farbe des Produkts  - `controlledProperty`: Enum:'temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, Leitwert, tss, tds, Trübung, Salzgehalt, orp, cdom, Wasserverschmutzung, Ort, Geschwindigkeit, Richtung, Gewicht, Wasserverbrauch, Gasverbrauch, Stromverbrauch, Bodenfeuchte, Verkehrsfluss, EssenAktivität, Melken, BewegungAktivität'.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `deviceClass`: Klasse des eingeschränkten Geräts, wie in RFC 7228 angegeben. Wenn das Gerät kein eingeschränktes Gerät ist, darf diese Eigenschaft nicht vorhanden sein. Normative Verweise: [RFC7228](https://tools.ietf.org/html/rfc7228#section-3). Enum:'C0, C1, C2'  - `documentation`: Ein Link zur Dokumentation des Geräts.  - `energyLimitationClass`: Klasse der Energiebegrenzung des Geräts gemäß RFC 7228. Normative Referenzen: [RFC7228](https://tools.ietf.org/html/rfc7228#page-11). Enum:'E0, E1, E2, E9'  - `function`: Die Funktionalität, die erforderlich ist, um die Aufgabe zu erfüllen, für die ein Gerät ausgelegt ist. Ein Gerät kann so konzipiert sein, dass es mehr als eine Funktion ausführt. Definiert durch [SAREF](https://w3id.org/saref#Function). Enum:'levelControl, sensing, onOff, openClose, metering, eventNotification  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `macAddress`: Die MAC-Adresse des Geräts.  - `manufacturerName`: Name des Geräteherstellers.  - `modelName`: Der Modellname des Geräts.  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `supportedProtocol`: Unterstützte(s) Protokoll(e) oder Netzwerke  - `supportedUnits`: Vom Gerät unterstützte Maßeinheiten. Der Einheitencode (Text) des Maßes, der unter Verwendung des [UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen).  - `type`: NGSI-Entity-Typ. Es muss DeviceModel sein    
+Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufnehmen oder Abspielen von Multimedia-Inhalten wie z. B. Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  - `color`: Die Farbe des Produkts  - `controlledProperty`: Enum:'temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, Leitwert, tss, tds, Trübung, Salzgehalt, orp, cdom, Wasserverschmutzung, Ort, Geschwindigkeit, Richtung, Gewicht, Wasserverbrauch, Gasverbrauch, Stromverbrauch, Bodenfeuchte, Verkehrsfluss, EssenAktivität, Melken, BewegungAktivität'.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `deviceClass`: Klasse des eingeschränkten Geräts, wie in RFC 7228 angegeben. Wenn das Gerät kein eingeschränktes Gerät ist, darf diese Eigenschaft nicht vorhanden sein. Normative Verweise: [RFC7228](https://tools.ietf.org/html/rfc7228#section-3). Enum:'C0, C1, C2'  - `documentation`: Ein Link zur Dokumentation des Geräts.  - `energyLimitationClass`: Klasse der Energiebegrenzung des Geräts gemäß RFC 7228. Normative Referenzen: [RFC7228](https://tools.ietf.org/html/rfc7228#page-11). Enum:'E0, E1, E2, E9'  - `function`: Die Funktionalität, die erforderlich ist, um die Aufgabe zu erfüllen, für die ein Gerät ausgelegt ist. Ein Gerät kann so konzipiert sein, dass es mehr als eine Funktion ausführt. Definiert durch [SAREF](https://w3id.org/saref#Function). Enum:'levelControl, sensing, onOff, openClose, metering, eventNotification  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `macAddress`: Die MAC-Adresse des Geräts.  - `manufacturerName`: Name des Geräteherstellers.  - `modelName`: Der Modellname des Geräts.  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `supportedProtocol`: Unterstützte(s) Protokoll(e) oder Netzwerk(e)  - `supportedUnits`: Vom Gerät unterstützte Maßeinheiten. Der Einheitencode (Text) des Maßes, der unter Verwendung des [UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben wird (max. 3 Zeichen).  - `type`: NGSI Entity-Typ. Es muss DeviceModel sein    
 Erforderliche Eigenschaften  
 - `brandName`  - `category`  - `controlledProperty`  - `id`  - `manufacturerName`  - `modelName`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -58,55 +59,56 @@ DeviceModel:
       x-ngsi:    
         model: https://schema.org/color    
     controlledProperty:    
-      description: 'Enum:''temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasConsumption, electricityConsumption, soilMoisture, trafficFlow, eatingActivity, milking, movementActivity''.'    
+      description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, gasComsumption, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, tss, turbidity, waterConsumption, waterPollution, weatherConditions, weight, windDirection, windSpeed'''    
       items:    
         enum:    
-          - temperature    
+          - airPollution    
+          - atmosphericPressure    
+          - cdom    
+          - conductance    
+          - conductivity    
+          - depth    
+          - eatingActivity    
+          - electricityConsumption    
+          - energy    
+          - fillingLevel    
+          - freeChlorine    
+          - gasComsumption    
+          - heading    
           - humidity    
           - light    
-          - motion    
-          - fillingLevel    
-          - occupancy    
-          - power    
-          - pressure    
-          - smoke    
-          - energy    
-          - airPollution    
-          - noiseLevel    
-          - weatherConditions    
-          - precipitation    
-          - windSpeed    
-          - windDirection    
-          - atmosphericPressure    
-          - solarRadiation    
-          - depth    
-          - pH    
-          - conductivity    
-          - conductance    
-          - tss    
-          - tds    
-          - turbidity    
-          - salinity    
-          - orp    
-          - cdom    
-          - waterPollution    
           - location    
-          - speed    
-          - heading    
-          - weight    
-          - waterConsumption    
-          - gasConsumption    
-          - electricityConsumption    
-          - soilMoisture    
-          - trafficFlow    
-          - eatingActivity    
           - milking    
+          - motion    
           - movementActivity    
+          - noiseLevel    
+          - occupancy    
+          - orp    
+          - pH    
+          - power    
+          - precipitation    
+          - pressure    
           - refractiveIndex    
+          - salinity    
+          - smoke    
+          - soilMoisture    
+          - solarRadiation    
+          - speed    
+          - tds    
+          - temperature    
+          - trafficFlow    
+          - tss    
+          - turbidity    
+          - waterConsumption    
+          - waterPollution    
+          - weatherConditions    
+          - weight    
+          - windDirection    
+          - windSpeed    
         type: string    
       type: Property    
       x-ngsi:    
-        model: https://schema.org/DateTime    
+        model: https://schema.org/Text    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: Property    
@@ -207,8 +209,8 @@ DeviceModel:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    

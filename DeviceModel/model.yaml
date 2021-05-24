@@ -41,56 +41,56 @@ DeviceModel:
       x-ngsi:
         model: https://schema.org/color
     controlledProperty:
-      description: 'Enum:''temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasConsumption, electricityConsumption, soilMoisture, trafficFlow, eatingActivity, milking, movementActivity''.'
+      description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, gasComsumption, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, tss, turbidity, waterConsumption, waterPollution, weatherConditions, weight, windDirection, windSpeed'''
       items:
         enum:
-          - temperature
+          - airPollution
+          - atmosphericPressure
+          - cdom
+          - conductance
+          - conductivity
+          - depth
+          - eatingActivity
+          - electricityConsumption
+          - energy
+          - fillingLevel
+          - freeChlorine
+          - gasComsumption
+          - heading
           - humidity
           - light
-          - motion
-          - fillingLevel
-          - occupancy
-          - power
-          - pressure
-          - smoke
-          - energy
-          - airPollution
-          - noiseLevel
-          - weatherConditions
-          - precipitation
-          - windSpeed
-          - windDirection
-          - atmosphericPressure
-          - solarRadiation
-          - depth
-          - pH
-          - conductivity
-          - conductance
-          - tss
-          - tds
-          - turbidity
-          - salinity
-          - orp
-          - cdom
-          - waterPollution
           - location
-          - speed
-          - heading
-          - weight
-          - waterConsumption
-          - gasConsumption
-          - electricityConsumption
-          - soilMoisture
-          - trafficFlow
-          - eatingActivity
           - milking
+          - motion
           - movementActivity
+          - noiseLevel
+          - occupancy
+          - orp
+          - pH
+          - power
+          - precipitation
+          - pressure
           - refractiveIndex
-          - freeChlorine
+          - salinity
+          - smoke
+          - soilMoisture
+          - solarRadiation
+          - speed
+          - tds
+          - temperature
+          - trafficFlow
+          - tss
+          - turbidity
+          - waterConsumption
+          - waterPollution
+          - weatherConditions
+          - weight
+          - windDirection
+          - windSpeed
         type: string
       type: Property
       x-ngsi:
-        model: https://schema.org/DateTime
+        model: https://schema.org/Text
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
       type: Property

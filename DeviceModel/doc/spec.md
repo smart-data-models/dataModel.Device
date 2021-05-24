@@ -1,6 +1,7 @@
 Entity: DeviceModel  
 ===================  
 [Open License](https://github.com/smart-data-models//dataModel.Device/blob/master/DeviceModel/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **This entity captures the static properties of a Device. **  
 
 ## List of properties  
@@ -58,54 +59,56 @@ DeviceModel:
       x-ngsi:    
         model: https://schema.org/color    
     controlledProperty:    
-      description: 'Enum:''temperature, humidity, light, motion, fillingLevel,occupancy, power, pressure, smoke, energy, airPollution, noiseLevel, weatherConditions, precipitation, windSpeed, windDirection, atmosphericPressure, solarRadiation, depth, pH,conductivity, conductance, tss, tds, turbidity, salinity,orp, cdom, waterPollution, location, speed, heading,weight, waterConsumption, gasConsumption, electricityConsumption, soilMoisture, trafficFlow, eatingActivity, milking, movementActivity''.'    
+      description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, gasComsumption, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, tss, turbidity, waterConsumption, waterPollution, weatherConditions, weight, windDirection, windSpeed'''    
       items:    
         enum:    
-          - temperature    
+          - airPollution    
+          - atmosphericPressure    
+          - cdom    
+          - conductance    
+          - conductivity    
+          - depth    
+          - eatingActivity    
+          - electricityConsumption    
+          - energy    
+          - fillingLevel    
+          - freeChlorine    
+          - gasComsumption    
+          - heading    
           - humidity    
           - light    
-          - motion    
-          - fillingLevel    
-          - occupancy    
-          - power    
-          - pressure    
-          - smoke    
-          - energy    
-          - airPollution    
-          - noiseLevel    
-          - weatherConditions    
-          - precipitation    
-          - windSpeed    
-          - windDirection    
-          - atmosphericPressure    
-          - solarRadiation    
-          - depth    
-          - pH    
-          - conductivity    
-          - conductance    
-          - tss    
-          - tds    
-          - turbidity    
-          - salinity    
-          - orp    
-          - cdom    
-          - waterPollution    
           - location    
-          - speed    
-          - heading    
-          - weight    
-          - waterConsumption    
-          - gasConsumption    
-          - electricityConsumption    
-          - soilMoisture    
-          - trafficFlow    
-          - eatingActivity    
           - milking    
+          - motion    
           - movementActivity    
+          - noiseLevel    
+          - occupancy    
+          - orp    
+          - pH    
+          - power    
+          - precipitation    
+          - pressure    
+          - refractiveIndex    
+          - salinity    
+          - smoke    
+          - soilMoisture    
+          - solarRadiation    
+          - speed    
+          - tds    
+          - temperature    
+          - trafficFlow    
+          - tss    
+          - turbidity    
+          - waterConsumption    
+          - waterPollution    
+          - weatherConditions    
+          - weight    
+          - windDirection    
+          - windSpeed    
         type: string    
       type: Property    
       x-ngsi:    
-        model: https://schema.org/DateTime    
+        model: https://schema.org/Text    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: Property    
@@ -206,8 +209,8 @@ DeviceModel:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -265,8 +268,8 @@ DeviceModel:
 ```  
 </details>    
 ## Example payloads    
-#### DeviceModel NGSI V2 key-values Example    
-Here is an example of a DeviceModel in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
+#### DeviceModel NGSI-v2 key-values Example    
+Here is an example of a DeviceModel in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
   "id": "myDevice-wastecontainer-sensor-345",  
@@ -280,8 +283,8 @@ DeviceModel:
   "controlledProperty": ["fillingLevel", "temperature"]  
 }  
 ```  
-#### DeviceModel NGSI V2 normalized Example    
-Here is an example of a DeviceModel in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
+#### DeviceModel NGSI-v2 normalized Example    
+Here is an example of a DeviceModel in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 ```json  
 {  
   "id": "myDevice-wastecontainer-sensor-345",  
@@ -312,62 +315,73 @@ DeviceModel:
 #### DeviceModel NGSI-LD key-values Example    
 Here is an example of a DeviceModel in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
-{"@context": ["https://schema.lab.fiware.org/ld/context",  
-              "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
- "brandName": "myDevice",  
- "category": ["sensor"],  
- "controlledProperty": ["fillingLevel", "temperature"],  
- "function": ["sensing"],  
- "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
- "manufacturerName": "myDevice Inc.",  
- "modelName": "S4Container 345",  
- "name": "myDevice Sensor for Containers 345",  
- "type": "DeviceModel"}  
+{  
+  "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
+  "type": "DeviceModel",  
+  "category": {  
+    "type": "Property",  
+    "value": [  
+      "sensor"  
+    ]  
+  },  
+  "function": {  
+    "type": "Property",  
+    "value": [  
+      "sensing"  
+    ]  
+  },  
+  "modelName": {  
+    "type": "Property",  
+    "value": "S4Container 345"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "myDevice Sensor for Containers 345"  
+  },  
+  "brandName": {  
+    "type": "Property",  
+    "value": "myDevice"  
+  },  
+  "manufacturerName": {  
+    "type": "Property",  
+    "value": "myDevice Inc."  
+  },  
+  "controlledProperty": {  
+    "type": "Property",  
+    "value": [  
+      "fillingLevel",  
+      "temperature"  
+    ]  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
 ```  
 #### DeviceModel NGSI-LD normalized Example    
 Here is an example of a DeviceModel in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
-    "type": "DeviceModel",  
-    "category": {  
-        "type": "Property",  
-        "value": [  
-            "sensor"  
-        ]  
-    },  
-    "function": {  
-        "type": "Property",  
-        "value": [  
-            "sensing"  
-        ]  
-    },  
-    "modelName": {  
-        "type": "Property",  
-        "value": "S4Container 345"  
-    },  
-    "name": {  
-        "type": "Property",  
-        "value": "myDevice Sensor for Containers 345"  
-    },  
-    "brandName": {  
-        "type": "Property",  
-        "value": "myDevice"  
-    },  
-    "manufacturerName": {  
-        "type": "Property",  
-        "value": "myDevice Inc."  
-    },  
-    "controlledProperty": {  
-        "type": "Property",  
-        "value": [  
-            "fillingLevel",  
-            "temperature"  
-        ]  
-    },  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-    ]  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ],  
+  "brandName": "myDevice",  
+  "category": [  
+    "sensor"  
+  ],  
+  "controlledProperty": [  
+    "fillingLevel",  
+    "temperature"  
+  ],  
+  "function": [  
+    "sensing"  
+  ],  
+  "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
+  "manufacturerName": "myDevice Inc.",  
+  "modelName": "S4Container 345",  
+  "name": "myDevice Sensor for Containers 345",  
+  "type": "DeviceModel"  
 }  
 ```  
