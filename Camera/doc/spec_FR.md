@@ -2,11 +2,13 @@ Entité : Caméra
 ===============  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Device/blob/master/Camera/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Description globale : **Un modèle de données pour les installations de caméras dans une ville.**  
 
 ## Liste des propriétés  
 
-Propriétés requises  
-- Aucune propriété requise  ## Description des propriétés du modèle de données  
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `cameraName`: Nom de la caméra correspondant à cette observation.  - `cameraNum`: Numéro de la caméra correspondant à cette observation.  - `cameraOrientation`: Informations sur l'orientation de la caméra correspondant à cette observation  - `cameraType`: Type de la caméra correspondant à cette observation. Enum : 'FIXE, PTZ, DOME, JOUR/NUIT, C-MOUNT, BULLET'.  - `cameraUsage`: Objectif de la caméra correspondant à cette observation. ENUM : [SURVEILLANCE, RLVD, ANPR/LPR].  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `endDateTime`: Heure de fin déclarée correspondant à cette observation.  - `id`: Identifiant unique de l'entité  - `imageSnapshot`: Lien de téléchargement de l'instantané de l'alimentation de la caméra correspondant à cette observation  - `location`:   - `mediaURL`: URL fournissant des informations supplémentaires sur les images ou les médias de la plainte ou du lieu.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `startDateTime`: Heure de début déclarée correspondant à cette observation.  - `streamName`: Nom du flux vidéo de la caméra correspondant à cette observation  - `streamURL`: URL fournissant des informations de diffusion vidéo pour la caméra correspondant à cette observation    
+Propriétés requises  
+- `id`  - `type`  ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
