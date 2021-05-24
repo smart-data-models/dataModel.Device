@@ -4,6 +4,8 @@ These data models allow to represent devices of different nature (IoT, mobile, w
 ### List of data models
 
 The following entity types are available:
+- [Camera](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/README.md). A Data Model for camera installations in a city.
+
 - [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/README.md). An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).
 
 - [DeviceModel](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceModel/README.md). This entity captures the static properties of a Device. 
