@@ -7,11 +7,11 @@ A Data Model for camera installations in a city.
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec.md)
 
-Link to the [specification in Spanish](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec_ES.md)
+Enlace a la [Especificación en Español](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec_ES.md)
 
-Link to the [specification in French](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec_FR.md)
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec_FR.md)
 
-Link to the [specification in German](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec_DE.md)
+Link zur [spezifikation Spezifikation in deutscher Sprache](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec_DE.md)
 ### Examples
 
 Link to the [example](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/examples/example.json) (keyvalues) for NGSI v2
