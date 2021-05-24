@@ -2,11 +2,13 @@ Entität: Kamera
 ===============  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Device/blob/master/Camera/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Globale Beschreibung: **Ein Datenmodell für Kamera-Installationen in einer Stadt.**  
 
 ## Liste der Eigenschaften  
 
-Erforderliche Eigenschaften  
-- Keine erforderlichen Eigenschaften  ## Datenmodell Beschreibung der Eigenschaften  
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `cameraName`: Name der Kamera, die zu dieser Beobachtung gehört.  - `cameraNum`: Kameranummer, die dieser Beobachtung entspricht.  - `cameraOrientation`: Orientierungsinformationen für die Kamera, die dieser Beobachtung entspricht  - `cameraType`: Typ der Kamera, die dieser Beobachtung entspricht. Enum:'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  - `cameraUsage`: Zweck der Kamera, die dieser Beobachtung entspricht. ENUM: [SURVEILLANCE, RLVD, ANPR/LPR].  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `endDateTime`: Gemeldete Endzeit, die dieser Beobachtung entspricht.  - `id`: Eindeutiger Bezeichner der Entität  - `imageSnapshot`: Download-Link für den Snapshot der Kamera, die dieser Beobachtung entspricht  - `location`:   - `mediaURL`: URL mit weiteren Informationen zu Bild(ern) oder Medien der Beschwerde oder des Ortes.  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startDateTime`: Gemeldete Startzeit, die dieser Beobachtung entspricht.  - `streamName`: Name des Video-Streams von der Kamera, der dieser Beobachtung entspricht  - `streamURL`: URL mit Videostreaming-Informationen für die Kamera, die dieser Beobachtung entspricht    
+Erforderliche Eigenschaften  
+- `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -345,7 +347,7 @@ Camera:
 }  
 ```  
 #### Kamera NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für eine Kamera im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.  
+Hier ist ein Beispiel für eine Kamera im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Smart Data Models-Camera",  
