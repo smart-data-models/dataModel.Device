@@ -77,9 +77,7 @@
           "gateOpening",
           "batteryLife",
           "batterySupply",
-          "waterLevel",
-          "inflow",
-          "outflow"
+          "waterLevel"
         ]
       },
       "SupportedProtocolType": {
