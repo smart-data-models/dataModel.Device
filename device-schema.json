@@ -71,7 +71,15 @@
           "eatingActivity",
           "milking",
           "movementActivity",
-          "soilMoisture"
+          "soilMoisture",
+          "waterFlow",
+          "averageVelocity",
+          "gateOpening",
+          "batteryLife",
+          "batterySupply",
+          "waterLevel",
+          "inflow",
+          "outflow"
         ]
       },
       "SupportedProtocolType": {
@@ -110,7 +118,7 @@
       },
       "supportedProtocol": {
         "$ref": "/definitions/SupportedProtocolType"
-      }, 
+      },
       "macAddress": {
         "$ref": "/definitions/MacAddressType"
       }
