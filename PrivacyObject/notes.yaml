@@ -1,0 +1,5 @@
+notesHeader:
+  The PrivacyObject entity represents an IoT device (a sensor typically) with the information about the privacy directly linked to this IoT device. Several attributes are used to describe the IoT device in the context of the privacy. Notably, an attribute provides the location of the IoT device and two others give more information about the exact position. An attribute is also used to decribe the IoT device and a second attribute gives the purpose of the IoT sensor. Other attributes are very focused on the privacy and GDPR with the aim to categorize the information associated to the IoT device.
+notesMiddle:
+
+notesFooter:

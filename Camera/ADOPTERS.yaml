@@ -1,0 +1,10 @@
+description: This is a compilation list of the current adopters of the data model Camera of the Subject CrossSector.  All fields are non mandatory. More info at https://smart-data-models.github.io/data-models/templates/dataModel/ADOPTERS.yaml
+currentAdopters:
+-
+ adopter: IUDX
+ description: A Data Model for camera installations in a city.
+ mail:
+ organization:
+ project:
+ comments:
+ startDate: 2021-05-21.

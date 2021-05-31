@@ -1,0 +1,89 @@
+{
+  "id": "urn:ngsi-ld:PrivacyObject:1044_parking",
+  "type": "PrivacyObject",
+  "refDevice": {
+    "type": "Relationship",
+    "value": "Device:1044_parking"
+  },
+  "name": {
+    "type": "Property",
+    "value": "1004_parking"
+  },
+  "location": {
+    "type": "Geoproperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        46.18311,
+        6.14132
+      ]
+    }
+  },
+  "isIndoor": {
+    "type": "Property",
+    "value": "false"
+  },
+  "floor": {
+    "type": "Property",
+    "value": "false"
+  },
+  "description": {
+    "type": "Property",
+    "value": "Electromagnetic and ultrasonic sensor"
+  },
+  "description_fr": {
+    "type": "Property",
+    "value": "Capteur électromagnétique et à ultrasons"
+  },
+  "user": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:User:abcdef"
+  },
+  "purpose": {
+    "type": "Property",
+    "value": "Detecting the presence of a vehicle on a parking slot."
+  },
+  "purpose_fr": {
+    "type": "string",
+    "value": "Détecter la présence d'un véhicule sur une place de parc."
+  },
+  "category": {
+    "type": "Property",
+    "value": [
+      "sensor"
+    ]
+  },
+  "recipientList": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:User:CommunalAdministration",
+      "urn:ngsi-ld:User:Motorists"
+    ]
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "ngsi-ld:city:CityofCarouge"
+    ]
+  },
+  "isPersonalData": {
+    "type": "Property",
+    "value": "false"
+  },
+  "retentionPeriod": {
+    "type": "Property",
+    "value": "< 1 month"
+  },
+  "legitimateInterest": {
+    "type": "Property",
+    "value": "Facilitate and understand parking habits"
+  },
+  "crossborderTransfer": {
+    "type": "Property",
+    "value": "None"
+  },
+  "image": {
+    "type": "Property",
+    "value": "http://www.example.com/device1.jpg"
+  }
+}
