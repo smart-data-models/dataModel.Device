@@ -6,7 +6,7 @@ Entität: Kamera
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `cameraName`: Name der Kamera, die zu dieser Beobachtung gehört.  - `cameraNum`: Kameranummer, die dieser Beobachtung entspricht.  - `cameraOrientation`: Orientierungsinformationen für die Kamera, die dieser Beobachtung entspricht  - `cameraType`: Typ der Kamera, die dieser Beobachtung entspricht. Enum:'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  - `cameraUsage`: Zweck der Kamera, die dieser Beobachtung entspricht. ENUM: [SURVEILLANCE, RLVD, ANPR/LPR].  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `endDateTime`: Gemeldete Endzeit, die dieser Beobachtung entspricht.  - `id`: Eindeutiger Bezeichner der Entität  - `imageSnapshot`: Download-Link für den Snapshot der Kamera, die dieser Beobachtung entspricht  - `location`:   - `mediaURL`: URL mit weiteren Informationen zu Bild(ern) oder Medien der Beschwerde oder des Ortes.  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startDateTime`: Gemeldete Startzeit, die dieser Beobachtung entspricht.  - `streamName`: Name des Video-Streams von der Kamera, der dieser Beobachtung entspricht  - `streamURL`: URL mit Videostreaming-Informationen für die Kamera, die dieser Beobachtung entspricht    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `cameraName`: Name der Kamera, die zu dieser Beobachtung gehört.  - `cameraNum`: Kameranummer, die dieser Beobachtung entspricht.  - `cameraOrientation`: Orientierungsinformationen für die Kamera, die dieser Beobachtung entspricht  - `cameraType`: Typ der Kamera, die dieser Beobachtung entspricht. Enum:'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  - `cameraUsage`: Zweck der Kamera, die dieser Beobachtung entspricht. ENUM: [SURVEILLANCE, RLVD, ANPR/LPR].  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `endDateTime`: Gemeldete Endzeit, die dieser Beobachtung entspricht.  - `id`: Eindeutiger Bezeichner der Entität  - `imageSnapshot`: Download-Link für den Snapshot der Kamera, die dieser Beobachtung entspricht  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mediaURL`: URL mit weiteren Informationen zu Bild(ern) oder Medien der Beschwerde oder des Ortes.  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startDateTime`: Gemeldete Startzeit, die dieser Beobachtung entspricht.  - `streamName`: Name des Video-Streams von der Kamera, der dieser Beobachtung entspricht  - `streamURL`: URL mit Videostreaming-Informationen für die Kamera, die dieser Beobachtung entspricht    
 Erforderliche Eigenschaften  
 - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -121,10 +121,10 @@ Camera:
       x-ngsi:    
         model: https://schema.org/Text    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -144,7 +144,8 @@ Camera:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -167,7 +168,8 @@ Camera:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -192,7 +194,8 @@ Camera:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -214,7 +217,8 @@ Camera:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -239,7 +243,8 @@ Camera:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -266,7 +271,7 @@ Camera:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mediaURL:    
       description: 'URL providing further information of any image(s) or media of the complaint or place.'    
       format: uri    
@@ -347,7 +352,7 @@ Camera:
 }  
 ```  
 #### Kamera NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für eine Kamera im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.  
+Hier ist ein Beispiel für eine Kamera im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Smart Data Models-Camera",  
