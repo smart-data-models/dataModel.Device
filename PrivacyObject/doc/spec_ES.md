@@ -1,15 +1,12 @@
 Entidad: PrivacyObject  
 ======================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Device/blob/master/PrivacyObject/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Información sobre la privacidad de un dispositivo IoT**  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `category`: Sensor: Dispositivo que detecta y responde a eventos o cambios en el entorno físico, como la luz, el movimiento o los cambios de temperatura. https://w3id.org/saref#Sensor.  
-Actuador : Dispositivo encargado de mover o controlar un mecanismo o sistema. https://w3id.org/saref#Actuator.  
-Medidor : Dispositivo construido para detectar y mostrar con precisión una cantidad de forma legible por un ser humano. Definido parcialmente por la SAREF. HVAC : Dispositivo de Calefacción, Ventilación y Aire Acondicionado (HVAC) que proporciona confort ambiental en interiores. https://w3id.org/saref#HVAC.  
-Red : Dispositivo utilizado para conectar otros dispositivos en una red, como el concentrador, el conmutador o el router en una red LAN o de sensores. (https://w3id.org/saref#Network.  
-Multimedia : Dispositivo diseñado para mostrar, almacenar, grabar o reproducir contenidos multimedia como audio, imágenes, animación, vídeo. Enum:'actuador, baliza, pistola final, HVAC, implemento, irrSection, irrSystem, medidor, multimedia, red, sensor'  - `crossborderTransfer`: Indicación sobre la transferencia transfronteriza vinculada a la entidad.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `floor`: El piso donde se instala el dispositivo cuando está en el edificio o equivalente.  - `id`: Identificador único de la entidad  - `image`: Una imagen del artículo  - `isIndoor`: Bandera para indicar si la entidad está instalada en el interior o en el exterior.  - `isPersonalData`: Bandera para indicar si la entidad proporciona o contiene datos personales.  - `legitimateInterest`: Interés legítimo asociado a la entidad. Esto significa para qué finalidad de alto nivel se realiza la recogida de datos.  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `purpose`: Objetivo de la recogida de datos.  - `recipientList`: Lista que contiene los destinatarios. Un destinatario es el beneficiario que utiliza los datos generados por un sensor. Cada destinatario está representado por un URI que permite su identificación única. Privacidad:'Baja'  - `refDevice`: Identificador único del conjunto de datos de origen.  - `retentionPeriod`: Período de conservación de los datos.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Propiedad de tipo NGSI. Tiene que ser PrivacyObject.  - `user`: Identificador de un usuario anónimo. Este identificador es, de hecho, un URN único que puede utilizarse para reconocer de forma anónima a un usuario.    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `category`: Sensor: Dispositivo que detecta y responde a eventos o cambios en el entorno físico, como la luz, el movimiento o los cambios de temperatura. https://w3id.org/saref#Sensor. Actuador : Dispositivo encargado de mover o controlar un mecanismo o sistema. https://w3id.org/saref#Actuator. Medidor : Dispositivo construido para detectar y mostrar con precisión una cantidad de forma legible por un ser humano. Definido parcialmente por la SAREF. HVAC : Dispositivo de Calefacción, Ventilación y Aire Acondicionado (HVAC) que proporciona confort ambiental en interiores. https://w3id.org/saref#HVAC. Red : Dispositivo utilizado para conectar otros dispositivos en una red, como el concentrador, el conmutador o el router en una red LAN o de sensores. (https://w3id.org/saref#Network. Multimedia : Dispositivo diseñado para mostrar, almacenar, grabar o reproducir contenidos multimedia como audio, imágenes, animación, vídeo. Enum:'actuador, baliza, pistola final, HVAC, implemento, irrSection, irrSystem, medidor, multimedia, red, sensor'  - `crossborderTransfer`: Indicación sobre la transferencia transfronteriza vinculada a la entidad.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `floor`: El piso donde se instala el dispositivo cuando está en el edificio o equivalente.  - `id`: Identificador único de la entidad  - `image`: Una imagen del artículo  - `isIndoor`: Bandera para indicar si la entidad está instalada en el interior o en el exterior.  - `isPersonalData`: Bandera para indicar si la entidad proporciona o contiene datos personales.  - `legitimateInterest`: Interés legítimo asociado a la entidad. Esto significa para qué finalidad de alto nivel se realiza la recogida de datos.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `purpose`: Objetivo de la recogida de datos.  - `recipientList`: Lista que contiene los destinatarios. Un destinatario es el beneficiario que utiliza los datos generados por un sensor. Cada destinatario está representado por un URI que permite su identificación única. Privacidad:'Baja'  - `refDevice`: Identificador único del conjunto de datos de origen.  - `retentionPeriod`: Período de conservación de los datos.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Propiedad de tipo NGSI. Tiene que ser PrivacyObject.  - `user`: Identificador de un usuario anónimo. Este identificador es, de hecho, un URN único que puede utilizarse para reconocer de forma anónima a un usuario.    
 Propiedades requeridas  
 - `id`  - `type`    
 La entidad PrivacyObject representa un dispositivo IoT (normalmente un sensor) con la información sobre la privacidad directamente vinculada a este dispositivo IoT. Se utilizan varios atributos para describir el dispositivo IoT en el contexto de la privacidad. En particular, un atributo proporciona la ubicación del dispositivo IoT y otros dos dan más información sobre la posición exacta. También se utiliza un atributo para describir el dispositivo IoT y un segundo atributo da el propósito del sensor IoT. Otros atributos están muy centrados en la privacidad y el GDPR con el objetivo de categorizar la información asociada al dispositivo IoT.  
@@ -32,14 +29,11 @@ PrivacyObject:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -56,7 +50,7 @@ PrivacyObject:
       x-ngsi:    
         model: https://schema.org/Text    
     category:    
-      description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. \nactuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. \nMeter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. \nNetwork : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. \nMultimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'"    
+      description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'"    
       items:    
         enum:    
           - actuator    
@@ -122,10 +116,10 @@ PrivacyObject:
       description: 'Legitimate interest associated to the entity. This means for which high-level finality the data collection is made.'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -145,7 +139,8 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -168,7 +163,8 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +189,8 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -215,7 +212,8 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +238,8 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -267,7 +266,7 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -307,8 +306,8 @@ PrivacyObject:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -333,8 +332,8 @@ PrivacyObject:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-#### PrivacyObject NGSI V2 key-values Ejemplo  
-Aquí hay un ejemplo de un PrivacyObject en formato JSON como key-values. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### PrivacyObject NGSI-v2 key-values Ejemplo  
+Aquí hay un ejemplo de un PrivacyObject en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
@@ -372,8 +371,8 @@ PrivacyObject:
   "image": "http://www.example.com/device1.jpg"  
 }  
 ```  
-#### PrivacyObject NGSI V2 normalizado Ejemplo  
-Aquí hay un ejemplo de un PrivacyObject en formato JSON normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### PrivacyObject NGSI-v2 normalizado Ejemplo  
+Este es un ejemplo de un PrivacyObject en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
@@ -471,48 +470,6 @@ PrivacyObject:
 {  
   "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
   "type": "PrivacyObject",  
-  "refDevice": "Device:1044_parking",  
-  "name": "1004_parking",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      46.18311,  
-      6.14132  
-    ]  
-  },  
-  "isIndoor": false,  
-  "floor": 0,  
-  "description": "Electromagnetic and ultrasonic sensor",  
-  "description_fr": "Capteur électromagnétique et à ultrasons",  
-  "user": "urn:ngsi-ld:User:abcdef",  
-  "purpose": "Detecting the presence of a vehicle on a parking slot.",  
-  "purpose_fr": "Détecter la présence d'un véhicule sur une place de parc.",  
-  "category": [  
-    "sensor"  
-  ],  
-  "recipientList": [  
-    "urn:ngsi-ld:User:CommunalAdministration",  
-    "urn:ngsi-ld:User:Motorists"  
-  ],  
-  "owner": [  
-    "ngsi-ld:city:CityofCarouge"  
-  ],  
-  "isPersonalData": false,  
-  "retentionPeriod": "< 1 month",  
-  "legitimateInterest": "Facilitate and understand parking habits",  
-  "crossborderTransfer": "None",  
-  "image": "http://www.example.com/device1.jpg",  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld"  
-  ]  
-}  
-```  
-#### PrivacyObject NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un PrivacyObject en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-```json  
-{  
-  "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
-  "type": "PrivacyObject",  
   "refDevice": {  
     "type": "Relationship",  
     "value": "Device:1044_parking"  
@@ -545,7 +502,7 @@ PrivacyObject:
   },  
   "description_fr": {  
     "type": "Property",  
-    "value": "Capteur électromagnétique et à ultrasons"  
+    "value": "Capteur \u00e9lectromagn\u00e9tique et \u00e0 ultrasons"  
   },  
   "user": {  
     "type": "Property",  
@@ -557,7 +514,7 @@ PrivacyObject:
   },  
   "purpose_fr": {  
     "type": "string",  
-    "value": "Détecter la présence d'un véhicule sur une place de parc."  
+    "value": "D\u00e9tecter la pr\u00e9sence d'un v\u00e9hicule sur une place de parc."  
   },  
   "category": {  
     "type": "Property",  
@@ -598,7 +555,49 @@ PrivacyObject:
     "type": "Property",  
     "value": "http://www.example.com/device1.jpg"  
   },  
-   "@context": [  
+  "@context": [  
+    "https://smart-data-models.github.io/data-models/context.jsonld"  
+  ]  
+}  
+```  
+#### PrivacyObject NGSI-LD normalizado Ejemplo  
+Este es un ejemplo de un PrivacyObject en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
+  "type": "PrivacyObject",  
+  "refDevice": "Device:1044_parking",  
+  "name": "1004_parking",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      46.18311,  
+      6.14132  
+    ]  
+  },  
+  "isIndoor": false,  
+  "floor": 0,  
+  "description": "Electromagnetic and ultrasonic sensor",  
+  "description_fr": "Capteur \u00e9lectromagn\u00e9tique et \u00e0 ultrasons",  
+  "user": "urn:ngsi-ld:User:abcdef",  
+  "purpose": "Detecting the presence of a vehicle on a parking slot.",  
+  "purpose_fr": "D\u00e9tecter la pr\u00e9sence d'un v\u00e9hicule sur une place de parc.",  
+  "category": [  
+    "sensor"  
+  ],  
+  "recipientList": [  
+    "urn:ngsi-ld:User:CommunalAdministration",  
+    "urn:ngsi-ld:User:Motorists"  
+  ],  
+  "owner": [  
+    "ngsi-ld:city:CityofCarouge"  
+  ],  
+  "isPersonalData": false,  
+  "retentionPeriod": "< 1 month",  
+  "legitimateInterest": "Facilitate and understand parking habits",  
+  "crossborderTransfer": "None",  
+  "image": "http://www.example.com/device1.jpg",  
+  "@context": [  
     "https://smart-data-models.github.io/data-models/context.jsonld"  
   ]  
 }  
