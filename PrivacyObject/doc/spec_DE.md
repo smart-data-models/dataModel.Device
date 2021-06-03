@@ -1,15 +1,12 @@
 Entität: PrivacyObject  
 ======================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Device/blob/master/PrivacyObject/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Informationen zum Datenschutz für ein IoT-Gerät**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `category`: Sensor: Ein Gerät, das Ereignisse oder Veränderungen in der physikalischen Umgebung wie Licht, Bewegung oder Temperaturänderungen erkennt und darauf reagiert. https://w3id.org/saref#Sensor.  
-Aktor : Ein Gerät, das für die Bewegung oder Steuerung eines Mechanismus oder Systems verantwortlich ist. https://w3id.org/saref#Actuator.  
-Messgerät : Ein Gerät, das zur genauen Erfassung und Anzeige einer Größe in einer für den Menschen lesbaren Form gebaut ist. Teilweise durch SAREF definiert. HVAC : Gerät für Heizung, Lüftung und Klimatisierung (HVAC), das für ein angenehmes Raumklima sorgt. https://w3id.org/saref#HVAC.  
-Netzwerk : Ein Gerät, das dazu dient, andere Geräte in einem Netzwerk zu verbinden, z. B. Hub, Switch oder Router in einem LAN oder Sensor-Netzwerk. (https://w3id.org/saref#Network.  
-Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufnehmen oder Abspielen von Multimedia-Inhalten wie z. B. Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  - `crossborderTransfer`: Angabe über den mit der Entität verbundenen grenzüberschreitenden Transfer.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `floor`: Die Etage, in der das Gerät installiert ist, wenn es sich in einem Gebäude befindet oder gleichwertig.  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `isIndoor`: Flagge zur Angabe, ob die Einheit im Innen- oder Außenbereich installiert ist.  - `isPersonalData`: Kennzeichen, um anzuzeigen, ob die Entität personenbezogene Daten bereitstellt oder enthält.  - `legitimateInterest`: Berechtigtes Interesse, das mit der Entität verbunden ist. Dies bedeutet, für welche hochrangige Finalität die Datenerhebung erfolgt.  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `purpose`: Zweck der Datenerfassung.  - `recipientList`: Liste mit den Empfängern. Ein Empfänger ist der Nutznießer, der die von einem Sensor erzeugten Daten verwendet. Jeder Empfänger wird durch eine URI repräsentiert, die seine eindeutige Identifizierung ermöglicht. Datenschutz:'Niedrig'  - `refDevice`: Eindeutiger Bezeichner aus dem Quelldatensatz.  - `retentionPeriod`: Dauer der Datenspeicherung.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ-Eigenschaft. Es muss PrivacyObject sein.  - `user`: Bezeichner eines anonymen Benutzers. Dieser Bezeichner ist eigentlich eine eindeutige URN, mit der ein Benutzer anonym erkannt werden kann.    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `category`: Sensor: Ein Gerät, das Ereignisse oder Veränderungen in der physikalischen Umgebung wie Licht, Bewegung oder Temperaturänderungen erkennt und darauf reagiert. https://w3id.org/saref#Sensor. Aktor : Ein Gerät, das für die Bewegung oder Steuerung eines Mechanismus oder Systems verantwortlich ist. https://w3id.org/saref#Actuator. Messgerät : Ein Gerät, das zur genauen Erfassung und Anzeige einer Größe in einer für den Menschen lesbaren Form gebaut ist. Teilweise durch SAREF definiert. HVAC : Gerät für Heizung, Lüftung und Klimatisierung (HVAC), das für ein angenehmes Raumklima sorgt. https://w3id.org/saref#HVAC. Netzwerk : Ein Gerät, das dazu dient, andere Geräte in einem Netzwerk zu verbinden, z. B. Hub, Switch oder Router in einem LAN oder Sensor-Netzwerk. (https://w3id.org/saref#Network. Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufnehmen oder Abspielen von Multimedia-Inhalten wie z. B. Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  - `crossborderTransfer`: Angabe über den mit der Entität verbundenen grenzüberschreitenden Transfer.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `floor`: Die Etage, in der das Gerät installiert ist, wenn es sich in einem Gebäude befindet oder gleichwertig.  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `isIndoor`: Flagge zur Angabe, ob die Einheit im Innen- oder Außenbereich installiert ist.  - `isPersonalData`: Kennzeichen, das anzeigt, ob die Entität personenbezogene Daten bereitstellt oder enthält.  - `legitimateInterest`: Berechtigtes Interesse, das mit der Entität verbunden ist. Dies bedeutet, für welche hochrangige Finalität die Datenerhebung erfolgt.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `purpose`: Zweck der Datenerfassung.  - `recipientList`: Liste mit den Empfängern. Ein Empfänger ist der Nutznießer, der die von einem Sensor erzeugten Daten verwendet. Jeder Empfänger wird durch eine URI repräsentiert, die seine eindeutige Identifizierung ermöglicht. Datenschutz:'Niedrig'  - `refDevice`: Eindeutiger Bezeichner aus dem Quelldatensatz.  - `retentionPeriod`: Dauer der Datenspeicherung.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ-Eigenschaft. Es muss PrivacyObject sein.  - `user`: Bezeichner eines anonymen Benutzers. Dieser Bezeichner ist eigentlich eine eindeutige URN, mit der ein Benutzer anonym erkannt werden kann.    
 Erforderliche Eigenschaften  
 - `id`  - `type`    
 Die Entität PrivacyObject repräsentiert ein IoT-Gerät (typischerweise einen Sensor) mit den Informationen zur Privatsphäre, die direkt mit diesem IoT-Gerät verknüpft sind. Mehrere Attribute werden verwendet, um das IoT-Gerät im Zusammenhang mit der Privatsphäre zu beschreiben. Insbesondere liefert ein Attribut den Standort des IoT-Geräts und zwei weitere geben weitere Informationen über die genaue Position. Ein Attribut wird auch verwendet, um das IoT-Gerät zu beschreiben und ein zweites Attribut gibt den Zweck des IoT-Sensors an. Andere Attribute sind sehr auf den Datenschutz und GDPR fokussiert, mit dem Ziel, die mit dem IoT-Gerät verbundenen Informationen zu kategorisieren.  
@@ -32,14 +29,11 @@ PrivacyObject:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -56,7 +50,7 @@ PrivacyObject:
       x-ngsi:    
         model: https://schema.org/Text    
     category:    
-      description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. \nactuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. \nMeter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. \nNetwork : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. \nMultimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'"    
+      description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'"    
       items:    
         enum:    
           - actuator    
@@ -122,10 +116,10 @@ PrivacyObject:
       description: 'Legitimate interest associated to the entity. This means for which high-level finality the data collection is made.'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -145,7 +139,8 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -168,7 +163,8 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +189,8 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -215,7 +212,8 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +238,8 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -267,7 +266,7 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -307,8 +306,8 @@ PrivacyObject:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
