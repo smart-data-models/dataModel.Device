@@ -1,11 +1,12 @@
 Entität: SmartMeteringObservation  
 =================================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Device/blob/master/SmartMeteringObservation/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung einer Smart Meter Observation, allgemein anwendbar für Smart Homes, Industrie, Städte und Landwirtschaft. Sie basiert größtenteils auf der GSMA-Entity-Definition, ist aber erweitert**.  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `entityVersion`: Die Version der Entitätsspezifikation. Eine Versionsnummer von 2.0 oder höher bedeutet, dass die Entität mit NGSI-LD dargestellt wird  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `location`:   - `meterType`: Die Art der Versorgung, die gemessen wird, z. B.: Elektrizität, Benzin, Wasser, Methan, Diesel.  - `name`: Der Name dieses Elements.  - `offPeakConsumption`: Die vom Zähler seit der Installation aufgezeichnete Gesamtmenge des Produkts, die während der Schwachlastzeiten geliefert wurde (besonders relevant für die Stromversorgung). Es sollte der entsprechende UnitCode angegeben werden, z. B. KWH (Kilo Watt Hours) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `peakConsumption`: Die vom Zähler seit der Installation aufgezeichnete Gesamtmenge des gelieferten Produkts während der "Spitzenstunden" (besonders relevant für die Stromversorgung). Es sollte der entsprechende UnitCode angegeben werden, z. B. KWH (Kilo Watt Hours) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `powerFactor`: Relevant für 3-Phasen-Stromversorgungen, die häufig in der Industrie verwendet werden - der Leistungsfaktor reicht von -1 bis +1, abhängig von der Nettobilanz zwischen kapazitiven und induktiven Lasten. Falls verwendet, misst dies den durchschnittlichen Leistungsfaktor seit der Zählerinstallation.  - `refDevice`: Eindeutiger Bezeichner der Entität  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `totalConsumption`: Die Gesamtmenge des gelieferten Produkts, wie vom Zähler seit der Installation aufgezeichnet. Es sollte der entsprechende UnitCode angegeben werden, z. B. KWH (Kilo Watt Hours) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `type`: Es muss SmartMeteringObservation sein. NGSI-Entitätstyp    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `entityVersion`: Die Version der Entitätsspezifikation. Eine Versionsnummer von 2.0 oder höher bedeutet, dass die Entität mit NGSI-LD dargestellt wird  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `meterType`: Die Art der Versorgung, die gemessen wird, z. B.: Elektrizität, Benzin, Wasser, Methan, Diesel.  - `name`: Der Name dieses Elements.  - `offPeakConsumption`: Die vom Zähler seit der Installation aufgezeichnete Gesamtmenge des Produkts, die während der Schwachlastzeiten geliefert wurde (besonders relevant für die Stromversorgung). Es sollte der entsprechende UnitCode angegeben werden, z. B. KWH (Kilo Watt Hours) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `peakConsumption`: Die vom Zähler seit der Installation aufgezeichnete Gesamtmenge des gelieferten Produkts während der "Spitzenstunden" (besonders relevant für die Stromversorgung). Es sollte der entsprechende UnitCode angegeben werden, z. B. KWH (Kilo Watt Hours) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `powerFactor`: Relevant für 3-Phasen-Stromversorgungen, die häufig in der Industrie verwendet werden - der Leistungsfaktor reicht von -1 bis +1, abhängig von der Nettobilanz zwischen kapazitiven und induktiven Lasten. Falls verwendet, misst dies den durchschnittlichen Leistungsfaktor seit der Zählerinstallation.  - `refDevice`: Eindeutiger Bezeichner der Entität  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `totalConsumption`: Die Gesamtmenge des gelieferten Produkts, wie vom Zähler seit der Installation aufgezeichnet. Es sollte der entsprechende UnitCode angegeben werden, z. B. KWH (Kilo Watt Hours) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `type`: Es muss SmartMeteringObservation sein. NGSI-Entitätstyp    
 Erforderliche Eigenschaften  
 - `id`  - `type`    
 Angepasst von GSMA-Datenmodellen, aber kompatibel mit allen Smart-Datenmodellen zu sein. Erweitert um individuelle Eigenschaften.  
@@ -28,14 +29,11 @@ SmartMeteringObservation:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -92,10 +90,10 @@ SmartMeteringObservation:
       x-ngsi:    
         model: https://schema.org/URL    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -115,7 +113,8 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -138,7 +137,8 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -163,7 +163,8 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -185,7 +186,8 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -210,7 +212,8 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -237,7 +240,7 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     meterType:    
       description: 'The type of supply being metered e.g.: Electricity, Gasoline, Water, Methane, Diesel.'    
       type: Property    
@@ -275,8 +278,8 @@ SmartMeteringObservation:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
