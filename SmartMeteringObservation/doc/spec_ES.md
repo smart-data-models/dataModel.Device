@@ -1,11 +1,12 @@
 Entidad: SmartMeteringObservation  
 =================================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Device/blob/master/SmartMeteringObservation/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Esta entidad contiene una descripción armonizada de la observación de un contador inteligente, generalmente aplicable a los hogares inteligentes, la industria, las ciudades y la agricultura. Se basa principalmente en la definición de entidad de la GSMA, pero se amplía**.  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `entityVersion`: La versión de la especificación de la entidad. Un número de versión 2.0 o posterior indica que la entidad está representada con NGSI-LD  - `id`: Identificador único de la entidad  - `image`: Una imagen del artículo  - `location`:   - `meterType`: El tipo de suministro que se mide, por ejemplo Electricidad, gasolina, agua, metano, gasóleo.  - `name`: El nombre de este artículo.  - `offPeakConsumption`: La cantidad total de producto suministrado durante las horas de menor consumo (especialmente en el caso del suministro de electricidad) registrada por el contador desde su instalación. Debe especificarse el código de unidad correspondiente, como KWH (kilovatios hora) para la electricidad, LTR (litros) o MTQ (metros cúbicos) para los gases o líquidos.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `peakConsumption`: La cantidad total de producto suministrado durante las horas "punta" (especialmente en el caso del suministro de electricidad) registrada por el contador desde su instalación. Debe especificarse el código de unidad correspondiente, como KWH (kilovatios hora) para la electricidad, LTR (litros) o MTQ (metros cúbicos) para los gases o líquidos.  - `powerFactor`: Relevante para los suministros eléctricos trifásicos que se utilizan a menudo en la industria - el factor de potencia oscila entre -1 y +1 dependiendo del equilibrio neto entre las cargas capacitivas e inductivas. Si se utiliza, mide el factor de potencia medio desde la instalación del contador.  - `refDevice`: Identificador único de la entidad  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `totalConsumption`: La cantidad total de producto suministrado registrada por el contador desde su instalación. Debe especificarse el código de unidad correspondiente, como KWH (kilovatios hora) para la electricidad, LTR (litros) o MTQ (metros cúbicos) para los gases o líquidos.  - `type`: Tiene que ser SmartMeteringObservation. Tipo de entidad NGSI    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `entityVersion`: La versión de la especificación de la entidad. Un número de versión 2.0 o posterior indica que la entidad está representada con NGSI-LD  - `id`: Identificador único de la entidad  - `image`: Una imagen del artículo  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `meterType`: El tipo de suministro que se mide, por ejemplo Electricidad, gasolina, agua, metano, gasóleo.  - `name`: El nombre de este artículo.  - `offPeakConsumption`: La cantidad total de producto suministrado durante las horas de menor consumo (especialmente en el caso del suministro de electricidad) registrada por el contador desde su instalación. Debe especificarse el código de unidad correspondiente, como KWH (kilovatios hora) para la electricidad, LTR (litros) o MTQ (metros cúbicos) para los gases o líquidos.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `peakConsumption`: La cantidad total de producto suministrado durante las horas "punta" (especialmente en el caso del suministro de electricidad) registrada por el contador desde su instalación. Debe especificarse el código de unidad correspondiente, como KWH (kilovatios hora) para la electricidad, LTR (litros) o MTQ (metros cúbicos) para los gases o líquidos.  - `powerFactor`: Relevante para los suministros eléctricos trifásicos que se utilizan a menudo en la industria: el factor de potencia oscila entre -1 y +1, dependiendo del equilibrio neto entre las cargas capacitivas e inductivas. Si se utiliza, mide el factor de potencia medio desde la instalación del contador.  - `refDevice`: Identificador único de la entidad  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `totalConsumption`: La cantidad total de producto suministrado registrada por el contador desde su instalación. Debe especificarse el código de unidad correspondiente, como KWH (kilovatios hora) para la electricidad, LTR (litros) o MTQ (metros cúbicos) para los gases o líquidos.  - `type`: Tiene que ser SmartMeteringObservation. Tipo de entidad NGSI    
 Propiedades requeridas  
 - `id`  - `type`    
 Adaptado de los modelos de datos de la GSMA, pero para que sea compatible con todos los modelos de datos inteligentes. Ampliado por propiedades individuales.  
@@ -28,14 +29,11 @@ SmartMeteringObservation:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -92,10 +90,10 @@ SmartMeteringObservation:
       x-ngsi:    
         model: https://schema.org/URL    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -115,7 +113,8 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -138,7 +137,8 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -163,7 +163,8 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -185,7 +186,8 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -210,7 +212,8 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -237,7 +240,7 @@ SmartMeteringObservation:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     meterType:    
       description: 'The type of supply being metered e.g.: Electricity, Gasoline, Water, Methane, Diesel.'    
       type: Property    
@@ -275,8 +278,8 @@ SmartMeteringObservation:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
