@@ -193,11 +193,11 @@ Device:
         model: https://schema.org/DateTime
         type: Property
     dateLastValueReported:
-      description: ""
+      description: 'A timestamp which denotes the last time when the device successfully reported data to the cloud.'
       format: date-time
       type: string
       x-ngsi:
-        model: 'https://schema.org/DateTime.A timestamp which denotes the last time when the device successfully reported data to the cloud..'
+        model: https://schema.org/DateTime
         type: Property
     dateManufactured:
       description: 'A timestamp which denotes when the device was manufactured.'
