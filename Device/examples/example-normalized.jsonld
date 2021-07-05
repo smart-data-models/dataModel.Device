@@ -1,8 +1,6 @@
 {
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ],
+  "id": "urn:ngsi-ld:Device:device-9845A",
+  "type": "Device",
   "batteryLevel": 0.75,
   "category": [
     "sensor"
@@ -16,7 +14,6 @@
   ],
   "dateFirstUsed": "2014-09-11T11:00:00Z",
   "deviceState": "ok",
-  "id": "urn:ngsi-ld:Device:device-9845A",
   "ipAddress": [
     "192.14.56.78"
   ],
@@ -28,6 +25,9 @@
   "refDeviceModel": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",
   "rssi": 0.86,
   "serialNumber": "9845A",
-  "type": "Device",
-  "value": "l%3D0.22%3Bt%3D21.2"
+  "value": "l%3D0.22%3Bt%3D21.2",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld",
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+  ]
 }

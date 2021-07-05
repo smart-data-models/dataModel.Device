@@ -2,7 +2,9 @@
   "id": "device-9845A",
   "type": "Device",
   "category": {
-    "value": ["sensor"]
+    "value": [
+      "sensor"
+    ]
   },
   "batteryLevel": {
     "value": 0.75
@@ -13,7 +15,9 @@
   },
   "controlledAsset": {
     "type": "Relationship",
-    "value": ["wastecontainer-Osuna-100"]
+    "value": [
+      "wastecontainer-Osuna-100"
+    ]
   },
   "serialNumber": {
     "value": "9845A"
@@ -32,16 +36,23 @@
     "value": 0.86
   },
   "controlledProperty": {
-    "value": ["fillingLevel", "temperature"]
+    "value": [
+      "fillingLevel",
+      "temperature"
+    ]
   },
   "owner": {
-    "value": ["http://person.org/leon"]
+    "value": [
+      "http://person.org/leon"
+    ]
   },
   "mnc": {
     "value": "07"
   },
   "ipAddress": {
-    "value": ["192.14.56.78"]
+    "value": [
+      "192.14.56.78"
+    ]
   },
   "deviceState": {
     "value": "ok"
