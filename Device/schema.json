@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.4",
+    "$schemaVersion": "0.0.5",
     "$id": "https://smart-data-models.github.io/dataModel.Device/Device/schema.json",
     "title": " Smart Data Models - Device schema",
     "description": "An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).",
@@ -184,7 +184,7 @@
                 "dateLastValueReported": {
                     "type": "string",
                     "format": "date-time",
-                    "description": "Property. Model:'https://schema.org/DateTime'.A timestamp which denotes the last time when the device successfully reported data to the cloud.."
+                    "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denotes the last time when the device successfully reported data to the cloud."
                 },
                 "value": {
                     "type": "string",
