@@ -7,8 +7,8 @@
     "alternateName": "",
     "description": "DAta center measurement values",
     "dataProvider": "",
-    "owner": [],
-    "seeAlso": [],
+    "owner": ["urn:ngsi-ld:MEASUREMENT:seeAlso:owner:00001"],
+    "seeAlso": ["urn:ngsi-ld:MEASUREMENT:seeAlso:ZMHH:32977"],
     "location": {
         "type": "Point",
         "coordinates": [
