@@ -95,5 +95,9 @@
   "outlier": {
     "type": "Boolean",
     "value": true
+  },
+  "unit": {
+    "type": "string",
+    "value": "UDT0000016"
   }
 }

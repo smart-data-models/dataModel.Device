@@ -34,6 +34,7 @@
     "measurementType": "FillingLevelSensor",
     "dateObserved": "2021-09-03T07:33:18Z",
     "outlier": true,
+    "unit": "UDT0000016",
     "@context": [
         "https://smartdatamodels.org/context.jsonld"
     ]

@@ -1,5 +1,5 @@
 notesHeader:
-
+  NGSIv2 and NGSI-LD standards have ways of including units in every property. However there is a proeprty call 'Unit' for compatibility reasons. It is optional.
 notesMiddle:
 
 notesFooter:
