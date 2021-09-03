@@ -317,8 +317,13 @@ Measurement:
       type: string
       x-ngsi:
         type: Property
+    unit:
+      description: 'Units of the measurement. In case of use of an acronym use units accepted in [CEFACT](https://www.unece.org/cefact.html) code.'
+      type: string
+      x-ngsi:
+        type: Property
   required:
     - id
     - type
   type: object
-  version: 0.0.1
+  version: 0.0.2
