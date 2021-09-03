@@ -10,6 +10,8 @@ The following entity types are available:
 
 - [DeviceModel](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceModel/README.md). This entity captures the static properties of a Device. 
 
+- [Measurement](https://github.com/smart-data-models/dataModel.Device/blob/master/Measurement/README.md). Description of a generic measurement entity coming from a device or other data source.
+
 - [PrivacyObject](https://github.com/smart-data-models/dataModel.Device/blob/master/PrivacyObject/README.md). Information about privacy for an IoT device
 
 - [SmartMeteringObservation](https://github.com/smart-data-models/dataModel.Device/blob/master/SmartMeteringObservation/README.md). This entity contains a harmonised description of a Smart Meter Observation, generally applicable for Smart Homes, Industry, Cities and Agriculture. It is based mostly in the GSMA entity definition but it is extended
