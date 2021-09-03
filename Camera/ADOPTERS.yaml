@@ -8,3 +8,11 @@ currentAdopters:
  project:
  comments:
  startDate: 2021-05-21.
+
+ adopter: Profirator Oy
+ description: A Data Models for various sensoring and measurements.
+ mail: ilari.mikkonen@profirator.fi
+ organization: Profirator
+ project: Luolakallio Sensor Data
+ comments:
+ startDate: 2021-09-03.
