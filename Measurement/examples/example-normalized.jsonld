@@ -1,5 +1,6 @@
 {
   "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",
+  "type": "DeviceMeasurement",
   "dateCreated": {
     "type": "Property",
     "value": "2021-09-03T07:33:18Z"
@@ -61,7 +62,6 @@
     "type": "Property",
     "value": "Helsinki council"
   },
-  "type": "Measurement",
   "numValue": {
     "type": "Property",
     "value": 55.2
