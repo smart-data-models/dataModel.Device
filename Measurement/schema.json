@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "$schemaVersion": "0.0.2",
+  "$schemaVersion": "0.1.0",
   "$id": "https://smart-data-models.github.io/dataModel.Device/Measurement/schema.json",
   "title": "Smart Data models - Measurement schema,",
   "description": "Description of a generic measurement entity coming from a device or other data source.",
@@ -22,7 +22,7 @@
           "type": "string",
           "description": "Property. NGSI Entity type. It has to be Measurement",
           "enum": [
-            "Measurement"
+            "DeviceMeasurement"
           ]
         },
         "numValue": {

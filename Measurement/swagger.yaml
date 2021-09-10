@@ -11,7 +11,7 @@ info:
   description:  |
     Description of a generic measurement entity coming from a device or other data source.
   title: Measurement
-  version: "0.0.1"
+  version: "0.0.2"
 openapi: "3.0.0"
 
 paths: 
