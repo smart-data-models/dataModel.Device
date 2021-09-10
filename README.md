@@ -8,9 +8,9 @@ The following entity types are available:
 
 - [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/README.md). An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).
 
-- [DeviceModel](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceModel/README.md). This entity captures the static properties of a Device. 
+- [DeviceMeasurement](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceMeasurement/README.md). Description of a generic measurement entity coming from a device or other data source.
 
-- [Measurement](https://github.com/smart-data-models/dataModel.Device/blob/master/Measurement/README.md). Description of a generic measurement entity coming from a device or other data source.
+- [DeviceModel](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceModel/README.md). This entity captures the static properties of a Device. 
 
 - [PrivacyObject](https://github.com/smart-data-models/dataModel.Device/blob/master/PrivacyObject/README.md). Information about privacy for an IoT device
 
