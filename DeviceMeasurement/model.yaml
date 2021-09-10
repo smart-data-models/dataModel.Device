@@ -1,4 +1,4 @@
-Measurement:
+DeviceMeasurement:
   description: 'Description of a generic measurement entity coming from a device or other data source.'
   properties:
     address:
@@ -79,7 +79,7 @@ Measurement:
         model: https://schema.org/Text
         type: Property
     id:
-      anyOf: &measurement_-_properties_-_owner_-_items_-_anyof
+      anyOf: &devicemeasurement_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
           minLength: 1
@@ -269,7 +269,7 @@ Measurement:
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *measurement_-_properties_-_owner_-_items_-_anyof
+        anyOf: *devicemeasurement_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       type: array
       x-ngsi:
@@ -313,7 +313,7 @@ Measurement:
     type:
       description: 'NGSI Entity type. It has to be Measurement'
       enum:
-        - Measurement
+        - DeviceMeasurement
       type: string
       x-ngsi:
         type: Property
@@ -326,4 +326,4 @@ Measurement:
     - id
     - type
   type: object
-  version: 0.0.2
+  version: 0.1.0
