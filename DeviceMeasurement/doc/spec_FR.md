@@ -1,9 +1,9 @@
-Entité : Mesure  
-===============  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.Device/blob/master/Measurement/LICENSE.md)  
+Entité : DeviceMeasurement  
+==========================  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.Device/blob/master/DeviceMeasurement/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Description d'une entité de mesure générique provenant d'un dispositif ou d'une autre source de données.**  
-version : 0.0.2  
+version : 0.1.0  
 
 ## Liste des propriétés  
 
@@ -15,7 +15,7 @@ Entité : Mesure
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
-Measurement:    
+DeviceMeasurement:    
   description: 'Description of a generic measurement entity coming from a device or other data source.'    
   properties:    
     address:    
@@ -96,7 +96,7 @@ Measurement:
         model: https://schema.org/Text    
         type: Property    
     id:    
-      anyOf: &measurement_-_properties_-_owner_-_items_-_anyof    
+      anyOf: &devicemeasurement_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
           maxLength: 256    
           minLength: 1    
@@ -286,7 +286,7 @@ Measurement:
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
-        anyOf: *measurement_-_properties_-_owner_-_items_-_anyof    
+        anyOf: *devicemeasurement_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
       type: array    
       x-ngsi:    
@@ -330,7 +330,7 @@ Measurement:
     type:    
       description: 'NGSI Entity type. It has to be Measurement'    
       enum:    
-        - Measurement    
+        - DeviceMeasurement    
       type: string    
       x-ngsi:    
         type: Property    
@@ -343,57 +343,62 @@ Measurement:
     - id    
     - type    
   type: object    
-  version: 0.0.2    
+  version: 0.1.0    
 ```  
 </details>    
 ## Exemples de charges utiles  
-#### Mesure des valeurs clés NGSI-v2 Exemple  
-Voici un exemple de mesure au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-```json  
-{  
-    "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
-    "dateCreated": "2021-09-03T07:33:18Z",  
-    "dateModified": "2021-09-03T07:33:18Z",  
-    "source": "Datacenter",  
-    "name": "Simple measurement",  
-    "alternateName": "",  
-    "description": "DAta center measurement values",  
-    "dataProvider": "",  
-    "owner": ["urn:ngsi-ld:MEASUREMENT:seeAlso:owner:00001"],  
-    "seeAlso": ["urn:ngsi-ld:MEASUREMENT:seeAlso:ZMHH:32977"],  
-    "location": {  
-        "type": "Point",  
-        "coordinates": [  
-            60.170833,  
-            24.9375  
-        ]  
-    },  
-    "address": {  
-        "streetAddress": "Pohjoisesplanadi 11-13 ",  
-        "addressLocality": "Helsinki",  
-        "addressRegion": "Helsinki",  
-        "addressCountry": "Finland",  
-        "postalCode": "00099",  
-        "postOfficeBoxNumber": "1"  
-    },  
-    "areaServed": "Helsinki council",  
-    "type": "Measurement",  
-    "numValue": 55.2,  
-    "textValue": "",  
-    "controlledProperty": "humidity",  
-    "refDevice": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158",  
-    "deviceType": "sensor",  
-    "measurementType": "FillingLevelSensor",  
-    "dateObserved": "2021-09-03T07:33:18Z",  
-    "outlier": true,  
-    "unit": "UDT0000016"  
-}  
-```  
-#### Mesure NGSI-v2 normalisée Exemple  
-Voici un exemple de mesure au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### Valeurs-clés NGSI-v2 de DeviceMeasurement Exemple  
+Voici un exemple de DeviceMeasurement au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
+  "dateCreated": "2021-09-03T07:33:18Z",  
+  "dateModified": "2021-09-03T07:33:18Z",  
+  "source": "Datacenter",  
+  "name": "Simple measurement",  
+  "alternateName": "",  
+  "description": "DAta center measurement values",  
+  "dataProvider": "",  
+  "owner": [  
+    "urn:ngsi-ld:MEASUREMENT:seeAlso:owner:00001"  
+  ],  
+  "seeAlso": [  
+    "urn:ngsi-ld:MEASUREMENT:seeAlso:ZMHH:32977"  
+  ],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      60.170833,  
+      24.9375  
+    ]  
+  },  
+  "address": {  
+    "streetAddress": "Pohjoisesplanadi 11-13 ",  
+    "addressLocality": "Helsinki",  
+    "addressRegion": "Helsinki",  
+    "addressCountry": "Finland",  
+    "postalCode": "00099",  
+    "postOfficeBoxNumber": "1"  
+  },  
+  "areaServed": "Helsinki council",  
+  "type": "DeviceMeasurement",  
+  "numValue": 55.2,  
+  "textValue": "",  
+  "controlledProperty": "humidity",  
+  "refDevice": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158",  
+  "deviceType": "sensor",  
+  "measurementType": "FillingLevelSensor",  
+  "dateObserved": "2021-09-03T07:33:18Z",  
+  "outlier": true,  
+  "unit": "UDT0000016"  
+}  
+```  
+#### AppareilMesure NGSI-v2 normalisé Exemple  
+Voici un exemple d'un DeviceMeasurement au format JSON-LD tel que normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
+  "type": "DeviceMeasurement",  
   "dateCreated": {  
     "type": "string",  
     "value": "2021-09-03T07:33:18Z"  
@@ -457,7 +462,6 @@ Measurement:
     "type": "string",  
     "value": "Helsinki council"  
   },  
-  "type": "Measurement",  
   "numValue": {  
     "type": "Number",  
     "value": 55.2  
@@ -496,56 +500,57 @@ Measurement:
   }  
 }  
 ```  
-#### Mesure des valeurs clés NGSI-LD Exemple  
-Voici un exemple de mesure au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-```json  
-{  
-    "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
-    "dateCreated": "2021-09-03T07:33:18Z",  
-    "dateModified": "2021-09-03T07:33:18Z",  
-    "source": "Datacenter",  
-    "name": "Simple measurement",  
-    "alternateName": "",  
-    "description": "DAta center measurement values",  
-    "dataProvider": "",  
-    "owner": [],  
-    "seeAlso": [],  
-    "location": {  
-        "type": "Point",  
-        "coordinates": [  
-            60.170833,  
-            24.9375  
-        ]  
-    },  
-    "address": {  
-        "streetAddress": "Pohjoisesplanadi 11-13 ",  
-        "addressLocality": "Helsinki",  
-        "addressRegion": "Helsinki",  
-        "addressCountry": "Finland",  
-        "postalCode": "00099",  
-        "postOfficeBoxNumber": "1"  
-    },  
-    "areaServed": "Helsinki council",  
-    "type": "Measurement",  
-    "numValue": 55.2,  
-    "textValue": "",  
-    "controlledProperty": "humidity",  
-    "refDevice": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158",  
-    "deviceType": "sensor",  
-    "measurementType": "FillingLevelSensor",  
-    "dateObserved": "2021-09-03T07:33:18Z",  
-    "outlier": true,  
-    "unit": "UDT0000016",  
-    "@context": [  
-        "https://smartdatamodels.org/context.jsonld"  
-    ]  
-}  
-```  
-#### Mesure NGSI-LD normalisée Exemple  
-Voici un exemple de mesure au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### Valeurs clés NGSI-LD de DeviceMeasurement Exemple  
+Voici un exemple de DeviceMeasurement au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
+  "dateCreated": "2021-09-03T07:33:18Z",  
+  "dateModified": "2021-09-03T07:33:18Z",  
+  "source": "Datacenter",  
+  "name": "Simple measurement",  
+  "alternateName": "",  
+  "description": "DAta center measurement values",  
+  "dataProvider": "",  
+  "owner": [],  
+  "seeAlso": [],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      60.170833,  
+      24.9375  
+    ]  
+  },  
+  "address": {  
+    "streetAddress": "Pohjoisesplanadi 11-13 ",  
+    "addressLocality": "Helsinki",  
+    "addressRegion": "Helsinki",  
+    "addressCountry": "Finland",  
+    "postalCode": "00099",  
+    "postOfficeBoxNumber": "1"  
+  },  
+  "areaServed": "Helsinki council",  
+  "type": "DeviceMeasurement",  
+  "numValue": 55.2,  
+  "textValue": "",  
+  "controlledProperty": "humidity",  
+  "refDevice": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158",  
+  "deviceType": "sensor",  
+  "measurementType": "FillingLevelSensor",  
+  "dateObserved": "2021-09-03T07:33:18Z",  
+  "outlier": true,  
+  "unit": "UDT0000016",  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  
+#### AppareilMesure NGSI-LD normalisé Exemple  
+Voici un exemple de DeviceMeasurement au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
+  "type": "DeviceMeasurement",  
   "dateCreated": {  
     "type": "Property",  
     "value": "2021-09-03T07:33:18Z"  
@@ -607,7 +612,6 @@ Measurement:
     "type": "Property",  
     "value": "Helsinki council"  
   },  
-  "type": "Measurement",  
   "numValue": {  
     "type": "Property",  
     "value": 55.2  
