@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/CrossSector/Camera/schema.json",
     "title": " Smart Data Models - Camera",
-    "description": "A Data Model for camera installations in a city."
+    "description": "A Data Model for camera installations in a city.",
+    "type": "object"
 }
