@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Device/DeviceMeasurement/schema.json",
     "title": "Smart Data models - Measurement schema,",
-    "description": "Description of a generic measurement entity coming from a device or other data source."
+    "description": "Description of a generic measurement entity coming from a device or other data source.",
+    "type": "object"
 }
