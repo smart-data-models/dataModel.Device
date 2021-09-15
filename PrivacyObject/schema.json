@@ -3,5 +3,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Device/PrivacyObject/schema.json",
     "$schemaVersion": "0.0.1",
-    "title": "Smart Data Models / Privacy Object"
+    "title": "Smart Data Models / Privacy Object",
+    "description": "Information about privacy for an IoT device"
 }
