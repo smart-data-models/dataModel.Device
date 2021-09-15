@@ -85,5 +85,14 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "category",
+        "controlledProperty",
+        "manufacturerName",
+        "brandName",
+        "modelName"
     ]
 }
