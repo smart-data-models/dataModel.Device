@@ -575,3 +575,4 @@ Device:
     - type
     - controlledProperty
   type: object
+  version: 0.0.5
