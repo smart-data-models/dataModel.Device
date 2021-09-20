@@ -2,24 +2,38 @@
   "id": "myDevice-wastecontainer-sensor-345",
   "type": "DeviceModel",
   "category": {
-    "value": ["sensor"]
+    "type": "array",
+    "value": [
+      "sensor"
+    ]
   },
   "function": {
-    "value": ["sensing"]
+    "type": "array",
+    "value": [
+      "sensing"
+    ]
   },
   "modelName": {
+    "type": "Text",
     "value": "S4Container 345"
   },
   "name": {
+    "type": "Text",
     "value": "myDevice Sensor for Containers 345"
   },
   "brandName": {
+    "type": "Text",
     "value": "myDevice"
   },
   "manufacturerName": {
+    "type": "Text",
     "value": "myDevice Inc."
   },
   "controlledProperty": {
-    "value": ["fillingLevel", "temperature"]
+    "type": "array",
+    "value": [
+      "fillingLevel",
+      "temperature"
+    ]
   }
 }
