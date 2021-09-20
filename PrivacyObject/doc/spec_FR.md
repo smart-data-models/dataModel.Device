@@ -3,6 +3,7 @@ Entité : PrivacyObject
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Device/blob/master/PrivacyObject/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Informations sur la confidentialité d'un dispositif IoT**.  
+version : 0.0.1  
 
 ## Liste des propriétés  
 
@@ -38,17 +39,21 @@ PrivacyObject:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     category:    
       description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'"    
       items:    
@@ -65,29 +70,42 @@ PrivacyObject:
           - network    
           - sensor    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     crossborderTransfer:    
       description: 'Indication about the crossborder transfer linked to the entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     floor:    
       description: 'The floor where the device is installed when in building or equivalent.'    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &privacyobject_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -99,22 +117,30 @@ PrivacyObject:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     image:    
       description: 'An image of the item'    
       format: uri    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Property    
     isIndoor:    
       description: 'Flag to indicate if the entity is installed indoor or outdoor.'    
-      type: Property    
+      type: boolean    
+      x-ngsi:    
+        type: Property    
     isPersonalData:    
       description: 'Flag to indicate if the entity is providing or contains personal data.'    
-      type: Property    
+      type: boolean    
+      x-ngsi:    
+        type: Property    
     legitimateInterest:    
       description: 'Legitimate interest associated to the entity. This means for which high-level finality the data collection is made.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -266,27 +292,35 @@ PrivacyObject:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *privacyobject_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     purpose:    
       description: 'Purpose of the data gathering.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     recipientList:    
       description: 'List containing the recipients. A recipient is the beneficiary using the data generated by a sensor. Each recipient is represented by an URI which allows its unique identification. Privacy:''Low'''    
       items:    
         format: uri    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Property    
     refDevice:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -298,10 +332,13 @@ PrivacyObject:
           format: uri    
           type: string    
       description: 'Unique identifier from the source data set.'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     retentionPeriod:    
       description: 'Period of data retention.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -312,23 +349,31 @@ PrivacyObject:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI type property. It has to be PrivacyObject.'    
       enum:    
         - PrivacyObject    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     user:    
       description: 'Identifier of an anonymous user. This identifier is in fact a unique URN which can be used to recognize anonymously a user.'    
       format: uri    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
   type: object    
+  version: 0.0.1    
 ```  
 </details>    
 ## Exemples de charges utiles  
@@ -382,7 +427,7 @@ PrivacyObject:
     "value": "Device:1044_parking"  
   },  
   "name": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "1004_parking"  
   },  
   "location": {  
@@ -396,27 +441,27 @@ PrivacyObject:
     }  
   },  
   "isIndoor": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "false"  
   },  
   "floor": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "false"  
   },  
   "description": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "Electromagnetic and ultrasonic sensor"  
   },  
   "description_fr": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "Capteur électromagnétique et à ultrasons"  
   },  
   "user": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "urn:ngsi-ld:User:abcdef"  
   },  
   "purpose": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "Detecting the presence of a vehicle on a parking slot."  
   },  
   "purpose_fr": {  
@@ -424,48 +469,90 @@ PrivacyObject:
     "value": "Détecter la présence d'un véhicule sur une place de parc."  
   },  
   "category": {  
-    "type": "Property",  
+    "type": "array",  
     "value": [  
       "sensor"  
     ]  
   },  
   "recipientList": {  
-    "type": "Property",  
+    "type": "array",  
     "value": [  
       "urn:ngsi-ld:User:CommunalAdministration",  
       "urn:ngsi-ld:User:Motorists"  
     ]  
   },  
   "owner": {  
-    "type": "Property",  
+    "type": "array",  
     "value": [  
       "ngsi-ld:city:CityofCarouge"  
     ]  
   },  
   "isPersonalData": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "false"  
   },  
   "retentionPeriod": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "< 1 month"  
   },  
   "legitimateInterest": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "Facilitate and understand parking habits"  
   },  
   "crossborderTransfer": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "None"  
   },  
   "image": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "http://www.example.com/device1.jpg"  
   }  
 }  
 ```  
 #### PrivacyObject Valeurs-clés NGSI-LD Exemple  
 Voici un exemple d'un PrivacyObject au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
+  "type": "PrivacyObject",  
+  "refDevice": "Device:1044_parking",  
+  "name": "1004_parking",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      46.18311,  
+      6.14132  
+    ]  
+  },  
+  "isIndoor": false,  
+  "floor": 0,  
+  "description": "Electromagnetic and ultrasonic sensor",  
+  "description_fr": "Capteur electromagnetique et ultrasons",  
+  "user": "urn:ngsi-ld:User:abcdef",  
+  "purpose": "Detecting the presence of a vehicle on a parking slot.",  
+  "purpose_fr": "Detecter la presence d'un vehicule sur une place de parc.",  
+  "category": [  
+    "sensor"  
+  ],  
+  "recipientList": [  
+    "urn:ngsi-ld:User:CommunalAdministration",  
+    "urn:ngsi-ld:User:Motorists"  
+  ],  
+  "owner": [  
+    "ngsi-ld:city:CityofCarouge"  
+  ],  
+  "isPersonalData": false,  
+  "retentionPeriod": "< 1 month",  
+  "legitimateInterest": "Facilitate and understand parking habits",  
+  "crossborderTransfer": "None",  
+  "image": "http://www.example.com/device1.jpg",  
+  "@context": [  
+    "https://smart-data-models.github.io/data-models/context.jsonld"  
+  ]  
+}  
+```  
+#### PrivacyObject NGSI-LD normalisé Exemple  
+Voici un exemple d'un PrivacyObject au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
@@ -502,7 +589,7 @@ PrivacyObject:
   },  
   "description_fr": {  
     "type": "Property",  
-    "value": "Capteur \u00e9lectromagn\u00e9tique et \u00e0 ultrasons"  
+    "value": "Capteur electromagnetique et ultrasons"  
   },  
   "user": {  
     "type": "Property",  
@@ -514,7 +601,7 @@ PrivacyObject:
   },  
   "purpose_fr": {  
     "type": "string",  
-    "value": "D\u00e9tecter la pr\u00e9sence d'un v\u00e9hicule sur une place de parc."  
+    "value": "Detecter la presence d'un vehicule sur une place de parc."  
   },  
   "category": {  
     "type": "Property",  
@@ -556,49 +643,7 @@ PrivacyObject:
     "value": "http://www.example.com/device1.jpg"  
   },  
   "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld"  
-  ]  
-}  
-```  
-#### PrivacyObject NGSI-LD normalisé Exemple  
-Voici un exemple d'un PrivacyObject au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-```json  
-{  
-  "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
-  "type": "PrivacyObject",  
-  "refDevice": "Device:1044_parking",  
-  "name": "1004_parking",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      46.18311,  
-      6.14132  
-    ]  
-  },  
-  "isIndoor": false,  
-  "floor": 0,  
-  "description": "Electromagnetic and ultrasonic sensor",  
-  "description_fr": "Capteur \u00e9lectromagn\u00e9tique et \u00e0 ultrasons",  
-  "user": "urn:ngsi-ld:User:abcdef",  
-  "purpose": "Detecting the presence of a vehicle on a parking slot.",  
-  "purpose_fr": "D\u00e9tecter la pr\u00e9sence d'un v\u00e9hicule sur une place de parc.",  
-  "category": [  
-    "sensor"  
-  ],  
-  "recipientList": [  
-    "urn:ngsi-ld:User:CommunalAdministration",  
-    "urn:ngsi-ld:User:Motorists"  
-  ],  
-  "owner": [  
-    "ngsi-ld:city:CityofCarouge"  
-  ],  
-  "isPersonalData": false,  
-  "retentionPeriod": "< 1 month",  
-  "legitimateInterest": "Facilitate and understand parking habits",  
-  "crossborderTransfer": "None",  
-  "image": "http://www.example.com/device1.jpg",  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld"  
+    "https://smartdatamodels.org/context.jsonld"  
   ]  
 }  
 ```  
