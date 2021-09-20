@@ -3,6 +3,7 @@ Entity: Device
 [Open License](https://github.com/smart-data-models//dataModel.Device/blob/master/Device/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).**  
+version: 0.0.5  
 
 ## List of properties  
 
@@ -591,6 +592,7 @@ Device:
     - type    
     - controlledProperty    
   type: object    
+  version: 0.0.5    
 ```  
 </details>    
 ## Example payloads    
@@ -600,10 +602,19 @@ Device:
 {  
   "id": "device-9845A",  
   "type": "Device",  
-  "category": ["sensor"],  
-  "controlledProperty": ["fillingLevel", "temperature"],  
-  "controlledAsset": ["wastecontainer-Osuna-100"],  
-  "ipAddress": ["192.14.56.78"],  
+  "category": [  
+    "sensor"  
+  ],  
+  "controlledProperty": [  
+    "fillingLevel",  
+    "temperature"  
+  ],  
+  "controlledAsset": [  
+    "wastecontainer-Osuna-100"  
+  ],  
+  "ipAddress": [  
+    "192.14.56.78"  
+  ],  
   "mcc": "214",  
   "mnc": "07",  
   "batteryLevel": 0.75,  
@@ -613,7 +624,9 @@ Device:
   "value": "l%3D0.22%3Bt%3D21.2",  
   "deviceState": "ok",  
   "dateFirstUsed": "2014-09-11T11:00:00Z",  
-  "owner": ["http://person.org/leon"]  
+  "owner": [  
+    "http://person.org/leon"  
+  ]  
 }  
 ```  
 #### Device NGSI-v2 normalized Example    
@@ -623,9 +636,13 @@ Device:
   "id": "device-9845A",  
   "type": "Device",  
   "category": {  
-    "value": ["sensor"]  
+    "type": "Text",  
+    "value": [  
+      "sensor"  
+    ]  
   },  
   "batteryLevel": {  
+    "type": "Number",  
     "value": 0.75  
   },  
   "dateFirstUsed": {  
@@ -634,15 +651,20 @@ Device:
   },  
   "controlledAsset": {  
     "type": "Relationship",  
-    "value": ["wastecontainer-Osuna-100"]  
+    "value": [  
+      "wastecontainer-Osuna-100"  
+    ]  
   },  
   "serialNumber": {  
+    "type": "Text",  
     "value": "9845A"  
   },  
   "mcc": {  
+    "type": "Text",  
     "value": "214"  
   },  
   "value": {  
+    "type": "Text",  
     "value": "l%3D0.22%3Bt%3D21.2"  
   },  
   "refDeviceModel": {  
@@ -650,21 +672,34 @@ Device:
     "value": "myDevice-wastecontainer-sensor-345"  
   },  
   "rssi": {  
+    "type": "Number",  
     "value": 0.86  
   },  
   "controlledProperty": {  
-    "value": ["fillingLevel", "temperature"]  
+    "type": "array",  
+    "value": [  
+      "fillingLevel",  
+      "temperature"  
+    ]  
   },  
   "owner": {  
-    "value": ["http://person.org/leon"]  
+    "type": "array",  
+    "value": [  
+      "http://person.org/leon"  
+    ]  
   },  
   "mnc": {  
+    "type": "Text",  
     "value": "07"  
   },  
   "ipAddress": {  
-    "value": ["192.14.56.78"]  
+    "type": "array",  
+    "value": [  
+      "192.14.56.78"  
+    ]  
   },  
   "deviceState": {  
+    "type": "Text",  
     "value": "ok"  
   }  
 }  
@@ -681,84 +716,31 @@ Device:
       "sensor"  
     ]  
   },  
-  "batteryLevel": {  
-    "type": "Property",  
-    "value": 0.75  
-  },  
-  "dateFirstUsed": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2014-09-11T11:00:00Z"  
-    }  
-  },  
-  "controlledAsset": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld::wastecontainer-Osuna-100"  
-    ]  
-  },  
-  "serialNumber": {  
-    "type": "Property",  
-    "value": "9845A"  
-  },  
-  "mcc": {  
-    "type": "Property",  
-    "value": "214"  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": "l%3D0.22%3Bt%3D21.2"  
-  },  
-  "refDeviceModel": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345"  
-  },  
-  "rssi": {  
-    "type": "Property",  
-    "value": 0.86  
-  },  
-  "controlledProperty": {  
-    "type": "Property",  
-    "value": [  
-      "fillingLevel",  
-      "temperature"  
-    ]  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "http://person.org/leon"  
-    ]  
-  },  
-  "mnc": {  
-    "type": "Property",  
-    "value": "07"  
-  },  
-  "ipAddress": {  
-    "type": "Property",  
-    "value": [  
-      "192.14.56.78"  
-    ]  
-  },  
-  "deviceState": {  
-    "type": "Property",  
-    "value": "ok"  
-  },  
-  "distance": {  
-    "type": "Property",  
-    "value": 20,  
-    "unitCode": "MTR"  
-  },  
-  "depth": {  
-    "type": "Property",  
-    "value": 3,  
-    "unitCode": "MTR"  
-  },  
-  "direction": {  
-    "type": "Property",  
-    "value": "Outlet"  
-  },  
+  "batteryLevel": 0.75,  
+  "dateFirstUsed": "2014-09-11T11:00:00Z",  
+  "controlledAsset": [  
+    "urn:ngsi-ld::wastecontainer-Osuna-100"  
+  ],  
+  "serialNumber": "9845A",  
+  "mcc": "214",  
+  "value": "l%3D0.22%3Bt%3D21.2",  
+  "refDeviceModel": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
+  "rssi": 0.86,  
+  "controlledProperty": [  
+    "fillingLevel",  
+    "temperature"  
+  ],  
+  "owner": [  
+    "http://person.org/leon"  
+  ],  
+  "mnc": "07",  
+  "ipAddress": [  
+    "192.14.56.78"  
+  ],  
+  "deviceState": "ok",  
+  "distance": 20,  
+  "depth": 3,  
+  "direction": "Outlet",  
   "@context": [  
     "https://smartdatamodels.org/context.jsonld"  
   ]  
@@ -768,36 +750,81 @@ Device:
 Here is an example of a Device in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {  
+  "id": "urn:ngsi-ld:Device:device-9845A",  
+  "type": "Device",  
+  "batteryLevel": {  
+    "type": "Property",  
+    "value": 0.75  
+  },  
+  "category": {  
+    "type": "Property",  
+    "value": [  
+      "sensor"  
+    ]  
+  },  
+  "controlledAsset": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld::wastecontainer-Osuna-100"  
+    ]  
+  },  
+  "controlledProperty": {  
+    "type": "Property",  
+    "value": [  
+      "fillingLevel",  
+      "temperature"  
+    ]  
+  },  
+  "dateFirstUsed": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2014-09-11T11:00:00Z"  
+    }  
+  },  
+  "deviceState": {  
+    "type": "Property",  
+    "value": "ok"  
+  },  
+  "ipAddress": {  
+    "type": "Property",  
+    "value": [  
+      "192.14.56.78"  
+    ]  
+  },  
+  "mcc": {  
+    "type": "Property",  
+    "value": "214"  
+  },  
+  "mnc": {  
+    "type": "Property",  
+    "value": "07"  
+  },  
+  "owner": {  
+    "type": "Property",  
+    "value": [  
+      "http://person.org/leon"  
+    ]  
+  },  
+  "refDeviceModel": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345"  
+  },  
+  "rssi": {  
+    "type": "Property",  
+    "value": 0.86  
+  },  
+  "serialNumber": {  
+    "type": "Property",  
+    "value": "9845A"  
+  },  
+  "value": {  
+    "type": "Property",  
+    "value": "l%3D0.22%3Bt%3D21.2"  
+  },  
   "@context": [  
     "https://smartdatamodels.org/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "batteryLevel": 0.75,  
-  "category": [  
-    "sensor"  
-  ],  
-  "controlledAsset": [  
-    "urn:ngsi-ld::wastecontainer-Osuna-100"  
-  ],  
-  "controlledProperty": [  
-    "fillingLevel",  
-    "temperature"  
-  ],  
-  "dateFirstUsed": "2014-09-11T11:00:00Z",  
-  "deviceState": "ok",  
-  "id": "urn:ngsi-ld:Device:device-9845A",  
-  "ipAddress": [  
-    "192.14.56.78"  
-  ],  
-  "mcc": "214",  
-  "mnc": "07",  
-  "owner": [  
-    "http://person.org/leon"  
-  ],  
-  "refDeviceModel": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
-  "rssi": 0.86,  
-  "serialNumber": "9845A",  
-  "type": "Device",  
-  "value": "l%3D0.22%3Bt%3D21.2"  
+  ]  
 }  
 ```  
