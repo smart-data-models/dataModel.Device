@@ -356,3 +356,4 @@ PrivacyObject:
     - id
     - type
   type: object
+  version: 0.0.1
