@@ -3,10 +3,11 @@ Entidad: Dispositivo
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Device/blob/master/Device/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Un aparato (hardware + software + firmware) destinado a realizar una tarea determinada (detectar el entorno, actuar, etc.).  
+versión: 0.0.5  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `batteryLevel`: Nivel de batería del dispositivo. Debe ser igual a 1,0 cuando la batería está llena. 0.0 cuando la batería está vacía. -1 cuando transitoriamente no se puede determinar.  - `category`: Sensor: Dispositivo que detecta y responde a eventos o cambios en el entorno físico, como la luz, el movimiento o los cambios de temperatura. https://w3id.org/saref#Sensor. Actuador : Dispositivo encargado de mover o controlar un mecanismo o sistema. https://w3id.org/saref#Actuator. Medidor : Dispositivo construido para detectar y mostrar con precisión una cantidad de forma legible por un ser humano. Definido parcialmente por la SAREF. HVAC : Dispositivo de Calefacción, Ventilación y Aire Acondicionado (HVAC) que proporciona confort ambiental en interiores. https://w3id.org/saref#HVAC. Red : Dispositivo utilizado para conectar otros dispositivos en una red, como el concentrador, el conmutador o el router en una red LAN o de sensores. (https://w3id.org/saref#Network. Multimedia : Dispositivo diseñado para mostrar, almacenar, grabar o reproducir contenidos multimedia como audio, imágenes, animación, vídeo. Enum:'actuador, baliza, pistola final, HVAC, implemento, irrSection, irrSystem, medidor, multimedia, red, sensor'  - `configuration`: Configuración técnica del dispositivo. Este atributo pretende ser una matriz de propiedades y sus valores que capturan parámetros que tienen que ver con la configuración de un dispositivo (tiempos de espera, periodos de notificación, etc.) y que actualmente no están cubiertos por los atributos estándar definidos por este modelo.  - `controlledAsset`: Lista de los activos (edificio, objeto, etc.) controlados por el dispositivo.  - `controlledProperty`: Cualquier cosa que pueda ser detectada, medida o controlada por. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movimientoActividad, nivel de ruido, ocupación, orp, pH, potencia, precipitación, presión, índice de refracción, salinidad, humo, humedad del suelo, radiación solar, velocidad, tds, temperatura, flujo de tráfico, tss, turbidez, consumo de agua, flujo de agua, nivel de agua, contaminación del agua, condiciones meteorológicas, peso, dirección del viento, velocidad del viento".  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateFirstUsed`: Una marca de tiempo que indica cuándo se utilizó el dispositivo por primera vez.  - `dateInstalled`: Una marca de tiempo que indica cuándo se instaló el dispositivo (si requiere instalación).  - `dateLastCalibration`: Una marca de tiempo que indica cuándo se realizó la última calibración del dispositivo.  - `dateLastValueReported`: Una marca de tiempo que denota la última vez que el dispositivo comunicó correctamente los datos a la nube.  - `dateManufactured`: Una marca de tiempo que indica cuándo se fabricó el dispositivo.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: Fecha de la entidad observada definida por el usuario.  - `depth`: Ubicación de este dispositivo representada por una profundidad desde un punto de partida. Todas las unidades se aceptan en código [CEFACT](https://www.unece.org/cefact.html)  - `description`: Una descripción de este artículo  - `deviceState`: Estado de este dispositivo desde el punto de vista operativo. Su valor puede depender del proveedor.  - `direction`: Enum:'Entrada, Salida, Entrada, Salida'. Una marca de tiempo que denota cuándo se instaló el dispositivo (si requiere instalación).  - `distance`: Ubicación de este dispositivo representada por una distancia desde un punto de partida. Todas las unidades se aceptan en código [CEFACT](https://www.unece.org/cefact.html)  - `dstAware`: Indica un dispositivo que es consciente del horario de verano (verdadero). En caso de que lo sea, el dispositivo ajusta automáticamente la marca de tiempo para reflejar los cambios del horario de verano. Si no lo es (Falso) los ajustes de hora deben ser realizados por el usuario.  - `firmwareVersion`: La versión del firmware de este dispositivo.  - `hardwareVersion`: La versión de hardware de este dispositivo.  - `id`: Identificador único de la entidad  - `ipAddress`: Lista de direcciones IP del dispositivo. Puede ser una lista de valores separados por comas si el dispositivo tiene más de una dirección IP.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `macAddress`: La dirección MAC del dispositivo.  - `mcc`: Esta propiedad identifica el código de país del móvil  - `mnc`: Esta propiedad identifica el código de red móvil (MNC) de la red a la que está conectado el dispositivo. El MNC se utiliza en combinación con un código de país móvil (MCC) (también conocido como "tupla MCC / MNC") para identificar de forma exclusiva a un operador de telefonía móvil que utiliza las redes móviles terrestres públicas GSM, CDMA, iDEN, TETRA y 3G / 4G y algunas redes móviles por satélite.  - `name`: El nombre de este artículo.  - `osVersion`: La versión del dispositivo del sistema operativo anfitrión.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `provider`: El proveedor del dispositivo.  - `refDeviceModel`: Modelo del dispositivo  - `relativePosition`: Ubicación de este dispositivo en un sistema de coordenadas según su emplazamiento local.  - `rssi`: Indicador de la intensidad de la señal recibida por un dispositivo inalámbrico. Debe expresarse en dBm o mW, utilice unitcode para establecerlo.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `serialNumber`: El número de serie asignado por el fabricante.  - `softwareVersion`: La versión de software de este dispositivo.  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `supportedProtocol`: Protocolo(s) o redes compatibles  - `type`: Tipo de entidad NGSI. Tiene que ser un Dispositivo  - `value`: Un valor observado o informado. En el caso de los dispositivos actuadores, es un atributo que permite a una aplicación de control cambiar la configuración de actuación. Por ejemplo, un dispositivo interruptor que está actualmente _encendido_ puede reportar un valor 'on' de tipo 'Text'. Obviamente, para activar el referido interruptor, el valor de este atributo tendrá que ser cambiado a 'off'.    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `batteryLevel`: Nivel de batería del dispositivo. Debe ser igual a 1,0 cuando la batería está llena. 0.0 cuando la batería está vacía. -1 cuando transitoriamente no se puede determinar.  - `category`: Sensor: Dispositivo que detecta y responde a eventos o cambios en el entorno físico, como la luz, el movimiento o los cambios de temperatura. https://w3id.org/saref#Sensor. Actuador : Dispositivo encargado de mover o controlar un mecanismo o sistema. https://w3id.org/saref#Actuator. Medidor : Dispositivo construido para detectar y mostrar con precisión una cantidad de forma legible por un ser humano. Definido parcialmente por la SAREF. HVAC : Dispositivo de Calefacción, Ventilación y Aire Acondicionado (HVAC) que proporciona confort ambiental en interiores. https://w3id.org/saref#HVAC. Red : Dispositivo utilizado para conectar otros dispositivos en una red, como el concentrador, el conmutador o el router en una red LAN o de sensores. (https://w3id.org/saref#Network. Multimedia : Dispositivo diseñado para mostrar, almacenar, grabar o reproducir contenidos multimedia como audio, imágenes, animación, vídeo. Enum:'actuador, baliza, pistola final, HVAC, implemento, irrSection, irrSystem, medidor, multimedia, red, sensor'  - `configuration`: Configuración técnica del dispositivo. Este atributo pretende ser una matriz de propiedades y sus valores que capturan parámetros que tienen que ver con la configuración de un dispositivo (tiempos de espera, periodos de notificación, etc.) y que no están actualmente cubiertos por los atributos estándar definidos por este modelo.  - `controlledAsset`: Lista de los activos (edificio, objeto, etc.) controlados por el dispositivo.  - `controlledProperty`: Cualquier cosa que pueda ser detectada, medida o controlada por. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movimientoActividad, nivel de ruido, ocupación, orp, pH, potencia, precipitación, presión, índice de refracción, salinidad, humo, humedad del suelo, radiación solar, velocidad, tds, temperatura, flujo de tráfico, tss, turbidez, consumo de agua, flujo de agua, nivel de agua, contaminación del agua, condiciones meteorológicas, peso, dirección del viento, velocidad del viento".  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateFirstUsed`: Una marca de tiempo que indica cuándo se utilizó el dispositivo por primera vez.  - `dateInstalled`: Una marca de tiempo que indica cuándo se instaló el dispositivo (si requiere instalación).  - `dateLastCalibration`: Una marca de tiempo que indica cuándo se realizó la última calibración del dispositivo.  - `dateLastValueReported`: Una marca de tiempo que denota la última vez que el dispositivo comunicó correctamente los datos a la nube.  - `dateManufactured`: Una marca de tiempo que indica cuándo se fabricó el dispositivo.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: Fecha de la entidad observada definida por el usuario.  - `depth`: Ubicación de este dispositivo representada por una profundidad desde un punto de partida. Todas las unidades se aceptan en código [CEFACT](https://www.unece.org/cefact.html)  - `description`: Una descripción de este artículo  - `deviceState`: Estado de este dispositivo desde el punto de vista operativo. Su valor puede depender del proveedor.  - `direction`: Enum:'Entrada, Salida, Entrada, Salida'. Una marca de tiempo que denota cuándo se instaló el dispositivo (si requiere instalación).  - `distance`: Ubicación de este dispositivo representada por una distancia desde un punto de partida. Todas las unidades se aceptan en código [CEFACT](https://www.unece.org/cefact.html)  - `dstAware`: Indica un dispositivo que es consciente del horario de verano (verdadero). En caso de que lo sea, el dispositivo ajusta automáticamente la marca de tiempo para reflejar los cambios del horario de verano. Si no lo es (Falso) los ajustes de hora deben ser realizados por el usuario.  - `firmwareVersion`: La versión del firmware de este dispositivo.  - `hardwareVersion`: La versión de hardware de este dispositivo.  - `id`: Identificador único de la entidad  - `ipAddress`: Lista de direcciones IP del dispositivo. Puede ser una lista de valores separados por comas si el dispositivo tiene más de una dirección IP.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `macAddress`: La dirección MAC del dispositivo.  - `mcc`: Esta propiedad identifica el código de país del móvil  - `mnc`: Esta propiedad identifica el código de red móvil (MNC) de la red a la que está conectado el dispositivo. El MNC se utiliza en combinación con un código de país móvil (MCC) (también conocido como "tupla MCC / MNC") para identificar de forma exclusiva a un operador de telefonía móvil que utiliza las redes móviles terrestres públicas GSM, CDMA, iDEN, TETRA y 3G / 4G y algunas redes móviles por satélite.  - `name`: El nombre de este artículo.  - `osVersion`: La versión del dispositivo del sistema operativo anfitrión.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `provider`: El proveedor del dispositivo.  - `refDeviceModel`: Modelo del dispositivo  - `relativePosition`: Ubicación de este dispositivo en un sistema de coordenadas según su emplazamiento local.  - `rssi`: Indicador de la intensidad de la señal recibida por un dispositivo inalámbrico. Debe expresarse en dBm o mW, utilice unitcode para establecerlo.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `serialNumber`: El número de serie asignado por el fabricante.  - `softwareVersion`: La versión de software de este dispositivo.  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `supportedProtocol`: Protocolo(s) o redes compatibles  - `type`: Tipo de entidad NGSI. Tiene que ser un Dispositivo  - `value`: Un valor observado o informado. En el caso de los dispositivos actuadores, es un atributo que permite a una aplicación de control cambiar la configuración de actuación. Por ejemplo, un dispositivo interruptor que está actualmente _encendido_ puede reportar un valor 'on' de tipo 'Text'. Obviamente, para activar el referido interruptor, el valor de este atributo tendrá que ser cambiado a 'off'.    
 Propiedades requeridas  
 - `controlledProperty`  - `id`  - `type`    
 Un dispositivo es un objeto tangible que contiene cierta lógica y es productor y/o consumidor de datos. Se supone que un dispositivo siempre es capaz de comunicarse electrónicamente a través de una red. Este modelo de datos ha sido parcialmente desarrollado en colaboración con los operadores de telefonía móvil y la [GSMA](https://www.gsma.com/iot/iot-big-data/). Este modelo de datos reutiliza conceptos procedentes de la [Ontología SAREF](http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/01.01.01_60/ts_103264v010101p.pdf) parte de las normas [ETSI](http://www.etsi.org).  
@@ -591,6 +592,7 @@ Device:
     - type    
     - controlledProperty    
   type: object    
+  version: 0.0.5    
 ```  
 </details>    
 ## Ejemplo de carga útil  
@@ -600,10 +602,19 @@ Device:
 {  
   "id": "device-9845A",  
   "type": "Device",  
-  "category": ["sensor"],  
-  "controlledProperty": ["fillingLevel", "temperature"],  
-  "controlledAsset": ["wastecontainer-Osuna-100"],  
-  "ipAddress": ["192.14.56.78"],  
+  "category": [  
+    "sensor"  
+  ],  
+  "controlledProperty": [  
+    "fillingLevel",  
+    "temperature"  
+  ],  
+  "controlledAsset": [  
+    "wastecontainer-Osuna-100"  
+  ],  
+  "ipAddress": [  
+    "192.14.56.78"  
+  ],  
   "mcc": "214",  
   "mnc": "07",  
   "batteryLevel": 0.75,  
@@ -613,7 +624,9 @@ Device:
   "value": "l%3D0.22%3Bt%3D21.2",  
   "deviceState": "ok",  
   "dateFirstUsed": "2014-09-11T11:00:00Z",  
-  "owner": ["http://person.org/leon"]  
+  "owner": [  
+    "http://person.org/leon"  
+  ]  
 }  
 ```  
 #### Dispositivo NGSI-v2 normalizado Ejemplo  
@@ -623,9 +636,13 @@ Device:
   "id": "device-9845A",  
   "type": "Device",  
   "category": {  
-    "value": ["sensor"]  
+    "type": "Text",  
+    "value": [  
+      "sensor"  
+    ]  
   },  
   "batteryLevel": {  
+    "type": "Number",  
     "value": 0.75  
   },  
   "dateFirstUsed": {  
@@ -634,15 +651,20 @@ Device:
   },  
   "controlledAsset": {  
     "type": "Relationship",  
-    "value": ["wastecontainer-Osuna-100"]  
+    "value": [  
+      "wastecontainer-Osuna-100"  
+    ]  
   },  
   "serialNumber": {  
+    "type": "Text",  
     "value": "9845A"  
   },  
   "mcc": {  
+    "type": "Text",  
     "value": "214"  
   },  
   "value": {  
+    "type": "Text",  
     "value": "l%3D0.22%3Bt%3D21.2"  
   },  
   "refDeviceModel": {  
@@ -650,21 +672,34 @@ Device:
     "value": "myDevice-wastecontainer-sensor-345"  
   },  
   "rssi": {  
+    "type": "Number",  
     "value": 0.86  
   },  
   "controlledProperty": {  
-    "value": ["fillingLevel", "temperature"]  
+    "type": "array",  
+    "value": [  
+      "fillingLevel",  
+      "temperature"  
+    ]  
   },  
   "owner": {  
-    "value": ["http://person.org/leon"]  
+    "type": "array",  
+    "value": [  
+      "http://person.org/leon"  
+    ]  
   },  
   "mnc": {  
+    "type": "Text",  
     "value": "07"  
   },  
   "ipAddress": {  
-    "value": ["192.14.56.78"]  
+    "type": "array",  
+    "value": [  
+      "192.14.56.78"  
+    ]  
   },  
   "deviceState": {  
+    "type": "Text",  
     "value": "ok"  
   }  
 }  
@@ -681,84 +716,31 @@ Device:
       "sensor"  
     ]  
   },  
-  "batteryLevel": {  
-    "type": "Property",  
-    "value": 0.75  
-  },  
-  "dateFirstUsed": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2014-09-11T11:00:00Z"  
-    }  
-  },  
-  "controlledAsset": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld::wastecontainer-Osuna-100"  
-    ]  
-  },  
-  "serialNumber": {  
-    "type": "Property",  
-    "value": "9845A"  
-  },  
-  "mcc": {  
-    "type": "Property",  
-    "value": "214"  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": "l%3D0.22%3Bt%3D21.2"  
-  },  
-  "refDeviceModel": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345"  
-  },  
-  "rssi": {  
-    "type": "Property",  
-    "value": 0.86  
-  },  
-  "controlledProperty": {  
-    "type": "Property",  
-    "value": [  
-      "fillingLevel",  
-      "temperature"  
-    ]  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "http://person.org/leon"  
-    ]  
-  },  
-  "mnc": {  
-    "type": "Property",  
-    "value": "07"  
-  },  
-  "ipAddress": {  
-    "type": "Property",  
-    "value": [  
-      "192.14.56.78"  
-    ]  
-  },  
-  "deviceState": {  
-    "type": "Property",  
-    "value": "ok"  
-  },  
-  "distance": {  
-    "type": "Property",  
-    "value": 20,  
-    "unitCode": "MTR"  
-  },  
-  "depth": {  
-    "type": "Property",  
-    "value": 3,  
-    "unitCode": "MTR"  
-  },  
-  "direction": {  
-    "type": "Property",  
-    "value": "Outlet"  
-  },  
+  "batteryLevel": 0.75,  
+  "dateFirstUsed": "2014-09-11T11:00:00Z",  
+  "controlledAsset": [  
+    "urn:ngsi-ld::wastecontainer-Osuna-100"  
+  ],  
+  "serialNumber": "9845A",  
+  "mcc": "214",  
+  "value": "l%3D0.22%3Bt%3D21.2",  
+  "refDeviceModel": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
+  "rssi": 0.86,  
+  "controlledProperty": [  
+    "fillingLevel",  
+    "temperature"  
+  ],  
+  "owner": [  
+    "http://person.org/leon"  
+  ],  
+  "mnc": "07",  
+  "ipAddress": [  
+    "192.14.56.78"  
+  ],  
+  "deviceState": "ok",  
+  "distance": 20,  
+  "depth": 3,  
+  "direction": "Outlet",  
   "@context": [  
     "https://smartdatamodels.org/context.jsonld"  
   ]  
@@ -768,36 +750,81 @@ Device:
 Este es un ejemplo de un Dispositivo en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
+  "id": "urn:ngsi-ld:Device:device-9845A",  
+  "type": "Device",  
+  "batteryLevel": {  
+    "type": "Property",  
+    "value": 0.75  
+  },  
+  "category": {  
+    "type": "Property",  
+    "value": [  
+      "sensor"  
+    ]  
+  },  
+  "controlledAsset": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld::wastecontainer-Osuna-100"  
+    ]  
+  },  
+  "controlledProperty": {  
+    "type": "Property",  
+    "value": [  
+      "fillingLevel",  
+      "temperature"  
+    ]  
+  },  
+  "dateFirstUsed": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2014-09-11T11:00:00Z"  
+    }  
+  },  
+  "deviceState": {  
+    "type": "Property",  
+    "value": "ok"  
+  },  
+  "ipAddress": {  
+    "type": "Property",  
+    "value": [  
+      "192.14.56.78"  
+    ]  
+  },  
+  "mcc": {  
+    "type": "Property",  
+    "value": "214"  
+  },  
+  "mnc": {  
+    "type": "Property",  
+    "value": "07"  
+  },  
+  "owner": {  
+    "type": "Property",  
+    "value": [  
+      "http://person.org/leon"  
+    ]  
+  },  
+  "refDeviceModel": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345"  
+  },  
+  "rssi": {  
+    "type": "Property",  
+    "value": 0.86  
+  },  
+  "serialNumber": {  
+    "type": "Property",  
+    "value": "9845A"  
+  },  
+  "value": {  
+    "type": "Property",  
+    "value": "l%3D0.22%3Bt%3D21.2"  
+  },  
   "@context": [  
     "https://smartdatamodels.org/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "batteryLevel": 0.75,  
-  "category": [  
-    "sensor"  
-  ],  
-  "controlledAsset": [  
-    "urn:ngsi-ld::wastecontainer-Osuna-100"  
-  ],  
-  "controlledProperty": [  
-    "fillingLevel",  
-    "temperature"  
-  ],  
-  "dateFirstUsed": "2014-09-11T11:00:00Z",  
-  "deviceState": "ok",  
-  "id": "urn:ngsi-ld:Device:device-9845A",  
-  "ipAddress": [  
-    "192.14.56.78"  
-  ],  
-  "mcc": "214",  
-  "mnc": "07",  
-  "owner": [  
-    "http://person.org/leon"  
-  ],  
-  "refDeviceModel": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
-  "rssi": 0.86,  
-  "serialNumber": "9845A",  
-  "type": "Device",  
-  "value": "l%3D0.22%3Bt%3D21.2"  
+  ]  
 }  
 ```  
