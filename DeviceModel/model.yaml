@@ -289,3 +289,4 @@ DeviceModel:
     - brandName
     - modelName
   type: object
+  version: 0.0.1
