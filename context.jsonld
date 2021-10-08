@@ -27,7 +27,7 @@
         "dateModified": "https://smartdatamodels.org/dataModel.Device/dateModified",
         "dateObserved": "https://smartdatamodels.org/dataModel.Device/dateObserved",
         "depth": "https://smartdatamodels.org/dataModel.Device/depth",
-        "description": "https://smartdatamodels.org/dataModel.Device/description",
+        "description": "http://purl.org/dc/terms/description",
         "deviceClass": "https://smartdatamodels.org/dataModel.Device/deviceClass",
         "deviceState": "https://smartdatamodels.org/dataModel.Device/deviceState",
         "deviceType": "https://smartdatamodels.org/dataModel.Device/deviceType",
@@ -49,7 +49,7 @@
         "isIndoor": "https://smartdatamodels.org/dataModel.Device/isIndoor",
         "isPersonalData": "https://smartdatamodels.org/dataModel.Device/isPersonalData",
         "legitimateInterest": "https://smartdatamodels.org/dataModel.Device/legitimateInterest",
-        "location": "https://smartdatamodels.org/dataModel.Device/location",
+        "location": "ngsi-ld:location",
         "macAddress": "https://smartdatamodels.org/dataModel.Device/macAddress",
         "manufacturerName": "https://smartdatamodels.org/dataModel.Device/manufacturerName",
         "mcc": "https://smartdatamodels.org/dataModel.Device/mcc",
@@ -88,6 +88,6 @@
         "type": "@type",
         "unit": "https://smartdatamodels.org/dataModel.Device/unit",
         "user": "https://smartdatamodels.org/dataModel.Device/user",
-        "value": "https://smartdatamodels.org/dataModel.Device/value"
+        "value": "ngsi-ld:hasValue"
     }
 }
