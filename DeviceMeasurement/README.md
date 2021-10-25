@@ -6,7 +6,7 @@ Version: 0.1.0
 Description of a generic measurement entity coming from a device or other data source.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceMeasurement/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/DeviceMeasurement/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceMeasurement/doc/spec.md)
 
