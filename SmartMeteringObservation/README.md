@@ -6,7 +6,7 @@ Version: 0.0.1
 This entity contains a harmonised description of a Smart Meter Observation, generally applicable for Smart Homes, Industry, Cities and Agriculture. It is based mostly in the GSMA entity definition but it is extended
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Device/blob/master/SmartMeteringObservation/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/SmartMeteringObservation/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Device/blob/master/SmartMeteringObservation/doc/spec.md)
 
