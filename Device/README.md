@@ -6,7 +6,7 @@ Version: 0.0.5
 An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Device/blob/master/Device/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/Device/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)
 
