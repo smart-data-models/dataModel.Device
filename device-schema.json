@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/dataModel.Device/device-schema.json",
-  "$schemaVersion": "0.0.2",
+  "$schemaVersion": "0.0.3",
   "title": " - Device  Commons schema",
   "description": "Common definitions to describe Device and Device Model schemas.",
   "definitions": {
@@ -32,7 +32,7 @@
     },
     "ControlledPropertyType": {
       "type": "array",
-      "description": "Property. Model:'https://schema.org/Text'. Anything that can be sensed, measured or controlled by. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'",
+      "description": "Property. Model:'https://schema.org/Text'. Anything that can be sensed, measured or controlled by. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'",
       "items": {
         "type": "string",
         "enum": [
@@ -45,7 +45,6 @@
           "conductance",
           "conductivity",
           "depth",
-          "eatingActivity",
           "eatingActivity",
           "electricityConsumption",
           "energy",
