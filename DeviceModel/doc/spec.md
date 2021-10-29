@@ -3,7 +3,7 @@ Entity: DeviceModel
 [Open License](https://github.com/smart-data-models//dataModel.Device/blob/master/DeviceModel/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **This entity captures the static properties of a Device. **  
-version: 0.0.1  
+version: 0.0.2  
 
 ## List of properties  
 
@@ -15,6 +15,7 @@ Entity: DeviceModel
 ```yaml  
 DeviceModel:    
   description: 'This entity captures the static properties of a Device. '    
+  modelTags: ""    
   properties:    
     alternateName:    
       description: 'An alternative name for this item'    
@@ -207,7 +208,7 @@ DeviceModel:
         type: Property    
     macAddress:    
       description: 'The MAC address of the device.'    
-      pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$    
+      pattern: ^([[A-Fa-f0-9]]{2}[:.-]?){5}[[A-Fa-f0-9]]{2}$    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -304,7 +305,7 @@ DeviceModel:
     - brandName    
     - modelName    
   type: object    
-  version: 0.0.1    
+  version: 0.0.2    
 ```  
 </details>    
 ## Example payloads    
