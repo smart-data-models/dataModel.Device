@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.5",
+    "$schemaVersion": "0.0.6",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Device/Device/schema.json",
     "title": " Smart Data Models - Device schema",

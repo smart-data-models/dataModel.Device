@@ -7,7 +7,7 @@
   "definitions": {
     "MacAddressType": {
       "type": "string",
-      "pattern": "^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$",
+      "pattern": "^([[A-Fa-f0-9]]{2}[:.-]?){5}[[A-Fa-f0-9]]{2}$",
       "description": "Property. Model:'https://schema.org/Text'. The MAC address of the device."
     },
     "CategoryType": {
