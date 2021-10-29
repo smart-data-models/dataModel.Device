@@ -25,7 +25,7 @@
         "dateLastValueReported": "https://smartdatamodels.org/dataModel.Device/dateLastValueReported",
         "dateManufactured": "https://smartdatamodels.org/dataModel.Device/dateManufactured",
         "dateModified": "https://smartdatamodels.org/dateModified",
-        "dateObserved": "https://smartdatamodels.org/dataModel.Device/dateObserved",
+        "dateObserved": "https://smartdatamodels.org/dateObserved",
         "depth": "https://smartdatamodels.org/dataModel.Device/depth",
         "description": "http://purl.org/dc/terms/description",
         "deviceClass": "https://smartdatamodels.org/dataModel.Device/deviceClass",
