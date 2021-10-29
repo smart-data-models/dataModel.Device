@@ -3,7 +3,7 @@ Entité : Device
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Device/blob/master/Device/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Appareil (matériel + logiciel + microprogramme) destiné à accomplir une tâche particulière (détection de l'environnement, actionnement, etc.).**  
-version : 0.0.5  
+version : 0.0.6  
 
 ## Liste des propriétés  
 
@@ -17,6 +17,7 @@ Entité : Device
 ```yaml  
 Device:    
   description: 'An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).'    
+  modelTags: ""    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -457,7 +458,7 @@ Device:
         type: Geoproperty    
     macAddress:    
       description: 'The MAC address of the device.'    
-      pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$    
+      pattern: ^([[A-Fa-f0-9]]{2}[:.-]?){5}[[A-Fa-f0-9]]{2}$    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -592,7 +593,7 @@ Device:
     - type    
     - controlledProperty    
   type: object    
-  version: 0.0.5    
+  version: 0.0.6    
 ```  
 </details>    
 ## Exemples de charges utiles  
