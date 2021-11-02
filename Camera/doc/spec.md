@@ -36,27 +36,33 @@ Camera:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     cameraName:    
       description: 'Name of the camera corresponding to this observation.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     cameraNum:    
       description: 'Camera number corresponding to this observation.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     cameraOrientation:    
       description: 'Orientation information for the camera corresponding to this observation'    
       properties:    
@@ -65,7 +71,9 @@ Camera:
           type: string    
         comments:    
           type: string    
-      type: Property    
+      type: object    
+      x-ngsi:    
+        type: Property    
     cameraType:    
       description: 'Type of the camera corresponding to this observation. Enum:''FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET''.'    
       enum:    
@@ -75,34 +83,45 @@ Camera:
         - DAY/NIGHT    
         - C-MOUNT    
         - BULLET    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     cameraUsage:    
       description: 'Purpose of the camera corresponding to this observation. ENUM: [SURVEILLANCE, RLVD, ANPR/LPR].'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     endDateTime:    
       description: 'Reported end time corresponding to this observation.'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     id:    
       anyOf: &camera_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -114,12 +133,14 @@ Camera:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     imageSnapshot:    
       description: 'Camera feed snapshot download link for the camera corresponding to this observation'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -271,22 +292,28 @@ Camera:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     mediaURL:    
       description: 'URL providing further information of any image(s) or media of the complaint or place.'    
       format: uri    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *camera_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -297,26 +324,32 @@ Camera:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     startDateTime:    
       description: 'Reported start time corresponding to this observation.'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     streamName:    
       description: 'Name of the video stream from the camera corresponding to this observation'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     streamURL:    
       description: 'URL providing video streaming information for the camera corresponding to this observation'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
   required:    
     - id    
     - type    
@@ -328,6 +361,8 @@ Camera:
 Here is an example of a Camera in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
+  "id": "urn:ngsi-ld:Camera:Cam2",  
+  "type": "Camera",  
   "cameraName": "Cam2",  
   "streamURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing",  
   "cameraUsage": "SURVEILLANCE",  
@@ -429,6 +464,8 @@ Camera:
 Here is an example of a Camera in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
+  "id": "urn:ngsi-ld:Camera:Cam2",  
+  "type": "Camera",  
   "cameraName": "Cam2",  
   "streamURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing",  
   "cameraUsage": "SURVEILLANCE",  
