@@ -8,6 +8,13 @@ contributors:
  project: 
  comments: 
 -
+ name: Chandra
+ surname: Challagonda
+ mail: chandra.challagonda@profirator.fi
+ organization: Caveman Datacenter sensoring and measuring
+ project: cavetroll.profirator.fi
+ comments:
+-
  name: Francisco
  surname: de la Vega
  mail: 
@@ -35,17 +42,17 @@ contributors:
  organization: 
  project: 
  comments: 
- -
+-
  name: Michal
  surname: Zimniewicz
  mail: 
  organization: Poznan Supercomputing and Networking Center
  project: shop4cf.eu
- comments: 
- -
- name: Chandra
- surname: Challagonda
- mail: chandra.challagonda@profirator.fi
- organization: Caveman Datacenter sensoring and measuring
- project: cavetroll.profirator.fi
- comments: 
+ comments:
+-
+ name:
+ surname:
+ mail:
+ organization: IUDX
+ project:
+ comments:
