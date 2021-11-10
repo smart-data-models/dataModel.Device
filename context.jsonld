@@ -59,6 +59,7 @@
         "mnc": "https://smartdatamodels.org/dataModel.Device/mnc",
         "modelName": "https://smartdatamodels.org/dataModel.Device/modelName",
         "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "numValue": "https://smartdatamodels.org/dataModel.Device/numValue",
         "offPeakConsumption": "https://smartdatamodels.org/dataModel.Device/offPeakConsumption",
         "osVersion": "https://smartdatamodels.org/dataModel.Device/osVersion",
