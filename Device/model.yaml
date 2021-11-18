@@ -43,7 +43,8 @@ Device:
         - maximum: 1
           minimum: 0
           type: number
-        - const: -1
+        - maximum: -1
+          minimum: -1
           type: number
       x-ngsi:
         model: https://schema.org/Number
@@ -439,7 +440,7 @@ Device:
         type: Geoproperty
     macAddress:
       description: 'The MAC address of the device.'
-      pattern: ^([[A-Fa-f0-9]]{2}[:.-]?){5}[[A-Fa-f0-9]]{2}$
+      pattern: ^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -579,4 +580,4 @@ Device:
   x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/Device/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Device/Device/schema.json
   x-model-tags: ""
-  x-version: 0.0.6
+  x-version: 0.0.7
