@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.6",
+  "$schemaVersion": "0.0.7",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.Device/Device/schema.json",
   "title": " Smart Data Models - Device schema",
@@ -165,12 +165,13 @@
           "oneOf": [
             {
               "type": "number",
-              "minimum": 0,
-              "maximum": 1
+              "maximum": 1,
+              "minimum": 0
             },
             {
               "type": "number",
-              "const": -1
+              "maximum": -1,
+              "minimum": -1
             }
           ]
         },
