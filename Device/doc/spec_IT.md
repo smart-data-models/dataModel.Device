@@ -3,7 +3,6 @@ Entità: Dispositivo
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Device/blob/master/Device/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descrizione globale: **Un apparato (hardware + software + firmware) destinato a svolgere un compito particolare (rilevamento dell'ambiente, attuazione, ecc.).  
-versione: 0.0.6  
 
 ## Elenco delle proprietà  
 
@@ -17,7 +16,6 @@ Entità: Dispositivo
 ```yaml  
 Device:    
   description: 'An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).'    
-  modelTags: ""    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -61,7 +59,8 @@ Device:
         - maximum: 1    
           minimum: 0    
           type: number    
-        - const: -1    
+        - maximum: -1    
+          minimum: -1    
           type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -457,7 +456,7 @@ Device:
         type: Geoproperty    
     macAddress:    
       description: 'The MAC address of the device.'    
-      pattern: ^([[A-Fa-f0-9]]{2}[:.-]?){5}[[A-Fa-f0-9]]{2}$    
+      pattern: ^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -592,7 +591,12 @@ Device:
     - type    
     - controlledProperty    
   type: object    
-  version: 0.0.6    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/Device/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Device/Device/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.7    
 ```  
 </details>    
 ## Esempio di payloads  
