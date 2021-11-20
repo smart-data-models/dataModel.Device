@@ -6,6 +6,8 @@ Version: 0.0.1
 A Data Model for camera installations in a city.
 ### Specification
 
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Camera/swagger.yaml)
+
 Link to the [specification](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec.md)
 
 Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec_ES.md)
@@ -13,6 +15,10 @@ Enlace a la [Especificación en español](https://github.com/smart-data-models/d
 Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec_FR.md)
 
 Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/doc/spec_JA.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Device/Camera/examples/example.json) (keyvalues) for NGSI v2
