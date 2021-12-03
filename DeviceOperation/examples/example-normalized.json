@@ -1,0 +1,60 @@
+{
+  "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
+  "type": "DeviceOperation",
+  "source": {
+    "type": "URL",
+    "value": "https://source.example.com"
+  },
+  "dataProvider": {
+    "type": "URL",
+    "value": "https://provider.example.com"
+  },
+  "device": {
+    "type": "Relationship",
+    "value": "urn:ngsi-ld:Device:2033a7c7-d31b-48e7-91c2-014dc426c29e"
+  },
+  "operationType": {
+    "type": "Text",
+    "value": "fault"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Backup battery needs replacement"
+  },
+  "result": {
+    "type": "Text",
+    "value": "ok"
+  },
+  "plannedStartAt": {
+    "type": "DateTime",
+    "value": "2016-08-22T10:18:16Z"
+  },
+  "plannedEndAt": {
+    "type": "DateTime",
+    "value": "2016-08-28T10:18:16Z"
+  },
+  "status": {
+    "type": "Text",
+    "value": "ongoing"
+  },
+  "operator": {
+    "type": "Relationship",
+    "value": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836"
+  },
+  "startedAt": {
+    "type": "DateTime",
+    "value": "2016-08-22T10:18:16Z"
+  },
+  "endedAt": {
+    "type": "DateTime",
+    "value": "2016-08-28T10:18:16Z"
+  },
+  "reportedAt": {
+    "type": "DateTime",
+    "value": "2016-08-28T10:18:16Z"
+  },
+  "addressedAt": {
+    "type": "DateTime",
+    "value": "2016-08-28T10:18:16Z"
+  }
+}
