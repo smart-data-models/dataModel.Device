@@ -77,6 +77,8 @@
           "trafficFlow",
           "tss",
           "turbidity",
+          "uvLampIntensity",
+          "uvOrganicLoad",
           "waterConsumption",
           "waterFlow",
           "waterLevel",
