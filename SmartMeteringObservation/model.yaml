@@ -284,7 +284,7 @@ SmartMeteringObservation:
         - description: 'Property. Identifier format of any NGSI entity'
           format: uri
           type: string
-      description: 'Unique identifier of the entity'
+      description: 'Unique identifier of the entity (Device) linked to the SmartMeteringObservation'
       x-ngsi:
         type: Relationship
     seeAlso:
@@ -325,4 +325,4 @@ SmartMeteringObservation:
   x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/SmartMeteringObservation/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Device/SmartMeteringObservation/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.0.2
