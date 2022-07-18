@@ -1,17 +1,19 @@
-エンティティSmartMeteringObservation（スマートメータリングオブザベーション  
-=================================================  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティSmartMeteringObservation  
+==============================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Device/blob/master/SmartMeteringObservation/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、スマートホーム、産業、都市、農業に適用されるスマートメータの観測に関する統一された記述を含んでいます。このエンティティは、主にGSMAエンティティ定義に基づいていますが、拡張されています。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述。**このエンティティは、スマートホーム、産業、都市、農業に適用されるスマートメータ観測の調和された記述を含んでいる。このエンティティは GSMA のエンティティ定義にほぼ基づいているが、拡張されている**。  
+バージョン: 0.0.2  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `entityVersion`: エンティティ仕様のバージョン。バージョン2.0以降は、NGSI-LDで表現されていることを示す。  - `id`: エンティティのユニークな識別子  - `image`: アイテムのイメージ  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `meterType`: 計量されている供給の種類（例）。電気、ガソリン、水、メタン、ディーゼルなど。  - `name`: このアイテムの名前です。  - `offPeakConsumption`: 設置以来、メーターによって記録された「オフピーク」時間に供給された製品の総量（特に電力供給に関連する）。電力の場合はKWH（キロワット時）、ガスや液体の場合はLTR（リットル）またはMTQ（立方メートル）など、関連するUnitCodeを指定する必要がある。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `peakConsumption`: ピーク」時間帯に供給された製品の総量（特に電力供給に関連する）で、設置以来メーターによって記録されたもの。電力の場合はKWH（Kilo Watt Hours）、ガスや液体の場合はLTR（Litre）またはMTQ（Cubic Metre）のように、関連するUnitCodeを指定する必要がある。  - `powerFactor`: 産業界で使用されることの多い三相電源に関連するもので、力率は容量性負荷と誘導性負荷の正味のバランスによって-1から+1の範囲となる。これを使用すると、メーター設置後の平均力率を測定することができる。  - `refDevice`: エンティティのユニークな識別子  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `totalConsumption`: 設置後にメーターが記録した供給された製品の総量。電力の場合はKWH（キロワット時）、ガスや液体の場合はLTR（リットル）やMTQ（立方メートル）など、関連するUnitCodeを指定する必要がある。  - `type`: SmartMeteringObservationでなければならない。NGSIエンティティタイプ    
-必須項目  
+- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `entityVersion`: エンティティの仕様バージョン。バージョン 2.0 以降は、NGSI-LD で表現されたエンティティであることを示す。  - `id`: エンティティの一意な識別子  - `image`: アイテムの画像  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `meterType`: 計測される供給の種類（例）。電気、ガソリン、水、メタン、ディーゼル。  - `name`: このアイテムの名称です。  - `offPeakConsumption`: 設置以来計器によって記録された「オフピーク」時間帯（特に電力供給に関連）に供給された製品の総量。関連する単位コードは、電気については KWH（キロワット時）、ガスまたは液体については LTR（リットル）または MTQ（立方メートル）のように指定されるべきである。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `peakConsumption`: 設置以来計器によって記録された「ピーク」時間帯（特に電力供給に関連）に供給された製品の総量。関連する単位コードは、電力については KWH（キロワット時）、ガスまたは液体については LTR（リットル）または MTQ（立方メートル）のように指定されるべきである。  - `powerFactor`: 産業界でよく使用される三相電源に関連するもので、力率は容量性負荷と誘導性負荷の間の純バランスによって-1から+1までとなります。使用する場合は、メーター設置以来の平均力率を測定します。  - `refDevice`: SmartMeteringObservationにリンクしているエンティティ（Device）の一意な識別子。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `totalConsumption`: 設置以来メータによって記録された製品の総供給量。関連する unitCode は、電気では KWH（キロワット時）、ガスまたは液体では LTR（リットル）または MTQ（立方 メートル）のように指定されなければならない。  - `type`: SmartMeteringObservationでなければならない。NGSIエンティティタイプ    
+必要なプロパティ  
 - `id`  - `type`    
-GSMAのデータモデルを採用していますが、すべてのスマートデータモデルと互換性があります。個々のプロパティによって拡張されています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+GSMAのデータモデルを応用しているが、すべてのスマートデータモデルと互換性があるように。個々のプロパティによって拡張される。  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SmartMeteringObservation:    
@@ -300,7 +302,7 @@ SmartMeteringObservation:
         - description: 'Property. Identifier format of any NGSI entity'    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: 'Unique identifier of the entity (Device) linked to the SmartMeteringObservation'    
       x-ngsi:    
         type: Relationship    
     seeAlso:    
@@ -341,12 +343,12 @@ SmartMeteringObservation:
   x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/SmartMeteringObservation/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Device/SmartMeteringObservation/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
-#### SmartMeteringObservation NGSI-v2 のキーバリューの例。  
-SmartMeteringObservationをkey-valuesとしてJSON-LD形式で記述した例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### SmartMeteringObservation NGSI-v2 key-value の例。  
+SmartMeteringObservationをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:SmartMeter:8ac0db56-9adf-11e8-ad67-e7308e2e8b15",  
@@ -375,8 +377,8 @@ SmartMeteringObservation:
   "powerFactor": 0.98  
 }  
 ```  
-#### SmartMeteringObservation NGSI-v2の正規化された例。  
-ここでは、正規化されたJSON-LD形式のSmartMeteringObservationの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキスト・データを返します。  
+#### SmartMeteringObservation NGSI-v2 正規化例  
+以下は、SmartMeteringObservation を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:SmartMeter:8ac0db56-9adf-11e8-ad67-e7308e2e8b15",  
@@ -441,106 +443,104 @@ SmartMeteringObservation:
   }  
 }  
 ```  
-#### SmartMeteringObservation NGSI-LD のキーバリューの例。  
-SmartMeteringObservationをkey-valuesとしてJSON-LD形式で記述した例を示します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### SmartMeteringObservation NGSI-LD key-value Example  
+SmartMeteringObservationをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
 ```json  
 {  
-  "id": "urn:ngsi-ld:SmartMeter:8ac0db56-9adf-11e8-ad67-e7308e2e8b15",  
-  "type": "SmartMeteringObservation",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "entityVersion": "2.0",  
-  "meterType": "Electricity",  
-  "refDevice": "urn:ngsi-ld:Device:7a0708f6-9668-11e8-8f77-abc2b62ebaac",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -103.9904,  
-      39.7564  
+    "id": "urn:ngsi-ld:SmartMeter:8ac0db56-9adf-11e8-ad67-e7308e2e8b15",  
+    "type": "SmartMeteringObservation",  
+    "address": {  
+        "addressLocality": "London",  
+        "postalCode": "EC4N 8AF",  
+        "streetAddress": "25 Walbrook"  
+    },  
+    "dataProvider": "https://provider.example.com",  
+    "entityVersion": "2.0",  
+    "image": "urn:ngsi:iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg==",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -103.9904,  
+            39.7564  
+        ]  
+    },  
+    "meterType": "Electricity",  
+    "offPeakConsumption": 8.0,  
+    "peakConsumption": 9.3,  
+    "powerFactor": 0.98,  
+    "refDevice": "urn:ngsi-ld:Device:7a0708f6-9668-11e8-8f77-abc2b62ebaac",  
+    "source": "https://source.example.com",  
+    "totalConsumption": 7.0,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "image": "urn:ngsi:iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg==",  
-  "address": {  
-    "addressLocality": "London",  
-    "postalCode": "EC4N 8AF",  
-    "streetAddress": "25 Walbrook"  
-  },  
-  "totalConsumption": 7.0,  
-  "peakConsumption": 9.3,  
-  "offPeakConsumption": 8.0,  
-  "powerFactor": 0.98,  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### SmartMeteringObservation NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のSmartMeteringObservationの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキスト・データを返します。  
+#### SmartMeteringObservation NGSI-LD 正規化例  
+SmartMeteringObservation を JSON-LD 形式で正規化した例です。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:SmartMeter:8ac0db56-9adf-11e8-ad67-e7308e2e8b15",  
-  "type": "SmartMeteringObservation",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "entityVersion": {  
-    "type": "Property",  
-    "value": "2.0"  
-  },  
-  "meterType": {  
-    "type": "Property",  
-    "value": "Electricity"  
-  },  
-  "refDevice": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Device:7a0708f6-9668-11e8-8f77-abc2b62ebaac"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -103.9904,  
-        39.7564  
-      ]  
-    }  
-  },  
-  "image": {  
-    "type": "Property",  
-    "value": "urn:ngsi:iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg=="  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "addressLocality": "London",  
-      "postalCode": "EC4N 8AF",  
-      "streetAddress": "25 Walbrook"  
-    }  
-  },  
-  "totalConsumption": {  
-    "type": "Property",  
-    "value": 7.0  
-  },  
-  "peakConsumption": {  
-    "type": "Property",  
-    "value": 9.3  
-  },  
-  "offPeakConsumption": {  
-    "type": "Property",  
-    "value": 8.0  
-  },  
-  "powerFactor": {  
-    "type": "Property",  
-    "value": 0.98  
-  }  
+    "id": "urn:ngsi-ld:SmartMeter:8ac0db56-9adf-11e8-ad67-e7308e2e8b15",  
+    "type": "SmartMeteringObservation",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressLocality": "London",  
+            "postalCode": "EC4N 8AF",  
+            "streetAddress": "25 Walbrook"  
+        }  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "entityVersion": {  
+        "type": "Property",  
+        "value": "2.0"  
+    },  
+    "image": {  
+        "type": "Property",  
+        "value": "urn:ngsi:iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg=="  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -103.9904,  
+                39.7564  
+            ]  
+        }  
+    },  
+    "meterType": {  
+        "type": "Property",  
+        "value": "Electricity"  
+    },  
+    "offPeakConsumption": {  
+        "type": "Property",  
+        "value": 8.0  
+    },  
+    "peakConsumption": {  
+        "type": "Property",  
+        "value": 9.3  
+    },  
+    "powerFactor": {  
+        "type": "Property",  
+        "value": 0.98  
+    },  
+    "refDevice": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Device:7a0708f6-9668-11e8-8f77-abc2b62ebaac"  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "totalConsumption": {  
+        "type": "Property",  
+        "value": 7.0  
+    },  
+    "@context": []  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
