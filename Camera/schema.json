@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.1.0",
+  "$schemaVersion": "0.1.1",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/CrossSector/Camera/schema.json",
   "title": " Smart Data Models - Camera",
@@ -28,7 +28,7 @@
         },
         "cameraUsage": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Purpose of the camera corresponding to this observation. ENUM: [SURVEILLANCE, RLVD, ANPR/LPR]."
+          "description": "Property. Model:'https://schema.org/Text'. Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR]."
         },
         "streamURL": {
           "type": "string",
