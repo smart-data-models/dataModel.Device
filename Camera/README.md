@@ -1,6 +1,5 @@
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-# Camera
-Version: 0.0.1
+# Camera
+Version: 0.1.1
 
 ## Description 
 
