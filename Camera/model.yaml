@@ -74,7 +74,7 @@ Camera:
         model: https://schema.org/Text
         type: Property
     cameraUsage:
-      description: 'Purpose of the camera corresponding to this observation. ENUM: [SURVEILLANCE, RLVD, ANPR/LPR].'
+      description: 'Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR].'
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -336,6 +336,13 @@ Camera:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+    type:
+      description: 'NGSI entity type. It has to be Camera'
+      enum:
+        - Camera
+      type: string
+      x-ngsi:
+        type: Property
   required:
     - id
     - type
@@ -345,4 +352,4 @@ Camera:
   x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/CrossSector/Camera/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.1.1
