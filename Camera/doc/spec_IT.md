@@ -1,14 +1,16 @@
-Entità: Camera  
-==============  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: Telecamera  
+==================  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Device/blob/master/Camera/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Un modello di dati per le installazioni di telecamere in una città.  
+Descrizione globale: **Un modello di dati per le installazioni di telecamere in una città.**  
+versione: 0.1.1  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `cameraName`: Nome della telecamera corrispondente a questa osservazione.  - `cameraNum`: Numero della telecamera corrispondente a questa osservazione.  - `cameraOrientation`: Informazioni sull'orientamento della telecamera corrispondente a questa osservazione  - `cameraType`: Tipo di telecamera corrispondente a questa osservazione. Enum:'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  - `cameraUsage`: Scopo della telecamera corrispondente a questa osservazione. ENUM: [SORVEGLIANZA, RLVD, ANPR/LPR].  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `endDateTime`: Ora di fine rapporto corrispondente a questa osservazione.  - `id`: Identificatore unico dell'entità  - `imageSnapshot`: Link per scaricare l'istantanea della telecamera corrispondente a questa osservazione  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mediaURL`: URL che fornisce ulteriori informazioni di qualsiasi immagine(i) o media della denuncia o del luogo.  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio pienamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `startDateTime`: Ora di inizio riportata corrispondente a questa osservazione.  - `streamName`: Nome del flusso video dalla telecamera corrispondente a questa osservazione  - `streamURL`: URL che fornisce informazioni di streaming video per la telecamera corrispondente a questa osservazione    
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `cameraName`: Nome della telecamera corrispondente a questa osservazione.  - `cameraNum`: Numero della telecamera corrispondente a questa osservazione.  - `cameraOrientation`: Informazioni sull'orientamento della telecamera corrispondente a questa osservazione  - `cameraType`: Tipo di telecamera corrispondente a questa osservazione. Enum:'FISSA, PTZ, DOME, GIORNO/NOTTE, C-MOUNT, BULLET'.  - `cameraUsage`: Scopo della telecamera corrispondente a questa osservazione. Enum: [VIGILANZA, RLVD, ANPR/LPR].  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `endDateTime`: Ora di fine segnalata corrispondente a questa osservazione.  - `id`: Identificatore univoco dell'entità  - `imageSnapshot`: Collegamento per il download dell'istantanea del feed della telecamera corrispondente a questa osservazione  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mediaURL`: URL che fornisce ulteriori informazioni su eventuali immagini o supporti del reclamo o del luogo.  - `name`: Il nome di questo elemento.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `startDateTime`: Ora di inizio segnalata corrispondente a questa osservazione.  - `streamName`: Nome del flusso video dalla telecamera corrispondente a questa osservazione  - `streamURL`: URL che fornisce informazioni sullo streaming video per la telecamera corrispondente a questa osservazione  - `type`: Tipo di entità NGSI. Deve essere Camera    
 Proprietà richieste  
-- `id`  - `type`  ## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  ## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -88,7 +90,7 @@ Camera:
         model: https://schema.org/Text    
         type: Property    
     cameraUsage:    
-      description: 'Purpose of the camera corresponding to this observation. ENUM: [SURVEILLANCE, RLVD, ANPR/LPR].'    
+      description: 'Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR].'    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -350,6 +352,13 @@ Camera:
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
+    type:    
+      description: 'NGSI entity type. It has to be Camera'    
+      enum:    
+        - Camera    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
@@ -359,12 +368,12 @@ Camera:
   x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/CrossSector/Camera/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### Camera NGSI-v2 valori chiave Esempio  
-Ecco un esempio di una Camera in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+## Esempi di payload  
+#### Valori chiave della telecamera NGSI-v2 Esempio  
+Ecco un esempio di Camera in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Camera:Cam2",  
@@ -392,8 +401,8 @@ Camera:
   "mediaURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
 }  
 ```  
-#### Camera NGSI-v2 normalizzata Esempio  
-Ecco un esempio di una Camera in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+#### Esempio di telecamera NGSI-v2 normalizzata  
+Ecco un esempio di Camera in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Smart Data Models-Camera",  
@@ -466,110 +475,108 @@ Camera:
   ]  
 }  
 ```  
-#### Camera NGSI-LD valori chiave Esempio  
-Ecco un esempio di una Camera in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+#### Valori chiave della telecamera NGSI-LD Esempio  
+Ecco un esempio di Camera in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:Camera:Cam2",  
-  "type": "Camera",  
-  "cameraName": "Cam2",  
-  "streamURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing",  
-  "cameraUsage": "SURVEILLANCE",  
-  "cameraType": "FIXED",  
-  "endDateTime": "2021-05-11T06:35:20.065Z",  
-  "startDateTime": "2021-05-11T06:30:00.020Z",  
-  "cameraOrientation": {  
-    "comments": "Camera facing RSBhawan",  
-    "annotatedMap": "https://drive.google.com/file/d/1RXDGogU5UMmzRppqFaNKTzcr69Kl0wjb/view?usp=sharing"  
-  },  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      91.28076,  
-      23.831796  
+    "id": "urn:ngsi-ld:Camera:Cam2",  
+    "type": "Camera",  
+    "cameraName": "Cam2",  
+    "cameraNum": 2,  
+    "cameraOrientation": {  
+        "comments": "Camera facing RSBhawan",  
+        "annotatedMap": "https://drive.google.com/file/d/1RXDGogU5UMmzRppqFaNKTzcr69Kl0wjb/view?usp=sharing"  
+    },  
+    "cameraType": "FIXED",  
+    "cameraUsage": "SURVEILLANCE",  
+    "endDateTime": "2021-05-11T06:35:20.065Z",  
+    "imageSnapshot": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            91.28076,  
+            23.831796  
+        ]  
+    },  
+    "mediaURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing",  
+    "startDateTime": "2021-05-11T06:30:00.020Z",  
+    "streamName": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2",  
+    "streamURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "cameraNum": 2,  
-  "imageSnapshot": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing",  
-  "streamName": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2",  
-  "mediaURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### Camera NGSI-LD normalizzata Esempio  
-Ecco un esempio di una Camera in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+#### Esempio di telecamera NGSI-LD normalizzata  
+Ecco un esempio di Camera in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:Smart Data Models-Camera",  
-  "type": "Camera",  
-  "cameraName": {  
-    "type": "Property",  
-    "value": "Cam2"  
-  },  
-  "streamURL": {  
-    "type": "Property",  
-    "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
-  },  
-  "cameraUsage": {  
-    "type": "Property",  
-    "value": "SURVEILLANCE"  
-  },  
-  "cameraType": {  
-    "type": "Property",  
-    "value": "FIXED"  
-  },  
-  "startDateTime": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "Datetime",  
-      "@value": "2021-05-11T06:30:00.020Z"  
-    }  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        23.831796,  
-        91.28076  
-      ]  
-    }  
-  },  
-  "cameraOrientation": {  
-    "type": "Property",  
-    "value": {  
-      "comments": "Camera facing RSBhawan",  
-      "annotatedMap": "https://drive.google.com/file/d/1RXDGogU5UMmzRppqFaNKTzcr69Kl0wjb/view?usp=sharing"  
-    }  
-  },  
-  "endDateTime": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-05-11T06:35:20.065Z"  
-    }  
-  },  
-  "cameraNum": {  
-    "type": "Property",  
-    "value": 2  
-  },  
-  "imageSnapshot": {  
-    "type": "Property",  
-    "value": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing"  
-  },  
-  "streamName": {  
-    "type": "Property",  
-    "value": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2"  
-  },  
-  "mediaURL": {  
-    "type": "Property",  
-    "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:Smart Data Models-Camera",  
+    "type": "Camera",  
+    "cameraName": {  
+        "type": "Property",  
+        "value": "Cam2"  
+    },  
+    "cameraNum": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "cameraOrientation": {  
+        "type": "Property",  
+        "value": {  
+            "comments": "Camera facing RSBhawan",  
+            "annotatedMap": "https://drive.google.com/file/d/1RXDGogU5UMmzRppqFaNKTzcr69Kl0wjb/view?usp=sharing"  
+        }  
+    },  
+    "cameraType": {  
+        "type": "Property",  
+        "value": "FIXED"  
+    },  
+    "cameraUsage": {  
+        "type": "Property",  
+        "value": "SURVEILLANCE"  
+    },  
+    "endDateTime": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-05-11T06:35:20.065Z"  
+        }  
+    },  
+    "imageSnapshot": {  
+        "type": "Property",  
+        "value": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                23.831796,  
+                91.28076  
+            ]  
+        }  
+    },  
+    "mediaURL": {  
+        "type": "Property",  
+        "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
+    },  
+    "startDateTime": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "Datetime",  
+            "@value": "2021-05-11T06:30:00.020Z"  
+        }  
+    },  
+    "streamName": {  
+        "type": "Property",  
+        "value": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2"  
+    },  
+    "streamURL": {  
+        "type": "Property",  
+        "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
+    },  
+    "@context": []  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
