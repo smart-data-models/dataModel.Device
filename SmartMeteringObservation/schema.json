@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
+    "$schemaVersion": "0.0.2",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Device/SmartMeteringObservation/schema.json",
     "title": " Smart Data Models - Smart Metering Observation",
@@ -49,7 +49,7 @@
                             "description": "Property. Identifier format of any NGSI entity"
                         }
                     ],
-                    "description": "Relationship. Unique identifier of the entity"
+                    "description": "Relationship. Unique identifier of the entity (Device) linked to the SmartMeteringObservation"
                 },
                 "image": {
                     "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/PhysicalObject-Commons/properties/image"

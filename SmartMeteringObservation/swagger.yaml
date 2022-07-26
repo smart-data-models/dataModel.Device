@@ -11,7 +11,7 @@ info:
   description:  |
     This entity contains a harmonised description of a Smart Meter Observation, generally applicable for Smart Homes, Industry, Cities and Agriculture. It is based mostly in the GSMA entity definition but it is extended
   title: SmartMeteringObservation
-  version: "1.0.0"
+  version: "0.0.2"
 openapi: "3.0.0"
 
 paths: 
