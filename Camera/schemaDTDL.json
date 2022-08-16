@@ -44,7 +44,7 @@
             "displayName": "cameraUsage",
             "@type": "Property",
             "schema": "string",
-            "comment": "Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC]."
+            "comment": "Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR]."
         },
         {
             "name": "dataProvider",
@@ -109,14 +109,6 @@
             "@type": "Property",
             "schema": "string",
             "comment": "The name of this item."
-        },
-        {
-            "name": "on",
-            "writable": true,
-            "displayName": "on",
-            "@type": "Property",
-            "schema": "Boolean",
-            "comment": "The state of the camera on/off."
         },
         {
             "name": "seeAlso",
