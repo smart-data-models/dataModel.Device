@@ -28,7 +28,7 @@
         },
         "cameraUsage": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR]."
+          "description": "Property. Model:'https://schema.org/Text'. Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC]."
         },
         "streamURL": {
           "type": "string",
@@ -43,7 +43,7 @@
             "DOME",
             "DAY/NIGHT",
             "C-MOUNT",
-            "BULLET"
+            "BULLET"         
           ]
         },
         "endDateTime": {
@@ -81,6 +81,10 @@
           "type": "string",
           "format": "date-time",
           "description": "Property. Model:'https://schema.org/DateTime'. Reported start time corresponding to this observation."
+        },
+        "on": {
+          "type": "boolean",
+          "description": "Property. Model:'https://schema.org/Boolean'. Indicates if the device is on (true) or off (false)."
         },
         "imageSnapshot": {
           "type": "string",
