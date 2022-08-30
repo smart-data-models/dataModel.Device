@@ -4,11 +4,11 @@
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Device/blob/master/Camera/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 グローバルな記述です。**都市に設置されたカメラのデータモデルです。  
-バージョン: 0.1.1  
+バージョン: 0.1.2  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `cameraName`: この観測に対応するカメラの名前。  - `cameraNum`: この観測に対応するカメラ番号。  - `cameraOrientation`: この観測に対応するカメラの方位情報  - `cameraType`: この観測に対応するカメラのタイプ。Enum: 'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  - `cameraUsage`: この観測に対応するカメラの目的。Enum: [SURVEILLANCE, RLVD, ANPR/LPR].  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `endDateTime`: この観測に対応する報告された終了時刻。  - `id`: エンティティの一意な識別子  - `imageSnapshot`: この観測に対応するカメラのフィードスナップショットダウンロードリンク  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mediaURL`: 苦情や場所に関する画像やメディアなどの詳細情報を提供するURL。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startDateTime`: この観測に対応する報告された開始時刻。  - `streamName`: この観測に対応するカメラからのビデオストリームの名前  - `streamURL`: この観測に対応するカメラの映像ストリーミング情報を提供するURL  - `type`: NGSIエンティティタイプ。カメラでなければならない    
+- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `cameraName`: この観測に対応するカメラの名前。  - `cameraNum`: この観測に対応するカメラ番号。  - `cameraOrientation`: この観測に対応するカメラの方位情報  - `cameraType`: この観測に対応するカメラのタイプ。Enum: 'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  - `cameraUsage`: この観測に対応するカメラの目的。Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC].  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `endDateTime`: この観測に対応する報告された終了時刻。  - `id`: エンティティの一意な識別子  - `imageSnapshot`: この観測に対応するカメラのフィードスナップショットダウンロードリンク  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mediaURL`: 苦情や場所に関する画像やメディアなどの詳細情報を提供するURL。  - `name`: このアイテムの名称です。  - `on`: デバイスがオン(true)かオフ(false)かを示す。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startDateTime`: この観測に対応する報告された開始時刻。  - `streamName`: この観測に対応するカメラからのビデオストリームの名前  - `streamURL`: この観測に対応するカメラの映像ストリーミング情報を提供するURL  - `type`: NGSIエンティティタイプ。カメラでなければならない    
 必要なプロパティ  
 - `id`  - `type`  ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
@@ -90,7 +90,7 @@ Camera:
         model: https://schema.org/Text    
         type: Property    
     cameraUsage:    
-      description: 'Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR].'    
+      description: 'Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC].'    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -308,6 +308,12 @@ Camera:
       type: string    
       x-ngsi:    
         type: Property    
+    on:    
+      description: 'Indicates if the device is on (true) or off (false).'    
+      type: boolean    
+      x-ngsi:    
+        model: https://schema.org/Boolean    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
@@ -364,11 +370,11 @@ Camera:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/CrossSector/Camera/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.1    
+  x-version: 0.1.2    
 ```  
 </details>    
 ## ペイロードの例  
@@ -396,6 +402,7 @@ Camera:
     ]  
   },  
   "cameraNum": 2,  
+  "on" : true,  
   "imageSnapshot": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing",  
   "streamName": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2",  
   "mediaURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
@@ -470,6 +477,10 @@ Camera:
     "type": "Property",  
     "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
   },  
+  "on": {  
+    "type": "Property",  
+    "value": true  
+  },  
   "@context": [  
     "https://smartdatamodels.org/context.jsonld"  
   ]  
@@ -502,6 +513,7 @@ Camera:
     "startDateTime": "2021-05-11T06:30:00.020Z",  
     "streamName": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2",  
     "streamURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing",  
+    "on" : true,  
     "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
@@ -575,6 +587,10 @@ Camera:
     "streamURL": {  
         "type": "Property",  
         "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
+    },  
+    "on": {  
+        "type": "Property",  
+        "value": true  
     },  
     "@context": []  
 }  
