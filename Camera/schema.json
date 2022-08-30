@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.1.1",
+  "$schemaVersion": "0.1.2",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/CrossSector/Camera/schema.json",
   "title": " Smart Data Models - Camera",
