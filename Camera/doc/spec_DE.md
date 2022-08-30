@@ -4,11 +4,11 @@
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Device/blob/master/Camera/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Ein Datenmodell für Kameraanlagen in einer Stadt.**  
-Version: 0.1.1  
+Version: 0.1.2  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `cameraName`: Name der Kamera, die zu dieser Beobachtung gehört.  - `cameraNum`: Kameranummer, die dieser Beobachtung entspricht.  - `cameraOrientation`: Orientierungsinformationen für die Kamera, die dieser Beobachtung entspricht  - `cameraType`: Typ der Kamera, die dieser Beobachtung entspricht. Enum:'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  - `cameraUsage`: Zweck der Kamera, die dieser Beobachtung entspricht. Enum: [SURVEILLANCE, RLVD, ANPR/LPR].  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `endDateTime`: Gemeldete Endzeit für diese Beobachtung.  - `id`: Eindeutiger Bezeichner der Entität  - `imageSnapshot`: Download-Link für den Schnappschuss der Kamera, die zu dieser Beobachtung gehört  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mediaURL`: URL mit weiteren Informationen zu Bild(ern) oder Medien der Beschwerde oder des Ortes.  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `startDateTime`: Gemeldete Startzeit, die dieser Beobachtung entspricht.  - `streamName`: Name des Videostreams von der Kamera, der dieser Beobachtung entspricht  - `streamURL`: URL mit Video-Streaming-Informationen für die Kamera, die dieser Beobachtung entspricht  - `type`: NGSI-Entitätstyp. Es muss eine Kamera sein    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `cameraName`: Name der Kamera, die zu dieser Beobachtung gehört.  - `cameraNum`: Kameranummer, die dieser Beobachtung entspricht.  - `cameraOrientation`: Orientierungsinformationen für die Kamera, die dieser Beobachtung entspricht  - `cameraType`: Typ der Kamera, die dieser Beobachtung entspricht. Enum:'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  - `cameraUsage`: Zweck der Kamera, die dieser Beobachtung entspricht. Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC].  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `endDateTime`: Gemeldete Endzeit für diese Beobachtung.  - `id`: Eindeutiger Bezeichner der Entität  - `imageSnapshot`: Download-Link für den Schnappschuss der Kamera, die zu dieser Beobachtung gehört  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mediaURL`: URL mit weiteren Informationen zu Bild(ern) oder Medien der Beschwerde oder des Ortes.  - `name`: Der Name dieses Artikels.  - `on`: Gibt an, ob das Gerät eingeschaltet (true) oder ausgeschaltet (false) ist.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `startDateTime`: Gemeldete Startzeit, die dieser Beobachtung entspricht.  - `streamName`: Name des Videostreams von der Kamera, der dieser Beobachtung entspricht  - `streamURL`: URL mit Video-Streaming-Informationen für die Kamera, die dieser Beobachtung entspricht  - `type`: NGSI-Entitätstyp. Es muss eine Kamera sein    
 Erforderliche Eigenschaften  
 - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -90,7 +90,7 @@ Camera:
         model: https://schema.org/Text    
         type: Property    
     cameraUsage:    
-      description: 'Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR].'    
+      description: 'Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC].'    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -308,6 +308,12 @@ Camera:
       type: string    
       x-ngsi:    
         type: Property    
+    on:    
+      description: 'Indicates if the device is on (true) or off (false).'    
+      type: boolean    
+      x-ngsi:    
+        model: https://schema.org/Boolean    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
@@ -364,11 +370,11 @@ Camera:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/Camera/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/CrossSector/Camera/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.1    
+  x-version: 0.1.2    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
@@ -396,6 +402,7 @@ Camera:
     ]  
   },  
   "cameraNum": 2,  
+  "on" : true,  
   "imageSnapshot": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing",  
   "streamName": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2",  
   "mediaURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
@@ -470,13 +477,17 @@ Camera:
     "type": "Property",  
     "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
   },  
+  "on": {  
+    "type": "Property",  
+    "value": true  
+  },  
   "@context": [  
     "https://smartdatamodels.org/context.jsonld"  
   ]  
 }  
 ```  
 #### Kamera NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für eine Kamera im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine Kamera im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
     "id": "urn:ngsi-ld:Camera:Cam2",  
@@ -502,6 +513,7 @@ Camera:
     "startDateTime": "2021-05-11T06:30:00.020Z",  
     "streamName": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2",  
     "streamURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing",  
+    "on" : true,  
     "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
@@ -575,6 +587,10 @@ Camera:
     "streamURL": {  
         "type": "Property",  
         "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
+    },  
+    "on": {  
+        "type": "Property",  
+        "value": true  
     },  
     "@context": []  
 }  
