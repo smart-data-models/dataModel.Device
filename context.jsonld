@@ -65,6 +65,7 @@
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "numValue": "https://smartdatamodels.org/dataModel.Device/numValue",
         "offPeakConsumption": "https://smartdatamodels.org/dataModel.Device/offPeakConsumption",
+        "on": "https://smartdatamodels.org/dataModel.Device/on",
         "operationType": "https://smartdatamodels.org/dataModel.Device/operationType",
         "operator": "https://smartdatamodels.org/dataModel.Device/operator",
         "osVersion": "https://smartdatamodels.org/dataModel.Device/osVersion",
