@@ -98,5 +98,7 @@
         "type": "Property",
         "value": "UDT0000016"
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+    ]
 }
