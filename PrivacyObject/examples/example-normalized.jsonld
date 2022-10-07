@@ -86,5 +86,7 @@
         "type": "Property",
         "value": "urn:ngsi-ld:User:abcdef"
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+    ]
 }
