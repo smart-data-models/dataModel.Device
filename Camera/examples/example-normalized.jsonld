@@ -68,5 +68,7 @@
         "type": "Property",
         "value": true
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+    ]
 }
