@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: SmartMeteringObservation  
-=================================  
+=================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Device/blob/master/SmartMeteringObservation/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung einer Smart-Meter-Beobachtung, die allgemein für Smart Homes, Industrie, Städte und Landwirtschaft gilt. Sie basiert größtenteils auf der GSMA-Entity-Definition, ist jedoch erweitert**.  
 Version: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `entityVersion`: Die Version der Entitätsspezifikation. Eine Versionsnummer von 2.0 oder höher bedeutet, dass die Entität mit NGSI-LD dargestellt wird.  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `meterType`: Die Art der gemessenen Versorgung, z. B.: Elektrizität, Benzin, Wasser, Methan, Diesel.  - `name`: Der Name dieses Artikels.  - `offPeakConsumption`: Die vom Zähler seit der Installation aufgezeichnete Gesamtmenge des während der Schwachlastzeiten gelieferten Produkts (besonders relevant für die Stromversorgung). Es sollte der entsprechende Einheitencode angegeben werden, z. B. KWH (Kilowattstunden) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `peakConsumption`: Die vom Zähler seit der Installation aufgezeichnete Gesamtmenge des während der "Spitzenzeiten" gelieferten Produkts (besonders relevant für die Stromversorgung). Es sollte der entsprechende Einheitencode angegeben werden, z. B. KWH (Kilowattstunden) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `powerFactor`: Relevant für die in der Industrie häufig verwendete 3-Phasen-Stromversorgung - der Leistungsfaktor reicht von -1 bis +1, je nach dem Nettogleichgewicht zwischen kapazitiven und induktiven Lasten. Falls verwendet, misst dies den durchschnittlichen Leistungsfaktor seit der Installation des Zählers.  - `refDevice`: Eindeutiger Bezeichner der mit der SmartMeteringObservation verbundenen Einheit (Gerät)  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `totalConsumption`: Die Gesamtmenge des gelieferten Produkts, die vom Zähler seit der Installation aufgezeichnet wurde. Es sollte der entsprechende Einheitencode angegeben werden, z. B. KWH (Kilowattstunden) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `type`: Es muss SmartMeteringObservation sein. NGSI Entitätstyp    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `entityVersion[string]`: Die Version der Entitätsspezifikation. Eine Versionsnummer von 2.0 oder höher bedeutet, dass die Entität mit NGSI-LD dargestellt wird.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Eindeutiger Bezeichner der Entität  - `image[string]`: Ein Bild des Artikels  . Model: [https://schema.org/URL](https://schema.org/URL)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `meterType[string]`: Die Art der gemessenen Versorgung, z. B.: Elektrizität, Benzin, Wasser, Methan, Diesel.  - `name[string]`: Der Name dieses Artikels.  - `offPeakConsumption[number]`: Die vom Zähler seit der Installation aufgezeichnete Gesamtmenge des während der Schwachlastzeiten gelieferten Produkts (besonders relevant für die Stromversorgung). Es sollte der entsprechende Einheitencode angegeben werden, z. B. KWH (Kilowattstunden) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `peakConsumption[number]`: Die vom Zähler seit der Installation aufgezeichnete Gesamtmenge des während der "Spitzenzeiten" gelieferten Produkts (besonders relevant für die Stromversorgung). Es sollte der entsprechende Einheitencode angegeben werden, z. B. KWH (Kilowattstunden) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `powerFactor[number]`: Relevant für die in der Industrie häufig verwendete 3-Phasen-Stromversorgung - der Leistungsfaktor reicht von -1 bis +1, je nach dem Nettogleichgewicht zwischen kapazitiven und induktiven Lasten. Falls verwendet, misst dies den durchschnittlichen Leistungsfaktor seit der Installation des Zählers.  - `refDevice[*]`: Eindeutiger Bezeichner der mit der SmartMeteringObservation verbundenen Einheit (Gerät)  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `totalConsumption[number]`: Die Gesamtmenge des gelieferten Produkts, die vom Zähler seit der Installation aufgezeichnet wurde. Es sollte der entsprechende Einheitencode angegeben werden, z. B. KWH (Kilowattstunden) für Strom, LTR (Liter) oder MTQ (Kubikmeter) für Gase oder Flüssigkeiten.  - `type[string]`: Es muss SmartMeteringObservation sein. NGSI Entitätstyp  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Angepasst an die Datenmodelle der GSMA, aber kompatibel mit allen intelligenten Datenmodellen. Erweitert um individuelle Eigenschaften.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SmartMeteringObservation:    
@@ -346,9 +359,14 @@ SmartMeteringObservation:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### SmartMeteringObservation NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für eine SmartMeteringObservation im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:SmartMeter:8ac0db56-9adf-11e8-ad67-e7308e2e8b15",  
@@ -377,8 +395,10 @@ SmartMeteringObservation:
   "powerFactor": 0.98  
 }  
 ```  
+</details>  
 #### SmartMeteringObservation NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für eine SmartMeteringObservation im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:SmartMeter:8ac0db56-9adf-11e8-ad67-e7308e2e8b15",  
@@ -443,8 +463,10 @@ SmartMeteringObservation:
   }  
 }  
 ```  
+</details>  
 #### SmartMeteringObservation NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für eine SmartMeteringObservation im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:SmartMeter:8ac0db56-9adf-11e8-ad67-e7308e2e8b15",  
@@ -476,8 +498,10 @@ SmartMeteringObservation:
     ]  
 }  
 ```  
+</details>  
 #### SmartMeteringObservation NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für eine SmartMeteringObservation im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:SmartMeter:8ac0db56-9adf-11e8-ad67-e7308e2e8b15",  
@@ -540,7 +564,17 @@ SmartMeteringObservation:
         "type": "Property",  
         "value": 7.0  
     },  
-    "@context": []  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
