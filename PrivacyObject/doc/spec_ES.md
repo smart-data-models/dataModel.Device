@@ -1,18 +1,32 @@
-Entidad: PrivacyObject  
-======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: PrivacyObject  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Device/blob/master/PrivacyObject/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Información sobre la privacidad de un dispositivo IoT**  
 versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `category`: Sensor: Dispositivo que detecta y responde a eventos o cambios en el entorno físico, como la luz, el movimiento o los cambios de temperatura. https://w3id.org/saref#Sensor. Actuador : Dispositivo encargado de mover o controlar un mecanismo o sistema. https://w3id.org/saref#Actuator. Medidor : Dispositivo construido para detectar y mostrar con precisión una cantidad de forma legible por un ser humano. Definido parcialmente por la SAREF. HVAC : Dispositivo de Calefacción, Ventilación y Aire Acondicionado (HVAC) que proporciona confort ambiental en interiores. https://w3id.org/saref#HVAC. Red : Dispositivo utilizado para conectar otros dispositivos en una red, como el concentrador, el conmutador o el router en una red LAN o de sensores. (https://w3id.org/saref#Network. Multimedia : Dispositivo diseñado para mostrar, almacenar, grabar o reproducir contenidos multimedia como audio, imágenes, animación, vídeo. Enum:'actuador, baliza, pistola final, HVAC, implemento, irrSection, irrSystem, medidor, multimedia, red, sensor'  - `crossborderTransfer`: Indicación sobre la transferencia transfronteriza vinculada a la entidad.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `floor`: El piso donde se instala el dispositivo cuando está en el edificio o equivalente.  - `id`: Identificador único de la entidad  - `image`: Una imagen del artículo  - `isIndoor`: Bandera para indicar si la entidad está instalada en el interior o en el exterior.  - `isPersonalData`: Bandera para indicar si la entidad proporciona o contiene datos personales.  - `legitimateInterest`: Interés legítimo asociado a la entidad. Esto significa para qué finalidad de alto nivel se realiza la recogida de datos.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `purpose`: Objetivo de la recogida de datos.  - `recipientList`: Lista que contiene los destinatarios. Un destinatario es el beneficiario que utiliza los datos generados por un sensor. Cada destinatario está representado por un URI que permite su identificación única. Privacidad:'Baja'  - `refDevice`: Identificador único del conjunto de datos de origen.  - `retentionPeriod`: Período de conservación de los datos.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Propiedad de tipo NGSI. Tiene que ser PrivacyObject.  - `user`: Identificador de un usuario anónimo. Este identificador es, de hecho, un URN único que puede utilizarse para reconocer de forma anónima a un usuario.    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: Sensor: Dispositivo que detecta y responde a eventos o cambios en el entorno físico, como la luz, el movimiento o los cambios de temperatura. https://w3id.org/saref#Sensor. Actuador : Dispositivo encargado de mover o controlar un mecanismo o sistema. https://w3id.org/saref#Actuator. Medidor : Dispositivo construido para detectar y mostrar con precisión una cantidad de forma legible por un ser humano. Definido parcialmente por la SAREF. HVAC : Dispositivo de Calefacción, Ventilación y Aire Acondicionado (HVAC) que proporciona confort ambiental en interiores. https://w3id.org/saref#HVAC. Red : Dispositivo utilizado para conectar otros dispositivos en una red, como el concentrador, el conmutador o el router en una red LAN o de sensores. (https://w3id.org/saref#Network. Multimedia : Dispositivo diseñado para mostrar, almacenar, grabar o reproducir contenidos multimedia como audio, imágenes, animación, vídeo. Enum:'actuador, baliza, pistola final, HVAC, implemento, irrSection, irrSystem, medidor, multimedia, red, sensor'  . Model: [https://schema.org/Text](https://schema.org/Text)- `crossborderTransfer[string]`: Indicación sobre la transferencia transfronteriza vinculada a la entidad.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `floor[number]`: El piso donde se instala el dispositivo cuando está en el edificio o equivalente.  - `id[*]`: Identificador único de la entidad  - `image[string]`: Una imagen del artículo  . Model: [https://schema.org/URL](https://schema.org/URL)- `isIndoor[boolean]`: Bandera para indicar si la entidad está instalada en el interior o en el exterior.  - `isPersonalData[boolean]`: Bandera para indicar si la entidad proporciona o contiene datos personales.  - `legitimateInterest[string]`: Interés legítimo asociado a la entidad. Esto significa para qué finalidad de alto nivel se realiza la recogida de datos.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `purpose[string]`: Objetivo de la recogida de datos.  - `recipientList[array]`: Lista que contiene los destinatarios. Un destinatario es el beneficiario que utiliza los datos generados por un sensor. Cada destinatario está representado por un URI que permite su identificación única. Privacidad:'Baja'  . Model: [https://schema.org/URL](https://schema.org/URL)- `refDevice[*]`: Identificador único del conjunto de datos de origen.  - `retentionPeriod[string]`: Período de conservación de los datos.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Propiedad de tipo NGSI. Tiene que ser PrivacyObject.  - `user[string]`: Identificador de un usuario anónimo. Este identificador es, de hecho, un URN único que puede utilizarse para reconocer de forma anónima a un usuario.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 La entidad PrivacyObject representa un dispositivo IoT (normalmente un sensor) con la información sobre la privacidad directamente vinculada a este dispositivo IoT. Se utilizan varios atributos para describir el dispositivo IoT en el contexto de la privacidad. En particular, un atributo proporciona la ubicación del dispositivo IoT y otros dos dan más información sobre la posición exacta. También se utiliza un atributo para describir el dispositivo IoT y un segundo atributo da el propósito del sensor IoT. Otros atributos están muy centrados en la privacidad y el GDPR con el objetivo de categorizar la información asociada al dispositivo IoT.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PrivacyObject:    
@@ -373,12 +387,22 @@ PrivacyObject:
     - id    
     - type    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/PrivacyObject/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Device/PrivacyObject/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### PrivacyObject NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un PrivacyObject en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
@@ -416,8 +440,10 @@ PrivacyObject:
   "image": "http://www.example.com/device1.jpg"  
 }  
 ```  
+</details>  
 #### PrivacyObject NGSI-v2 normalizado Ejemplo  
 Este es un ejemplo de un PrivacyObject en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
@@ -509,142 +535,155 @@ PrivacyObject:
   }  
 }  
 ```  
+</details>  
 #### PrivacyObject NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un PrivacyObject en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
-  "type": "PrivacyObject",  
-  "refDevice": "Device:1044_parking",  
-  "name": "1004_parking",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      46.18311,  
-      6.14132  
+    "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
+    "type": "PrivacyObject",  
+    "category": [  
+        "sensor"  
+    ],  
+    "crossborderTransfer": "None",  
+    "description": "Electromagnetic and ultrasonic sensor",  
+    "description_fr": "Capteur electromagnetique et ultrasons",  
+    "floor": 0,  
+    "image": "http://www.example.com/device1.jpg",  
+    "isIndoor": false,  
+    "isPersonalData": false,  
+    "legitimateInterest": "Facilitate and understand parking habits",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            46.18311,  
+            6.14132  
+        ]  
+    },  
+    "name": "1004_parking",  
+    "owner": [  
+        "ngsi-ld:city:CityofCarouge"  
+    ],  
+    "purpose": "Detecting the presence of a vehicle on a parking slot.",  
+    "purpose_fr": "Detecter la presence d'un vehicule sur une place de parc.",  
+    "recipientList": [  
+        "urn:ngsi-ld:User:CommunalAdministration",  
+        "urn:ngsi-ld:User:Motorists"  
+    ],  
+    "refDevice": "Device:1044_parking",  
+    "retentionPeriod": "< 1 month",  
+    "user": "urn:ngsi-ld:User:abcdef",  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "isIndoor": false,  
-  "floor": 0,  
-  "description": "Electromagnetic and ultrasonic sensor",  
-  "description_fr": "Capteur electromagnetique et ultrasons",  
-  "user": "urn:ngsi-ld:User:abcdef",  
-  "purpose": "Detecting the presence of a vehicle on a parking slot.",  
-  "purpose_fr": "Detecter la presence d'un vehicule sur une place de parc.",  
-  "category": [  
-    "sensor"  
-  ],  
-  "recipientList": [  
-    "urn:ngsi-ld:User:CommunalAdministration",  
-    "urn:ngsi-ld:User:Motorists"  
-  ],  
-  "owner": [  
-    "ngsi-ld:city:CityofCarouge"  
-  ],  
-  "isPersonalData": false,  
-  "retentionPeriod": "< 1 month",  
-  "legitimateInterest": "Facilitate and understand parking habits",  
-  "crossborderTransfer": "None",  
-  "image": "http://www.example.com/device1.jpg",  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### PrivacyObject NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de un PrivacyObject en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
-  "type": "PrivacyObject",  
-  "refDevice": {  
-    "type": "Relationship",  
-    "value": "Device:1044_parking"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "1004_parking"  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        46.18311,  
-        6.14132  
-      ]  
-    }  
-  },  
-  "isIndoor": {  
-    "type": "Property",  
-    "value": "false"  
-  },  
-  "floor": {  
-    "type": "Property",  
-    "value": "false"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Electromagnetic and ultrasonic sensor"  
-  },  
-  "description_fr": {  
-    "type": "Property",  
-    "value": "Capteur electromagnetique et ultrasons"  
-  },  
-  "user": {  
-    "type": "Property",  
-    "value": "urn:ngsi-ld:User:abcdef"  
-  },  
-  "purpose": {  
-    "type": "Property",  
-    "value": "Detecting the presence of a vehicle on a parking slot."  
-  },  
-  "purpose_fr": {  
-    "type": "string",  
-    "value": "Detecter la presence d'un vehicule sur une place de parc."  
-  },  
-  "category": {  
-    "type": "Property",  
-    "value": [  
-      "sensor"  
+    "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
+    "type": "PrivacyObject",  
+    "category": {  
+        "type": "Property",  
+        "value": [  
+            "sensor"  
+        ]  
+    },  
+    "crossborderTransfer": {  
+        "type": "Property",  
+        "value": "None"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Electromagnetic and ultrasonic sensor"  
+    },  
+    "description_fr": {  
+        "type": "Property",  
+        "value": "Capteur electromagnetique et ultrasons"  
+    },  
+    "floor": {  
+        "type": "Property",  
+        "value": "false"  
+    },  
+    "image": {  
+        "type": "Property",  
+        "value": "http://www.example.com/device1.jpg"  
+    },  
+    "isIndoor": {  
+        "type": "Property",  
+        "value": "false"  
+    },  
+    "isPersonalData": {  
+        "type": "Property",  
+        "value": "false"  
+    },  
+    "legitimateInterest": {  
+        "type": "Property",  
+        "value": "Facilitate and understand parking habits"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                46.18311,  
+                6.14132  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "1004_parking"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "ngsi-ld:city:CityofCarouge"  
+        ]  
+    },  
+    "purpose": {  
+        "type": "Property",  
+        "value": "Detecting the presence of a vehicle on a parking slot."  
+    },  
+    "purpose_fr": {  
+        "type": "string",  
+        "value": "Detecter la presence d'un vehicule sur une place de parc."  
+    },  
+    "recipientList": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:User:CommunalAdministration",  
+            "urn:ngsi-ld:User:Motorists"  
+        ]  
+    },  
+    "refDevice": {  
+        "type": "Relationship",  
+        "value": "Device:1044_parking"  
+    },  
+    "retentionPeriod": {  
+        "type": "Property",  
+        "value": "< 1 month"  
+    },  
+    "user": {  
+        "type": "Property",  
+        "value": "urn:ngsi-ld:User:abcdef"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "recipientList": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:User:CommunalAdministration",  
-      "urn:ngsi-ld:User:Motorists"  
-    ]  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "ngsi-ld:city:CityofCarouge"  
-    ]  
-  },  
-  "isPersonalData": {  
-    "type": "Property",  
-    "value": "false"  
-  },  
-  "retentionPeriod": {  
-    "type": "Property",  
-    "value": "< 1 month"  
-  },  
-  "legitimateInterest": {  
-    "type": "Property",  
-    "value": "Facilitate and understand parking habits"  
-  },  
-  "crossborderTransfer": {  
-    "type": "Property",  
-    "value": "None"  
-  },  
-  "image": {  
-    "type": "Property",  
-    "value": "http://www.example.com/device1.jpg"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
