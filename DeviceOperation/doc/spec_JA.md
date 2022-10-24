@@ -1,16 +1,32 @@
-Entityです。DeviceOperation  
-========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティDeviceOperation  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Device/blob/master/DeviceOperation/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、一般的なデバイス操作エンティティの調和された記述を含む。デバイス操作エンティティは、デバイスによって報告されたダイナミックデータを含んでいるため、すべてのIoTセグメントおよび関連するIoTアプリケーションに適用されます。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、一般的な機器操作エンティティの調和された記述を含んでいる。デバイス操作エンティティは、デバイスによって報告される動的データを含み、したがって、すべての IoT セグメントおよび関連する IoT アプリケーションに適用される。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `addressedAt`: イベントやフォールトが対処されたり、クリアされた時のタイムスタンプです。  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `device`: このデバイス操作に関連するデバイスへの参照です。  - `endedAt`: 操作が実際に終了した際のタイムスタンプ。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `operationType`: 列挙されたリストからの選択  - `operator`: 操作を行うオペレーターへの言及  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `plannedEndAt`: 操作の終了予定日／タイムスタンプ。これはあくまでも目安であり、実際の操作終了時刻は予定終了時刻の前後になる可能性があることに注意してください。  - `plannedStartAt`: 操作の開始予定日/タイムスタンプです。ただし、これはあくまでも目安であり、実際に操作を開始する時刻は、計画された開始時刻の前後になる可能性があります。  - `reportedAt`: イベント/障害が報告された時のタイムスタンプ。  - `result`: 操作の結果です。Enum:'ok, aborted, failed' です。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startedAt`: 実際に操作を開始した時のタイムスタンプ。  - `status`: ステータスを説明する列挙型リストからの選択です。Enum:'planned, ongoing, finished, scheduled, canceled'.  - `type`: NGSI Entityの識別子。DeviceOperationでなければならない。    
-必須項目  
-デバイスとは、何らかのロジックを含み、データの生成・消費を行う有形の物体です。デバイスは、常にネットワークを介して電子的に通信することができると想定されています。このデータモデルは、移動体通信事業者および[GSMA](https://www.gsma.com/iot/iot-big-data/)の協力を得て一部作成されました。このデータモデルは、[ETSI](http://www.etsi.org)規格の一部である[SAREF Ontology](http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/01.01.01_60/ts_103264v010101p.pdf)に由来する概念を再利用しています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `addressedAt[string]`: イベントまたはフォルトが対処またはクリアされたときのタイムスタンプ。  - `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `device[*]`: このデバイス操作に関連する「デバイス」への参照。  - `endedAt[string]`: 実際に操作が終了したときのタイムスタンプ。  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `operationType[string]`: 列挙されたリストからの選択  . Model: [event, maintenance, fault, installation, upgrade, other](event, maintenance, fault, installation, upgrade, other)- `operator[*]`: 操作を行うオペレーターへの言及  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `plannedEndAt[string]`: 操作の終了予定日/タイムスタンプ。これは参考値であり、実際の操作の終了時刻は計画された終了時刻の前後である可能性があることに注意してください。  - `plannedStartAt[string]`: 操作の開始予定日/タイムスタンプ。これは参考値であり、実際の操作開始時刻は計画された開始時刻の前後となる可能性があることに注意してください。  - `reportedAt[string]`: イベント/障害が報告されたときのタイムスタンプ。  - `result[string]`: 操作の結果。Enum:'ok, aborted, failed' です。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startedAt[string]`: 実際に操作が開始された時のタイムスタンプ。  - `status[string]`: ステータスを記述する列挙されたリストからの選択。Enum:'planned, ongoing, finished, scheduled, cancelled' （計画中、進行中、終了、予定、キャンセル  - `type[string]`: NGSI エンティティの識別子。これは、DeviceOperation でなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+デバイスは、何らかのロジックを含み、データの生成および/または消費する有形の物体です。デバイスは常に、ネットワークを介して電子的に通信することができると想定されています。このデータモデルは、モバイルオペレーターおよび[GSMA](https://www.gsma.com/iot/iot-big-data/)との協力により部分的に開発されました。このデータモデルは、[ETSI](http://www.etsi.org) 標準の [SAREF Ontology](http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/01.01.01_60/ts_103264v010101p.pdf) の一部から来た概念を再利用しています。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DeviceOperation:    
@@ -382,9 +398,14 @@ DeviceOperation:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### DeviceOperation NGSI-v2 key-valuesの例。  
-DeviceOperationをJSON-LD形式でkey-valuesにした例を紹介します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DeviceOperation NGSI-v2 key-value の例。  
+ここでは、DeviceOperationをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
@@ -405,8 +426,10 @@ DeviceOperation:
   "addressedAt": "2016-08-28T10:18:16Z"  
 }  
 ```  
-#### DeviceOperation NGSI-v2の正規化例  
-ここでは、正規化されたJSON-LD形式のDeviceOperationの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### DeviceOperation NGSI-v2 正規化例  
+以下は、DeviceOperationをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
@@ -469,114 +492,128 @@ DeviceOperation:
   }  
 }  
 ```  
-#### DeviceOperation NGSI-LD key-values 例  
-DeviceOperationをJSON-LD形式でkey-valuesにした例を紹介します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### DeviceOperation NGSI-LD key-value の例  
+ここでは、DeviceOperationをJSON-LD形式でkey-valuesとして記述した例を示す。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.Device/DeviceOperation/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
-  "type": "DeviceOperation",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "device": "urn:ngsi-ld:Device:2033a7c7-d31b-48e7-91c2-014dc426c29e",  
-  "operationType": "fault",  
-  "description": "Backup battery needs replacement",  
-  "result": "ok",  
-  "plannedStartAt": "2016-08-22T10:18:16Z",  
-  "plannedEndAt": "2016-08-28T10:18:16Z",  
-  "status": "ongoing",  
-  "operator": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836",  
-  "startedAt": "2016-08-22T10:18:16Z",  
-  "endedAt": "2016-08-28T10:18:16Z",  
-  "reportedAt": "2016-08-28T10:18:16Z",  
-  "addressedAt": "2016-08-28T10:18:16Z"  
+    "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
+    "type": "DeviceOperation",  
+    "addressedAt": "2016-08-28T10:18:16Z",  
+    "dataProvider": "https://provider.example.com",  
+    "description": "Backup battery needs replacement",  
+    "device": "urn:ngsi-ld:Device:2033a7c7-d31b-48e7-91c2-014dc426c29e",  
+    "endedAt": "2016-08-28T10:18:16Z",  
+    "operationType": "fault",  
+    "operator": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836",  
+    "plannedEndAt": "2016-08-28T10:18:16Z",  
+    "plannedStartAt": "2016-08-22T10:18:16Z",  
+    "reportedAt": "2016-08-28T10:18:16Z",  
+    "result": "ok",  
+    "source": "https://source.example.com",  
+    "startedAt": "2016-08-22T10:18:16Z",  
+    "status": "ongoing",  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.Device/DeviceOperation/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### DeviceOperation NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のDeviceOperationの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### DeviceOperation NGSI-LD 正規化例  
+以下は、DeviceOperationをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.Device/DeviceOperation/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
-  "type": "DeviceOperation",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "device": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Device:2033a7c7-d31b-48e7-91c2-014dc426c29e"  
-  },  
-  "operationType": {  
-    "type": "Property",  
-    "value": "fault"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Backup battery needs replacement"  
-  },  
-  "result": {  
-    "type": "Property",  
-    "value": "ok"  
-  },  
-  "plannedStartAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-22T10:18:16Z"  
-    }  
-  },  
-  "plannedEndAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-28T10:18:16Z"  
-    }  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "ongoing"  
-  },  
-  "operator": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836"  
-  },  
-  "startedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-22T10:18:16Z"  
-    }  
-  },  
-  "endedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-28T10:18:16Z"  
-    }  
-  },  
-  "reportedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-28T10:18:16Z"  
-    }  
-  },  
-  "addressedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-28T10:18:16Z"  
-    }  
-  }  
+    "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
+    "type": "DeviceOperation",  
+    "addressedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-28T10:18:16Z"  
+        }  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Backup battery needs replacement"  
+    },  
+    "device": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Device:2033a7c7-d31b-48e7-91c2-014dc426c29e"  
+    },  
+    "endedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-28T10:18:16Z"  
+        }  
+    },  
+    "operationType": {  
+        "type": "Property",  
+        "value": "fault"  
+    },  
+    "operator": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836"  
+    },  
+    "plannedEndAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-28T10:18:16Z"  
+        }  
+    },  
+    "plannedStartAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-22T10:18:16Z"  
+        }  
+    },  
+    "reportedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-28T10:18:16Z"  
+        }  
+    },  
+    "result": {  
+        "type": "Property",  
+        "value": "ok"  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "startedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-22T10:18:16Z"  
+        }  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "ongoing"  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.Device/DeviceOperation/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
