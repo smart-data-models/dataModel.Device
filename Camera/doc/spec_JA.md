@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティカメラ  
-=========  
+=========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Device/blob/master/Camera/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**都市に設置されたカメラのデータモデルです。  
 バージョン: 0.1.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `cameraName`: この観測に対応するカメラの名前。  - `cameraNum`: この観測に対応するカメラ番号。  - `cameraOrientation`: この観測に対応するカメラの方位情報  - `cameraType`: この観測に対応するカメラのタイプ。Enum: 'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  - `cameraUsage`: この観測に対応するカメラの目的。Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC].  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `endDateTime`: この観測に対応する報告された終了時刻。  - `id`: エンティティの一意な識別子  - `imageSnapshot`: この観測に対応するカメラのフィードスナップショットダウンロードリンク  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mediaURL`: 苦情や場所に関する画像やメディアなどの詳細情報を提供するURL。  - `name`: このアイテムの名称です。  - `on`: デバイスがオン(true)かオフ(false)かを示す。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startDateTime`: この観測に対応する報告された開始時刻。  - `streamName`: この観測に対応するカメラからのビデオストリームの名前  - `streamURL`: この観測に対応するカメラの映像ストリーミング情報を提供するURL  - `type`: NGSIエンティティタイプ。カメラでなければならない    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraName[string]`: この観測に対応するカメラの名前。  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraNum[number]`: この観測に対応するカメラ番号。  . Model: [https://schema.org/Number](https://schema.org/Number)- `cameraOrientation[object]`: この観測に対応するカメラの方位情報  - `cameraType[string]`: この観測に対応するカメラのタイプ。Enum: 'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraUsage[string]`: この観測に対応するカメラの目的。Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC].  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `endDateTime[string]`: この観測に対応する報告された終了時刻。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `id[*]`: エンティティの一意な識別子  - `imageSnapshot[string]`: この観測に対応するカメラのフィードスナップショットダウンロードリンク  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mediaURL[string]`: 苦情や場所に関する画像やメディアなどの詳細情報を提供するURL。  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: このアイテムの名称です。  - `on[boolean]`: デバイスがオン(true)かオフ(false)かを示す。  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startDateTime[string]`: この観測に対応する報告された開始時刻。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `streamName[string]`: この観測に対応するカメラからのビデオストリームの名前  . Model: [https://schema.org/Text](https://schema.org/Text)- `streamURL[string]`: この観測に対応するカメラの映像ストリーミング情報を提供するURL  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSIエンティティタイプ。カメラでなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`  ## プロパティのデータモデル記述  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Camera:    
@@ -377,9 +391,14 @@ Camera:
   x-version: 0.1.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### カメラNGSI-v2キーバリューの例  
 ここでは、CameraをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Camera:Cam2",  
@@ -408,8 +427,10 @@ Camera:
   "mediaURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
 }  
 ```  
+</details>  
 #### カメラ NGSI-v2 正規化例  
 ここでは、CameraをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Smart Data Models-Camera",  
@@ -486,8 +507,10 @@ Camera:
   ]  
 }  
 ```  
+</details>  
 #### カメラNGSI-LDのキー値例  
 ここでは、CameraをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Camera:Cam2",  
@@ -519,8 +542,10 @@ Camera:
     ]  
 }  
 ```  
+</details>  
 #### カメラ NGSI-LD 正規化例  
 ここでは、CameraをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Smart Data Models-Camera",  
@@ -592,7 +617,17 @@ Camera:
         "type": "Property",  
         "value": true  
     },  
-    "@context": []  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
