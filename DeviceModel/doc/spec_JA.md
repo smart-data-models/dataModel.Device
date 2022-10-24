@@ -1,21 +1,35 @@
-Entityです。デバイスモデル  
-================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティデバイスモデル  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Device/blob/master/DeviceModel/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、デバイスの静的なプロパティをキャプチャします。**  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**このエンティティは、デバイスの静的プロパティを取得します。**  
 バージョン: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `alternateName`: このアイテムの別称  - `annotations`: アイテムに関するアノテーション  - `brandName`: デバイスのブランド名です。  - `category`: センサー。光、動き、温度変化など、物理的環境における事象や変化を検出し、応答する装置。https://w3id.org/saref#Sensor. アクチュエータ : メカニズムやシステムを動かしたり、制御したりする役割を担う装置。https://w3id.org/saref#Actuator.計器 : 人間が読める形で量を正確に検出し、表示するために作られた装置のこと。SAREFで一部定義されている。HVAC : 室内環境の快適性を提供する暖房、換気、空調（HVAC）機器。https://w3id.org/saref#HVAC。ネットワーク : LANやセンサーネットワークにおけるハブ、スイッチ、ルーターなど、ネットワーク内で他の機器を接続するための装置。(https://w3id.org/saref#Network。マルチメディア。音声、画像、アニメーション、ビデオなどのマルチメディアコンテンツを表示、保存、記録、再生するための装置。Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'.  - `color`: 商品の色について  - `controlledProperty`: 感知、測定、制御が可能なもの。イナム。'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity,noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `deviceClass`: RFC7228で規定されている制約付きデバイスのクラス。デバイスが制約付きデバイスでない場合、このプロパティは存在してはならない。規範となるリファレンス[RFC7228](https://tools.ietf.org/html/rfc7228#section-3)。列挙:'C0, C1, C2'  - `documentation`: デバイスのドキュメントへのリンクです。  - `energyLimitationClass`: RFC 7228に準拠したデバイスのエネルギー制限のクラス。規範となるリファレンス[RFC7228](https://tools.ietf.org/html/rfc7228#page-11)。列挙:'E0, E1, E2, E9'  - `function`: デバイスが設計されたタスクを達成するために必要な機能。1つのデバイスが複数の機能を果たすように設計されることもある。SAREF](https://w3id.org/saref#Function)で定義されている。Enum:'levelControl, sensing, onOff, openClose, metering, eventNotification  - `id`: エンティティのユニークな識別子  - `image`: アイテムのイメージ  - `macAddress`: 機器のMACアドレスです。  - `manufacturerName`: デバイスのメーカー名です。  - `modelName`: デバイスのモデル名です。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `supportedProtocol`: 対応するプロトコルやネットワーク  - `supportedUnits`: デバイスがサポートしている測定の単位。UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与された測定単位コード（テキスト）（最大3文字）。  - `type`: NGSI Entity type. DeviceModelでなければなりません。    
-必須項目  
-- `brandName`  - `category`  - `controlledProperty`  - `id`  - `manufacturerName`  - `modelName`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `alternateName[string]`: この項目の別称  - `annotations[array]`: アイテムに関するアノテーション  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: デバイスのブランド名です。  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: センサー。光、動き、温度変化などの物理的環境における事象や変化を検知し、それに応答する装置。https://w3id.org/saref#Sensor。アクチュエーター : 機構やシステムを動かしたり、制御したりする役割を担う装置。https://w3id.org/saref#Actuator.メーター : 人間が読める形で量を正確に検出し、表示するために作られた装置。SAREFで一部定義されている。HVAC : 室内環境の快適性を提供する暖房、換気、空調（HVAC）装置。https://w3id.org/saref#HVAC。ネットワーク : LANやセンサーネットワークにおけるハブ、スイッチ、ルーターなど、ネットワーク内の他の機器を接続するために使用される機器。(https://w3id.org/saref#Network。マルチメディア。オーディオ、イメージ、アニメーション、ビデオなどのマルチメディアコンテンツを表示、保存、記録、再生するために設計されたデバイス。Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `color[string]`: 製品の色  . Model: [https://schema.org/color](https://schema.org/color)- `controlledProperty[array]`: 感知、測定、制御できるもの。Enumです。'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeClorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity,noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `deviceClass[string]`: RFC7228 で規定される制約条件付きデバイスのクラス。機器が制約条件付き機器でない場合、このプロパティは存在しないものとする。規範となる参考文献。[RFC7228](https://tools.ietf.org/html/rfc7228#section-3)。Enum：'C0、C1、C2'。  . Model: [https://schema.org/Text](https://schema.org/Text)- `documentation[string]`: デバイスのドキュメントへのリンクです。  . Model: [https://schema.org/URL](https://schema.org/URL)- `energyLimitationClass[string]`: RFC 7228 によるエネルギー制限のデバイスのクラス。規範的な参考文献。[RFC7228](https://tools.ietf.org/html/rfc7228#page-11)。Enum:'E0, E1, E2, E9'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `function[array]`: デバイスが設計されたタスクを達成するために必要な機能。デバイスは、複数の機能を果たすように設計することができる。SAREF](https://w3id.org/saref#Function)で定義されている。Enum:'levelControl, sensing, onOff, openClose, metering, eventNotification'（レベルコントロール、センシング、オンオフ、オープンクローズ、メータリング、イベント通知  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: エンティティの一意な識別子  - `image[string]`: アイテムの画像  . Model: [https://schema.org/URL](https://schema.org/URL)- `macAddress[string]`: 機器のMACアドレスです。  . Model: [https://schema.org/Text](https://schema.org/Text)- `manufacturerName[string]`: デバイスのメーカー名。  . Model: [https://schema.org/Text](https://schema.org/Text)- `modelName[string]`: デバイスのモデル名。  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `supportedProtocol[array]`: 対応するプロトコルやネットワーク  . Model: [3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket](3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket)- `supportedUnits[array]`: デバイスがサポートする測定単位。UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)で示される計測単位コード（テキスト）（3文字以内）。  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI Entity タイプ。DeviceModel でなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `brandName`  - `category`  - `controlledProperty`  - `id`  - `manufacturerName`  - `modelName`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DeviceModel:    
   description: 'This entity captures the static properties of a Device. '    
-  modelTags: ""    
   properties:    
     alternateName:    
       description: 'An alternative name for this item'    
@@ -207,7 +221,7 @@ DeviceModel:
         type: Property    
     macAddress:    
       description: 'The MAC address of the device.'    
-      pattern: ^([[A-Fa-f0-9]]{2}[:.-]?){5}[[A-Fa-f0-9]]{2}$    
+      pattern: ^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -304,12 +318,22 @@ DeviceModel:
     - brandName    
     - modelName    
   type: object    
-  version: 0.0.2    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceModel/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Device/DeviceModel/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### DeviceModel NGSI-v2 key-valuesの例。  
-DeviceModelをJSON-LD形式でkey-valuesにした例を紹介します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DeviceModel NGSI-v2 key-value の例。  
+DeviceModelをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "myDevice-wastecontainer-sensor-345",  
@@ -323,8 +347,10 @@ DeviceModel:
   "controlledProperty": ["fillingLevel", "temperature"]  
 }  
 ```  
+</details>  
 #### DeviceModel NGSI-v2 正規化例  
-ここでは、JSON-LD形式のDeviceModelを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+DeviceModelをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "myDevice-wastecontainer-sensor-345",  
@@ -366,77 +392,89 @@ DeviceModel:
   }  
 }  
 ```  
-#### DeviceModel NGSI-LD key-values の例。  
-DeviceModelをJSON-LD形式でkey-valuesにした例を紹介します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### DeviceModel NGSI-LD key-value Example  
+DeviceModelをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
-  "type": "DeviceModel",  
-  "brandName": "myDevice",  
-  "category": [  
-    "sensor"  
-  ],  
-  "controlledProperty": [  
-    "fillingLevel",  
-    "temperature"  
-  ],  
-  "function": [  
-    "sensing"  
-  ],  
-  "manufacturerName": "myDevice Inc.",  
-  "modelName": "S4Container 345",  
-  "name": "myDevice Sensor for Containers 345",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
+    "type": "DeviceModel",  
+    "brandName": "myDevice",  
+    "category": [  
+        "sensor"  
+    ],  
+    "controlledProperty": [  
+        "fillingLevel",  
+        "temperature"  
+    ],  
+    "function": [  
+        "sensing"  
+    ],  
+    "manufacturerName": "myDevice Inc.",  
+    "modelName": "S4Container 345",  
+    "name": "myDevice Sensor for Containers 345",  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### DeviceModel NGSI-LD 正規化された例  
-ここでは、JSON-LD形式のDeviceModelを正規化した例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### DeviceModel NGSI-LD 正規化例  
+DeviceModelをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
-  "type": "DeviceModel",  
-  "category": {  
-    "type": "Property",  
-    "value": [  
-      "sensor"  
+    "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
+    "type": "DeviceModel",  
+    "brandName": {  
+        "type": "Property",  
+        "value": "myDevice"  
+    },  
+    "category": {  
+        "type": "Property",  
+        "value": [  
+            "sensor"  
+        ]  
+    },  
+    "controlledProperty": {  
+        "type": "Property",  
+        "value": [  
+            "fillingLevel",  
+            "temperature"  
+        ]  
+    },  
+    "function": {  
+        "type": "Property",  
+        "value": [  
+            "sensing"  
+        ]  
+    },  
+    "manufacturerName": {  
+        "type": "Property",  
+        "value": "myDevice Inc."  
+    },  
+    "modelName": {  
+        "type": "Property",  
+        "value": "S4Container 345"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "myDevice Sensor for Containers 345"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "function": {  
-    "type": "Property",  
-    "value": [  
-      "sensing"  
-    ]  
-  },  
-  "modelName": {  
-    "type": "Property",  
-    "value": "S4Container 345"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "myDevice Sensor for Containers 345"  
-  },  
-  "brandName": {  
-    "type": "Property",  
-    "value": "myDevice"  
-  },  
-  "manufacturerName": {  
-    "type": "Property",  
-    "value": "myDevice Inc."  
-  },  
-  "controlledProperty": {  
-    "type": "Property",  
-    "value": [  
-      "fillingLevel",  
-      "temperature"  
-    ]  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
