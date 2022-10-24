@@ -1,17 +1,32 @@
-Entità: DeviceMeasurement  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: DeviceMeasurement  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Device/blob/master/DeviceMeasurement/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Descrizione di un'entità di misurazione generica proveniente da un dispositivo o da un'altra fonte di dati.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Descrizione di un'entità di misurazione generica proveniente da un dispositivo o da un'altra fonte di dati.**  
+versione: 0.1.0  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `controlledProperty`: Proprietà misurata dal dispositivo  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateObserved`: La data e l'ora di questa osservazione nel formato ISO8601 UTC  - `description`: Una descrizione di questo articolo  - `deviceType`: Tipo di dispositivo che effettua la misurazione  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `measurementType`: Il tipo di misurazione da effettuare  - `name`: Il nome di questo articolo.  - `numValue`: Valore numerico della misurazione  - `outlier`: Valore per marcare la misura da elaborare in modo speciale  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `refDevice`: Dispositivo che effettua la misurazione  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `textValue`: Valore testuale della misurazione  - `type`: Tipo di entità NGSI. Deve essere Misurazione  - `unit`: Unità di misura. In caso di utilizzo di un acronimo utilizzare unità accettate nel codice [CEFACT](https://www.unece.org/cefact.html).    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `controlledProperty[string]`: Proprietà misurata dal dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateObserved[string]`: La data e l'ora di questa osservazione nel formato ISO8601 UTC.  . Model: [https://schema.org/Text](https://schema.org/Text)- `description[string]`: Descrizione dell'articolo  - `deviceType[string]`: Tipo di dispositivo che effettua la misurazione  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `measurementType[string]`: Il tipo di misurazione da effettuare  - `name[string]`: Il nome di questo elemento.  - `numValue[number]`: Valore numerico della misura  . Model: [https://schema.org/Number](https://schema.org/Number)- `outlier[boolean]`: Valore per contrassegnare la misura da elaborare in modo speciale  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `refDevice[*]`: Dispositivo che effettua la misurazione  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `textValue[string]`: Valore testuale della misura  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tipo di entità NGSI. Deve essere Misura  - `unit[string]`: Unità di misura. In caso di utilizzo di un acronimo, utilizzare le unità accettate nel codice [CEFACT](https://www.unece.org/cefact.html).  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Gli standard NGSIv2 e NGSI-LD hanno modi per includere unità in ogni proprietà. Comunque c'è una proprietà chiamata 'Unit' per ragioni di compatibilità. È opzionale.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Gli standard NGSIv2 e NGSI-LD hanno modi per includere le unità in ogni proprietà. Tuttavia, per motivi di compatibilità, esiste una proprietà chiamata "Unità". È opzionale.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DeviceMeasurement:    
@@ -350,9 +365,14 @@ DeviceMeasurement:
   x-version: 0.1.0    
 ```  
 </details>    
-## Esempio di payloads  
-#### DeviceMeasurement NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un DeviceMeasurement in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Valori chiave DeviceMeasurement NGSI-v2 Esempio  
+Ecco un esempio di DeviceMeasurement in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
@@ -397,8 +417,10 @@ DeviceMeasurement:
   "unit": "UDT0000016"  
 }  
 ```  
-#### DeviceMeasurement NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un DeviceMeasurement in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### DispositivoMisura NGSI-v2 normalizzato Esempio  
+Ecco un esempio di DeviceMeasurement in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
@@ -504,157 +526,169 @@ DeviceMeasurement:
   }  
 }  
 ```  
-#### DeviceMeasurement NGSI-LD valori-chiave Esempio  
-Ecco un esempio di un DeviceMeasurement in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Valori chiave NGSI-LD di DeviceMeasurement Esempio  
+Ecco un esempio di DeviceMeasurement in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
-  "dateCreated": "2021-09-03T07:33:18Z",  
-  "dateModified": "2021-09-03T07:33:18Z",  
-  "source": "Datacenter",  
-  "name": "Simple measurement",  
-  "alternateName": "",  
-  "description": "DAta center measurement values",  
-  "dataProvider": "",  
-  "owner": [],  
-  "seeAlso": [],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      60.170833,  
-      24.9375  
+    "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
+    "type": "DeviceMeasurement",  
+    "address": {  
+        "streetAddress": "Pohjoisesplanadi 11-13 ",  
+        "addressLocality": "Helsinki",  
+        "addressRegion": "Helsinki",  
+        "addressCountry": "Finland",  
+        "postalCode": "00099",  
+        "postOfficeBoxNumber": "1"  
+    },  
+    "alternateName": "",  
+    "areaServed": "Helsinki council",  
+    "controlledProperty": "humidity",  
+    "dataProvider": "",  
+    "dateCreated": "2021-09-03T07:33:18Z",  
+    "dateModified": "2021-09-03T07:33:18Z",  
+    "dateObserved": "2021-09-03T07:33:18Z",  
+    "description": "DAta center measurement values",  
+    "deviceType": "sensor",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            60.170833,  
+            24.9375  
+        ]  
+    },  
+    "measurementType": "FillingLevelSensor",  
+    "name": "Simple measurement",  
+    "numValue": 55.2,  
+    "outlier": true,  
+    "owner": [],  
+    "refDevice": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158",  
+    "seeAlso": [],  
+    "source": "Datacenter",  
+    "textValue": "",  
+    "unit": "UDT0000016",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Pohjoisesplanadi 11-13 ",  
-    "addressLocality": "Helsinki",  
-    "addressRegion": "Helsinki",  
-    "addressCountry": "Finland",  
-    "postalCode": "00099",  
-    "postOfficeBoxNumber": "1"  
-  },  
-  "areaServed": "Helsinki council",  
-  "type": "DeviceMeasurement",  
-  "numValue": 55.2,  
-  "textValue": "",  
-  "controlledProperty": "humidity",  
-  "refDevice": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158",  
-  "deviceType": "sensor",  
-  "measurementType": "FillingLevelSensor",  
-  "dateObserved": "2021-09-03T07:33:18Z",  
-  "outlier": true,  
-  "unit": "UDT0000016",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### DeviceMeasurement NGSI-LD normalizzato Esempio  
-Ecco un esempio di un DeviceMeasurement in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### DispositivoMisura NGSI-LD normalizzato Esempio  
+Ecco un esempio di DeviceMeasurement in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
-  "type": "DeviceMeasurement",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": "2021-09-03T07:33:18Z"  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": "2021-09-03T07:33:18Z"  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Datacenter"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Simple measurement"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "DAta center measurement values"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": []  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": []  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        60.170833,  
-        24.9375  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Pohjoisesplanadi 11-13 ",  
-      "addressLocality": "Helsinki",  
-      "addressRegion": "Helsinki",  
-      "addressCountry": "Finland",  
-      "postalCode": "00099",  
-      "postOfficeBoxNumber": "1"  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Helsinki council"  
-  },  
-  "numValue": {  
-    "type": "Property",  
-    "value": 55.2  
-  },  
-  "textValue": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "controlledProperty": {  
-    "type": "Property",  
-    "value": "humidity"  
-  },  
-  "refDevice": {  
-    "type": "Property",  
-    "value": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158"  
-  },  
-  "deviceType": {  
-    "type": "Property",  
-    "value": "sensor"  
-  },  
-  "measurementType": {  
-    "type": "Property",  
-    "value": "FillingLevelSensor"  
-  },  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": "2021-09-03T07:33:18Z"  
-  },  
-  "outlier": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "unit": {  
-    "type": "Property",  
-    "value": "UDT0000016"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
+    "type": "DeviceMeasurement",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Pohjoisesplanadi 11-13 ",  
+            "addressLocality": "Helsinki",  
+            "addressRegion": "Helsinki",  
+            "addressCountry": "Finland",  
+            "postalCode": "00099",  
+            "postOfficeBoxNumber": "1"  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Helsinki council"  
+    },  
+    "controlledProperty": {  
+        "type": "Property",  
+        "value": "humidity"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": "2021-09-03T07:33:18Z"  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": "2021-09-03T07:33:18Z"  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": "2021-09-03T07:33:18Z"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "DAta center measurement values"  
+    },  
+    "deviceType": {  
+        "type": "Property",  
+        "value": "sensor"  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                60.170833,  
+                24.9375  
+            ]  
+        }  
+    },  
+    "measurementType": {  
+        "type": "Property",  
+        "value": "FillingLevelSensor"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Simple measurement"  
+    },  
+    "numValue": {  
+        "type": "Property",  
+        "value": 55.2  
+    },  
+    "outlier": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": []  
+    },  
+    "refDevice": {  
+        "type": "Property",  
+        "value": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": []  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Datacenter"  
+    },  
+    "textValue": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "unit": {  
+        "type": "Property",  
+        "value": "UDT0000016"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+    ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
