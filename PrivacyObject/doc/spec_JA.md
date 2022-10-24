@@ -1,17 +1,32 @@
-Entity:プライバシーオブジェクト  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティPrivacyObject  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Device/blob/master/PrivacyObject/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**IoTデバイスのプライバシーに関する情報**。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**IoT デバイスのプライバシーに関する情報**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `category`: センサー。光、動き、温度変化など、物理的環境における事象や変化を検出し、応答する装置。https://w3id.org/saref#Sensor. アクチュエータ : メカニズムやシステムを動かしたり、制御したりする役割を担う装置。https://w3id.org/saref#Actuator.計器 : 人間が読める形で量を正確に検出し、表示するために作られた装置のこと。SAREFで一部定義されている。HVAC : 室内環境の快適性を提供する暖房、換気、空調（HVAC）機器。https://w3id.org/saref#HVAC。ネットワーク : LANやセンサーネットワークにおけるハブ、スイッチ、ルーターなど、ネットワーク内で他の機器を接続するための装置。(https://w3id.org/saref#Network。マルチメディア。音声、画像、アニメーション、ビデオなどのマルチメディアコンテンツを表示、保存、記録、再生するための装置。Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'.  - `crossborderTransfer`: エンティティにリンクしたクロスボーダー転送に関する表示。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `floor`: 建物内にあるときに機器が設置されている階、またはそれに準ずる階。  - `id`: エンティティのユニークな識別子  - `image`: アイテムのイメージ  - `isIndoor`: エンティティが屋内に設置されているか、屋外に設置されているかを示すフラグ。  - `isPersonalData`: エンティティが個人データを提供しているか、または含んでいるかを示すフラグ。  - `legitimateInterest`: 企業に関連する正当な利益。これは、データ収集が高度な最終目的のために行われることを意味します。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `purpose`: データ収集の目的。  - `recipientList`: 受信者を含むリスト。受信者とは，センサが生成したデータを利用する受益者のことです．各受信者は，その受信者を一意に識別できるURIで表される．プライバシー:'低'  - `refDevice`: ソースデータセットからのユニークな識別子。  - `retentionPeriod`: データ保持の期間。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプのプロパティです。これはPrivacyObjectでなければなりません。  - `user`: 匿名ユーザーの識別子。この識別子は実際にはユニークなURNであり、匿名でユーザーを認識するために使用することができます。    
-必須項目  
-- `id`  - `type`    
-PrivacyObjectエンティティは、このIoTデバイスに直接リンクされたプライバシーに関する情報を持つIoTデバイス（通常はセンサー）を表します。いくつかの属性は、プライバシーの文脈でIoTデバイスを記述するために使用されます。特に、1つの属性はIoTデバイスの位置を提供し、他の2つの属性は正確な位置に関する詳細情報を提供する。また、IoTデバイスの説明にも属性が使用されており、2つ目の属性はIoTセンサーの目的を示しています。その他の属性は、IoTデバイスに関連する情報を分類することを目的として、プライバシーとGDPRに非常に焦点を当てています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: センサー。光、動き、温度変化などの物理的環境における事象や変化を検知し、それに応答する装置。https://w3id.org/saref#Sensor。アクチュエーター : 機構やシステムを動かしたり、制御したりする役割を担う装置。https://w3id.org/saref#Actuator.メーター : 人間が読める形で量を正確に検出し、表示するために作られた装置。SAREFで一部定義されている。HVAC : 室内環境の快適性を提供する暖房、換気、空調（HVAC）装置。https://w3id.org/saref#HVAC。ネットワーク : LANやセンサーネットワークにおけるハブ、スイッチ、ルーターなど、ネットワーク内の他の機器を接続するために使用される機器。(https://w3id.org/saref#Network。マルチメディア。オーディオ、イメージ、アニメーション、ビデオなどのマルチメディアコンテンツを表示、保存、記録、再生するために設計されたデバイス。Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `crossborderTransfer[string]`: エンティティに関連するクロスボーダー移転に関する表示。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `floor[number]`: 建物内またはそれに準ずる場所において、機器が設置されている階をいう。  - `id[*]`: エンティティの一意な識別子  - `image[string]`: アイテムの画像  . Model: [https://schema.org/URL](https://schema.org/URL)- `isIndoor[boolean]`: エンティティが屋内または屋外に設置されているかどうかを示すフラグ。  - `isPersonalData[boolean]`: エンティティが個人データを提供しているか、または含んでいるかを示すためのフラグ。  - `legitimateInterest[string]`: 事業体に関連する正当な利益。これは、データ収集がどの程度最終的なものであるかを意味する。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `purpose[string]`: データ収集の目的  - `recipientList[array]`: 受信者を含むリスト。受信者とは，センサが生成したデータを利用する受益者である．各受領者は URI で表現され、一意に識別することができる。プライバシー:'Low'  . Model: [https://schema.org/URL](https://schema.org/URL)- `refDevice[*]`: ソースデータセットからの一意な識別子。  - `retentionPeriod[string]`: データの保存期間  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIタイプのプロパティ。PrivacyObjectである必要があります。  - `user[string]`: 匿名ユーザーの識別子。この識別子は、実際には、ユーザーを匿名で認識するために使用できる一意のURNです。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+PrivacyObjectエンティティは、IoTデバイス（典型的にはセンサ）を表し、このIoTデバイスに直接リンクされたプライバシーに関する情報を持つ。いくつかの属性は、プライバシーのコンテキストでIoTデバイスを記述するために使用されます。特に、ある属性はIoTデバイスの位置を提供し、他の2つの属性は正確な位置についての詳細情報を提供する。また、ある属性はIoTデバイスを説明するために使用され、2番目の属性はIoTセンサーの目的を与える。他の属性は、IoTデバイスに関連する情報を分類する目的で、プライバシーとGDPRに非常に重点を置いています。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PrivacyObject:    
@@ -380,9 +395,14 @@ PrivacyObject:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### PrivacyObject NGSI-v2 key-valuesの例。  
-JSON-LD形式でkey-valuesとしてPrivacyObjectを表現した例です。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### PrivacyObject NGSI-v2 key-value の例。  
+PrivacyObjectをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
@@ -420,8 +440,10 @@ PrivacyObject:
   "image": "http://www.example.com/device1.jpg"  
 }  
 ```  
-#### プライバシーオブジェクト NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のPrivacyObjectの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### PrivacyObject NGSI-v2 正規化例  
+以下は、PrivacyObjectを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
@@ -513,142 +535,155 @@ PrivacyObject:
   }  
 }  
 ```  
-#### PrivacyObject NGSI-LD key-valuesの例。  
-ここでは、JSON-LD形式でPrivacyObjectをkey-valuesにした例を紹介します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### PrivacyObject NGSI-LD key-value 例  
+PrivacyObjectをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
-  "type": "PrivacyObject",  
-  "refDevice": "Device:1044_parking",  
-  "name": "1004_parking",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      46.18311,  
-      6.14132  
+    "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
+    "type": "PrivacyObject",  
+    "category": [  
+        "sensor"  
+    ],  
+    "crossborderTransfer": "None",  
+    "description": "Electromagnetic and ultrasonic sensor",  
+    "description_fr": "Capteur electromagnetique et ultrasons",  
+    "floor": 0,  
+    "image": "http://www.example.com/device1.jpg",  
+    "isIndoor": false,  
+    "isPersonalData": false,  
+    "legitimateInterest": "Facilitate and understand parking habits",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            46.18311,  
+            6.14132  
+        ]  
+    },  
+    "name": "1004_parking",  
+    "owner": [  
+        "ngsi-ld:city:CityofCarouge"  
+    ],  
+    "purpose": "Detecting the presence of a vehicle on a parking slot.",  
+    "purpose_fr": "Detecter la presence d'un vehicule sur une place de parc.",  
+    "recipientList": [  
+        "urn:ngsi-ld:User:CommunalAdministration",  
+        "urn:ngsi-ld:User:Motorists"  
+    ],  
+    "refDevice": "Device:1044_parking",  
+    "retentionPeriod": "< 1 month",  
+    "user": "urn:ngsi-ld:User:abcdef",  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "isIndoor": false,  
-  "floor": 0,  
-  "description": "Electromagnetic and ultrasonic sensor",  
-  "description_fr": "Capteur electromagnetique et ultrasons",  
-  "user": "urn:ngsi-ld:User:abcdef",  
-  "purpose": "Detecting the presence of a vehicle on a parking slot.",  
-  "purpose_fr": "Detecter la presence d'un vehicule sur une place de parc.",  
-  "category": [  
-    "sensor"  
-  ],  
-  "recipientList": [  
-    "urn:ngsi-ld:User:CommunalAdministration",  
-    "urn:ngsi-ld:User:Motorists"  
-  ],  
-  "owner": [  
-    "ngsi-ld:city:CityofCarouge"  
-  ],  
-  "isPersonalData": false,  
-  "retentionPeriod": "< 1 month",  
-  "legitimateInterest": "Facilitate and understand parking habits",  
-  "crossborderTransfer": "None",  
-  "image": "http://www.example.com/device1.jpg",  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### プライバシーオブジェクト NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のPrivacyObjectの例を示します。これはオプションを使わない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、PrivacyObjectをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
-  "type": "PrivacyObject",  
-  "refDevice": {  
-    "type": "Relationship",  
-    "value": "Device:1044_parking"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "1004_parking"  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        46.18311,  
-        6.14132  
-      ]  
-    }  
-  },  
-  "isIndoor": {  
-    "type": "Property",  
-    "value": "false"  
-  },  
-  "floor": {  
-    "type": "Property",  
-    "value": "false"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Electromagnetic and ultrasonic sensor"  
-  },  
-  "description_fr": {  
-    "type": "Property",  
-    "value": "Capteur electromagnetique et ultrasons"  
-  },  
-  "user": {  
-    "type": "Property",  
-    "value": "urn:ngsi-ld:User:abcdef"  
-  },  
-  "purpose": {  
-    "type": "Property",  
-    "value": "Detecting the presence of a vehicle on a parking slot."  
-  },  
-  "purpose_fr": {  
-    "type": "string",  
-    "value": "Detecter la presence d'un vehicule sur une place de parc."  
-  },  
-  "category": {  
-    "type": "Property",  
-    "value": [  
-      "sensor"  
+    "id": "urn:ngsi-ld:PrivacyObject:1044_parking",  
+    "type": "PrivacyObject",  
+    "category": {  
+        "type": "Property",  
+        "value": [  
+            "sensor"  
+        ]  
+    },  
+    "crossborderTransfer": {  
+        "type": "Property",  
+        "value": "None"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Electromagnetic and ultrasonic sensor"  
+    },  
+    "description_fr": {  
+        "type": "Property",  
+        "value": "Capteur electromagnetique et ultrasons"  
+    },  
+    "floor": {  
+        "type": "Property",  
+        "value": "false"  
+    },  
+    "image": {  
+        "type": "Property",  
+        "value": "http://www.example.com/device1.jpg"  
+    },  
+    "isIndoor": {  
+        "type": "Property",  
+        "value": "false"  
+    },  
+    "isPersonalData": {  
+        "type": "Property",  
+        "value": "false"  
+    },  
+    "legitimateInterest": {  
+        "type": "Property",  
+        "value": "Facilitate and understand parking habits"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                46.18311,  
+                6.14132  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "1004_parking"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "ngsi-ld:city:CityofCarouge"  
+        ]  
+    },  
+    "purpose": {  
+        "type": "Property",  
+        "value": "Detecting the presence of a vehicle on a parking slot."  
+    },  
+    "purpose_fr": {  
+        "type": "string",  
+        "value": "Detecter la presence d'un vehicule sur une place de parc."  
+    },  
+    "recipientList": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:User:CommunalAdministration",  
+            "urn:ngsi-ld:User:Motorists"  
+        ]  
+    },  
+    "refDevice": {  
+        "type": "Relationship",  
+        "value": "Device:1044_parking"  
+    },  
+    "retentionPeriod": {  
+        "type": "Property",  
+        "value": "< 1 month"  
+    },  
+    "user": {  
+        "type": "Property",  
+        "value": "urn:ngsi-ld:User:abcdef"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "recipientList": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:User:CommunalAdministration",  
-      "urn:ngsi-ld:User:Motorists"  
-    ]  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "ngsi-ld:city:CityofCarouge"  
-    ]  
-  },  
-  "isPersonalData": {  
-    "type": "Property",  
-    "value": "false"  
-  },  
-  "retentionPeriod": {  
-    "type": "Property",  
-    "value": "< 1 month"  
-  },  
-  "legitimateInterest": {  
-    "type": "Property",  
-    "value": "Facilitate and understand parking habits"  
-  },  
-  "crossborderTransfer": {  
-    "type": "Property",  
-    "value": "None"  
-  },  
-  "image": {  
-    "type": "Property",  
-    "value": "http://www.example.com/device1.jpg"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
