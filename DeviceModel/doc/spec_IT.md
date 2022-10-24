@@ -1,21 +1,35 @@
-Entità: DeviceModel  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: DeviceModel  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Device/blob/master/DeviceModel/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa entità cattura le proprietà statiche di un dispositivo. **  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa entità cattura le proprietà statiche di un Dispositivo. **  
 versione: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `alternateName`: Un nome alternativo per questa voce  - `annotations`: Annotazioni sull'elemento  - `brandName`: Marchio del dispositivo.  - `category`: Sensore: Un dispositivo che rileva e risponde a eventi o cambiamenti nell'ambiente fisico come la luce, il movimento o i cambiamenti di temperatura. https://w3id.org/saref#Sensor. attuatore : Un dispositivo responsabile del movimento o del controllo di un meccanismo o di un sistema. https://w3id.org/saref#Actuator. Misuratore : Un dispositivo costruito per rilevare accuratamente e visualizzare una quantità in una forma leggibile da un essere umano. Parzialmente definito da SAREF. HVAC : Dispositivo di riscaldamento, ventilazione e condizionamento dell'aria (HVAC) che fornisce il comfort ambientale interno. https://w3id.org/saref#HVAC. Rete : Un dispositivo utilizzato per collegare altri dispositivi in una rete, come hub, switch o router in una rete LAN o di sensori. (https://w3id.org/saref#Network. Multimediale: Un dispositivo progettato per visualizzare, memorizzare, registrare o riprodurre contenuti multimediali come audio, immagini, animazione, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  - `color`: Il colore del prodotto  - `controlledProperty`: Qualsiasi cosa che può essere percepita, misurata o controllata da. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `deviceClass`: Classe di dispositivo vincolato come specificato da RFC 7228. Se il dispositivo non è un dispositivo vincolato, questa proprietà non deve essere presente. Riferimenti normativi: [RFC7228](https://tools.ietf.org/html/rfc7228#section-3). Enum:'C0, C1, C2'.  - `documentation`: Un link alla documentazione del dispositivo.  - `energyLimitationClass`: Classe di limitazione dell'energia del dispositivo secondo RFC 7228. Riferimenti normativi: [RFC7228](https://tools.ietf.org/html/rfc7228#page-11). Enum: "E0, E1, E2, E9".  - `function`: La funzionalità necessaria per realizzare il compito per il quale un dispositivo è progettato. Un dispositivo può essere progettato per eseguire più di una funzione. Definito da [SAREF](https://w3id.org/saref#Function). Enum:'levelControl, sensing, onOff, openClose, metering, eventNotification  - `id`: Identificatore unico dell'entità  - `image`: Un'immagine dell'oggetto  - `macAddress`: L'indirizzo MAC del dispositivo.  - `manufacturerName`: Nome del produttore del dispositivo.  - `modelName`: Nome del modello del dispositivo.  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `supportedProtocol`: Protocollo/i o reti supportate  - `supportedUnits`: Unità di misura supportate dal dispositivo. Il codice dell'unità (testo) di misura dato usando il [UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 caratteri).  - `type`: Tipo di entità NGSI. deve essere DeviceModel    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `alternateName[string]`: Un nome alternativo per questa voce  - `annotations[array]`: Annotazioni sull'elemento  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Nome del marchio del dispositivo.  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: Sensore: Dispositivo che rileva e risponde a eventi o cambiamenti nell'ambiente fisico, come luce, movimento o variazioni di temperatura. https://w3id.org/saref#Sensor. Attuatore: Dispositivo responsabile del movimento o del controllo di un meccanismo o di un sistema. https://w3id.org/saref#Actuator. Misuratore : Dispositivo costruito per rilevare con precisione e visualizzare una quantità in una forma leggibile da un essere umano. Parzialmente definito da SAREF. HVAC : Dispositivo di riscaldamento, ventilazione e condizionamento dell'aria (HVAC) che fornisce il comfort ambientale interno. https://w3id.org/saref#HVAC. Rete : Dispositivo utilizzato per collegare altri dispositivi in una rete, come hub, switch o router in una rete LAN o Sensor. (https://w3id.org/saref#Network. Multimedia : Dispositivo progettato per visualizzare, memorizzare, registrare o riprodurre contenuti multimediali come audio, immagini, animazioni, video. Enum:'attuatore, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `color[string]`: Il colore del prodotto  . Model: [https://schema.org/color](https://schema.org/color)- `controlledProperty[array]`: Qualsiasi cosa che possa essere rilevata, misurata o controllata. Enum:Inquinamento atmosferico, Pressione atmosferica, Velocità media, Durata della batteria, Alimentazione della batteria, Conduttanza, Conduttività, Profondità, AlimentazioneAttività, Consumo di elettricità, Energia, Livello di riempimento, Cloro libero, Consumo di gas, Apertura del cancello, Direzione, Umidità, Luce, Posizione, Mungitura, Movimento, MovimentoAttività, rumore, occupazione, orp, pH, potenza, precipitazione, pressione, indice di rifrazione, salinità, fumo, umidità del suolo, radiazione solare, velocità, tds, temperatura, flusso di traffico, tss, torbidità, consumo d'acqua, flusso d'acqua, livello d'acqua, inquinamento idrico, condizioni meteorologiche, peso, direzione del vento, velocità del vento".  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `deviceClass[string]`: Classe del dispositivo vincolato, come specificato da RFC 7228. Se il dispositivo non è un dispositivo vincolato, questa proprietà non deve essere presente. Riferimenti normativi: [RFC7228](https://tools.ietf.org/html/rfc7228#section-3). Enum:'C0, C1, C2'  . Model: [https://schema.org/Text](https://schema.org/Text)- `documentation[string]`: Un link alla documentazione del dispositivo.  . Model: [https://schema.org/URL](https://schema.org/URL)- `energyLimitationClass[string]`: Classe di limitazione energetica del dispositivo secondo RFC 7228. Riferimenti normativi: [RFC7228](https://tools.ietf.org/html/rfc7228#page-11). Enum:'E0, E1, E2, E9'  . Model: [https://schema.org/Text](https://schema.org/Text)- `function[array]`: La funzionalità necessaria per svolgere il compito per cui un dispositivo è stato progettato. Un dispositivo può essere progettato per svolgere più di una funzione. Definito da [SAREF](https://w3id.org/saref#Function). Enum:'levelControl, sensing, onOff, openClose, metering, eventNotification  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificatore univoco dell'entità  - `image[string]`: Un'immagine dell'articolo  . Model: [https://schema.org/URL](https://schema.org/URL)- `macAddress[string]`: L'indirizzo MAC del dispositivo.  . Model: [https://schema.org/Text](https://schema.org/Text)- `manufacturerName[string]`: Nome del produttore del dispositivo.  . Model: [https://schema.org/Text](https://schema.org/Text)- `modelName[string]`: Nome del modello del dispositivo.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `supportedProtocol[array]`: Protocolli o reti supportati  . Model: [3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket](3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket)- `supportedUnits[array]`: Unità di misura supportate dal dispositivo. Il codice dell'unità di misura (testo) fornito utilizzando il [Codice comune UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 caratteri).  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tipo di entità NGSI. deve essere DeviceModel.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `brandName`  - `category`  - `controlledProperty`  - `id`  - `manufacturerName`  - `modelName`  - `type`  ## Descrizione del modello di dati delle proprietà  
+- `brandName`  - `category`  - `controlledProperty`  - `id`  - `manufacturerName`  - `modelName`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DeviceModel:    
   description: 'This entity captures the static properties of a Device. '    
-  modelTags: ""    
   properties:    
     alternateName:    
       description: 'An alternative name for this item'    
@@ -207,7 +221,7 @@ DeviceModel:
         type: Property    
     macAddress:    
       description: 'The MAC address of the device.'    
-      pattern: ^([[A-Fa-f0-9]]{2}[:.-]?){5}[[A-Fa-f0-9]]{2}$    
+      pattern: ^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -304,12 +318,22 @@ DeviceModel:
     - brandName    
     - modelName    
   type: object    
-  version: 0.0.2    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceModel/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Device/DeviceModel/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.2    
 ```  
 </details>    
-## Esempio di payloads  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
 #### DeviceModel NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un DeviceModel in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di DeviceModel in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "myDevice-wastecontainer-sensor-345",  
@@ -323,8 +347,10 @@ DeviceModel:
   "controlledProperty": ["fillingLevel", "temperature"]  
 }  
 ```  
+</details>  
 #### DeviceModel NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un DeviceModel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di DeviceModel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "myDevice-wastecontainer-sensor-345",  
@@ -366,77 +392,89 @@ DeviceModel:
   }  
 }  
 ```  
-#### DeviceModel NGSI-LD valori chiave Esempio  
-Ecco un esempio di un DeviceModel in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### DeviceModel Valori chiave NGSI-LD Esempio  
+Ecco un esempio di DeviceModel in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
-  "type": "DeviceModel",  
-  "brandName": "myDevice",  
-  "category": [  
-    "sensor"  
-  ],  
-  "controlledProperty": [  
-    "fillingLevel",  
-    "temperature"  
-  ],  
-  "function": [  
-    "sensing"  
-  ],  
-  "manufacturerName": "myDevice Inc.",  
-  "modelName": "S4Container 345",  
-  "name": "myDevice Sensor for Containers 345",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
+    "type": "DeviceModel",  
+    "brandName": "myDevice",  
+    "category": [  
+        "sensor"  
+    ],  
+    "controlledProperty": [  
+        "fillingLevel",  
+        "temperature"  
+    ],  
+    "function": [  
+        "sensing"  
+    ],  
+    "manufacturerName": "myDevice Inc.",  
+    "modelName": "S4Container 345",  
+    "name": "myDevice Sensor for Containers 345",  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### DeviceModel NGSI-LD normalizzato Esempio  
-Ecco un esempio di un DeviceModel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di DeviceModel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
-  "type": "DeviceModel",  
-  "category": {  
-    "type": "Property",  
-    "value": [  
-      "sensor"  
+    "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
+    "type": "DeviceModel",  
+    "brandName": {  
+        "type": "Property",  
+        "value": "myDevice"  
+    },  
+    "category": {  
+        "type": "Property",  
+        "value": [  
+            "sensor"  
+        ]  
+    },  
+    "controlledProperty": {  
+        "type": "Property",  
+        "value": [  
+            "fillingLevel",  
+            "temperature"  
+        ]  
+    },  
+    "function": {  
+        "type": "Property",  
+        "value": [  
+            "sensing"  
+        ]  
+    },  
+    "manufacturerName": {  
+        "type": "Property",  
+        "value": "myDevice Inc."  
+    },  
+    "modelName": {  
+        "type": "Property",  
+        "value": "S4Container 345"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "myDevice Sensor for Containers 345"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "function": {  
-    "type": "Property",  
-    "value": [  
-      "sensing"  
-    ]  
-  },  
-  "modelName": {  
-    "type": "Property",  
-    "value": "S4Container 345"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "myDevice Sensor for Containers 345"  
-  },  
-  "brandName": {  
-    "type": "Property",  
-    "value": "myDevice"  
-  },  
-  "manufacturerName": {  
-    "type": "Property",  
-    "value": "myDevice Inc."  
-  },  
-  "controlledProperty": {  
-    "type": "Property",  
-    "value": [  
-      "fillingLevel",  
-      "temperature"  
-    ]  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
