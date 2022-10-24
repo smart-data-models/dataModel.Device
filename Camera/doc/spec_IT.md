@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: Telecamera  
-==================  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Device/blob/master/Camera/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descrizione globale: **Un modello di dati per le installazioni di telecamere in una città.**  
 versione: 0.1.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `cameraName`: Nome della telecamera corrispondente a questa osservazione.  - `cameraNum`: Numero della telecamera corrispondente a questa osservazione.  - `cameraOrientation`: Informazioni sull'orientamento della telecamera corrispondente a questa osservazione  - `cameraType`: Tipo di telecamera corrispondente a questa osservazione. Enum:'FISSA, PTZ, DOME, GIORNO/NOTTE, C-MOUNT, BULLET'.  - `cameraUsage`: Scopo della telecamera corrispondente a questa osservazione. Enum: [VIGILANZA, RLVD, ANPR/LPR, TRAFFICO].  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `endDateTime`: Ora di fine segnalata corrispondente a questa osservazione.  - `id`: Identificatore univoco dell'entità  - `imageSnapshot`: Collegamento per il download dell'istantanea del feed della telecamera corrispondente a questa osservazione  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mediaURL`: URL che fornisce ulteriori informazioni su eventuali immagini o supporti del reclamo o del luogo.  - `name`: Il nome di questo elemento.  - `on`: Indica se il dispositivo è acceso (true) o spento (false).  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `startDateTime`: Ora di inizio segnalata corrispondente a questa osservazione.  - `streamName`: Nome del flusso video dalla telecamera corrispondente a questa osservazione  - `streamURL`: URL che fornisce informazioni sullo streaming video per la telecamera corrispondente a questa osservazione  - `type`: Tipo di entità NGSI. Deve essere Camera    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraName[string]`: Nome della telecamera corrispondente a questa osservazione.  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraNum[number]`: Numero della telecamera corrispondente a questa osservazione.  . Model: [https://schema.org/Number](https://schema.org/Number)- `cameraOrientation[object]`: Informazioni sull'orientamento della telecamera corrispondente a questa osservazione  - `cameraType[string]`: Tipo di telecamera corrispondente a questa osservazione. Enum:'FISSA, PTZ, DOME, GIORNO/NOTTE, C-MOUNT, BULLET'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraUsage[string]`: Scopo della telecamera corrispondente a questa osservazione. Enum: [VIGILANZA, RLVD, ANPR/LPR, TRAFFICO].  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `endDateTime[string]`: Ora di fine segnalata corrispondente a questa osservazione.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `id[*]`: Identificatore univoco dell'entità  - `imageSnapshot[string]`: Collegamento per il download dell'istantanea del feed della telecamera corrispondente a questa osservazione  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mediaURL[string]`: URL che fornisce ulteriori informazioni su eventuali immagini o supporti del reclamo o del luogo.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Il nome di questo elemento.  - `on[boolean]`: Indica se il dispositivo è acceso (true) o spento (false).  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `startDateTime[string]`: Ora di inizio segnalata corrispondente a questa osservazione.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `streamName[string]`: Nome del flusso video dalla telecamera corrispondente a questa osservazione  . Model: [https://schema.org/Text](https://schema.org/Text)- `streamURL[string]`: URL che fornisce informazioni sullo streaming video per la telecamera corrispondente a questa osservazione  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tipo di entità NGSI. Deve essere Camera  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`  ## Modello di dati descrizione delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Camera:    
@@ -377,9 +391,14 @@ Camera:
   x-version: 0.1.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Esempi di payload  
 #### Valori chiave della telecamera NGSI-v2 Esempio  
 Ecco un esempio di Camera in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Camera:Cam2",  
@@ -408,8 +427,10 @@ Camera:
   "mediaURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
 }  
 ```  
+</details>  
 #### Esempio di telecamera NGSI-v2 normalizzata  
 Ecco un esempio di Camera in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Smart Data Models-Camera",  
@@ -486,8 +507,10 @@ Camera:
   ]  
 }  
 ```  
+</details>  
 #### Valori chiave della telecamera NGSI-LD Esempio  
 Ecco un esempio di Camera in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Camera:Cam2",  
@@ -519,8 +542,10 @@ Camera:
     ]  
 }  
 ```  
+</details>  
 #### Esempio di telecamera NGSI-LD normalizzata  
 Ecco un esempio di Camera in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Smart Data Models-Camera",  
@@ -592,7 +617,17 @@ Camera:
         "type": "Property",  
         "value": true  
     },  
-    "@context": []  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
