@@ -1,18 +1,32 @@
-Entity: DeviceMeasurement  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: DeviceMeasurement  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.Device/blob/master/DeviceMeasurement/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Description of a generic measurement entity coming from a device or other data source.**  
 version: 0.1.0  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `controlledProperty`: Property being measured by the device  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTC format  - `description`: A description of this item  - `deviceType`: Type of device taking the measurement  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurementType`: The type of measurement to be taken  - `name`: The name of this item.  - `numValue`: Numerical value of the measurement  - `outlier`: Value for marking the measurement to be specially processed  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice`: Device taking the measurement  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `textValue`: Textual value of the measurement  - `type`: NGSI Entity type. It has to be Measurement  - `unit`: Units of the measurement. In case of use of an acronym use units accepted in [CEFACT](https://www.unece.org/cefact.html) code.    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `controlledProperty[string]`: Property being measured by the device  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved[string]`: The date and time of this observation in ISO8601 UTC format  . Model: [https://schema.org/Text](https://schema.org/Text)- `description[string]`: A description of this item  - `deviceType[string]`: Type of device taking the measurement  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurementType[string]`: The type of measurement to be taken  - `name[string]`: The name of this item.  - `numValue[number]`: Numerical value of the measurement  . Model: [https://schema.org/Number](https://schema.org/Number)- `outlier[boolean]`: Value for marking the measurement to be specially processed  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refDevice[*]`: Device taking the measurement  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `textValue[string]`: Textual value of the measurement  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI Entity type. It has to be Measurement  - `unit[string]`: Units of the measurement. In case of use of an acronym use units accepted in [CEFACT](https://www.unece.org/cefact.html) code.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 NGSIv2 and NGSI-LD standards have ways of including units in every property. However there is a proeprty call 'Unit' for compatibility reasons. It is optional.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DeviceMeasurement:    
@@ -343,12 +357,22 @@ DeviceMeasurement:
     - id    
     - type    
   type: object    
-  version: 0.1.0    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceMeasurement/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Device/DeviceMeasurement/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.0    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### DeviceMeasurement NGSI-v2 key-values Example    
 Here is an example of a DeviceMeasurement in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
@@ -393,8 +417,10 @@ DeviceMeasurement:
   "unit": "UDT0000016"  
 }  
 ```  
+</details>  
 #### DeviceMeasurement NGSI-v2 normalized Example    
 Here is an example of a DeviceMeasurement in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
@@ -500,157 +526,169 @@ DeviceMeasurement:
   }  
 }  
 ```  
+</details>  
 #### DeviceMeasurement NGSI-LD key-values Example    
 Here is an example of a DeviceMeasurement in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
-  "dateCreated": "2021-09-03T07:33:18Z",  
-  "dateModified": "2021-09-03T07:33:18Z",  
-  "source": "Datacenter",  
-  "name": "Simple measurement",  
-  "alternateName": "",  
-  "description": "DAta center measurement values",  
-  "dataProvider": "",  
-  "owner": [],  
-  "seeAlso": [],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      60.170833,  
-      24.9375  
+    "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
+    "type": "DeviceMeasurement",  
+    "address": {  
+        "streetAddress": "Pohjoisesplanadi 11-13 ",  
+        "addressLocality": "Helsinki",  
+        "addressRegion": "Helsinki",  
+        "addressCountry": "Finland",  
+        "postalCode": "00099",  
+        "postOfficeBoxNumber": "1"  
+    },  
+    "alternateName": "",  
+    "areaServed": "Helsinki council",  
+    "controlledProperty": "humidity",  
+    "dataProvider": "",  
+    "dateCreated": "2021-09-03T07:33:18Z",  
+    "dateModified": "2021-09-03T07:33:18Z",  
+    "dateObserved": "2021-09-03T07:33:18Z",  
+    "description": "DAta center measurement values",  
+    "deviceType": "sensor",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            60.170833,  
+            24.9375  
+        ]  
+    },  
+    "measurementType": "FillingLevelSensor",  
+    "name": "Simple measurement",  
+    "numValue": 55.2,  
+    "outlier": true,  
+    "owner": [],  
+    "refDevice": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158",  
+    "seeAlso": [],  
+    "source": "Datacenter",  
+    "textValue": "",  
+    "unit": "UDT0000016",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "Pohjoisesplanadi 11-13 ",  
-    "addressLocality": "Helsinki",  
-    "addressRegion": "Helsinki",  
-    "addressCountry": "Finland",  
-    "postalCode": "00099",  
-    "postOfficeBoxNumber": "1"  
-  },  
-  "areaServed": "Helsinki council",  
-  "type": "DeviceMeasurement",  
-  "numValue": 55.2,  
-  "textValue": "",  
-  "controlledProperty": "humidity",  
-  "refDevice": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158",  
-  "deviceType": "sensor",  
-  "measurementType": "FillingLevelSensor",  
-  "dateObserved": "2021-09-03T07:33:18Z",  
-  "outlier": true,  
-  "unit": "UDT0000016",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### DeviceMeasurement NGSI-LD normalized Example    
 Here is an example of a DeviceMeasurement in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
-  "type": "DeviceMeasurement",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": "2021-09-03T07:33:18Z"  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": "2021-09-03T07:33:18Z"  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Datacenter"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Simple measurement"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "DAta center measurement values"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": []  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": []  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        60.170833,  
-        24.9375  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Pohjoisesplanadi 11-13 ",  
-      "addressLocality": "Helsinki",  
-      "addressRegion": "Helsinki",  
-      "addressCountry": "Finland",  
-      "postalCode": "00099",  
-      "postOfficeBoxNumber": "1"  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Helsinki council"  
-  },  
-  "numValue": {  
-    "type": "Property",  
-    "value": 55.2  
-  },  
-  "textValue": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "controlledProperty": {  
-    "type": "Property",  
-    "value": "humidity"  
-  },  
-  "refDevice": {  
-    "type": "Property",  
-    "value": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158"  
-  },  
-  "deviceType": {  
-    "type": "Property",  
-    "value": "sensor"  
-  },  
-  "measurementType": {  
-    "type": "Property",  
-    "value": "FillingLevelSensor"  
-  },  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": "2021-09-03T07:33:18Z"  
-  },  
-  "outlier": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "unit": {  
-    "type": "Property",  
-    "value": "UDT0000016"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",  
+    "type": "DeviceMeasurement",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Pohjoisesplanadi 11-13 ",  
+            "addressLocality": "Helsinki",  
+            "addressRegion": "Helsinki",  
+            "addressCountry": "Finland",  
+            "postalCode": "00099",  
+            "postOfficeBoxNumber": "1"  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Helsinki council"  
+    },  
+    "controlledProperty": {  
+        "type": "Property",  
+        "value": "humidity"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": "2021-09-03T07:33:18Z"  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": "2021-09-03T07:33:18Z"  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": "2021-09-03T07:33:18Z"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "DAta center measurement values"  
+    },  
+    "deviceType": {  
+        "type": "Property",  
+        "value": "sensor"  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                60.170833,  
+                24.9375  
+            ]  
+        }  
+    },  
+    "measurementType": {  
+        "type": "Property",  
+        "value": "FillingLevelSensor"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Simple measurement"  
+    },  
+    "numValue": {  
+        "type": "Property",  
+        "value": 55.2  
+    },  
+    "outlier": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": []  
+    },  
+    "refDevice": {  
+        "type": "Property",  
+        "value": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": []  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Datacenter"  
+    },  
+    "textValue": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "unit": {  
+        "type": "Property",  
+        "value": "UDT0000016"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+    ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
