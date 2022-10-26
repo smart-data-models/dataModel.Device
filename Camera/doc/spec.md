@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: Camera  
-==============  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.Device/blob/master/Camera/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **A Data Model for camera installations in a city.**  
 version: 0.1.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `cameraName`: Name of the camera corresponding to this observation.  - `cameraNum`: Camera number corresponding to this observation.  - `cameraOrientation`: Orientation information for the camera corresponding to this observation  - `cameraType`: Type of the camera corresponding to this observation. Enum:'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  - `cameraUsage`: Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC].  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `endDateTime`: Reported end time corresponding to this observation.  - `id`: Unique identifier of the entity  - `imageSnapshot`: Camera feed snapshot download link for the camera corresponding to this observation  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mediaURL`: URL providing further information of any image(s) or media of the complaint or place.  - `name`: The name of this item.  - `on`: Indicates if the device is on (true) or off (false).  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `startDateTime`: Reported start time corresponding to this observation.  - `streamName`: Name of the video stream from the camera corresponding to this observation  - `streamURL`: URL providing video streaming information for the camera corresponding to this observation  - `type`: NGSI entity type. It has to be Camera    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraName[string]`: Name of the camera corresponding to this observation.  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraNum[number]`: Camera number corresponding to this observation.  . Model: [https://schema.org/Number](https://schema.org/Number)- `cameraOrientation[object]`: Orientation information for the camera corresponding to this observation  - `cameraType[string]`: Type of the camera corresponding to this observation. Enum:'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraUsage[string]`: Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC].  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `endDateTime[string]`: Reported end time corresponding to this observation.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `id[*]`: Unique identifier of the entity  - `imageSnapshot[string]`: Camera feed snapshot download link for the camera corresponding to this observation  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mediaURL[string]`: URL providing further information of any image(s) or media of the complaint or place.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: The name of this item.  - `on[boolean]`: Indicates if the device is on (true) or off (false).  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `startDateTime[string]`: Reported start time corresponding to this observation.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `streamName[string]`: Name of the video stream from the camera corresponding to this observation  . Model: [https://schema.org/Text](https://schema.org/Text)- `streamURL[string]`: URL providing video streaming information for the camera corresponding to this observation  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI entity type. It has to be Camera  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`  ## Data Model description of properties  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Camera:    
@@ -377,9 +391,14 @@ Camera:
   x-version: 0.1.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Camera NGSI-v2 key-values Example    
 Here is an example of a Camera in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Camera:Cam2",  
@@ -408,8 +427,10 @@ Camera:
   "mediaURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
 }  
 ```  
+</details>  
 #### Camera NGSI-v2 normalized Example    
 Here is an example of a Camera in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Smart Data Models-Camera",  
@@ -486,8 +507,10 @@ Camera:
   ]  
 }  
 ```  
+</details>  
 #### Camera NGSI-LD key-values Example    
 Here is an example of a Camera in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Camera:Cam2",  
@@ -519,8 +542,10 @@ Camera:
     ]  
 }  
 ```  
+</details>  
 #### Camera NGSI-LD normalized Example    
 Here is an example of a Camera in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Smart Data Models-Camera",  
@@ -592,7 +617,17 @@ Camera:
         "type": "Property",  
         "value": true  
     },  
-    "@context": []  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
