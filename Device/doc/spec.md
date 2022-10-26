@@ -1,17 +1,32 @@
-Entity: Device  
-==============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Device  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.Device/blob/master/Device/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).**  
+version: 0.0.7  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `batteryLevel`: Device battery level. It must be equal to 1.0 when battery is full. 0.0 when battery is empty. -1 when transiently cannot be determined.  - `category`: Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  - `configuration`: Device's technical configuration. This attribute is intended to be a array properties and their values which capture parameters which have to do with the configuration of a device (timeouts, reporting periods, etc.) and which are not currently covered by the standard attributes defined by this model.  - `controlledAsset`: List of the asset(s) (building, object, etc.) controlled by the device.  - `controlledProperty`: Anything that can be sensed, measured or controlled by. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateFirstUsed`: A timestamp which denotes when the device was first used.  - `dateInstalled`: A timestamp which denotes when the device was installed (if it requires installation).  - `dateLastCalibration`: A timestamp which denotes when the last calibration of the device happened.  - `dateLastValueReported`: A timestamp which denotes the last time when the device successfully reported data to the cloud.  - `dateManufactured`: A timestamp which denotes when the device was manufactured.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: Date of the observed entity defined by the user.  - `depth`: Location of this device represented by a depth from a starting point. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code  - `description`: A description of this item  - `deviceState`: State of this device from an operational point of view. Its value can be vendor dependent.  - `direction`: Enum:'Inlet, Outlet, Entry, Exit'. A timestamp which denotes when the device was installed (if it requires installation).  - `distance`: Location of this device represented by a distance from a starting point. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code  - `dstAware`: Indicates a device which is Daylight Savings Time Aware (True). In case it is then the Timestamp is automatically adjusted by the device to reflect DST changes. If not (False) the time adjustments must be taken care of by the user.  - `firmwareVersion`: The firmware version of this device.  - `hardwareVersion`: The hardware version of this device.  - `id`: Unique identifier of the entity  - `ipAddress`: List of IP address of the device. It can be a comma separated list of values if the device has more than one IP address.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `macAddress`: The MAC address of the device.  - `mcc`: This property identifies the Mobile Country Code  - `mnc`: This property identifies the Mobile Network Code (MNC) of the network the device is attached to. The MNC is used in combination with a Mobile Country Code (MCC) (also known as a 'MCC / MNC tuple') to uniquely identify a mobile phone operator/carrier using the GSM, CDMA, iDEN, TETRA and 3G / 4G public land mobile networks and some satellite mobile networks.  - `name`: The name of this item.  - `osVersion`: The version of the host operating system device.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `provider`: The provider of the device.  - `refDeviceModel`: Model of the device  - `relativePosition`: Location of this device in a coordinate system according to its local emplacement.  - `rssi`: Received signal strength indicator for a wireless enabled device. It must be expressed in dBm or mW, use unitcode to set it out.   - `seeAlso`: list of uri pointing to additional resources about the item  - `serialNumber`: The serial number assigned by the manufacturer.  - `softwareVersion`: The software version of this device.  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `supportedProtocol`: Supported protocol(s) or networks  - `type`: NGSI Entity type. It has to be Device  - `value`: A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to change the actuation setting. For instance, a switch device which is currently _on_ can report a value 'on' of type 'Text'. Obviously, in order to toggle the referred switch, this attribute value will have to be changed to 'off'.    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `batteryLevel[*]`: Device battery level. It must be equal to 1.0 when battery is full. 0.0 when battery is empty. -1 when transiently cannot be determined.  . Model: [https://schema.org/Number](https://schema.org/Number)- `category[array]`: Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  . Model: [https://schema.org/Text](https://schema.org/Text)- `configuration[array]`: Device's technical configuration. This attribute is intended to be a array properties and their values which capture parameters which have to do with the configuration of a device (timeouts, reporting periods, etc.) and which are not currently covered by the standard attributes defined by this model.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `controlledAsset[array]`: List of the asset(s) (building, object, etc.) controlled by the device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `controlledProperty[array]`: Anything that can be sensed, measured or controlled by. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateFirstUsed[string]`: A timestamp which denotes when the device was first used.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateInstalled[string]`: A timestamp which denotes when the device was installed (if it requires installation).  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastCalibration[string]`: A timestamp which denotes when the last calibration of the device happened.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastValueReported[string]`: A timestamp which denotes the last time when the device successfully reported data to the cloud.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateManufactured[string]`: A timestamp which denotes when the device was manufactured.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved[string]`: Date of the observed entity defined by the user.  - `depth[number]`: Location of this device represented by a depth from a starting point. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code  . Model: [https://schema.org/depth](https://schema.org/depth)- `description[string]`: A description of this item  - `deviceState[string]`: State of this device from an operational point of view. Its value can be vendor dependent.  . Model: [https://schema.org/Text](https://schema.org/Text)- `direction[string]`: Enum:'Inlet, Outlet, Entry, Exit'. A timestamp which denotes when the device was installed (if it requires installation).  . Model: [ https://schema.org/DateTime]( https://schema.org/DateTime)- `distance[number]`: Location of this device represented by a distance from a starting point. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code  . Model: [https://schema.org/Distance](https://schema.org/Distance)- `dstAware[boolean]`: Indicates a device which is Daylight Savings Time Aware (True). In case it is then the Timestamp is automatically adjusted by the device to reflect DST changes. If not (False) the time adjustments must be taken care of by the user.  - `firmwareVersion[string]`: The firmware version of this device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `hardwareVersion[string]`: The hardware version of this device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Unique identifier of the entity  - `ipAddress[array]`: List of IP address of the device. It can be a comma separated list of values if the device has more than one IP address.  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `macAddress[string]`: The MAC address of the device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `mcc[string]`: This property identifies the Mobile Country Code  . Model: [https://schema.org/Text](https://schema.org/Text)- `mnc[string]`: This property identifies the Mobile Network Code (MNC) of the network the device is attached to. The MNC is used in combination with a Mobile Country Code (MCC) (also known as a 'MCC / MNC tuple') to uniquely identify a mobile phone operator/carrier using the GSM, CDMA, iDEN, TETRA and 3G / 4G public land mobile networks and some satellite mobile networks.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: The name of this item.  - `osVersion[string]`: The version of the host operating system device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `provider[string]`: The provider of the device.  . Model: [https://schema.org/provider](https://schema.org/provider)- `refDeviceModel[*]`: Model of the device  - `relativePosition[string]`: Location of this device in a coordinate system according to its local emplacement.  - `rssi[number]`: Received signal strength indicator for a wireless enabled device. It must be expressed in dBm or mW, use unitcode to set it out.   . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `serialNumber[string]`: The serial number assigned by the manufacturer.  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `softwareVersion[string]`: The software version of this device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `supportedProtocol[array]`: Supported protocol(s) or networks  . Model: [3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket](3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket)- `type[string]`: NGSI Entity type. It has to be Device  - `value[string]`: A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to change the actuation setting. For instance, a switch device which is currently _on_ can report a value 'on' of type 'Text'. Obviously, in order to toggle the referred switch, this attribute value will have to be changed to 'off'.  . Model: [https://schema.org/QuantitativeValue](https://schema.org/QuantitativeValue)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `controlledProperty`  - `id`  - `type`    
+- `controlledProperty`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 A Device is a   tangible object which contains some logic and is producer and/or consumer of data. A Device is always assumed to be capable of communicating electronically via a network. This data model has been partially developed in cooperation with mobile operators and the [GSMA](https://www.gsma.com/iot/iot-big-data/). This data model reuses concepts coming from the [SAREF Ontology](http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/01.01.01_60/ts_103264v010101p.pdf) part of [ETSI](http://www.etsi.org) standards.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Device:    
@@ -599,9 +614,14 @@ Device:
   x-version: 0.0.7    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Device NGSI-v2 key-values Example    
 Here is an example of a Device in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "device-9845A",  
@@ -633,8 +653,10 @@ Device:
   ]  
 }  
 ```  
+</details>  
 #### Device NGSI-v2 normalized Example    
 Here is an example of a Device in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "device-9845A",  
@@ -708,128 +730,140 @@ Device:
   }  
 }  
 ```  
+</details>  
 #### Device NGSI-LD key-values Example    
 Here is an example of a Device in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Device:device-9845A",  
-  "type": "Device",  
-  "category": {  
-    "type": "Property",  
-    "value": [  
-      "sensor"  
+    "id": "urn:ngsi-ld:Device:device-9845A",  
+    "type": "Device",  
+    "batteryLevel": 0.75,  
+    "category": {  
+        "type": "Property",  
+        "value": [  
+            "sensor"  
+        ]  
+    },  
+    "controlledAsset": [  
+        "urn:ngsi-ld::wastecontainer-Osuna-100"  
+    ],  
+    "controlledProperty": [  
+        "fillingLevel",  
+        "temperature"  
+    ],  
+    "dateFirstUsed": "2014-09-11T11:00:00Z",  
+    "depth": 3,  
+    "deviceState": "ok",  
+    "direction": "Outlet",  
+    "distance": 20,  
+    "ipAddress": [  
+        "192.14.56.78"  
+    ],  
+    "mcc": "214",  
+    "mnc": "07",  
+    "owner": [  
+        "http://person.org/leon"  
+    ],  
+    "refDeviceModel": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
+    "rssi": 0.86,  
+    "serialNumber": "9845A",  
+    "value": "l%3D0.22%3Bt%3D21.2",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "batteryLevel": 0.75,  
-  "dateFirstUsed": "2014-09-11T11:00:00Z",  
-  "controlledAsset": [  
-    "urn:ngsi-ld::wastecontainer-Osuna-100"  
-  ],  
-  "serialNumber": "9845A",  
-  "mcc": "214",  
-  "value": "l%3D0.22%3Bt%3D21.2",  
-  "refDeviceModel": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",  
-  "rssi": 0.86,  
-  "controlledProperty": [  
-    "fillingLevel",  
-    "temperature"  
-  ],  
-  "owner": [  
-    "http://person.org/leon"  
-  ],  
-  "mnc": "07",  
-  "ipAddress": [  
-    "192.14.56.78"  
-  ],  
-  "deviceState": "ok",  
-  "distance": 20,  
-  "depth": 3,  
-  "direction": "Outlet",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Device NGSI-LD normalized Example    
 Here is an example of a Device in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Device:device-9845A",  
-  "type": "Device",  
-  "batteryLevel": {  
-    "type": "Property",  
-    "value": 0.75  
-  },  
-  "category": {  
-    "type": "Property",  
-    "value": [  
-      "sensor"  
-    ]  
-  },  
-  "controlledAsset": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld::wastecontainer-Osuna-100"  
-    ]  
-  },  
-  "controlledProperty": {  
-    "type": "Property",  
-    "value": [  
-      "fillingLevel",  
-      "temperature"  
-    ]  
-  },  
-  "dateFirstUsed": {  
-    "type": "Property",  
+    "id": "urn:ngsi-ld:Device:device-9845A",  
+    "type": "Device",  
+    "batteryLevel": {  
+        "type": "Property",  
+        "value": 0.75  
+    },  
+    "category": {  
+        "type": "Property",  
+        "value": [  
+            "sensor"  
+        ]  
+    },  
+    "controlledAsset": [  
+        {  
+            "type": "Relationship",  
+            "object": "urn:ngsi-ld::wastecontainer-Osuna-100"  
+        }  
+    ],  
+    "controlledProperty": {  
+        "type": "Property",  
+        "value": [  
+            "fillingLevel",  
+            "temperature"  
+        ]  
+    },  
+    "dateFirstUsed": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2014-09-11T11:00:00Z"  
+        }  
+    },  
+    "deviceState": {  
+        "type": "Property",  
+        "value": "ok"  
+    },  
+    "ipAddress": {  
+        "type": "Property",  
+        "value": [  
+            "192.14.56.78"  
+        ]  
+    },  
+    "mcc": {  
+        "type": "Property",  
+        "value": "214"  
+    },  
+    "mnc": {  
+        "type": "Property",  
+        "value": "07"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "http://person.org/leon"  
+        ]  
+    },  
+    "refDeviceModel": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345"  
+    },  
+    "rssi": {  
+        "type": "Property",  
+        "value": 0.86  
+    },  
+    "serialNumber": {  
+        "type": "Property",  
+        "value": "9845A"  
+    },  
     "value": {  
-      "@type": "DateTime",  
-      "@value": "2014-09-11T11:00:00Z"  
-    }  
-  },  
-  "deviceState": {  
-    "type": "Property",  
-    "value": "ok"  
-  },  
-  "ipAddress": {  
-    "type": "Property",  
-    "value": [  
-      "192.14.56.78"  
+        "type": "Property",  
+        "value": "l%3D0.22%3Bt%3D21.2"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
     ]  
-  },  
-  "mcc": {  
-    "type": "Property",  
-    "value": "214"  
-  },  
-  "mnc": {  
-    "type": "Property",  
-    "value": "07"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "http://person.org/leon"  
-    ]  
-  },  
-  "refDeviceModel": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345"  
-  },  
-  "rssi": {  
-    "type": "Property",  
-    "value": 0.86  
-  },  
-  "serialNumber": {  
-    "type": "Property",  
-    "value": "9845A"  
-  },  
-  "value": {  
-    "type": "Property",  
-    "value": "l%3D0.22%3Bt%3D21.2"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
