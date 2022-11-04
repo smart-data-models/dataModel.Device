@@ -36,7 +36,7 @@
         "value": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing"
     },
     "location": {
-        "type": "Geoproperty",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
