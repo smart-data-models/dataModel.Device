@@ -40,7 +40,7 @@
         "value": "Facilitate and understand parking habits"
     },
     "location": {
-        "type": "Geoproperty",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
