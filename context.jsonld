@@ -30,6 +30,7 @@
         "depth": "https://smartdatamodels.org/dataModel.Device/depth",
         "description": "http://purl.org/dc/terms/description",
         "device": "https://smartdatamodels.org/dataModel.Device/device",
+        "deviceCategory": "https://smartdatamodels.org/dataModel.Device/deviceCategory",
         "deviceClass": "https://smartdatamodels.org/dataModel.Device/deviceClass",
         "deviceState": "https://smartdatamodels.org/dataModel.Device/deviceState",
         "deviceType": "https://smartdatamodels.org/dataModel.Device/deviceType",
