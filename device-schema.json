@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/dataModel.Device/device-schema.json",
-  "$schemaVersion": "0.0.5",
-  "title": " - Device  Commons schema",
+  "$schemaVersion": "0.0.6",
+  "title": " Smart data Models - Device  Commons schema",
   "description": "Common definitions to describe Device and Device Model schemas.",
   "definitions": {
     "MacAddressType": {
@@ -12,7 +12,7 @@
     },
     "CategoryType": {
       "type": "array",
-      "description": "Property. Model:'https://schema.org/Text'. Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'",
+      "description": "Property. Model:'https://schema.org/Text'. Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. Raw category will be deprecated use deviceCategory instead to avoid conflict with other aqttributes named category",
       "items": {
         "type": "string",
         "enum": [
@@ -120,6 +120,9 @@
       "type": "object",
       "properties": {
         "category": {
+          "$ref": "#/definitions/CategoryType"
+        },
+        "deviceCategory": {
           "$ref": "#/definitions/CategoryType"
         },
         "controlledProperty": {
