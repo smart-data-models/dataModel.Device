@@ -1,7 +1,7 @@
 {
   "id": "device-9845A",
   "type": "Device",
-  "category": [
+  "deviceCategory": [
     "sensor"
   ],
   "controlledProperty": [

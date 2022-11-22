@@ -1,7 +1,7 @@
 {
   "id": "myDevice-wastecontainer-sensor-345",
   "type": "DeviceModel",
-  "category": {
+  "deviceCategory": {
     "type": "array",
     "value": [
       "sensor"

@@ -5,7 +5,7 @@
         "type": "Property",
         "value": "myDevice"
     },
-    "category": {
+    "deviceCategory": {
         "type": "Property",
         "value": [
             "sensor"

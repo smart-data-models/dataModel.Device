@@ -2,7 +2,7 @@
     "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",
     "type": "DeviceModel",
     "brandName": "myDevice",
-    "category": [
+    "deviceCategory": [
         "sensor"
     ],
     "controlledProperty": [

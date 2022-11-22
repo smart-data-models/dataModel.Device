@@ -5,7 +5,7 @@
         "type": "Property",
         "value": 0.75
     },
-    "category": {
+    "deviceCategory": {
         "type": "Property",
         "value": [
             "sensor"
