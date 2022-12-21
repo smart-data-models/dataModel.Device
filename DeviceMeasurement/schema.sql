@@ -1,0 +1,3 @@
+/* (Beta) Export of data model DeviceMeasurement of the subject dataModel.Device for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE DeviceMeasurement_type AS ENUM ('DeviceMeasurement');
+CREATE TABLE DeviceMeasurement (address json, alternateName text, areaServed text, controlledProperty text, dataProvider text, dateCreated timestamp, dateModified timestamp, dateObserved timestamp, description text, deviceType text, id text, location json, measurementType text, name text, numValue text, outlier text, owner json, refDevice text, seeAlso json, source text, textValue text, type DeviceMeasurement_type, unit text);
