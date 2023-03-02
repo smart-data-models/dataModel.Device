@@ -1,5 +1,12 @@
 {
     "@context": {
+        "Camera": "https://smartdatamodels.org/dataModel.Device/Camera",
+        "Device": "https://smartdatamodels.org/dataModel.Device/Device",
+        "DeviceMeasurement": "https://smartdatamodels.org/dataModel.Device/DeviceMeasurement",
+        "DeviceModel": "https://smartdatamodels.org/dataModel.Device/DeviceModel",
+        "DeviceOperation": "https://smartdatamodels.org/dataModel.Device/DeviceOperation",
+        "PrivacyObject": "https://smartdatamodels.org/dataModel.Device/PrivacyObject",
+        "SmartMeteringObservation": "https://smartdatamodels.org/dataModel.Device/SmartMeteringObservation",
         "address": "https://smartdatamodels.org/address",
         "addressedAt": "https://smartdatamodels.org/dataModel.Device/addressedAt",
         "alternateName": "https://smartdatamodels.org/alternateName",
