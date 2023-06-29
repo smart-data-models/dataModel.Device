@@ -1,22 +1,21 @@
 {
-    "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",
-    "type": "DeviceModel",
-    "brandName": "myDevice",
-    "deviceCategory": [
-        "sensor"
-    ],
-    "controlledProperty": [
-        "fillingLevel",
-        "temperature"
-    ],
-    "function": [
-        "sensing"
-    ],
-    "manufacturerName": "myDevice Inc.",
-    "modelName": "S4Container 345",
-    "name": "myDevice Sensor for Containers 345",
-    "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",
+  "type": "DeviceModel",
+  "brandName": "myDevice",
+  "deviceCategory": [
+    "sensor"
+  ],
+  "controlledProperty": [
+    "fillingLevel",
+    "temperature"
+  ],
+  "function": [
+    "sensing"
+  ],
+  "manufacturerName": "myDevice Inc.",
+  "modelName": "S4Container 345",
+  "name": "myDevice Sensor for Containers 345",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  ]
 }

@@ -1,43 +1,42 @@
 {
-    "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",
-    "type": "DeviceModel",
-    "brandName": {
-        "type": "Property",
-        "value": "myDevice"
-    },
-    "deviceCategory": {
-        "type": "Property",
-        "value": [
-            "sensor"
-        ]
-    },
-    "controlledProperty": {
-        "type": "Property",
-        "value": [
-            "fillingLevel",
-            "temperature"
-        ]
-    },
-    "function": {
-        "type": "Property",
-        "value": [
-            "sensing"
-        ]
-    },
-    "manufacturerName": {
-        "type": "Property",
-        "value": "myDevice Inc."
-    },
-    "modelName": {
-        "type": "Property",
-        "value": "S4Container 345"
-    },
-    "name": {
-        "type": "Property",
-        "value": "myDevice Sensor for Containers 345"
-    },
-    "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  "id": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345",
+  "type": "DeviceModel",
+  "brandName": {
+    "type": "Property",
+    "value": "myDevice"
+  },
+  "deviceCategory": {
+    "type": "Property",
+    "value": [
+      "sensor"
     ]
+  },
+  "controlledProperty": {
+    "type": "Property",
+    "value": [
+      "fillingLevel",
+      "temperature"
+    ]
+  },
+  "function": {
+    "type": "Property",
+    "value": [
+      "sensing"
+    ]
+  },
+  "manufacturerName": {
+    "type": "Property",
+    "value": "myDevice Inc."
+  },
+  "modelName": {
+    "type": "Property",
+    "value": "S4Container 345"
+  },
+  "name": {
+    "type": "Property",
+    "value": "myDevice Sensor for Containers 345"
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  ]
 }

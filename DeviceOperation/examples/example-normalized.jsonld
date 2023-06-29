@@ -1,82 +1,81 @@
 {
-    "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
-    "type": "DeviceOperation",
-    "addressedAt": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-08-28T10:18:16Z"
-        }
-    },
-    "dataProvider": {
-        "type": "Property",
-        "value": "https://provider.example.com"
-    },
-    "description": {
-        "type": "Property",
-        "value": "Backup battery needs replacement"
-    },
-    "device": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Device:2033a7c7-d31b-48e7-91c2-014dc426c29e"
-    },
-    "endedAt": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-08-28T10:18:16Z"
-        }
-    },
-    "operationType": {
-        "type": "Property",
-        "value": "fault"
-    },
-    "operator": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836"
-    },
-    "plannedEndAt": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-08-28T10:18:16Z"
-        }
-    },
-    "plannedStartAt": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-08-22T10:18:16Z"
-        }
-    },
-    "reportedAt": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-08-28T10:18:16Z"
-        }
-    },
-    "result": {
-        "type": "Property",
-        "value": "ok"
-    },
-    "source": {
-        "type": "Property",
-        "value": "https://source.example.com"
-    },
-    "startedAt": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-08-22T10:18:16Z"
-        }
-    },
-    "status": {
-        "type": "Property",
-        "value": "ongoing"
-    },
-    "@context": [
-        "https://smart-data-models.github.io/dataModel.Device/DeviceOperation/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
+  "type": "DeviceOperation",
+  "addressedAt": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-08-28T10:18:16Z"
+    }
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "https://provider.example.com"
+  },
+  "description": {
+    "type": "Property",
+    "value": "Backup battery needs replacement"
+  },
+  "device": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Device:2033a7c7-d31b-48e7-91c2-014dc426c29e"
+  },
+  "endedAt": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-08-28T10:18:16Z"
+    }
+  },
+  "operationType": {
+    "type": "Property",
+    "value": "fault"
+  },
+  "operator": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836"
+  },
+  "plannedEndAt": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-08-28T10:18:16Z"
+    }
+  },
+  "plannedStartAt": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-08-22T10:18:16Z"
+    }
+  },
+  "reportedAt": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-08-28T10:18:16Z"
+    }
+  },
+  "result": {
+    "type": "Property",
+    "value": "ok"
+  },
+  "source": {
+    "type": "Property",
+    "value": "https://source.example.com"
+  },
+  "startedAt": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-08-22T10:18:16Z"
+    }
+  },
+  "status": {
+    "type": "Property",
+    "value": "ongoing"
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  ]
 }

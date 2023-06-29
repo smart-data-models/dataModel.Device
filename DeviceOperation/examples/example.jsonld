@@ -16,7 +16,6 @@
     "startedAt": "2016-08-22T10:18:16Z",
     "status": "ongoing",
     "@context": [
-        "https://smart-data-models.github.io/dataModel.Device/DeviceOperation/context.jsonld",
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
     ]
 }

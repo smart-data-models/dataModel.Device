@@ -1,2 +1,0 @@
-"id_", "type_", "brandName_", "deviceCategory__0_", "controlledProperty__0_", "controlledProperty__1_", "function__0_", "manufacturerName_", "modelName_", "name_", "@context__0_", "@context__1_"
-"urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345", "DeviceModel", "myDevice", "sensor", "fillingLevel", "temperature", "sensing", "myDevice Inc.", "S4Container 345", "myDevice Sensor for Containers 345", "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld", "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
