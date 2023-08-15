@@ -20,12 +20,12 @@
     }
   },
   "isIndoor": {
-    "type": "Text",
-    "value": "false"
+    "type": "Boolean",
+    "value": false
   },
   "floor": {
-    "type": "Text",
-    "value": "false"
+    "type": "Number",
+    "value": 0
   },
   "description": {
     "type": "Text",
@@ -67,8 +67,8 @@
     ]
   },
   "isPersonalData": {
-    "type": "Text",
-    "value": "false"
+    "type": "Boolean",
+    "value": false
   },
   "retentionPeriod": {
     "type": "Text",
