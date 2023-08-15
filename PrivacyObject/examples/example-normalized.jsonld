@@ -21,7 +21,7 @@
   },
   "floor": {
     "type": "Property",
-    "value": "false"
+    "value": 0
   },
   "image": {
     "type": "Property",
@@ -29,11 +29,11 @@
   },
   "isIndoor": {
     "type": "Property",
-    "value": "false"
+    "value": false
   },
   "isPersonalData": {
     "type": "Property",
-    "value": "false"
+    "value": false
   },
   "legitimateInterest": {
     "type": "Property",
