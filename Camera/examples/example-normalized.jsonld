@@ -1,53 +1,21 @@
 {
-  "id": "urn:ngsi-ld:Smart-Data-Models-Camera",
+  "id": "urn:ngsi-ld:Smart Data Models-Camera",
   "type": "Camera",
   "cameraName": {
-    "type": "Property",
+    "type": "Text",
     "value": "Cam2"
   },
-  "cameraNum": {
-    "type": "Property",
-    "value": 2
-  },
-  "cameraOrientation": {
-    "type": "Property",
-    "value": {
-      "comments": "Camera facing RSBhawan",
-      "annotatedMap": "https://drive.google.com/file/d/1RXDGogU5UMmzRppqFaNKTzcr69Kl0wjb/view?usp=sharing"
-    }
-  },
-  "cameraType": {
-    "type": "Property",
-    "value": "FIXED"
+  "streamURL": {
+    "type": "Text",
+    "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"
   },
   "cameraUsage": {
-    "type": "Property",
+    "type": "Text",
     "value": "SURVEILLANCE"
   },
-  "endDateTime": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-05-11T06:35:20.065Z"
-    }
-  },
-  "imageSnapshot": {
-    "type": "Property",
-    "value": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing"
-  },
-  "location": {
-    "type": "GeoProperty",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        23.831796,
-        81.28076
-      ]
-    }
-  },
-  "mediaURL": {
-    "type": "Property",
-    "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"
+  "cameraType": {
+    "type": "Text",
+    "value": "FIXED"
   },
   "startDateTime": {
     "type": "Property",
@@ -56,19 +24,48 @@
       "@value": "2021-05-11T06:30:00.020Z"
     }
   },
+  "location": {
+    "type": "Geoproperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        23.831796,
+        91.28076
+      ]
+    }
+  },
+  "cameraOrientation": {
+    "type": "Property",
+    "value": {
+      "comments": "Camera facing RSBhawan",
+      "annotatedMap": "https://drive.google.com/file/d/1RXDGogU5UMmzRppqFaNKTzcr69Kl0wjb/view?usp=sharing"
+    }
+  },
+  "endDateTime": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-05-11T06:35:20.065Z"
+    }
+  },
+  "cameraNum": {
+    "type": "Property",
+    "value": 2
+  },
+  "imageSnapshot": {
+    "type": "Property",
+    "value": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing"
+  },
   "streamName": {
     "type": "Property",
     "value": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2"
   },
-  "streamURL": {
+  "mediaURL": {
     "type": "Property",
     "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"
   },
   "on": {
     "type": "Property",
     "value": true
-  },
-  "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
-  ]
+  }
 }
