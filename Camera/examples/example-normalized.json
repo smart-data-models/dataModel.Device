@@ -67,8 +67,5 @@
   "on": {
     "type": "Property",
     "value": true
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+  }
 }
