@@ -3,12 +3,12 @@
   "$id": "https://smart-data-models.github.io/dataModel.Device/device-schema.json",
   "$schemaVersion": "0.0.6",
   "title": " Smart data Models - Device  Commons schema",
-  "description": "Common definitions to describe Device and Device Model schemas.",
+  "description": "Common definitions to describe Device and Device Model schemas",
   "definitions": {
     "MacAddressType": {
       "type": "string",
       "pattern": "^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$",
-      "description": "Property. Model:'https://schema.org/Text'. The MAC address of the device."
+      "description": "Property. Model:'https://schema.org/Text'. The MAC address of the device"
     },
     "CategoryType": {
       "type": "array",
