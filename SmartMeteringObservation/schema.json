@@ -32,7 +32,7 @@
                 },
                 "meterType": {
                     "type": "string",
-                    "description": "Property. The type of supply being metered e.g.: Electricity, Gasoline, Water, Methane, Diesel."
+                    "description": "Property. The type of supply being metered e.g.: Electricity, Gasoline, Water, Methane, Diesel"
                 },
                 "refDevice": {
                     "anyOf": [
@@ -56,19 +56,19 @@
                 },
                 "totalConsumption": {
                     "type": "number",
-                    "description": "Property. The total amount of product supplied as recorded by the meter since installation. The relevant unitCode should be specified such as KWH (Kilo Watt Hours) for Electricity, LTR (Litre) or MTQ (Cubic Metre) for gases or liquids."
+                    "description": "Property. The total amount of product supplied as recorded by the meter since installation. The relevant unitCode should be specified such as KWH (Kilo Watt Hours) for Electricity, LTR (Litre) or MTQ (Cubic Metre) for gases or liquids"
                 },
                 "peakConsumption": {
                     "type": "number",
-                    "description": "Property. The total amount of product supplied during 'peak' hours (particularly relevant to Electricity supply) as recorded by the meter since installation. The relevant unitCode should be specified such as KWH (Kilo Watt Hours) for Electricity, LTR (Litre) or MTQ (Cubic Metre) for gases or liquids."
+                    "description": "Property. The total amount of product supplied during 'peak' hours (particularly relevant to Electricity supply) as recorded by the meter since installation. The relevant unitCode should be specified such as KWH (Kilo Watt Hours) for Electricity, LTR (Litre) or MTQ (Cubic Metre) for gases or liquids"
                 },
                 "offPeakConsumption": {
                     "type": "number",
-                    "description": "Property. The total amount of product supplied during 'off-peak' hours (particularly relevant to Electricity supply) as recorded by the meter since installation. The relevant unitCode should be specified such as KWH (Kilo Watt Hours) for Electricity, LTR (Litre) or MTQ (Cubic Metre) for gases or liquids."
+                    "description": "Property. The total amount of product supplied during 'off-peak' hours (particularly relevant to Electricity supply) as recorded by the meter since installation. The relevant unitCode should be specified such as KWH (Kilo Watt Hours) for Electricity, LTR (Litre) or MTQ (Cubic Metre) for gases or liquids"
                 },
                 "powerFactor": {
                     "type": "number",
-                    "description": "Property. Relevant to 3-Phase electricity supplies often used in industry - the power factor ranges from -1 to +1 depending on the net balance between capacitive and inductive loads. If used this measures the average power factor since meter installation."
+                    "description": "Property. Relevant to 3-Phase electricity supplies often used in industry - the power factor ranges from -1 to +1 depending on the net balance between capacitive and inductive loads. If used this measures the average power factor since meter installation"
                 }
             }
         }
