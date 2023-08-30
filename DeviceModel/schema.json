@@ -51,7 +51,7 @@
                 },
                 "supportedUnits": {
                     "type": "array",
-                    "description": "Property. Model:'https://schema.org/Text'. Units of measurement supported by the device. The unit code (text) of measurement given using the [UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters).",
+                    "description": "Property. Model:'https://schema.org/Text'. Units of measurement supported by the device. The unit code (text) of measurement given using the [UN/CEFACT Common Code](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) (max. 3 characters)",
                     "items": {
                         "type": "string"
                     }
@@ -69,19 +69,19 @@
                 "documentation": {
                     "type": "string",
                     "format": "uri",
-                    "description": "Property. Model:'https://schema.org/URL'. A link to device's documentation."
+                    "description": "Property. Model:'https://schema.org/URL'. A link to device's documentation"
                 },
                 "brandName": {
                     "type": "string",
-                    "description": "Property. Model:'https://schema.org/Text'. Device's brand name."
+                    "description": "Property. Model:'https://schema.org/Text'. Device's brand name"
                 },
                 "modelName": {
                     "type": "string",
-                    "description": "Property. Model:'https://schema.org/Text. Device's model name."
+                    "description": "Property. Model:'https://schema.org/Text. Device's model name"
                 },
                 "manufacturerName": {
                     "type": "string",
-                    "description": "Property. Model:'https://schema.org/Text'. Device's manufacturer name."
+                    "description": "Property. Model:'https://schema.org/Text'. Device's manufacturer name"
                 }
             }
         }
