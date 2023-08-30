@@ -74,7 +74,7 @@
                 },
                 "unit": {
                     "type": "string",
-                    "description": "Property. Units of the measurement. In case of use of an acronym use units accepted in [CEFACT](https://www.unece.org/cefact.html) code."
+                    "description": "Property. Units of the measurement. In case of use of an acronym use units accepted in [CEFACT](https://www.unece.org/cefact.html) code"
                 }
             }
         }
