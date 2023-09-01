@@ -11,12 +11,13 @@
             "sensor"
         ]
     },
-    "controlledAsset": [
+    "controlledAsset":
         {
             "type": "Relationship",
-            "object": "urn:ngsi-ld::wastecontainer-Osuna-100"
+            "object": [
+                "urn:ngsi-ld::wastecontainer-Osuna-100"]
         }
-    ],
+    ,
     "controlledProperty": {
         "type": "Property",
         "value": [
