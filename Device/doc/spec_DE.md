@@ -15,12 +15,19 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `batteryLevel[*]`: Batteriestand des Geräts. Er muss gleich 1,0 sein, wenn die Batterie voll ist. 0,0, wenn die Batterie leer ist. -1, wenn vorübergehend nicht ermittelt werden kann.  . Model: [https://schema.org/Number](https://schema.org/Number)- `category[array]`: Sensor: Ein Gerät, das Ereignisse oder Veränderungen in der physikalischen Umgebung wie Licht, Bewegung oder Temperaturveränderungen erkennt und darauf reagiert. https://w3id.org/saref#Sensor. Aktor: Ein Gerät, das für die Bewegung oder Steuerung eines Mechanismus oder Systems verantwortlich ist. https://w3id.org/saref#Actuator. Messgerät : Ein Gerät, das zur genauen Erfassung und Anzeige einer Größe in einer für den Menschen lesbaren Form dient. Teilweise durch SAREF definiert. HVAC : Heizungs-, Belüftungs- und Klimaanlagen (HVAC), die für ein angenehmes Raumklima sorgen. https://w3id.org/saref#HVAC. Netzwerk : Ein Gerät, das dazu dient, andere Geräte in einem Netzwerk zu verbinden, wie z. B. Hub, Switch oder Router in einem LAN oder Sensornetzwerk. (https://w3id.org/saref#Network. Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufzeichnen oder Abspielen von Multimedia-Inhalten wie Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. Raw category wird veraltet sein, stattdessen sollte deviceCategory verwendet werden, um Konflikte mit anderen aqttributes namens category zu vermeiden.  . Model: [https://schema.org/Text](https://schema.org/Text)- `configuration[array]`: Technische Konfiguration des Geräts. Bei diesem Attribut handelt es sich um ein Array von Eigenschaften und deren Werten, die Parameter erfassen, die mit der Konfiguration eines Geräts zu tun haben (Zeitüberschreitungen, Meldezeiträume usw.) und die derzeit nicht durch die in diesem Modell definierten Standardattribute abgedeckt sind.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `controlledAsset[array]`: Liste der von dem Gerät kontrollierten Anlagegüter (Gebäude, Objekt usw.).  . Model: [https://schema.org/Text](https://schema.org/Text)- `controlledProperty[array]`: Alles, was von einem Sensor erfasst, gemessen oder kontrolliert werden kann. Enum:airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, motionActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateFirstUsed[string]`: Ein Zeitstempel, der angibt, wann das Gerät zum ersten Mal verwendet wurde.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateInstalled[string]`: Ein Zeitstempel, der angibt, wann das Gerät installiert wurde (falls es installiert werden muss).  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastCalibration[string]`: Ein Zeitstempel, der angibt, wann die letzte Kalibrierung des Geräts stattgefunden hat.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastValueReported[string]`: Ein Zeitstempel, der den letzten Zeitpunkt angibt, zu dem das Gerät erfolgreich Daten an die Cloud gemeldet hat.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateManufactured[string]`: Ein Zeitstempel, der angibt, wann das Gerät hergestellt wurde.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved[string]`: Datum der vom Benutzer definierten beobachteten Einheit.  - `depth[number]`: Standort dieses Geräts, dargestellt durch die Tiefe von einem Startpunkt aus. Alle Einheiten werden im Code [CEFACT](https://www.unece.org/cefact.html) akzeptiert.  . Model: [https://schema.org/depth](https://schema.org/depth)- `description[string]`: Eine Beschreibung dieses Artikels  - `deviceCategory[array]`: Sensor: Ein Gerät, das Ereignisse oder Veränderungen in der physikalischen Umgebung wie Licht, Bewegung oder Temperaturveränderungen erkennt und darauf reagiert. https://w3id.org/saref#Sensor. Aktor: Ein Gerät, das für die Bewegung oder Steuerung eines Mechanismus oder Systems verantwortlich ist. https://w3id.org/saref#Actuator. Messgerät : Ein Gerät, das zur genauen Erfassung und Anzeige einer Größe in einer für den Menschen lesbaren Form dient. Teilweise durch SAREF definiert. HVAC : Heizungs-, Belüftungs- und Klimaanlagen (HVAC), die für ein angenehmes Raumklima sorgen. https://w3id.org/saref#HVAC. Netzwerk : Ein Gerät, das dazu dient, andere Geräte in einem Netzwerk zu verbinden, wie z. B. Hub, Switch oder Router in einem LAN oder Sensornetzwerk. (https://w3id.org/saref#Network. Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufzeichnen oder Abspielen von Multimedia-Inhalten wie Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. Raw category wird veraltet sein, stattdessen sollte deviceCategory verwendet werden, um Konflikte mit anderen aqttributes namens category zu vermeiden.  . Model: [https://schema.org/Text](https://schema.org/Text)- `deviceState[string]`: Zustand dieses Geräts aus betrieblicher Sicht. Sein Wert kann herstellerabhängig sein.  . Model: [https://schema.org/Text](https://schema.org/Text)- `direction[string]`: Enum:'Einlass, Auslass, Eintritt, Austritt'. Ein Zeitstempel, der angibt, wann das Gerät installiert wurde (falls es installiert werden muss).  . Model: [ https://schema.org/DateTime]( https://schema.org/DateTime)- `distance[number]`: Standort dieses Geräts, dargestellt als Entfernung von einem Ausgangspunkt. Alle Einheiten werden im Code [CEFACT](https://www.unece.org/cefact.html) akzeptiert.  . Model: [https://schema.org/Distance](https://schema.org/Distance)- `dstAware[boolean]`: Zeigt ein Gerät an, das die Sommerzeit kennt (True). Wenn dies der Fall ist, wird der Zeitstempel automatisch vom Gerät an die Sommerzeit angepasst. Ist dies nicht der Fall (False), muss die Zeitanpassung vom Benutzer vorgenommen werden.  - `firmwareVersion[string]`: Die Firmware-Version dieses Geräts.  . Model: [https://schema.org/Text](https://schema.org/Text)- `hardwareVersion[string]`: Die Hardware-Version dieses Geräts.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Eindeutiger Bezeichner der Entität  - `ipAddress[array]`: Liste der IP-Adresse des Geräts. Es kann eine durch Kommata getrennte Liste von Werten sein, wenn das Gerät mehr als eine IP-Adresse hat.  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `macAddress[string]`: Die MAC-Adresse des Geräts.  . Model: [https://schema.org/Text](https://schema.org/Text)- `mcc[string]`: Diese Eigenschaft identifiziert den Mobile Country Code  . Model: [https://schema.org/Text](https://schema.org/Text)- `mnc[string]`: Diese Eigenschaft identifiziert den Mobile Network Code (MNC) des Netzes, an das das Gerät angeschlossen ist. Der MNC wird in Kombination mit einem Mobile Country Code (MCC) (auch bekannt als "MCC/MNC-Tupel") verwendet, um einen Mobilfunkbetreiber/Carrier eindeutig zu identifizieren, der die öffentlichen GSM-, CDMA-, iDEN-, TETRA- und 3G/4G-Mobilfunknetze sowie einige Satellitenmobilfunknetze nutzt.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Der Name dieses Artikels.  - `osVersion[string]`: Die Version des Host-Betriebssystems Gerät.  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `provider[string]`: Der Anbieter des Geräts.  . Model: [https://schema.org/provider](https://schema.org/provider)- `refDeviceModel[*]`: Modell des Geräts  - `relativePosition[string]`: Lage dieses Geräts in einem Koordinatensystem entsprechend seiner örtlichen Positionierung.  - `rssi[number]`: Indikator für die Stärke des empfangenen Signals für ein drahtloses Gerät. Sie muss in dBm oder mW ausgedrückt werden; verwenden Sie Unitcode, um sie anzugeben.  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `serialNumber[string]`: Die vom Hersteller vergebene Seriennummer.  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `softwareVersion[string]`: Die Softwareversion dieses Geräts.  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `supportedProtocol[array]`: Unterstützte(s) Protokoll(e) oder Netzwerk(e)  . Model: [3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket](3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket)- `type[string]`: NGSI-Entitätstyp. Es muss Gerät sein  - `value[string]`: Ein beobachteter oder gemeldeter Wert. Bei Betätigungsgeräten ist es ein Attribut, das es einer steuernden Anwendung ermöglicht, die Betätigungseinstellung zu ändern. Zum Beispiel kann ein Schalter, der gerade _eingeschaltet_ ist, einen Wert "ein" vom Typ "Text" melden. Um den betreffenden Schalter umzuschalten, muss dieser Attributwert natürlich in 'aus' geändert werden.  . Model: [https://schema.org/QuantitativeValue](https://schema.org/QuantitativeValue)<!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `batteryLevel[*]`: Batteriestand des Geräts. Er muss gleich 1,0 sein, wenn die Batterie voll ist. 0,0, wenn die Batterie leer ist. -1 wenn vorübergehend nicht ermittelt werden kann  . Model: [https://schema.org/Number](https://schema.org/Number)- `category[array]`: Sensor: Ein Gerät, das Ereignisse oder Veränderungen in der physikalischen Umgebung wie Licht, Bewegung oder Temperaturveränderungen erkennt und darauf reagiert. https://w3id.org/saref#Sensor. Aktor: Ein Gerät, das für die Bewegung oder Steuerung eines Mechanismus oder Systems verantwortlich ist. https://w3id.org/saref#Actuator. Messgerät : Ein Gerät, das zur genauen Erfassung und Anzeige einer Größe in einer für den Menschen lesbaren Form dient. Teilweise durch SAREF definiert. HVAC : Heizungs-, Belüftungs- und Klimaanlagen (HVAC), die für ein angenehmes Raumklima sorgen. https://w3id.org/saref#HVAC. Netzwerk : Ein Gerät, das dazu dient, andere Geräte in einem Netzwerk zu verbinden, z. B. Hub, Switch oder Router in einem LAN oder Sensornetzwerk. (https://w3id.org/saref#Network. Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufzeichnen oder Abspielen von Multimedia-Inhalten wie Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. Raw category wird veraltet sein, stattdessen sollte deviceCategory verwendet werden, um Konflikte mit anderen aqttributes namens category zu vermeiden.  . Model: [https://schema.org/Text](https://schema.org/Text)- `configuration[array]`: Technische Konfiguration des Geräts. Bei diesem Attribut handelt es sich um ein Array von Eigenschaften und deren Werten, die Parameter erfassen, die mit der Konfiguration eines Geräts zu tun haben (Zeitüberschreitungen, Meldezeiträume usw.) und die derzeit nicht durch die in diesem Modell definierten Standardattribute abgedeckt sind  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `controlledAsset[array]`: Liste der von dem Gerät kontrollierten Anlagegüter (Gebäude, Objekt usw.)  . Model: [https://schema.org/Text](https://schema.org/Text)- `controlledProperty[array]`: Alles, was von einem Sensor erfasst, gemessen oder kontrolliert werden kann. Enum:airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, motionActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateFirstUsed[date-time]`: Ein Zeitstempel, der angibt, wann das Gerät zum ersten Mal verwendet wurde  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateInstalled[date-time]`: Ein Zeitstempel, der angibt, wann das Gerät installiert wurde (falls es installiert werden muss)  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastCalibration[date-time]`: Ein Zeitstempel, der angibt, wann die letzte Kalibrierung des Geräts stattgefunden hat  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastValueReported[date-time]`: Ein Zeitstempel, der den letzten Zeitpunkt angibt, zu dem das Gerät erfolgreich Daten an die Cloud gemeldet hat  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateManufactured[date-time]`: Ein Zeitstempel, der angibt, wann das Gerät hergestellt wurde  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `dateObserved[date-time]`: Datum der vom Benutzer definierten beobachteten Einheit  - `depth[number]`: Standort dieses Geräts, dargestellt durch die Tiefe von einem Startpunkt aus. Alle Einheiten werden im Code [CEFACT](https://www.unece.org/cefact.html) akzeptiert.  . Model: [https://schema.org/depth](https://schema.org/depth)- `description[string]`: Eine Beschreibung dieses Artikels  - `deviceCategory[array]`: Sensor: Ein Gerät, das Ereignisse oder Veränderungen in der physikalischen Umgebung wie Licht, Bewegung oder Temperaturveränderungen erkennt und darauf reagiert. https://w3id.org/saref#Sensor. Aktor: Ein Gerät, das für die Bewegung oder Steuerung eines Mechanismus oder Systems verantwortlich ist. https://w3id.org/saref#Actuator. Messgerät : Ein Gerät, das zur genauen Erfassung und Anzeige einer Größe in einer für den Menschen lesbaren Form dient. Teilweise durch SAREF definiert. HVAC : Heizungs-, Belüftungs- und Klimaanlagen (HVAC), die für ein angenehmes Raumklima sorgen. https://w3id.org/saref#HVAC. Netzwerk : Ein Gerät, das dazu dient, andere Geräte in einem Netzwerk zu verbinden, z. B. Hub, Switch oder Router in einem LAN oder Sensornetzwerk. (https://w3id.org/saref#Network. Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufzeichnen oder Abspielen von Multimedia-Inhalten wie Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. Raw category wird veraltet sein, stattdessen sollte deviceCategory verwendet werden, um Konflikte mit anderen aqttributes namens category zu vermeiden.  . Model: [https://schema.org/Text](https://schema.org/Text)- `deviceState[string]`: Zustand dieses Geräts aus betrieblicher Sicht. Sein Wert kann herstellerabhängig sein  . Model: [https://schema.org/Text](https://schema.org/Text)- `direction[string]`: Enum:'Einlass, Auslass, Eintritt, Austritt'. Ein Zeitstempel, der angibt, wann das Gerät installiert wurde (falls es installiert werden muss)  . Model: [ https://schema.org/DateTime]( https://schema.org/DateTime)- `distance[number]`: Standort dieses Geräts, dargestellt als Entfernung von einem Ausgangspunkt. Alle Einheiten werden im Code [CEFACT](https://www.unece.org/cefact.html) akzeptiert.  . Model: [https://schema.org/Distance](https://schema.org/Distance)- `dstAware[boolean]`: Zeigt ein Gerät an, das die Sommerzeit kennt (True). Wenn dies der Fall ist, wird der Zeitstempel automatisch vom Gerät an die Sommerzeit angepasst. Ist dies nicht der Fall (False), muss die Zeitanpassung vom Benutzer vorgenommen werden.  - `firmwareVersion[string]`: Die Firmware-Version dieses Geräts  . Model: [https://schema.org/Text](https://schema.org/Text)- `hardwareVersion[string]`: Die Hardware-Version dieses Geräts  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Eindeutiger Bezeichner der Entität  - `ipAddress[array]`: Liste der IP-Adresse des Geräts. Es kann eine durch Kommata getrennte Liste von Werten sein, wenn das Gerät mehr als eine IP-Adresse hat  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `macAddress[string]`: Die MAC-Adresse des Geräts  . Model: [https://schema.org/Text](https://schema.org/Text)- `mcc[string]`: Diese Eigenschaft identifiziert den Mobile Country Code  . Model: [https://schema.org/Text](https://schema.org/Text)- `mnc[string]`: Diese Eigenschaft identifiziert den Mobile Network Code (MNC) des Netzes, an das das Gerät angeschlossen ist. Der MNC wird in Kombination mit einem Mobile Country Code (MCC) (auch bekannt als "MCC/MNC-Tupel") verwendet, um einen Mobilfunkbetreiber/Carrier eindeutig zu identifizieren, der die öffentlichen GSM-, CDMA-, iDEN-, TETRA- und 3G/4G-Mobilfunknetze sowie einige Satellitenmobilfunknetze nutzt.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Der Name dieses Artikels  - `osVersion[string]`: Die Version des Host-Betriebssystems Gerät  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `provider[string]`: Der Anbieter des Geräts  . Model: [https://schema.org/provider](https://schema.org/provider)- `refDeviceModel[*]`: Modell des Geräts  - `relativePosition[string]`: Lage des Geräts in einem Koordinatensystem entsprechend seiner örtlichen Positionierung  - `rssi[number]`: Indikator für die Stärke des empfangenen Signals für ein drahtloses Gerät. Sie muss in dBm oder mW ausgedrückt werden; verwenden Sie Unitcode, um sie anzugeben.  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `serialNumber[string]`: Die vom Hersteller vergebene Seriennummer  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `softwareVersion[string]`: Die Softwareversion dieses Geräts  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `supportedProtocol[array]`: Unterstützte(s) Protokoll(e) oder Netzwerk(e)  . Model: [3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket](3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket)- `type[string]`: NGSI-Entitätstyp. Es muss Gerät sein  - `value[string]`: Ein beobachteter oder gemeldeter Wert. Bei Betätigungsgeräten ist es ein Attribut, das es einer steuernden Anwendung ermöglicht, die Betätigungseinstellung zu ändern. Zum Beispiel kann ein Schalter, der gerade _eingeschaltet_ ist, einen Wert "ein" vom Typ "Text" melden. Um den betreffenden Schalter umzuschalten, muss dieser Attributwert natürlich in 'aus' geändert werden.  . Model: [https://schema.org/QuantitativeValue](https://schema.org/QuantitativeValue)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `controlledProperty`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Ein Gerät ist ein greifbares Objekt, das eine gewisse Logik enthält und Daten produziert und/oder konsumiert. Es wird immer davon ausgegangen, dass ein Gerät in der Lage ist, elektronisch über ein Netz zu kommunizieren. Dieses Datenmodell wurde teilweise in Zusammenarbeit mit Mobilfunkbetreibern und der [GSMA] (https://www.gsma.com/iot/iot-big-data/) entwickelt. Dieses Datenmodell verwendet Konzepte aus der [SAREF Ontology](http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/01.01.01_60/ts_103264v010101p.pdf), die Teil der [ETSI](http://www.etsi.org) Standards ist.  
+Ein Gerät ist ein materieller Gegenstand, der eine gewisse Logik enthält und Daten erzeugt und/oder verbraucht. Es wird immer davon ausgegangen, dass ein Gerät in der Lage ist, elektronisch über ein Netz zu kommunizieren. Dieses Datenmodell wurde teilweise in Zusammenarbeit mit Mobilfunkbetreibern und der [GSMA] (https://www.gsma.com/iot/iot-big-data/) entwickelt. Dieses Datenmodell verwendet Konzepte aus der [SAREF Ontology](http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/01.01.01_60/ts_103264v010101p.pdf), die Teil der [ETSI](http://www.etsi.org) Standards ist.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -36,23 +43,51 @@ Device:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -69,7 +104,7 @@ Device:
         model: https://schema.org/Text    
         type: Property    
     batteryLevel:    
-      description: Device battery level. It must be equal to 1.0 when battery is full. 0.0 when battery is empty. -1 when transiently cannot be determined.    
+      description: Device battery level. It must be equal to 1.0 when battery is full. 0.0 when battery is empty. -1 when transiently cannot be determined    
       oneOf:    
         - maximum: 1    
           minimum: 0    
@@ -82,7 +117,7 @@ Device:
         type: Property    
     category:    
       description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. Raw category will be deprecated use deviceCategory instead to avoid conflict with other aqttributes named category"    
-      items: &device_-_properties_-_devicecategory_-_items    
+      items:    
         enum:    
           - actuator    
           - beacon    
@@ -101,7 +136,7 @@ Device:
         model: https://schema.org/Text    
         type: Property    
     configuration:    
-      description: 'Device''s technical configuration. This attribute is intended to be a array properties and their values which capture parameters which have to do with the configuration of a device (timeouts, reporting periods, etc.) and which are not currently covered by the standard attributes defined by this model.'    
+      description: 'Device''s technical configuration. This attribute is intended to be a array properties and their values which capture parameters which have to do with the configuration of a device (timeouts, reporting periods, etc.) and which are not currently covered by the standard attributes defined by this model'    
       items:    
         properties:    
           parameter:    
@@ -114,21 +149,27 @@ Device:
         model: https://schema.org/StructuredValue    
         type: Property    
     controlledAsset:    
-      description: 'List of the asset(s) (building, object, etc.) controlled by the device.'    
+      description: 'List of the asset(s) (building, object, etc.) controlled by the device'    
       items:    
         oneOf:    
           - format: uri    
             type: string    
-          - anyOf: &device_-_properties_-_id_-_anyof    
-              - description: Property. Identifier format of any NGSI entity    
+          - anyOf:    
+              - description: Identifier format of any NGSI entity    
                 maxLength: 256    
                 minLength: 1    
                 pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
                 type: string    
-              - description: Property. Identifier format of any NGSI entity    
+                x-ngsi:    
+                  type: Property    
+              - description: Identifier format of any NGSI entity    
                 format: uri    
                 type: string    
-            description: Property. Unique identifier of the entity    
+                x-ngsi:    
+                  type: Property    
+            description: Unique identifier of the entity    
+            x-ngsi:    
+              type: Property    
       type: array    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -194,59 +235,59 @@ Device:
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateFirstUsed:    
-      description: A timestamp which denotes when the device was first used.    
+      description: A timestamp which denotes when the device was first used    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateInstalled:    
-      description: A timestamp which denotes when the device was installed (if it requires installation).    
+      description: A timestamp which denotes when the device was installed (if it requires installation)    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateLastCalibration:    
-      description: A timestamp which denotes when the last calibration of the device happened.    
+      description: A timestamp which denotes when the last calibration of the device happened    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateLastValueReported:    
-      description: A timestamp which denotes the last time when the device successfully reported data to the cloud.    
+      description: A timestamp which denotes the last time when the device successfully reported data to the cloud    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateManufactured:    
-      description: A timestamp which denotes when the device was manufactured.    
+      description: A timestamp which denotes when the device was manufactured    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateObserved:    
-      description: Date of the observed entity defined by the user.    
+      description: Date of the observed entity defined by the user    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -264,19 +305,32 @@ Device:
         type: Property    
     deviceCategory:    
       description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. Raw category will be deprecated use deviceCategory instead to avoid conflict with other aqttributes named category"    
-      items: *device_-_properties_-_devicecategory_-_items    
+      items:    
+        enum:    
+          - actuator    
+          - beacon    
+          - endgun    
+          - HVAC    
+          - implement    
+          - irrSection    
+          - irrSystem    
+          - meter    
+          - multimedia    
+          - network    
+          - sensor    
+        type: string    
       type: array    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     deviceState:    
-      description: State of this device from an operational point of view. Its value can be vendor dependent.    
+      description: State of this device from an operational point of view. Its value can be vendor dependent    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     direction:    
-      description: 'Enum:''Inlet, Outlet, Entry, Exit''. A timestamp which denotes when the device was installed (if it requires installation).'    
+      description: 'Enum:''Inlet, Outlet, Entry, Exit''. A timestamp which denotes when the device was installed (if it requires installation)'    
       enum:    
         - Inlet    
         - Outlet    
@@ -293,29 +347,41 @@ Device:
         model: https://schema.org/Distance    
         type: Property    
     dstAware:    
-      description: Indicates a device which is Daylight Savings Time Aware (True). In case it is then the Timestamp is automatically adjusted by the device to reflect DST changes. If not (False) the time adjustments must be taken care of by the user.    
+      description: Indicates a device which is Daylight Savings Time Aware (True). In case it is then the Timestamp is automatically adjusted by the device to reflect DST changes. If not (False) the time adjustments must be taken care of by the user    
       type: boolean    
       x-ngsi:    
         type: Property    
     firmwareVersion:    
-      description: The firmware version of this device.    
+      description: The firmware version of this device    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     hardwareVersion:    
-      description: The hardware version of this device.    
+      description: The hardware version of this device    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     id:    
-      anyOf: *device_-_properties_-_id_-_anyof    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     ipAddress:    
-      description: List of IP address of the device. It can be a comma separated list of values if the device has more than one IP address.    
+      description: List of IP address of the device. It can be a comma separated list of values if the device has more than one IP address    
       items:    
         oneOf:    
           - format: ipv4    
@@ -328,7 +394,7 @@ Device:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: Geoproperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -349,7 +415,9 @@ Device:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -373,7 +441,9 @@ Device:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -399,7 +469,9 @@ Device:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -422,7 +494,9 @@ Device:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -448,7 +522,9 @@ Device:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -476,10 +552,12 @@ Device:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     macAddress:    
-      description: The MAC address of the device.    
+      description: The MAC address of the device    
       pattern: ^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$    
       type: string    
       x-ngsi:    
@@ -492,18 +570,18 @@ Device:
         model: https://schema.org/Text    
         type: Property    
     mnc:    
-      description: 'This property identifies the Mobile Network Code (MNC) of the network the device is attached to. The MNC is used in combination with a Mobile Country Code (MCC) (also known as a ''MCC / MNC tuple'') to uniquely identify a mobile phone operator/carrier using the GSM, CDMA, iDEN, TETRA and 3G / 4G public land mobile networks and some satellite mobile networks.'    
+      description: 'This property identifies the Mobile Network Code (MNC) of the network the device is attached to. The MNC is used in combination with a Mobile Country Code (MCC) (also known as a ''MCC / MNC tuple'') to uniquely identify a mobile phone operator/carrier using the GSM, CDMA, iDEN, TETRA and 3G / 4G public land mobile networks and some satellite mobile networks'    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     osVersion:    
-      description: The version of the host operating system device.    
+      description: The version of the host operating system device    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -511,13 +589,27 @@ Device:
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *device_-_properties_-_id_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     provider:    
-      description: The provider of the device.    
+      description: The provider of the device    
       type: string    
       x-ngsi:    
         model: https://schema.org/provider    
@@ -527,12 +619,26 @@ Device:
       oneOf:    
         - format: uri    
           type: string    
-        - anyOf: *device_-_properties_-_id_-_anyof    
-          description: Property. Unique identifier of the entity    
+        - anyOf:    
+            - description: Identifier format of any NGSI entity    
+              maxLength: 256    
+              minLength: 1    
+              pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+              type: string    
+              x-ngsi:    
+                type: Property    
+            - description: Identifier format of any NGSI entity    
+              format: uri    
+              type: string    
+              x-ngsi:    
+                type: Property    
+          description: Unique identifier of the entity    
+          x-ngsi:    
+            type: Property    
       x-ngsi:    
         type: Relationship    
     relativePosition:    
-      description: Location of this device in a coordinate system according to its local emplacement.    
+      description: Location of this device in a coordinate system according to its local emplacement    
       type: string    
       x-ngsi:    
         type: Property    
@@ -555,19 +661,19 @@ Device:
       x-ngsi:    
         type: Property    
     serialNumber:    
-      description: The serial number assigned by the manufacturer.    
+      description: The serial number assigned by the manufacturer    
       type: string    
       x-ngsi:    
         model: https://schema.org/serialNumber    
         type: Property    
     softwareVersion:    
-      description: The software version of this device.    
+      description: The software version of this device    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -605,7 +711,7 @@ Device:
       x-ngsi:    
         type: Property    
     value:    
-      description: 'A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to change the actuation setting. For instance, a switch device which is currently _on_ can report a value ''on'' of type ''Text''. Obviously, in order to toggle the referred switch, this attribute value will have to be changed to ''off''.'    
+      description: 'A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to change the actuation setting. For instance, a switch device which is currently _on_ can report a value ''on'' of type ''Text''. Obviously, in order to toggle the referred switch, this attribute value will have to be changed to ''off'''    
       type: string    
       x-ngsi:    
         model: https://schema.org/QuantitativeValue    
@@ -789,82 +895,82 @@ Device:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Device:device-9845A",  
-    "type": "Device",  
-    "batteryLevel": {  
-        "type": "Property",  
-        "value": 0.75  
-    },  
-    "deviceCategory": {  
-        "type": "Property",  
-        "value": [  
-            "sensor"  
-        ]  
-    },  
-    "controlledAsset": [  
-        {  
-            "type": "Relationship",  
-            "object": "urn:ngsi-ld::wastecontainer-Osuna-100"  
-        }  
-    ],  
-    "controlledProperty": {  
-        "type": "Property",  
-        "value": [  
-            "fillingLevel",  
-            "temperature"  
-        ]  
-    },  
-    "dateFirstUsed": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2014-09-11T11:00:00Z"  
-        }  
-    },  
-    "deviceState": {  
-        "type": "Property",  
-        "value": "ok"  
-    },  
-    "ipAddress": {  
-        "type": "Property",  
-        "value": [  
-            "192.14.56.78"  
-        ]  
-    },  
-    "mcc": {  
-        "type": "Property",  
-        "value": "214"  
-    },  
-    "mnc": {  
-        "type": "Property",  
-        "value": "07"  
-    },  
-    "owner": {  
-        "type": "Property",  
-        "value": [  
-            "http://person.org/leon"  
-        ]  
-    },  
-    "refDeviceModel": {  
-        "type": "Relationship",  
-        "object": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345"  
-    },  
-    "rssi": {  
-        "type": "Property",  
-        "value": 0.86  
-    },  
-    "serialNumber": {  
-        "type": "Property",  
-        "value": "9845A"  
-    },  
-    "value": {  
-        "type": "Property",  
-        "value": "l%3D0.22%3Bt%3D21.2"  
-    },  
-    "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+  "id": "urn:ngsi-ld:Device:device-9845A",  
+  "type": "Device",  
+  "batteryLevel": {  
+    "type": "Property",  
+    "value": 0.75  
+  },  
+  "deviceCategory": {  
+    "type": "Property",  
+    "value": [  
+      "sensor"  
     ]  
+  },  
+  "controlledAsset": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld::wastecontainer-Osuna-100"  
+    ]  
+  },  
+  "controlledProperty": {  
+    "type": "Property",  
+    "value": [  
+      "fillingLevel",  
+      "temperature"  
+    ]  
+  },  
+  "dateFirstUsed": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2014-09-11T11:00:00Z"  
+    }  
+  },  
+  "deviceState": {  
+    "type": "Property",  
+    "value": "ok"  
+  },  
+  "ipAddress": {  
+    "type": "Property",  
+    "value": [  
+      "192.14.56.78"  
+    ]  
+  },  
+  "mcc": {  
+    "type": "Property",  
+    "value": "214"  
+  },  
+  "mnc": {  
+    "type": "Property",  
+    "value": "07"  
+  },  
+  "owner": {  
+    "type": "Property",  
+    "value": [  
+      "http://person.org/leon"  
+    ]  
+  },  
+  "refDeviceModel": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:DeviceModel:myDevice-wastecontainer-sensor-345"  
+  },  
+  "rssi": {  
+    "type": "Property",  
+    "value": 0.86  
+  },  
+  "serialNumber": {  
+    "type": "Property",  
+    "value": "9845A"  
+  },  
+  "value": {  
+    "type": "Property",  
+    "value": "l%3D0.22%3Bt%3D21.2"  
+  },  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details><!-- /80-Examples -->  
