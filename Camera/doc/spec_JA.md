@@ -3,84 +3,120 @@
 エンティティカメラ  
 =========<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.Device/blob/master/Camera/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.Device/blob/master/Camera/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述です。**都市に設置されたカメラのデータモデルです。  
+グローバルな説明**都市に設置されたカメラのデータモデル。  
 バージョン: 0.1.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraName[string]`: この観測に対応するカメラの名前。  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraNum[number]`: この観測に対応するカメラ番号。  . Model: [https://schema.org/Number](https://schema.org/Number)- `cameraOrientation[object]`: この観測に対応するカメラの方位情報  - `cameraType[string]`: この観測に対応するカメラのタイプ。Enum: 'FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraUsage[string]`: この観測に対応するカメラの目的。Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC].  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `endDateTime[string]`: この観測に対応する報告された終了時刻。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `id[*]`: エンティティの一意な識別子  - `imageSnapshot[string]`: この観測に対応するカメラのフィードスナップショットダウンロードリンク  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mediaURL[string]`: 苦情や場所に関する画像やメディアなどの詳細情報を提供するURL。  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: このアイテムの名称です。  - `on[boolean]`: デバイスがオン(true)かオフ(false)かを示す。  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startDateTime[string]`: この観測に対応する報告された開始時刻。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `streamName[string]`: この観測に対応するカメラからのビデオストリームの名前  . Model: [https://schema.org/Text](https://schema.org/Text)- `streamURL[string]`: この観測に対応するカメラの映像ストリーミング情報を提供するURL  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSIエンティティタイプ。カメラでなければならない  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraName[string]`: この観測に対応するカメラ名  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraNum[number]`: この観測に対応するカメラ番号  . Model: [https://schema.org/Number](https://schema.org/Number)- `cameraOrientation[object]`: この観測に対応するカメラの方向情報  	- `annotatedMap`:     
+- `cameraType[string]`: この観測に対応するカメラのタイプ。Enum:'FIXED、PTZ、DOME、DAY/NIGHT、C-MOUNT、BULLET'  . Model: [https://schema.org/Text](https://schema.org/Text)- `cameraUsage[string]`: この観測に対応するカメラの目的。Enum：[SURVEILLANCE、RLVD、ANPR/LPR、TRAFFIC]。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `endDateTime[date-time]`: この観測に対応する報告終了時刻  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `id[*]`: エンティティの一意識別子  - `imageSnapshot[string]`: この観測に対応するカメラのフィードスナップショットダウンロードリンク  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `mediaURL[uri]`: 苦情や場所に関する画像やメディアの詳細情報を提供するURL  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: このアイテムの名前  - `on[boolean]`: デバイスがオン（true）かオフ（false）かを示す。  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `startDateTime[date-time]`: この観測に対応する報告された開始時間  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `streamName[string]`: この観測に対応するカメラからのビデオストリームの名前。  . Model: [https://schema.org/Text](https://schema.org/Text)- `streamURL[string]`: この観測に対応するカメラのビデオストリーミング情報を提供するURL  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSIエンティティタイプ。カメラでなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Camera:    
-  description: 'A Data Model for camera installations in a city.'    
+  description: A Data Model for camera installations in a city.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     cameraName:    
-      description: 'Name of the camera corresponding to this observation.'    
+      description: Name of the camera corresponding to this observation    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     cameraNum:    
-      description: 'Camera number corresponding to this observation.'    
+      description: Camera number corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     cameraOrientation:    
-      description: 'Orientation information for the camera corresponding to this observation'    
+      description: Orientation information for the camera corresponding to this observation    
       properties:    
         annotatedMap:    
           format: uri    
@@ -91,7 +127,7 @@ Camera:
       x-ngsi:    
         type: Property    
     cameraType:    
-      description: 'Type of the camera corresponding to this observation. Enum:''FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET''.'    
+      description: 'Type of the camera corresponding to this observation. Enum:''FIXED, PTZ, DOME, DAY/NIGHT, C-MOUNT, BULLET'''    
       enum:    
         - FIXED    
         - PTZ    
@@ -104,55 +140,59 @@ Camera:
         model: https://schema.org/Text    
         type: Property    
     cameraUsage:    
-      description: 'Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC].'    
+      description: 'Purpose of the camera corresponding to this observation. Enum: [SURVEILLANCE, RLVD, ANPR/LPR, TRAFFIC]'    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     endDateTime:    
-      description: 'Reported end time corresponding to this observation.'    
+      description: Reported end time corresponding to this observation    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     id:    
-      anyOf: &camera_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     imageSnapshot:    
-      description: 'Camera feed snapshot download link for the camera corresponding to this observation'    
+      description: Camera feed snapshot download link for the camera corresponding to this observation    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -160,7 +200,7 @@ Camera:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -179,9 +219,11 @@ Camera:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -203,9 +245,11 @@ Camera:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -229,9 +273,11 @@ Camera:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -252,9 +298,11 @@ Camera:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -278,9 +326,11 @@ Camera:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -306,38 +356,54 @@ Camera:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mediaURL:    
-      description: 'URL providing further information of any image(s) or media of the complaint or place.'    
+      description: URL providing further information of any image(s) or media of the complaint or place    
       format: uri    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     on:    
-      description: 'Indicates if the device is on (true) or off (false).'    
+      description: Indicates if the device is on (true) or off (false)    
       type: boolean    
       x-ngsi:    
         model: https://schema.org/Boolean    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *camera_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -349,31 +415,31 @@ Camera:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     startDateTime:    
-      description: 'Reported start time corresponding to this observation.'    
+      description: Reported start time corresponding to this observation    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     streamName:    
-      description: 'Name of the video stream from the camera corresponding to this observation'    
+      description: Name of the video stream from the camera corresponding to this observation    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     streamURL:    
-      description: 'URL providing video streaming information for the camera corresponding to this observation'    
+      description: URL providing video streaming information for the camera corresponding to this observation    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: 'NGSI entity type. It has to be Camera'    
+      description: NGSI entity type. It has to be Camera    
       enum:    
         - Camera    
       type: string    
@@ -396,8 +462,8 @@ Camera:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### カメラNGSI-v2キーバリューの例  
-ここでは、CameraをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### カメラ NGSI-v2 キー値の例  
+以下は、JSON-LD形式のCameraをkey-valuesとして返す例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -429,7 +495,7 @@ Camera:
 ```  
 </details>  
 #### カメラ NGSI-v2 正規化例  
-ここでは、CameraをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のCameraの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -459,7 +525,7 @@ Camera:
     }  
   },  
   "location": {  
-    "type": "GeoProperty",  
+    "type": "Geoproperty",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
@@ -501,15 +567,12 @@ Camera:
   "on": {  
     "type": "Property",  
     "value": true  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+  }  
 }  
 ```  
 </details>  
-#### カメラNGSI-LDのキー値例  
-ここでは、CameraをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+#### カメラ NGSI-LD キー値の例  
+以下は、JSON-LD形式のCameraをkey-valuesとして返す例である。これはNGSI-LDと互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -544,89 +607,89 @@ Camera:
 ```  
 </details>  
 #### カメラ NGSI-LD 正規化例  
-ここでは、CameraをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のCameraの例である。これは、オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Smart Data Models-Camera",  
-    "type": "Camera",  
-    "cameraName": {  
-        "type": "Property",  
-        "value": "Cam2"  
-    },  
-    "cameraNum": {  
-        "type": "Property",  
-        "value": 2  
-    },  
-    "cameraOrientation": {  
-        "type": "Property",  
-        "value": {  
-            "comments": "Camera facing RSBhawan",  
-            "annotatedMap": "https://drive.google.com/file/d/1RXDGogU5UMmzRppqFaNKTzcr69Kl0wjb/view?usp=sharing"  
-        }  
-    },  
-    "cameraType": {  
-        "type": "Property",  
-        "value": "FIXED"  
-    },  
-    "cameraUsage": {  
-        "type": "Property",  
-        "value": "SURVEILLANCE"  
-    },  
-    "endDateTime": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2021-05-11T06:35:20.065Z"  
-        }  
-    },  
-    "imageSnapshot": {  
-        "type": "Property",  
-        "value": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing"  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                23.831796,  
-                91.28076  
-            ]  
-        }  
-    },  
-    "mediaURL": {  
-        "type": "Property",  
-        "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
-    },  
-    "startDateTime": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "Datetime",  
-            "@value": "2021-05-11T06:30:00.020Z"  
-        }  
-    },  
-    "streamName": {  
-        "type": "Property",  
-        "value": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2"  
-    },  
-    "streamURL": {  
-        "type": "Property",  
-        "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
-    },  
-    "on": {  
-        "type": "Property",  
-        "value": true  
-    },  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
-    ]  
+  "id": "urn:ngsi-ld:Smart-Data-Models-Camera",  
+  "type": "Camera",  
+  "cameraName": {  
+    "type": "Property",  
+    "value": "Cam2"  
+  },  
+  "cameraNum": {  
+    "type": "Property",  
+    "value": 2  
+  },  
+  "cameraOrientation": {  
+    "type": "Property",  
+    "value": {  
+      "comments": "Camera facing RSBhawan",  
+      "annotatedMap": "https://drive.google.com/file/d/1RXDGogU5UMmzRppqFaNKTzcr69Kl0wjb/view?usp=sharing"  
+    }  
+  },  
+  "cameraType": {  
+    "type": "Property",  
+    "value": "FIXED"  
+  },  
+  "cameraUsage": {  
+    "type": "Property",  
+    "value": "SURVEILLANCE"  
+  },  
+  "endDateTime": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2021-05-11T06:35:20.065Z"  
+    }  
+  },  
+  "imageSnapshot": {  
+    "type": "Property",  
+    "value": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing"  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        23.831796,  
+        81.28076  
+      ]  
+    }  
+  },  
+  "mediaURL": {  
+    "type": "Property",  
+    "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
+  },  
+  "startDateTime": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "Datetime",  
+      "@value": "2021-05-11T06:30:00.020Z"  
+    }  
+  },  
+  "streamName": {  
+    "type": "Property",  
+    "value": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2"  
+  },  
+  "streamURL": {  
+    "type": "Property",  
+    "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"  
+  },  
+  "on": {  
+    "type": "Property",  
+    "value": true  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
