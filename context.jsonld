@@ -17,6 +17,10 @@
         "annotations": "https://smartdatamodels.org/annotations",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "batteryLevel": "https://smartdatamodels.org/dataModel.Device/batteryLevel",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "brandName": "https://smartdatamodels.org/dataModel.Device/brandName",
         "cameraName": "https://smartdatamodels.org/dataModel.Device/cameraName",
         "cameraNum": "https://smartdatamodels.org/dataModel.Device/cameraNum",
@@ -29,6 +33,10 @@
         "configuration": "https://smartdatamodels.org/dataModel.Device/configuration",
         "controlledAsset": "https://smartdatamodels.org/dataModel.Device/controlledAsset",
         "controlledProperty": "https://smartdatamodels.org/dataModel.Device/controlledProperty",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "crossborderTransfer": "https://smartdatamodels.org/dataModel.Device/crossborderTransfer",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -85,6 +93,7 @@
         "osVersion": "https://smartdatamodels.org/dataModel.Device/osVersion",
         "outlier": "https://smartdatamodels.org/dataModel.Device/outlier",
         "owner": "https://smartdatamodels.org/owner",
+        "parameter": "https://smartdatamodels.org/dataModel.Device/parameter",
         "peakConsumption": "https://smartdatamodels.org/dataModel.Device/peakConsumption",
         "plannedEndAt": "https://smartdatamodels.org/dataModel.Device/plannedEndAt",
         "plannedStartAt": "https://smartdatamodels.org/dataModel.Device/plannedStartAt",
