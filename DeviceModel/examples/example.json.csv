@@ -1,0 +1,2 @@
+"id_", "type_", "name_", "brandName_", "modelName_", "manufacturerName_", "deviceCategory__0_", "function__0_", "controlledProperty__0_", "controlledProperty__1_"
+"myDevice-wastecontainer-sensor-345", "DeviceModel", "myDevice Sensor for Containers 345", "myDevice", "S4Container 345", "myDevice Inc.", "sensor", "sensing", "fillingLevel", "temperature"
