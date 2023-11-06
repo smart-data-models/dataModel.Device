@@ -2,12 +2,9 @@
     "id": "urn:ngsi-ld:Device:device-9845A",
     "type": "Device",
     "batteryLevel": 0.75,
-    "deviceCategory": {
-        "type": "Property",
-        "value": [
-            "sensor"
-        ]
-    },
+    "deviceCategory": [
+        "sensor"
+    ],
     "controlledAsset": [
         "urn:ngsi-ld::wastecontainer-Osuna-100"
     ],
