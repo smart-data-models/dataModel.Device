@@ -577,26 +577,20 @@ Device:
         model: https://schema.org/provider
         type: Property
     refDeviceModel:
-      description: Model of the device
-      oneOf:
-        - format: uri
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - anyOf:
-            - description: Identifier format of any NGSI entity
-              maxLength: 256
-              minLength: 1
-              pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
-              type: string
-              x-ngsi:
-                type: Property
-            - description: Identifier format of any NGSI entity
-              format: uri
-              type: string
-              x-ngsi:
-                type: Property
-          description: Unique identifier of the entity
           x-ngsi:
             type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
+      description: Model of the device
       x-ngsi:
         type: Relationship
     relativePosition:
