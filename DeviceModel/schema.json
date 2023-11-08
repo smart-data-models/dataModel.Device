@@ -89,8 +89,8 @@
     "required": [
         "id",
         "type",
-        "category",
-        "controlledProperty",
+        "CategoryType",
+        "ControlledPropertyType",
         "manufacturerName",
         "brandName",
         "modelName"
