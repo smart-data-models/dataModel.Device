@@ -322,8 +322,8 @@ DeviceModel:
   required:
     - id
     - type
-    - CategoryType
-    - ControlledPropertyType
+    - category
+    - controlledProperty
     - manufacturerName
     - brandName
     - modelName
