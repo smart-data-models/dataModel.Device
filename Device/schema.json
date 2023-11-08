@@ -150,15 +150,7 @@
         },
         "refDeviceModel": {
           "description": "Relationship. Model of the device",
-          "oneOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
-            }
-          ]
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
         },
         "batteryLevel": {
           "description": "Property. Model:'https://schema.org/Number'. Device battery level. It must be equal to 1.0 when battery is full. 0.0 when battery is empty. -1 when transiently cannot be determined",
