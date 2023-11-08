@@ -29,15 +29,7 @@
           "type": "array",
           "description": "Property. Model:'https://schema.org/Text'. List of the asset(s) (building, object, etc.) controlled by the device",
           "items": {
-            "oneOf": [
-              {
-                "type": "string",
-                "format": "uri"
-              },
-              {
                 "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
-              }
-            ]
           }
         },
         "mnc": {
