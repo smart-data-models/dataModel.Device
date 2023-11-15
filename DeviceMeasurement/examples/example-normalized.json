@@ -2,45 +2,45 @@
   "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",
   "type": "DeviceMeasurement",
   "dateCreated": {
-    "type": "string",
+    "type": "DateTime",
     "value": "2021-09-03T07:33:18Z"
   },
   "dateModified": {
-    "type": "string",
+    "type": "DateTime",
     "value": "2021-09-03T07:33:18Z"
   },
   "source": {
-    "type": "string",
+    "type": "Text",
     "value": "Datacenter"
   },
   "name": {
-    "type": "string",
+    "type": "Text",
     "value": "Simple measurement"
   },
   "alternateName": {
-    "type": "string",
+    "type": "Text",
     "value": ""
   },
   "description": {
-    "type": "string",
+    "type": "Text",
     "value": "DAta center measurement values"
   },
   "dataProvider": {
-    "type": "string",
+    "type": "Text",
     "value": ""
   },
   "owner": {
-    "type": "array",
-    "value": [
-    ]
+    "type": "StructuredValue",
+    "value": []
   },
   "seeAlso": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
+      "urn:ngsi-ld:MEASUREMENT:seeAlso:ZMHH:32977"
     ]
   },
   "location": {
-    "type": "object",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -50,7 +50,7 @@
     }
   },
   "address": {
-    "type": "object",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "Pohjoisesplanadi 11-13 ",
       "addressLocality": "Helsinki",
@@ -61,7 +61,7 @@
     }
   },
   "areaServed": {
-    "type": "string",
+    "type": "Text",
     "value": "Helsinki council"
   },
   "numValue": {
@@ -69,27 +69,27 @@
     "value": 55.2
   },
   "textValue": {
-    "type": "string",
+    "type": "Text",
     "value": ""
   },
   "controlledProperty": {
-    "type": "string",
+    "type": "Text",
     "value": "humidity"
   },
   "refDevice": {
-    "type": "string",
+    "type": "Text",
     "value": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158"
   },
   "deviceType": {
-    "type": "string",
+    "type": "Text",
     "value": "sensor"
   },
   "measurementType": {
-    "type": "string",
+    "type": "Text",
     "value": "FillingLevelSensor"
   },
   "dateObserved": {
-    "type": "string",
+    "type": "DateTime",
     "value": "2021-09-03T07:33:18Z"
   },
   "outlier": {
@@ -97,7 +97,7 @@
     "value": true
   },
   "unit": {
-    "type": "string",
+    "type": "Text",
     "value": "UDT0000016"
   }
 }
