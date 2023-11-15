@@ -5,7 +5,17 @@
   "brandName": "myDevice",
   "modelName": "S4Container 345",
   "manufacturerName": "myDevice Inc.",
-  "deviceCategory": ["sensor"],
-  "function": ["sensing"],
-  "controlledProperty": ["fillingLevel", "temperature"]
+  "deviceCategory": [
+    "sensor"
+  ],
+  "category": [
+    "sensor"
+  ],
+  "function": [
+    "sensing"
+  ],
+  "controlledProperty": [
+    "fillingLevel",
+    "temperature"
+  ]
 }
