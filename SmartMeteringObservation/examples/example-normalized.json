@@ -10,7 +10,7 @@
     "value": "https://provider.example.com"
   },
   "entityVersion": {
-    "type": "Number",
+    "type": "Text",
     "value": "2.0"
   },
   "meterType": {
@@ -18,7 +18,7 @@
     "value": "Electricity"
   },
   "refDevice": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:Device:7a0708f6-9668-11e8-8f77-abc2b62ebaac"
   },
   "location": {
