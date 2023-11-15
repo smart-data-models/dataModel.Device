@@ -2,13 +2,13 @@
   "id": "myDevice-wastecontainer-sensor-345",
   "type": "DeviceModel",
   "deviceCategory": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "sensor"
     ]
   },
   "function": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "sensing"
     ]
@@ -30,10 +30,16 @@
     "value": "myDevice Inc."
   },
   "controlledProperty": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "fillingLevel",
       "temperature"
+    ]
+  },
+  "category": {
+    "type": "StructuredValue",
+    "value": [
+      "sensor"
     ]
   }
 }
