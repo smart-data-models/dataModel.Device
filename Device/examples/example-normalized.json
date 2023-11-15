@@ -2,7 +2,7 @@
   "id": "device-9845A",
   "type": "Device",
   "deviceCategory": {
-    "type": "Text",
+    "type": "StructuredValue",
     "value": [
       "sensor"
     ]
