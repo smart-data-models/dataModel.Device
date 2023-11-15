@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:PrivacyObject:1044_parking",
   "type": "PrivacyObject",
   "refDevice": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "Device:1044_parking"
   },
   "name": {
@@ -10,7 +10,7 @@
     "value": "1004_parking"
   },
   "location": {
-    "type": "Geoproperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -24,8 +24,8 @@
     "value": false
   },
   "floor": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "description": {
     "type": "Text",
@@ -33,7 +33,7 @@
   },
   "description_fr": {
     "type": "Text",
-    "value": "Capteur électromagnétique et à ultrasons"
+    "value": "Capteur \u00e9lectromagn\u00e9tique et \u00e0 ultrasons"
   },
   "user": {
     "type": "Text",
@@ -44,24 +44,24 @@
     "value": "Detecting the presence of a vehicle on a parking slot."
   },
   "purpose_fr": {
-    "type": "string",
-    "value": "Détecter la présence d'un véhicule sur une place de parc."
+    "type": "Text",
+    "value": "D\u00e9tecter la pr\u00e9sence d'un v\u00e9hicule sur une place de parc."
   },
   "category": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "sensor"
     ]
   },
   "recipientList": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:User:CommunalAdministration",
       "urn:ngsi-ld:User:Motorists"
     ]
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "ngsi-ld:city:CityofCarouge"
     ]
