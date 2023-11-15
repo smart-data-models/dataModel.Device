@@ -18,14 +18,11 @@
     "value": "FIXED"
   },
   "startDateTime": {
-    "type": "Property",
-    "value": {
-      "@type": "Datetime",
-      "@value": "2021-05-11T06:30:00.020Z"
-    }
+    "type": "DateTime",
+    "value": "2021-05-11T06:30:00.020Z"
   },
   "location": {
-    "type": "Geoproperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -35,37 +32,34 @@
     }
   },
   "cameraOrientation": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "comments": "Camera facing RSBhawan",
       "annotatedMap": "https://drive.google.com/file/d/1RXDGogU5UMmzRppqFaNKTzcr69Kl0wjb/view?usp=sharing"
     }
   },
   "endDateTime": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-05-11T06:35:20.065Z"
-    }
+    "type": "DateTime",
+    "value": "2021-05-11T06:35:20.065Z"
   },
   "cameraNum": {
-    "type": "Property",
+    "type": "Number",
     "value": 2
   },
   "imageSnapshot": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing"
   },
   "streamName": {
-    "type": "Property",
+    "type": "Text",
     "value": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2"
   },
   "mediaURL": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"
   },
   "on": {
-    "type": "Property",
+    "type": "Boolean",
     "value": true
   }
 }
