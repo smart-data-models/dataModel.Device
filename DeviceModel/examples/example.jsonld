@@ -5,6 +5,9 @@
   "deviceCategory": [
     "sensor"
   ],
+  "category": [
+    "sensor"
+  ],
   "controlledProperty": [
     "fillingLevel",
     "temperature"
