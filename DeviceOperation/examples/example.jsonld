@@ -1,21 +1,21 @@
 {
-    "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
-    "type": "DeviceOperation",
-    "addressedAt": "2016-08-28T10:18:16Z",
-    "dataProvider": "https://provider.example.com",
-    "description": "Backup battery needs replacement",
-    "device": "urn:ngsi-ld:Device:2033a7c7-d31b-48e7-91c2-014dc426c29e",
-    "endedAt": "2016-08-28T10:18:16Z",
-    "operationType": "fault",
-    "operator": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836",
-    "plannedEndAt": "2016-08-28T10:18:16Z",
-    "plannedStartAt": "2016-08-22T10:18:16Z",
-    "reportedAt": "2016-08-28T10:18:16Z",
-    "result": "ok",
-    "source": "https://source.example.com",
-    "startedAt": "2016-08-22T10:18:16Z",
-    "status": "ongoing",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
+  "type": "DeviceOperation",
+  "addressedAt": "2016-08-28T10:18:16Z",
+  "dataProvider": "https://provider.example.com",
+  "description": "Backup battery needs replacement",
+  "device": "urn:ngsi-ld:Device:2033a7c7-d31b-48e7-91c2-014dc426c29e",
+  "endedAt": "2016-08-28T10:18:16Z",
+  "operationType": "fault",
+  "operator": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836",
+  "plannedEndAt": "2016-08-28T10:18:16Z",
+  "plannedStartAt": "2016-08-22T10:18:16Z",
+  "reportedAt": "2016-08-28T10:18:16Z",
+  "result": "ok",
+  "source": "https://source.example.com",
+  "startedAt": "2016-08-22T10:18:16Z",
+  "status": "ongoing",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  ]
 }
