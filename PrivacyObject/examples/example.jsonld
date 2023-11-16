@@ -1,39 +1,39 @@
 {
-    "id": "urn:ngsi-ld:PrivacyObject:1044_parking",
-    "type": "PrivacyObject",
-    "category": [
-        "sensor"
-    ],
-    "crossborderTransfer": "None",
-    "description": "Electromagnetic and ultrasonic sensor",
-    "description_fr": "Capteur electromagnetique et ultrasons",
-    "floor": 0,
-    "image": "http://www.example.com/device1.jpg",
-    "isIndoor": false,
-    "isPersonalData": false,
-    "legitimateInterest": "Facilitate and understand parking habits",
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            46.18311,
-            6.14132
-        ]
-    },
-    "name": "1004_parking",
-    "owner": [
-        "ngsi-ld:city:CityofCarouge"
-    ],
-    "purpose": "Detecting the presence of a vehicle on a parking slot.",
-    "purpose_fr": "Detecter la presence d'un vehicule sur une place de parc.",
-    "recipientList": [
-        "urn:ngsi-ld:User:CommunalAdministration",
-        "urn:ngsi-ld:User:Motorists"
-    ],
-    "refDevice": "Device:1044_parking",
-    "retentionPeriod": "< 1 month",
-    "user": "urn:ngsi-ld:User:abcdef",
-    "@context": [
-        "https://smart-data-models.github.io/data-models/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  "id": "urn:ngsi-ld:PrivacyObject:1044_parking",
+  "type": "PrivacyObject",
+  "category": [
+    "sensor"
+  ],
+  "crossborderTransfer": "None",
+  "description": "Electromagnetic and ultrasonic sensor",
+  "description_fr": "Capteur electromagnetique et ultrasons",
+  "floor": 0,
+  "image": "http://www.example.com/device1.jpg",
+  "isIndoor": false,
+  "isPersonalData": false,
+  "legitimateInterest": "Facilitate and understand parking habits",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      46.18311,
+      6.14132
     ]
+  },
+  "name": "1004_parking",
+  "owner": [
+    "ngsi-ld:city:CityofCarouge"
+  ],
+  "purpose": "Detecting the presence of a vehicle on a parking slot.",
+  "purpose_fr": "Detecter la presence d'un vehicule sur une place de parc.",
+  "recipientList": [
+    "urn:ngsi-ld:User:CommunalAdministration",
+    "urn:ngsi-ld:User:Motorists"
+  ],
+  "refDevice": "Device:1044_parking",
+  "retentionPeriod": "< 1 month",
+  "user": "urn:ngsi-ld:User:abcdef",
+  "@context": [
+    "https://smart-data-models.github.io/data-models/context.jsonld",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  ]
 }
