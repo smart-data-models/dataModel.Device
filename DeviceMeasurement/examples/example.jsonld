@@ -1,41 +1,45 @@
 {
-    "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",
-    "type": "DeviceMeasurement",
-    "address": {
-        "streetAddress": "Pohjoisesplanadi 11-13 ",
-        "addressLocality": "Helsinki",
-        "addressRegion": "Helsinki",
-        "addressCountry": "Finland",
-        "postalCode": "00099",
-        "postOfficeBoxNumber": "1"
-    },
-    "alternateName": "",
-    "areaServed": "Helsinki council",
-    "controlledProperty": "humidity",
-    "dataProvider": "",
-    "dateCreated": "2021-09-03T07:33:18Z",
-    "dateModified": "2021-09-03T07:33:18Z",
-    "dateObserved": "2021-09-03T07:33:18Z",
-    "description": "DAta center measurement values",
-    "deviceType": "sensor",
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            60.170833,
-            24.9375
-        ]
-    },
-    "measurementType": "FillingLevelSensor",
-    "name": "Simple measurement",
-    "numValue": 55.2,
-    "outlier": true,
-    "owner": [],
-    "refDevice": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158",
-    "seeAlso": [],
-    "source": "Datacenter",
-    "textValue": "",
-    "unit": "UDT0000016",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  "id": "urn:ngsi-ld:MEASUREMENT:id:PMZY:77452386",
+  "type": "DeviceMeasurement",
+  "address": {
+    "streetAddress": "Pohjoisesplanadi 11-13 ",
+    "addressLocality": "Helsinki",
+    "addressRegion": "Helsinki",
+    "addressCountry": "Finland",
+    "postalCode": "00099",
+    "postOfficeBoxNumber": "1"
+  },
+  "alternateName": "",
+  "areaServed": "Helsinki council",
+  "controlledProperty": "humidity",
+  "dataProvider": "",
+  "dateCreated": "2021-09-03T07:33:18Z",
+  "dateModified": "2021-09-03T07:33:18Z",
+  "dateObserved": "2021-09-03T07:33:18Z",
+  "description": "DAta center measurement values",
+  "deviceType": "sensor",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      60.170833,
+      24.9375
     ]
+  },
+  "measurementType": "FillingLevelSensor",
+  "name": "Simple measurement",
+  "numValue": 55.2,
+  "outlier": true,
+  "refDevice": "urn:ngsi-ld:MEASUREMENT:refDevice:ZMHH:32871158",
+  "owner": [
+    "urn:ngsi-ld:MEASUREMENT:seeAlso:owner:00001"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:MEASUREMENT:seeAlso:ZMHH:32977"
+  ],
+  "source": "Datacenter",
+  "textValue": "",
+  "unit": "UDT0000016",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  ]
 }
