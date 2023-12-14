@@ -84,7 +84,9 @@
     },
     "seeAlso": {
         "type": "Property",
-        "value": []
+        "value": [
+          "urn:ngsi-ld:MEASUREMENT:seeAlso:ZMHH:32977"
+        ]
     },
     "source": {
         "type": "Property",
