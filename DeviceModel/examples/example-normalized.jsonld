@@ -11,6 +11,12 @@
       "sensor"
     ]
   },
+  "category": {
+    "type": "Property",
+    "value": [
+      "sensor"
+    ]
+  },
   "controlledProperty": {
     "type": "Property",
     "value": [
