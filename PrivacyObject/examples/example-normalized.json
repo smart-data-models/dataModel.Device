@@ -31,10 +31,6 @@
     "type": "Text",
     "value": "Electromagnetic and ultrasonic sensor"
   },
-  "description_fr": {
-    "type": "Text",
-    "value": "Capteur \u00e9lectromagn\u00e9tique et \u00e0 ultrasons"
-  },
   "user": {
     "type": "Text",
     "value": "urn:ngsi-ld:User:abcdef"
@@ -42,10 +38,6 @@
   "purpose": {
     "type": "Text",
     "value": "Detecting the presence of a vehicle on a parking slot."
-  },
-  "purpose_fr": {
-    "type": "Text",
-    "value": "D\u00e9tecter la pr\u00e9sence d'un v\u00e9hicule sur une place de parc."
   },
   "category": {
     "type": "StructuredValue",
