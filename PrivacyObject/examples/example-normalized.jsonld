@@ -15,10 +15,6 @@
     "type": "Property",
     "value": "Electromagnetic and ultrasonic sensor"
   },
-  "description_fr": {
-    "type": "Property",
-    "value": "Capteur electromagnetique et ultrasons"
-  },
   "floor": {
     "type": "Property",
     "value": 0
@@ -62,10 +58,6 @@
   "purpose": {
     "type": "Property",
     "value": "Detecting the presence of a vehicle on a parking slot."
-  },
-  "purpose_fr": {
-    "type": "Property",
-    "value": "Detecter la presence d'un vehicule sur une place de parc."
   },
   "recipientList": {
     "type": "Property",
