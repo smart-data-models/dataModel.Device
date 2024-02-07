@@ -13,7 +13,7 @@
     "type": "Property",
     "value": "coil"
   },
-  "protocol": {
+  "protocolId": {
     "type": "Property",
     "value": "0"
   },

@@ -4,6 +4,6 @@
   "memoryAddress": "0013",
   "unitId": "device1",
   "primaryTable": "coil",
-  "protocol": "0",
+  "protocolId": "0",
   "value": "0"
 }
