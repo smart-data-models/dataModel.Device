@@ -14,6 +14,8 @@ The following entity types are available:
 
 - [DeviceOperation](https://github.com/smart-data-models/dataModel.Device/blob/master/DeviceOperation/README.md). This entity contains a harmonised description of a generic device operation entity. The device operation entity contains dynamic data reported by a device and is therefore applicable to all IoT segments and related IoT applications.
 
+- [Modbus](https://github.com/smart-data-models/dataModel.Device/blob/master/Modbus/README.md). This entity contains a harmonised description of a modbus payload adapted from the modbus application protocol v1.1.b3
+
 - [PrivacyObject](https://github.com/smart-data-models/dataModel.Device/blob/master/PrivacyObject/README.md). Information about privacy for an IoT device
 
 - [SmartMeteringObservation](https://github.com/smart-data-models/dataModel.Device/blob/master/SmartMeteringObservation/README.md). This entity contains a harmonised description of a Smart Meter Observation, generally applicable for Smart Homes, Industry, Cities and Agriculture. It is based mostly in the GSMA entity definition but it is extended
