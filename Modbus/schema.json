@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSB/schema.json",
+  "title": "Smart Data models - ModBus data model",
+  "description": "This entity contains a harmonised description of a modbus payload adapted from the modbus application protocol v1.1.b3",
+  "type": "object",
+  "derivedFrom": "https://modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Property. NGSI Entity identifier. It has to be modbus",
+          "enum": [
+            "modbus"
+          ]
+        },
+        "unitId": {
+          "type": "string",
+          "description": "Property. "
+        },
+        "transactionId": {
+          "type": "string",
+          "description": "Property. "
+        },
+        "protocolId": {
+          "type": "string",
+          "description": "Property. "
+        },
+        "primaryTable": {
+          "type": "string",
+          "description": "Property. ",
+          "enum": [
+            "coil",
+            "inputRegister",
+            "holdingRegister",
+            "discreteInput"
+          ]
+        },
+        "memoryAddress": {
+          "type": "string",
+          "description": "Property. Address in the device sending data"
+        },
+        "value": {
+          "type": "string",
+          "description": "Property. Value of the data interchanged"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

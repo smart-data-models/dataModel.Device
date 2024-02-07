@@ -1,0 +1,10 @@
+description: This is a compilation list of the current adopters of the data model Modbus of the Subject Device.
+currentAdopters:
+-
+ adopter: INCODE project
+ description: 
+ mail: fernando.lopez@fiware.org
+ organization: FIWARE foundation
+ project: INCODE project
+ comments: 
+ startDate: 2024

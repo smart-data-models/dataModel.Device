@@ -1,0 +1,7 @@
+{
+  "id": "urn:ngsi-ld:device1:coil:0013",
+  "memoryAddress": "0013",
+  "unitId": "device1",
+  "operation": "coil",
+  "value": "0"
+}
