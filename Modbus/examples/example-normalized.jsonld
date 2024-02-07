@@ -1,0 +1,27 @@
+{
+  "id": "urn:ngsi-ld:device1:coil:0013",
+  "type": "Modbus",
+  "memoryAddress": {
+    "type": "Property",
+    "value": "0013"
+  },
+  "unitId": {
+    "type": "Property",
+    "value": "device1"
+  },
+  "primaryTable": {
+    "type": "Property",
+    "value": "coil"
+  },
+  "protocol": {
+    "type": "Property",
+    "value": "0"
+  },
+  "value": {
+    "type": "Property",
+    "value": "0"
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  ]
+}

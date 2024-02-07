@@ -1,0 +1,24 @@
+{
+  "id": "urn:ngsi-ld:device1:coil:0013",
+  "type": "Modbus",
+  "memoryAddress": {
+    "type": "Text",
+    "value": "0013"
+  },
+  "unitId": {
+    "type": "Text",
+    "value": "device1"
+  },
+  "primaryTable": {
+    "type": "Text",
+    "value": "coil"
+  },
+  "protocol": {
+    "type": "Text",
+    "value": "0"
+  },
+  "value": {
+    "type": "Text",
+    "value": "0"
+  }
+}

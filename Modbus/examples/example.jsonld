@@ -5,5 +5,8 @@
   "unitId": "device1",
   "primaryTable": "coil",
   "protocol": "0",
-  "value": "0"
+  "value": "0",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  ]
 }
