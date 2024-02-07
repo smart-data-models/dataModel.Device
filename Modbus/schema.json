@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.1",
-  "modelTags": "",
-  "$id": "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSB/schema.json",
+  "modelTags": "INCODE",
+  "$id": "https://smart-data-models.github.io/dataModel.Device/Modbus/schema.json",
   "title": "Smart Data models - ModBus data model",
   "description": "This entity contains a harmonised description of a modbus payload adapted from the modbus application protocol v1.1.b3",
   "type": "object",
@@ -18,26 +18,26 @@
       "properties": {
         "type": {
           "type": "string",
-          "description": "Property. NGSI Entity identifier. It has to be modbus",
+          "description": "Property. NGSI Entity identifier. It has to be Modbus",
           "enum": [
-            "modbus"
+            "Modbus"
           ]
         },
         "unitId": {
           "type": "string",
-          "description": "Property. "
+          "description": "Property. Identifier of the device"
         },
         "transactionId": {
           "type": "string",
-          "description": "Property. "
+          "description": "Property. Identifier of the transaction"
         },
         "protocolId": {
           "type": "string",
-          "description": "Property. "
+          "description": "Property. Identifier of the protool. In example 0 means modbus"
         },
         "primaryTable": {
           "type": "string",
-          "description": "Property. ",
+          "description": "Property. Register type of the data in the protocol",
           "enum": [
             "coil",
             "inputRegister",
