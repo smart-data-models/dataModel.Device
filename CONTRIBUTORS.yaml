@@ -35,6 +35,13 @@ contributors:
   project: 
   comments: 
   year: 2022
+- name: Fernando
+  surname: lopez
+  mail: fernando.lopez@fiware.org
+  organization: FIWARE
+  project: INCODE
+  comments:
+  year: 2024
 - name: Joud
   surname: Sayed Issa
   mail: joudsayedissa@gmail.com
