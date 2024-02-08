@@ -1,0 +1,2 @@
+"id_", "type_", "memoryAddress__type_", "memoryAddress__value_", "unitId__type_", "unitId__value_", "primaryTable__type_", "primaryTable__value_", "protocolId__type_", "protocolId__value_", "value__type_", "value__value_"
+"urn:ngsi-ld:device1:coil:0013", "Modbus", "Text", "0013", "Text", "device1", "Text", "coil", "Text", "0", "Text", "0"
