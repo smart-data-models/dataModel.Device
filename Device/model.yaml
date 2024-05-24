@@ -80,6 +80,7 @@ Device:
     category:
       description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. Raw category will be deprecated use deviceCategory instead to avoid conflict with other aqttributes named category"
       items:
+        description: Every type of device that can be included in the array
         enum:
           - actuator
           - beacon
@@ -93,6 +94,8 @@ Device:
           - network
           - sensor
         type: string
+        x-ngsi:
+          type: Property
       type: array
       x-ngsi:
         model: https://schema.org/Text
@@ -102,9 +105,15 @@ Device:
       items:
         properties:
           parameter:
+            description: Name of the parameter in the configuration of the device
             type: string
+            x-ngsi:
+              type: Property
           value:
+            description: Value of the parameter in the configuration of the device
             type: string
+            x-ngsi:
+              type: Property
         type: object
       type: array
       x-ngsi:
@@ -136,6 +145,7 @@ Device:
     controlledProperty:
       description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'''
       items:
+        description: Every possible property controlled by the device
         enum:
           - airPollution
           - atmosphericPressure
@@ -189,6 +199,8 @@ Device:
           - windDirection
           - windSpeed
         type: string
+        x-ngsi:
+          type: Property
       type: array
       x-ngsi:
         model: https://schema.org/Text
@@ -265,6 +277,7 @@ Device:
     deviceCategory:
       description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. Raw category will be deprecated use deviceCategory instead to avoid conflict with other aqttributes named category"
       items:
+        description: Every type of device that can be included in the array
         enum:
           - actuator
           - beacon
@@ -278,6 +291,8 @@ Device:
           - network
           - sensor
         type: string
+        x-ngsi:
+          type: Property
       type: array
       x-ngsi:
         model: https://schema.org/Text
@@ -633,6 +648,7 @@ Device:
     supportedProtocol:
       description: Supported protocol(s) or networks
       items:
+        description: Every type of protocols that can be used by the device
         enum:
           - 3g
           - bluetooth
@@ -652,6 +668,8 @@ Device:
           - ul20
           - websocket
         type: string
+        x-ngsi:
+          type: Property
       type: array
       x-ngsi:
         model: '3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket'
@@ -675,8 +693,8 @@ Device:
     - controlledProperty
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2024 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/Device/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Device/Device/schema.json
   x-model-tags: ""
-  x-version: 0.0.8
+  x-version: 0.0.9
