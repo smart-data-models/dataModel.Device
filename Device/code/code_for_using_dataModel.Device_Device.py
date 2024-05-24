@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Device"
 subject = "dataModel.Device"
-batteryLevel = {'type': 'Property', 'value': 0.75}
+batteryLevel = 0.75
 attribute = "batteryLevel"
 value = batteryLevel
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-deviceCategory = {'type': 'Property', 'value': ['sensor']}
+deviceCategory = ['sensor']
 attribute = "deviceCategory"
 value = deviceCategory
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-controlledAsset = {'type': 'Relationship', 'object': ['urn:ngsi-ld::wastecontainer-Osuna-100']}
+controlledAsset = ['urn:ngsi-ld::wastecontainer-Osuna-100']
 attribute = "controlledAsset"
 value = controlledAsset
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-controlledProperty = {'type': 'Property', 'value': ['fillingLevel', 'temperature']}
+controlledProperty = ['fillingLevel', 'temperature']
 attribute = "controlledProperty"
 value = controlledProperty
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
