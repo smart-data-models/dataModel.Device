@@ -23,7 +23,7 @@ The following entity types are available:
 
 
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.Device/blob/master/CONTRIBUTORS.yaml) to the 8 current contributors of the data models of this Subject.
+[Link](https://github.com/smart-data-models/dataModel.Device/blob/master/CONTRIBUTORS.yaml) to the 9 current contributors of the data models of this Subject.
 
 
 ### Contribution
