@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Global description: **An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).**  
-version: 0.0.8  
+version: 0.0.9  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
