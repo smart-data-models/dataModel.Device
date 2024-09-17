@@ -1,124 +1,124 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
-    "modelTags": "GSMA",
-    "$id": "https://smart-data-models.github.io/dataModel.Device/DeviceOperation/schema.json",
-    "title": "Smart Data models - Device-Operation schema",
-    "description": "This entity contains a harmonised description of a generic device operation entity. The device operation entity contains dynamic data reported by a device and is therefore applicable to all IoT segments and related IoT applications.",
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.0.1",
+  "modelTags": "GSMA",
+  "$id": "https://smart-data-models.github.io/dataModel.Device/DeviceOperation/schema.json",
+  "title": "Smart Data models - Device-Operation schema",
+  "description": "This entity contains a harmonised description of a generic device operation entity. The device operation entity contains dynamic data reported by a device and is therefore applicable to all IoT segments and related IoT applications.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Property. NGSI Entity identifier. It has to be DeviceOperation",
+          "enum": [
+            "DeviceOperation"
+          ]
         },
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-        },
-        {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "description": "Property. NGSI Entity identifier. It has to be DeviceOperation",
-                    "enum": [
-                        "DeviceOperation"
-                    ]
-                },
-                "device": {
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "minLength": 1,
-                            "maxLength": 256,
-                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                            "description": "Property. Identifier format of any NGSI entity"
-                        },
-                        {
-                            "type": "string",
-                            "format": "uri",
-                            "description": "Property. Identifier format of any NGSI entity"
-                        }
-                    ],
-                    "description": "Relationship. A reference to the associated Device for this device operation"
-                },
-                "operationType": {
-                    "type": "string",
-                    "description": "Property. A choice from an enumerated list. Model:'event, maintenance, fault, installation, upgrade, other'",
-                    "enum": [
-                        "event",
-                        "fault",
-                        "installation",
-                        "maintenance",
-                        "other",
-                        "upgrade"
-                    ]
-                },
-                "result": {
-                    "type": "string",
-                    "description": "Property. The result of the operation. Enum:'ok, aborted, failed'",
-                    "enum": [
-                        "aborted",
-                        "failed",
-                        "ok"
-                    ]
-                },
-                "plannedStartAt": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. The planned start date/timestamp for the operation. Note that this is advisory and the actual time the operation starts may be before or after the planned start"
-                },
-                "plannedEndAt": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. The planned end date/timestamp for the operation. Note that this is advisory and the actual time the operation finishes may be before or after the planned end"
-                },
-                "status": {
-                    "type": "string",
-                    "description": "Property. A choice from an enumerated list describing the status. Enum:'planned, ongoing, finished, scheduled, cancelled'",
-                    "enum": [
-                        "cancelled",
-                        "finished",
-                        "ongoing",
-                        "planned",
-                        "scheduled"
-                    ]
-                },
-                "operator": {
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "minLength": 1,
-                            "maxLength": 256,
-                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                            "description": "Property. Identifier format of any NGSI entity"
-                        },
-                        {
-                            "type": "string",
-                            "format": "uri",
-                            "description": "Property. Identifier format of any NGSI entity"
-                        }
-                    ],
-                    "description": "Relationship. Reference to the operator conducting the operation"
-                },
-                "startedAt": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Timestamp when the operation actually started to be performed"
-                },
-                "endedAt": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Timestamp when the operation actually finished"
-                },
-                "reportedAt": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Timestamp when the event/ fault was reported"
-                },
-                "addressedAt": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. The timestamp when an event or fault was addressed or cleared"
-                }
+        "device": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
             }
+          ],
+          "description": "Relationship. A reference to the associated Device for this device operation"
+        },
+        "operationType": {
+          "type": "string",
+          "description": "Property. A choice from an enumerated list. Model:'event, maintenance, fault, installation, upgrade, other'",
+          "enum": [
+            "event",
+            "fault",
+            "installation",
+            "maintenance",
+            "other",
+            "upgrade"
+          ]
+        },
+        "result": {
+          "type": "string",
+          "description": "Property. The result of the operation. Enum:'ok, aborted, failed'",
+          "enum": [
+            "aborted",
+            "failed",
+            "ok"
+          ]
+        },
+        "plannedStartAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. The planned start date/timestamp for the operation. Note that this is advisory and the actual time the operation starts may be before or after the planned start"
+        },
+        "plannedEndAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. The planned end date/timestamp for the operation. Note that this is advisory and the actual time the operation finishes may be before or after the planned end"
+        },
+        "status": {
+          "type": "string",
+          "description": "Property. A choice from an enumerated list describing the status. Enum:'planned, ongoing, finished, scheduled, cancelled'",
+          "enum": [
+            "cancelled",
+            "finished",
+            "ongoing",
+            "planned",
+            "scheduled"
+          ]
+        },
+        "operator": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. Reference to the operator conducting the operation"
+        },
+        "startedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Timestamp when the operation actually started to be performed"
+        },
+        "endedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Timestamp when the operation actually finished"
+        },
+        "reportedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Timestamp when the event/ fault was reported"
+        },
+        "addressedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. The timestamp when an event or fault was addressed or cleared"
         }
-    ]
+      }
+    }
+  ]
 }
