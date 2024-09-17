@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.9",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.Device/Device/schema.json",
@@ -29,7 +29,7 @@
           "type": "array",
           "description": "Property. Model:'https://schema.org/Text'. List of the asset(s) (building, object, etc.) controlled by the device",
           "items": {
-                "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
           }
         },
         "mnc": {
