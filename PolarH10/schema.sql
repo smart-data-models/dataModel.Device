@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PolarH10 of the subject dataModel.Device for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PolarH10_type AS ENUM ('PolarH10');
+CREATE TABLE PolarH10 (acc JSON, address JSON, alternateName TEXT, areaServed TEXT, clientId TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, deviceId TEXT, ecg JSON, hr NUMERIC, hrv NUMERIC, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, rr JSON, sampleRate NUMERIC, seeAlso JSON, sensorTimeStamp NUMERIC, sessionId NUMERIC, source TEXT, timeStamp NUMERIC, type PolarH10_type);
