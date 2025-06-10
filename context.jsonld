@@ -20,7 +20,7 @@
         "batteryLevel": "https://smartdatamodels.org/dataModel.Device/batteryLevel",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "brandName": "https://smartdatamodels.org/dataModel.Device/brandName",
         "cameraName": "https://smartdatamodels.org/dataModel.Device/cameraName",
@@ -36,7 +36,7 @@
         "controlledProperty": "https://smartdatamodels.org/dataModel.Device/controlledProperty",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "crossborderTransfer": "https://smartdatamodels.org/dataModel.Device/crossborderTransfer",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
@@ -75,7 +75,7 @@
         "isIndoor": "https://smartdatamodels.org/dataModel.Device/isIndoor",
         "isPersonalData": "https://smartdatamodels.org/dataModel.Device/isPersonalData",
         "legitimateInterest": "https://smartdatamodels.org/dataModel.Device/legitimateInterest",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "macAddress": "https://smartdatamodels.org/dataModel.Device/macAddress",
         "manufacturerName": "https://smartdatamodels.org/dataModel.Device/manufacturerName",
         "mcc": "https://smartdatamodels.org/dataModel.Device/mcc",
@@ -120,7 +120,7 @@
         "source": "https://smartdatamodels.org/source",
         "startDateTime": "https://smartdatamodels.org/dataModel.Device/startDateTime",
         "startedAt": "https://smartdatamodels.org/dataModel.Device/startedAt",
-        "status": "ngsi-ld:status",
+        "status": "https://uri.etsi.org/ngsi-ld/status",
         "streamName": "https://smartdatamodels.org/dataModel.Device/streamName",
         "streamURL": "https://smartdatamodels.org/dataModel.Device/streamURL",
         "streetAddress": "https://smartdatamodels.org/streetAddress",
@@ -134,6 +134,6 @@
         "unit": "https://smartdatamodels.org/dataModel.Device/unit",
         "unitId": "https://smartdatamodels.org/dataModel.Device/unitId",
         "user": "https://smartdatamodels.org/dataModel.Device/user",
-        "value": "ngsi-ld:hasValue"
+        "value": "https://uri.etsi.org/ngsi-ld/hasValue"
     }
 }
