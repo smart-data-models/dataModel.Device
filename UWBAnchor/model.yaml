@@ -1,0 +1,518 @@
+UWBAnchor:
+  description: Data model for the Ultra Wideband (UWB) Anchor which are electronic devices that detect UWB pulses emitted by UWB Tags and forward them to the location server for calculating tag positions.
+  properties:
+    address:
+      description: The mailing address
+      properties:
+        addressCountry:
+          description: The country. For example, Spain
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressCountry
+            type: Property
+        addressLocality:
+          description: The locality in which the street address is, and which is in the region
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressLocality
+            type: Property
+        addressRegion:
+          description: The region in which the locality is, and which is in the country
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressRegion
+            type: Property
+        district:
+          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          type: string
+          x-ngsi:
+            type: Property
+        postOfficeBoxNumber:
+          description: The post office box number for PO box addresses. For example, 03578
+          type: string
+          x-ngsi:
+            model: https://schema.org/postOfficeBoxNumber
+            type: Property
+        postalCode:
+          description: The postal code. For example, 24004
+          type: string
+          x-ngsi:
+            model: https://schema.org/https://schema.org/postalCode
+            type: Property
+        streetAddress:
+          description: The street address
+          type: string
+          x-ngsi:
+            model: https://schema.org/streetAddress
+            type: Property
+        streetNr:
+          description: Number identifying a specific property on a public street
+          type: string
+          x-ngsi:
+            type: Property
+      type: object
+      x-ngsi:
+        model: https://schema.org/address
+        type: Property
+    alternateName:
+      description: An alternative name for this item
+      type: string
+      x-ngsi:
+        type: Property
+    areaServed:
+      description: The geographic area where a service or offered item is provided
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    data:
+      description: Corresponding data of the UWB Anchor.
+      properties:
+        anchorData:
+          description: Anchor data information.
+          items:
+            properties:
+              anchorId:
+                description: Anchor ID.
+                type: string
+                x-ngsi:
+                  type: Property
+              rss:
+                description: RSS value.
+                type: number
+                x-ngsi:
+                  type: Property
+            type: object
+          type: array
+          x-ngsi:
+            type: Property
+        coordinates:
+          description: Coordinates data.
+          properties:
+            x:
+              description: X-axis reading.
+              type: number
+              x-ngsi:
+                type: Property
+            y:
+              description: Y-axis reading.
+              type: number
+              x-ngsi:
+                type: Property
+            z:
+              description: Z-axis reading.
+              type: number
+              x-ngsi:
+                type: Property
+          type: object
+          x-ngsi:
+            type: Property
+        metrics:
+          description: Metrics data.
+          properties:
+            latency:
+              description: Latency value.
+              type: number
+              x-ngsi:
+                type: Property
+            rates:
+              description: Rates data.
+              properties:
+                success:
+                  description: Success rate.
+                  type: number
+                  x-ngsi:
+                    type: Property
+                update:
+                  description: Update rate.
+                  type: number
+                  x-ngsi:
+                    type: Property
+              type: object
+              x-ngsi:
+                type: Property
+          type: object
+          x-ngsi:
+            type: Property
+        moving:
+          description: Moving status.
+          type: boolean
+          x-ngsi:
+            type: Property
+        tagData:
+          description: Tag data information.
+          properties:
+            accelerometer:
+              description: Accelerometer readings.
+              items:
+                description: Each of the accelaration measurements in X, Y, and Z-axis
+                properties:
+                  x:
+                    description: X-axis reading.
+                    type: number
+                    x-ngsi:
+                      type: Property
+                  y:
+                    description: Y-axis reading.
+                    type: number
+                    x-ngsi:
+                      type: Property
+                  z:
+                    description: Z-axis reading.
+                    type: number
+                    x-ngsi:
+                      type: Property
+                type: object
+                x-ngsi:
+                  type: Property
+              type: array
+              x-ngsi:
+                type: Property
+            blinkIndex:
+              description: Blink index value.
+              type: number
+              x-ngsi:
+                type: Property
+          type: object
+          x-ngsi:
+            type: Property
+        zones:
+          description: Zones information.
+          items:
+            properties:
+              id:
+                description: Zone ID.
+                type: string
+                x-ngsi:
+                  type: Property
+              name:
+                description: Zone name.
+                type: string
+                x-ngsi:
+                  type: Property
+            type: object
+          type: array
+          x-ngsi:
+            type: Property
+      type: object
+      x-ngsi:
+        type: Property
+    dataProvider:
+      description: A sequence of characters identifying the provider of the harmonised data entity
+      type: string
+      x-ngsi:
+        type: Property
+    dateCreated:
+      description: Entity creation timestamp. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    dateModified:
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    description:
+      description: A description of this item
+      type: string
+      x-ngsi:
+        type: Property
+    id:
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
+      description: Unique identifier of the entity
+      x-ngsi:
+        type: Relationship
+    location:
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+      oneOf:
+        - description: Geojson reference to the item. Point
+          properties:
+            bbox:
+              description: BBox of the  Point
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Point
+              items:
+                type: number
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Point
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. LineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the LineString
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON LineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. Polygon
+          properties:
+            bbox:
+              description: BBox coordinates of the Polygon
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Polygon
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Polygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiPoint
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MulitPoint
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPoint
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MultiLineString
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiLineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              description: Coordinates of the MultiPolygon
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPolygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+      x-ngsi:
+        type: GeoProperty
+    name:
+      description: The name of this item
+      type: string
+      x-ngsi:
+        type: Property
+    owner:
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
+      items:
+        anyOf:
+          - description: Identifier format of any NGSI entity
+            maxLength: 256
+            minLength: 1
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+            type: string
+            x-ngsi:
+              type: Property
+          - description: Identifier format of any NGSI entity
+            format: uri
+            type: string
+            x-ngsi:
+              type: Property
+        description: Unique identifier of the entity
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Property
+    seeAlso:
+      description: list of uri pointing to additional resources about the item
+      oneOf:
+        - items:
+            format: uri
+            type: string
+          minItems: 1
+          type: array
+        - format: uri
+          type: string
+      x-ngsi:
+        type: Property
+    source:
+      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      type: string
+      x-ngsi:
+        type: Property
+    success:
+      description: Success status.
+      type: boolean
+      x-ngsi:
+        type: Property
+    tagId:
+      description: Tag ID.
+      type: string
+      x-ngsi:
+        type: Property
+    timestamp:
+      description: Timestamp of the data.
+      type: number
+      x-ngsi:
+        type: Property
+    type:
+      description: NGSI entity type. It has to be UWBAnchor
+      enum:
+        - UWBAnchor
+      type: string
+      x-ngsi:
+        type: Property
+    version:
+      description: Version of the data.
+      type: string
+      x-ngsi:
+        type: Property
+  required:
+    - type
+    - id
+    - tagId
+  type: object
+  x-derived-from: ''
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2025 Contributors to Smart Data Models Program
+  x-license-url: https://github.com/smart-data-models/dataModel.Device/blob/master/UWBAnchor/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.Aeronautics/UWB/schema.json
+  x-model-tags: P2CODE
+  x-version: 0.0.1
