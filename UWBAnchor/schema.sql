@@ -1,0 +1,3 @@
+/* (Beta) Export of data model UWBAnchor of the subject dataModel.Device for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE UWBAnchor_type AS ENUM ('UWBAnchor');
+CREATE TABLE UWBAnchor (address JSON, alternateName TEXT, areaServed TEXT, data JSON, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, success BOOLEAN, tagId TEXT, timestamp NUMERIC, type UWBAnchor_type, version TEXT);
