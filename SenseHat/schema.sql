@@ -1,0 +1,3 @@
+/* (Beta) Export of data model SenseHat of the subject dataModel.Device for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE SenseHat_type AS ENUM ('SenseHat');
+CREATE TABLE SenseHat (accelerometer JSON, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, humidity NUMERIC, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, pressure NUMERIC, raspSn TEXT, seeAlso JSON, source TEXT, temperature NUMERIC, type SenseHat_type);
