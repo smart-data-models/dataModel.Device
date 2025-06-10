@@ -16,9 +16,17 @@ The following entity types are available:
 
 - [Modbus](https://github.com/smart-data-models/dataModel.Device/blob/master/Modbus/README.md). This entity contains a harmonised description of a modbus payload adapted from the modbus application protocol v1.1.b3
 
+- [PolarH10](https://github.com/smart-data-models/dataModel.Device/blob/master/PolarH10/README.md). A Data Model of Polar H10 Heart Rate Sensor with RR, HRV, HR, and ECG
+
 - [PrivacyObject](https://github.com/smart-data-models/dataModel.Device/blob/master/PrivacyObject/README.md). Information about privacy for an IoT device
 
+- [SenseHat](https://github.com/smart-data-models/dataModel.Device/blob/master/SenseHat/README.md). Data model for Sense Hat sensor readings for an array of sensing capabilities for Raspberry Pi.
+
+- [SenseHat](https://github.com/smart-data-models/dataModel.Device/blob/master/SenseHat/README.md). Data model for Sense Hat sensor readings for an array of sensing capabilities for Raspberry Pi.
+
 - [SmartMeteringObservation](https://github.com/smart-data-models/dataModel.Device/blob/master/SmartMeteringObservation/README.md). This entity contains a harmonised description of a Smart Meter Observation, generally applicable for Smart Homes, Industry, Cities and Agriculture. It is based mostly in the GSMA entity definition but it is extended
+
+- [UWBAnchor](https://github.com/smart-data-models/dataModel.Device/blob/master/UWBAnchor/README.md). Data model for the Ultra Wideband (UWB) Anchor which are electronic devices that detect UWB pulses emitted by UWB Tags and forward them to the location server for calculating tag positions.
 
 
 
