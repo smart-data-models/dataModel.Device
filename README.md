@@ -1,4 +1,5 @@
 # dataModel.Device
+
 These data models allow to represent devices of different nature (IoT, mobile, wearable, etc.).
 
 ### List of data models
@@ -28,13 +29,8 @@ The following entity types are available:
 
 - [UWBAnchor](https://github.com/smart-data-models/dataModel.Device/blob/master/UWBAnchor/README.md). Data model for the Ultra Wideband (UWB) Anchor which are electronic devices that detect UWB pulses emitted by UWB Tags and forward them to the location server for calculating tag positions.
 
-
-
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.Device/blob/master/CONTRIBUTORS.yaml) to the 9 current contributors of the data models of this Subject.
-
+[Link](https://github.com/smart-data-models/dataModel.Device/blob/master/CONTRIBUTORS.yaml) to the 9 current contributors.
 
 ### Contribution
-You can raise an [issue](https://github.com/smart-data-models/dataModel.Device/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.Device/pulls) on existing data models
-
-
+You can raise an [issue](https://github.com/smart-data-models/dataModel.Device/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.Device/pulls) on existing data models.
