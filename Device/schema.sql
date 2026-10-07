@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Device of the subject dataModel.Device for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE direction_type AS ENUM ('Inlet', 'Outlet', 'Entry', 'Exit');
+CREATE TYPE Device_direction_type AS ENUM ('Inlet', 'Outlet', 'Entry', 'Exit');
 CREATE TYPE Device_type AS ENUM ('Device');
 CREATE TABLE Device (
   "address" JSON,
@@ -23,7 +23,7 @@ CREATE TABLE Device (
   "description" TEXT,
   "deviceCategory" JSON,
   "deviceState" TEXT,
-  "direction" direction_type,
+  "direction" Device_direction_type,
   "distance" NUMERIC,
   "dstAware" BOOLEAN,
   "firmwareVersion" TEXT,
