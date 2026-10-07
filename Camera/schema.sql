@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Camera of the subject dataModel.Device for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE cameraType_type AS ENUM ('FIXED', 'PTZ', 'DOME', 'DAY/NIGHT', 'C-MOUNT', 'BULLET');
+CREATE TYPE Camera_cameraType_type AS ENUM ('FIXED', 'PTZ', 'DOME', 'DAY/NIGHT', 'C-MOUNT', 'BULLET');
 CREATE TYPE Camera_type AS ENUM ('Camera');
 CREATE TABLE Camera (
   "address" JSON,
@@ -8,7 +8,7 @@ CREATE TABLE Camera (
   "cameraName" TEXT,
   "cameraNum" NUMERIC,
   "cameraOrientation" JSON,
-  "cameraType" cameraType_type,
+  "cameraType" Camera_cameraType_type,
   "cameraUsage" TEXT,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
