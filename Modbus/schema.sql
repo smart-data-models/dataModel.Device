@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Modbus of the subject dataModel.Device for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE primaryTable_type AS ENUM ('coil', 'inputRegister', 'holdingRegister', 'discreteInput');
+CREATE TYPE Modbus_primaryTable_type AS ENUM ('coil', 'inputRegister', 'holdingRegister', 'discreteInput');
 CREATE TYPE Modbus_type AS ENUM ('Modbus');
 CREATE TABLE Modbus (
   "address" JSON,
@@ -14,7 +14,7 @@ CREATE TABLE Modbus (
   "memoryAddress" TEXT,
   "name" TEXT,
   "owner" JSON,
-  "primaryTable" primaryTable_type,
+  "primaryTable" Modbus_primaryTable_type,
   "protocolId" TEXT,
   "seeAlso" JSON,
   "source" TEXT,
