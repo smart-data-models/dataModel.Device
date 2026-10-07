@@ -1,6 +1,6 @@
 /* (Beta) Export of data model DeviceModel of the subject dataModel.Device for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE deviceClass_type AS ENUM ('C0', 'C1', 'C2');
-CREATE TYPE energyLimitationClass_type AS ENUM ('E0', 'E1', 'E2', 'E9');
+CREATE TYPE DeviceModel_deviceClass_type AS ENUM ('C0', 'C1', 'C2');
+CREATE TYPE DeviceModel_energyLimitationClass_type AS ENUM ('E0', 'E1', 'E2', 'E9');
 CREATE TYPE DeviceModel_type AS ENUM ('DeviceModel');
 CREATE TABLE DeviceModel (
   "alternateName" TEXT,
@@ -14,9 +14,9 @@ CREATE TABLE DeviceModel (
   "dateModified" TIMESTAMP,
   "description" TEXT,
   "deviceCategory" JSON,
-  "deviceClass" deviceClass_type,
+  "deviceClass" DeviceModel_deviceClass_type,
   "documentation" TEXT,
-  "energyLimitationClass" energyLimitationClass_type,
+  "energyLimitationClass" DeviceModel_energyLimitationClass_type,
   "function" JSON,
   "id" TEXT PRIMARY KEY,
   "image" TEXT,
