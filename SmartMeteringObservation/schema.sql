@@ -1,5 +1,5 @@
 /* (Beta) Export of data model SmartMeteringObservation of the subject dataModel.Device for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE entityVersion_type AS ENUM ('2.0', 'LD');
+CREATE TYPE SmartMeteringObservation_entityVersion_type AS ENUM ('2.0', 'LD');
 CREATE TYPE SmartMeteringObservation_type AS ENUM ('SmartMeteringObservation');
 CREATE TABLE SmartMeteringObservation (
   "address" JSON,
@@ -9,7 +9,7 @@ CREATE TABLE SmartMeteringObservation (
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
   "description" TEXT,
-  "entityVersion" entityVersion_type,
+  "entityVersion" SmartMeteringObservation_entityVersion_type,
   "id" TEXT PRIMARY KEY,
   "image" TEXT,
   "location" JSON,
