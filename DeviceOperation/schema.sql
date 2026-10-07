@@ -1,7 +1,7 @@
 /* (Beta) Export of data model DeviceOperation of the subject dataModel.Device for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE operationType_type AS ENUM ('event', 'fault', 'installation', 'maintenance', 'other', 'upgrade');
-CREATE TYPE result_type AS ENUM ('aborted', 'failed', 'ok');
-CREATE TYPE status_type AS ENUM ('cancelled', 'finished', 'ongoing', 'planned', 'scheduled');
+CREATE TYPE DeviceOperation_operationType_type AS ENUM ('event', 'fault', 'installation', 'maintenance', 'other', 'upgrade');
+CREATE TYPE DeviceOperation_result_type AS ENUM ('aborted', 'failed', 'ok');
+CREATE TYPE DeviceOperation_status_type AS ENUM ('cancelled', 'finished', 'ongoing', 'planned', 'scheduled');
 CREATE TYPE DeviceOperation_type AS ENUM ('DeviceOperation');
 CREATE TABLE DeviceOperation (
   "address" JSON,
@@ -17,16 +17,16 @@ CREATE TABLE DeviceOperation (
   "id" TEXT PRIMARY KEY,
   "location" JSON,
   "name" TEXT,
-  "operationType" operationType_type,
+  "operationType" DeviceOperation_operationType_type,
   "operator" JSON,
   "owner" JSON,
   "plannedEndAt" TIMESTAMP,
   "plannedStartAt" TIMESTAMP,
   "reportedAt" TIMESTAMP,
-  "result" result_type,
+  "result" DeviceOperation_result_type,
   "seeAlso" JSON,
   "source" TEXT,
   "startedAt" TIMESTAMP,
-  "status" status_type,
+  "status" DeviceOperation_status_type,
   "type" DeviceOperation_type
 );
