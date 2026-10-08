@@ -11,42 +11,42 @@ info:
   description:  |
     An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).
   title: Device
-  version: "0.0.9"
+  version: "0.0.10"
 openapi: "3.0.0"
 
-paths: 
-  /ngsi-ld/v1/entities: 
-    get: 
+paths:
+  /ngsi-ld/v1/entities:
+    get:
       description: "Retrieve a set of entities which matches a specific query from an NGSI-LD system"
-      parameters: 
-        - 
+      parameters:
+        -
           in: query
           name: type
           required: true
-          schema: 
-            enum: 
+          schema:
+            enum:
               - Device
             type: string
-      responses: 
+      responses:
         ? "200"
-        : 
-          content: 
-            application/ld+json: 
-              examples: 
-                keyvalues: 
+        :
+          content:
+            application/ld+json:
+              examples:
+                keyvalues:
                   summary: "Key-Values Pairs"
-                  value: 
-                    - 
+                  value:
+                    -
                       $ref: "https://smart-data-models.github.io/dataModel.Device/Device/examples/example.json"
-                normalized: 
+                normalized:
                   summary: "Normalized NGSI-LD"
-                  value: 
-                    - 
+                  value:
+                    -
                       $ref: "https://smart-data-models.github.io/dataModel.Device/Device/examples/example-normalized.jsonld"
           description: OK
-      tags: 
+      tags:
         - ngsi-ld
-tags: 
-  - 
+tags:
+  -
     description: "NGSI-LD Linked-data Format"
     name: ngsi-ld

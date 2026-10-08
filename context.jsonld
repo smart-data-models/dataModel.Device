@@ -25,6 +25,7 @@
         "annotations": "https://smartdatamodels.org/annotations",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "batteryLevel": "https://smartdatamodels.org/dataModel.Device/batteryLevel",
+        "batteryTemperature": "https://smartdatamodels.org/dataModel.Device/batteryTemperature",
         "bbox": {
             "@container": "@list",
             "@id": "https://purl.org/geojson/vocab#bbox"
