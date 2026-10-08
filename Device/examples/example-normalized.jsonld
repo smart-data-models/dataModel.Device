@@ -5,6 +5,10 @@
     "type": "Property",
     "value": 0.75
   },
+  "batteryTemperature": {
+    "type": "Property",
+    "value": 34.1
+  },
   "deviceCategory": {
     "type": "Property",
     "value": [

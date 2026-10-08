@@ -63,3 +63,10 @@ contributors:
   project: Digital-Water.city
   comments: 
   year: 2022
+- name: basabot
+  surname:
+  mail:
+  organization: Nekazari
+  project:
+  comments: batteryTemperature attribute for Device
+  year: 2026
