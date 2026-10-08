@@ -11,6 +11,10 @@
     "type": "Number",
     "value": 0.75
   },
+  "batteryTemperature": {
+    "type": "Number",
+    "value": 34.1
+  },
   "dateFirstUsed": {
     "type": "DateTime",
     "value": "2014-09-11T11:00:00Z"

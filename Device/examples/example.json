@@ -17,6 +17,7 @@
   "mcc": "214",
   "mnc": "07",
   "batteryLevel": 0.75,
+  "batteryTemperature": 34.1,
   "serialNumber": "9845A",
   "refDeviceModel": "myDevice-wastecontainer-sensor-345",
   "rssi": 0.86,

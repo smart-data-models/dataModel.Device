@@ -6,6 +6,7 @@ CREATE TABLE Device (
   "alternateName" TEXT,
   "areaServed" TEXT,
   "batteryLevel" JSON,
+  "batteryTemperature" JSON,
   "category" JSON,
   "configuration" JSON,
   "controlledAsset" JSON,

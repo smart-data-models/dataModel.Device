@@ -8,3 +8,11 @@ currentAdopters:
  project: https://lasrozasinnova.es/cosmos-plataforma-de-ciudad-inteligente-de-las-rozas/
  comments:
  startDate: 1-1-2022
+-
+ adopter: Nekazari
+ description: Battery thermal diagnostics for IoT field nodes (agrivoltaic deployments)
+ mail:
+ organization: Nekazari
+ project: https://github.com/nkz-os
+ comments:
+ startDate: 7-10-2026

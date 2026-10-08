@@ -161,6 +161,10 @@
             }
           ]
         },
+        "batteryTemperature": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Current battery temperature of the device. It must be expressed in degrees Celsius, use unitcode to set it out"
+        },
         "rssi": {
           "type": "number",
           "description": "Property. Model:'https://schema.org/Number'. Received signal strength indicator for a wireless enabled device. It must be expressed in dBm or mW, use unitcode to set it out. "
