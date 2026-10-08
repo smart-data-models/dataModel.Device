@@ -13,7 +13,12 @@
   },
   "batteryTemperature": {
     "type": "Number",
-    "value": 34.1
+    "value": 34.1,
+    "metadata": {
+      "unitCode": {
+        "value": "CEL"
+      }
+    }
   },
   "dateFirstUsed": {
     "type": "DateTime",
